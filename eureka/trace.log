@@ -1,0 +1,118 @@
+2021-10-25 00:03:28.999 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-10-25 00:03:29.625 INFO  com.tv.EurekaApplication                          :651  [32m        [0;39m No active profile set, falling back to default profiles: default
+2021-10-25 00:03:30.517 WARN  o.springframework.boot.actuate.endpoint.EndpointId:155  [32m        [0;39m Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2021-10-25 00:03:30.676 INFO  o.springframework.cloud.context.scope.GenericScope:295  [32m        [0;39m BeanFactory id=4cb4e834-76f4-37b7-a447-5fea1b5b7cea
+2021-10-25 00:03:30.900 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-10-25 00:03:31.642 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :92   [32m        [0;39m Tomcat initialized with port(s): 8761 (http)
+2021-10-25 00:03:31.653 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m        [0;39m Initializing ProtocolHandler ["http-nio-8761"]
+2021-10-25 00:03:31.653 INFO  org.apache.catalina.core.StandardService          :173  [32m        [0;39m Starting service [Tomcat]
+2021-10-25 00:03:31.653 INFO  org.apache.catalina.core.StandardEngine           :173  [32m        [0;39m Starting Servlet engine: [Apache Tomcat/9.0.29]
+2021-10-25 00:03:31.830 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m        [0;39m Initializing Spring embedded WebApplicationContext
+2021-10-25 00:03:31.830 INFO  org.springframework.web.context.ContextLoader     :284  [32m        [0;39m Root WebApplicationContext: initialization completed in 2185 ms
+2021-10-25 00:03:31.932 WARN  com.netflix.config.sources.URLConfigurationSource :121  [32m        [0;39m No URLs will be polled as dynamic configuration sources.
+2021-10-25 00:03:31.932 INFO  com.netflix.config.sources.URLConfigurationSource :122  [32m        [0;39m To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-10-25 00:03:31.950 INFO  com.netflix.config.DynamicPropertyFactory         :281  [32m        [0;39m DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@750ff7d3
+2021-10-25 00:03:33.103 INFO  c.s.j.server.impl.application.WebApplicationImpl  :815  [32m        [0;39m Initiating Jersey application, version 'Jersey: 1.19.1 03/11/2016 02:08 PM'
+2021-10-25 00:03:33.172 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :70   [32m        [0;39m Using JSON encoding codec LegacyJacksonJson
+2021-10-25 00:03:33.173 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :71   [32m        [0;39m Using JSON decoding codec LegacyJacksonJson
+2021-10-25 00:03:33.307 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :80   [32m        [0;39m Using XML encoding codec XStreamXml
+2021-10-25 00:03:33.308 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :81   [32m        [0;39m Using XML decoding codec XStreamXml
+2021-10-25 00:03:33.696 WARN  com.netflix.config.sources.URLConfigurationSource :121  [32m        [0;39m No URLs will be polled as dynamic configuration sources.
+2021-10-25 00:03:33.697 INFO  com.netflix.config.sources.URLConfigurationSource :122  [32m        [0;39m To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-10-25 00:03:33.954 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :171  [32m        [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2021-10-25 00:03:35.451 WARN  o.s.c.l.c.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger:106  [32m        [0;39m You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2021-10-25 00:03:35.492 WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger:81   [32m        [0;39m Spring Cloud LoadBalancer is currently working with default default cache. You can switch to using Caffeine cache, by adding it to the classpath.
+2021-10-25 00:03:35.514 INFO  o.s.cloud.netflix.eureka.InstanceInfoFactory      :72   [32m        [0;39m Setting initial instance status as: STARTING
+2021-10-25 00:03:35.550 INFO  com.netflix.discovery.DiscoveryClient             :365  [32m        [0;39m Initializing Eureka in region us-east-1
+2021-10-25 00:03:35.550 INFO  com.netflix.discovery.DiscoveryClient             :368  [32m        [0;39m Client configured to neither register nor query for data.
+2021-10-25 00:03:35.560 INFO  com.netflix.discovery.DiscoveryClient             :381  [32m        [0;39m Discovery Client initialized at timestamp 1635116615559 with initial instances count: 0
+2021-10-25 00:03:35.599 INFO  com.netflix.eureka.DefaultEurekaServerContext     :63   [32m        [0;39m Initializing ...
+2021-10-25 00:03:35.602 INFO  com.netflix.eureka.cluster.PeerEurekaNodes        :187  [32m        [0;39m Adding new peer nodes [http://localhost:8761/eureka/]
+2021-10-25 00:03:36.285 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :70   [32m        [0;39m Using JSON encoding codec LegacyJacksonJson
+2021-10-25 00:03:36.286 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :71   [32m        [0;39m Using JSON decoding codec LegacyJacksonJson
+2021-10-25 00:03:36.286 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :80   [32m        [0;39m Using XML encoding codec XStreamXml
+2021-10-25 00:03:36.286 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :81   [32m        [0;39m Using XML decoding codec XStreamXml
+2021-10-25 00:03:36.380 INFO  com.netflix.eureka.cluster.PeerEurekaNodes        :109  [32m        [0;39m Replica node URL:  http://localhost:8761/eureka/
+2021-10-25 00:03:36.389 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:151  [32m        [0;39m Finished initializing remote region registries. All known remote regions: []
+2021-10-25 00:03:36.390 INFO  com.netflix.eureka.DefaultEurekaServerContext     :70   [32m        [0;39m Initialized
+2021-10-25 00:03:36.408 INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver  :58   [32m        [0;39m Exposing 2 endpoint(s) beneath base path '/actuator'
+2021-10-25 00:03:36.435 INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry   :41   [32m        [0;39m Registering application EUREKA with eureka with status UP
+2021-10-25 00:03:36.437 INFO  o.s.c.netflix.eureka.server.EurekaServerBootstrap :110  [32m        [0;39m Setting the eureka configuration..
+2021-10-25 00:03:36.438 INFO  o.s.c.netflix.eureka.server.EurekaServerBootstrap :115  [32m        [0;39m Eureka data center value eureka.datacenter is not set, defaulting to default
+2021-10-25 00:03:36.439 INFO  o.s.c.netflix.eureka.server.EurekaServerBootstrap :129  [32m        [0;39m Eureka environment value eureka.environment is not set, defaulting to test
+2021-10-25 00:03:36.456 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m        [0;39m Starting ProtocolHandler ["http-nio-8761"]
+2021-10-25 00:03:36.457 INFO  o.s.c.netflix.eureka.server.EurekaServerBootstrap :188  [32m        [0;39m isAws returned false
+2021-10-25 00:03:36.458 INFO  o.s.c.netflix.eureka.server.EurekaServerBootstrap :153  [32m        [0;39m Initialized server context
+2021-10-25 00:03:36.458 INFO  c.n.eureka.registry.PeerAwareInstanceRegistryImpl :241  [32m        [0;39m Got 1 instances from neighboring DS node
+2021-10-25 00:03:36.458 INFO  c.n.eureka.registry.PeerAwareInstanceRegistryImpl :242  [32m        [0;39m Renew threshold is: 1
+2021-10-25 00:03:36.459 INFO  c.n.eureka.registry.PeerAwareInstanceRegistryImpl :253  [32m        [0;39m Changing status to UP
+2021-10-25 00:03:36.469 INFO  o.s.c.n.e.s.EurekaServerInitializerConfiguration  :72   [32m        [0;39m Started Eureka Server
+2021-10-25 00:03:36.484 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :204  [32m        [0;39m Tomcat started on port(s): 8761 (http) with context path ''
+2021-10-25 00:03:36.485 INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration         :145  [32m        [0;39m Updating port to 8761
+2021-10-25 00:03:37.057 INFO  com.tv.EurekaApplication                          :61   [32m        [0;39m Started EurekaApplication in 9.505 seconds (JVM running for 10.579)
+2021-10-25 00:03:37.063 INFO  com.tv.EurekaApplication                          :22   [32m        [0;39m start up successfully!!
+2021-10-25 00:03:37.063 INFO  com.tv.EurekaApplication                          :23   [32m        [0;39m Eureka address: 	http://127.0.0.1:8761
+2021-10-25 00:04:19.783 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-10-25 00:04:20.462 INFO  com.tv.EurekaApplication                          :651  [32m        [0;39m No active profile set, falling back to default profiles: default
+2021-10-25 00:04:21.440 WARN  o.springframework.boot.actuate.endpoint.EndpointId:155  [32m        [0;39m Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2021-10-25 00:04:21.639 INFO  o.springframework.cloud.context.scope.GenericScope:295  [32m        [0;39m BeanFactory id=4cb4e834-76f4-37b7-a447-5fea1b5b7cea
+2021-10-25 00:04:21.863 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-10-25 00:04:22.631 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :92   [32m        [0;39m Tomcat initialized with port(s): 8761 (http)
+2021-10-25 00:04:22.643 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m        [0;39m Initializing ProtocolHandler ["http-nio-8761"]
+2021-10-25 00:04:22.643 INFO  org.apache.catalina.core.StandardService          :173  [32m        [0;39m Starting service [Tomcat]
+2021-10-25 00:04:22.644 INFO  org.apache.catalina.core.StandardEngine           :173  [32m        [0;39m Starting Servlet engine: [Apache Tomcat/9.0.29]
+2021-10-25 00:04:22.891 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m        [0;39m Initializing Spring embedded WebApplicationContext
+2021-10-25 00:04:22.891 INFO  org.springframework.web.context.ContextLoader     :284  [32m        [0;39m Root WebApplicationContext: initialization completed in 2412 ms
+2021-10-25 00:04:22.995 WARN  com.netflix.config.sources.URLConfigurationSource :121  [32m        [0;39m No URLs will be polled as dynamic configuration sources.
+2021-10-25 00:04:22.995 INFO  com.netflix.config.sources.URLConfigurationSource :122  [32m        [0;39m To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-10-25 00:04:23.015 INFO  com.netflix.config.DynamicPropertyFactory         :281  [32m        [0;39m DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@11a8042c
+2021-10-25 00:04:24.310 INFO  c.s.j.server.impl.application.WebApplicationImpl  :815  [32m        [0;39m Initiating Jersey application, version 'Jersey: 1.19.1 03/11/2016 02:08 PM'
+2021-10-25 00:04:24.388 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :70   [32m        [0;39m Using JSON encoding codec LegacyJacksonJson
+2021-10-25 00:04:24.390 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :71   [32m        [0;39m Using JSON decoding codec LegacyJacksonJson
+2021-10-25 00:04:24.551 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :80   [32m        [0;39m Using XML encoding codec XStreamXml
+2021-10-25 00:04:24.552 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :81   [32m        [0;39m Using XML decoding codec XStreamXml
+2021-10-25 00:04:25.014 WARN  com.netflix.config.sources.URLConfigurationSource :121  [32m        [0;39m No URLs will be polled as dynamic configuration sources.
+2021-10-25 00:04:25.014 INFO  com.netflix.config.sources.URLConfigurationSource :122  [32m        [0;39m To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-10-25 00:04:25.294 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :171  [32m        [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2021-10-25 00:04:26.782 WARN  o.s.c.l.c.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger:106  [32m        [0;39m You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2021-10-25 00:04:26.828 WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger:81   [32m        [0;39m Spring Cloud LoadBalancer is currently working with default default cache. You can switch to using Caffeine cache, by adding it to the classpath.
+2021-10-25 00:04:26.850 INFO  o.s.cloud.netflix.eureka.InstanceInfoFactory      :72   [32m        [0;39m Setting initial instance status as: STARTING
+2021-10-25 00:04:26.886 INFO  com.netflix.discovery.DiscoveryClient             :365  [32m        [0;39m Initializing Eureka in region us-east-1
+2021-10-25 00:04:26.886 INFO  com.netflix.discovery.DiscoveryClient             :368  [32m        [0;39m Client configured to neither register nor query for data.
+2021-10-25 00:04:26.927 INFO  com.netflix.discovery.DiscoveryClient             :381  [32m        [0;39m Discovery Client initialized at timestamp 1635116666926 with initial instances count: 0
+2021-10-25 00:04:26.974 INFO  com.netflix.eureka.DefaultEurekaServerContext     :63   [32m        [0;39m Initializing ...
+2021-10-25 00:04:26.977 INFO  com.netflix.eureka.cluster.PeerEurekaNodes        :187  [32m        [0;39m Adding new peer nodes [http://localhost:8761/eureka/]
+2021-10-25 00:04:27.687 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :70   [32m        [0;39m Using JSON encoding codec LegacyJacksonJson
+2021-10-25 00:04:27.687 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :71   [32m        [0;39m Using JSON decoding codec LegacyJacksonJson
+2021-10-25 00:04:27.688 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :80   [32m        [0;39m Using XML encoding codec XStreamXml
+2021-10-25 00:04:27.688 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :81   [32m        [0;39m Using XML decoding codec XStreamXml
+2021-10-25 00:04:27.787 INFO  com.netflix.eureka.cluster.PeerEurekaNodes        :109  [32m        [0;39m Replica node URL:  http://localhost:8761/eureka/
+2021-10-25 00:04:27.794 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:151  [32m        [0;39m Finished initializing remote region registries. All known remote regions: []
+2021-10-25 00:04:27.795 INFO  com.netflix.eureka.DefaultEurekaServerContext     :70   [32m        [0;39m Initialized
+2021-10-25 00:04:27.810 INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver  :58   [32m        [0;39m Exposing 2 endpoint(s) beneath base path '/actuator'
+2021-10-25 00:04:27.838 INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry   :41   [32m        [0;39m Registering application EUREKA with eureka with status UP
+2021-10-25 00:04:27.841 INFO  o.s.c.netflix.eureka.server.EurekaServerBootstrap :110  [32m        [0;39m Setting the eureka configuration..
+2021-10-25 00:04:27.841 INFO  o.s.c.netflix.eureka.server.EurekaServerBootstrap :115  [32m        [0;39m Eureka data center value eureka.datacenter is not set, defaulting to default
+2021-10-25 00:04:27.842 INFO  o.s.c.netflix.eureka.server.EurekaServerBootstrap :129  [32m        [0;39m Eureka environment value eureka.environment is not set, defaulting to test
+2021-10-25 00:04:27.859 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m        [0;39m Starting ProtocolHandler ["http-nio-8761"]
+2021-10-25 00:04:27.860 INFO  o.s.c.netflix.eureka.server.EurekaServerBootstrap :188  [32m        [0;39m isAws returned false
+2021-10-25 00:04:27.860 INFO  o.s.c.netflix.eureka.server.EurekaServerBootstrap :153  [32m        [0;39m Initialized server context
+2021-10-25 00:04:27.861 INFO  c.n.eureka.registry.PeerAwareInstanceRegistryImpl :241  [32m        [0;39m Got 1 instances from neighboring DS node
+2021-10-25 00:04:27.861 INFO  c.n.eureka.registry.PeerAwareInstanceRegistryImpl :242  [32m        [0;39m Renew threshold is: 1
+2021-10-25 00:04:27.861 INFO  c.n.eureka.registry.PeerAwareInstanceRegistryImpl :253  [32m        [0;39m Changing status to UP
+2021-10-25 00:04:27.873 INFO  o.s.c.n.e.s.EurekaServerInitializerConfiguration  :72   [32m        [0;39m Started Eureka Server
+2021-10-25 00:04:27.890 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :204  [32m        [0;39m Tomcat started on port(s): 8761 (http) with context path ''
+2021-10-25 00:04:27.891 INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration         :145  [32m        [0;39m Updating port to 8761
+2021-10-25 00:04:28.473 INFO  com.tv.EurekaApplication                          :61   [32m        [0;39m Started EurekaApplication in 10.135 seconds (JVM running for 11.216)
+2021-10-25 00:04:28.479 INFO  com.tv.EurekaApplication                          :22   [32m        [0;39m started successfully!!
+2021-10-25 00:04:28.479 INFO  com.tv.EurekaApplication                          :23   [32m        [0;39m Eureka address: 	http://127.0.0.1:8761
+2021-10-25 00:04:31.380 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m        [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-10-25 00:04:31.380 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m        [0;39m Initializing Servlet 'dispatcherServlet'
+2021-10-25 00:04:31.389 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m        [0;39m Completed initialization in 8 ms
+2021-10-25 00:05:27.869 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1250 [32m        [0;39m Running the evict task with compensationTime 0ms
+2021-10-25 00:06:27.883 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1250 [32m        [0;39m Running the evict task with compensationTime 14ms
+2021-10-25 00:07:27.889 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1250 [32m        [0;39m Running the evict task with compensationTime 5ms
+2021-10-25 00:08:27.892 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1250 [32m        [0;39m Running the evict task with compensationTime 3ms
+2021-10-25 00:09:27.902 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1250 [32m        [0;39m Running the evict task with compensationTime 9ms
+2021-10-25 00:10:27.904 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1250 [32m        [0;39m Running the evict task with compensationTime 2ms
+2021-10-25 00:11:27.911 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1250 [32m        [0;39m Running the evict task with compensationTime 6ms
