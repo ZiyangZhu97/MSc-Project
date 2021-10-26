@@ -1,7 +1,7 @@
 package com.tv.system.controller;
 
-import com.tv.system.domain.Test;
-import com.tv.system.service.TestService;
+import com.tv.server.domain.Test;
+import com.tv.server.service.TestService;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 

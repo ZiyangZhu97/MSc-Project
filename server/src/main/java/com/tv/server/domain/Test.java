@@ -1,6 +1,6 @@
-package com.tv.system.domain;
+package com.tv.server.domain;
 
-public class Test {
+public class Test {//对应数据库的test表
     private String id;
 
     private String name;

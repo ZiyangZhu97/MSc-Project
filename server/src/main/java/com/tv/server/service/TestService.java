@@ -1,7 +1,7 @@
-package com.tv.system.service;
+package com.tv.server.service;
 
-import com.tv.system.domain.Test;
-import com.tv.system.mapper.TestMapper;
+import com.tv.server.domain.Test;
+import com.tv.server.mapper.TestMapper;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;

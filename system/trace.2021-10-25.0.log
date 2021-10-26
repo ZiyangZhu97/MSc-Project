@@ -1,5 +1,5 @@
 2021-10-25 00:37:29.515 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-10-25 00:37:30.166 INFO  com.tv.system.SystemApplication                   :651  [32m        [0;39m No active profile set, falling back to default profiles: default
+2021-10-25 00:37:30.166 INFO  com.tv.SystemApplication                   :651  [32m        [0;39m No active profile set, falling back to default profiles: default
 2021-10-25 00:37:30.946 INFO  o.springframework.cloud.context.scope.GenericScope:295  [32m        [0;39m BeanFactory id=783ca635-c138-30c2-bec2-db8fbf7918fe
 2021-10-25 00:37:31.136 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
 2021-10-25 00:37:31.846 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :92   [32m        [0;39m Tomcat initialized with port(s): 9001 (http)
@@ -104,7 +104,7 @@ com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Con
 	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
 	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
-	at com.tv.system.SystemApplication.main(SystemApplication.java:15)
+	at com.tv.SystemApplication.main(SystemApplication.java:15)
 Caused by: java.net.ConnectException: Connection refused: connect
 	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
 	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:81)
@@ -184,7 +184,7 @@ com.netflix.discovery.shared.transport.TransportException: Cannot execute reques
 	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
 	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
-	at com.tv.system.SystemApplication.main(SystemApplication.java:15)
+	at com.tv.SystemApplication.main(SystemApplication.java:15)
 2021-10-25 00:37:40.251 WARN  com.netflix.discovery.DiscoveryClient             :297  [32m        [0;39m Using default backup registry implementation which does not do anything.
 2021-10-25 00:37:40.256 INFO  com.netflix.discovery.DiscoveryClient             :1288 [32m        [0;39m Starting heartbeat executor: renew interval is: 30
 2021-10-25 00:37:40.262 INFO  com.netflix.discovery.InstanceInfoReplicator      :60   [32m        [0;39m InstanceInfoReplicator onDemand update allowed rate per min is 4
@@ -195,9 +195,9 @@ com.netflix.discovery.shared.transport.TransportException: Cannot execute reques
 2021-10-25 00:37:40.292 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m        [0;39m Starting ProtocolHandler ["http-nio-9001"]
 2021-10-25 00:37:40.315 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :204  [32m        [0;39m Tomcat started on port(s): 9001 (http) with context path ''
 2021-10-25 00:37:40.316 INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration         :145  [32m        [0;39m Updating port to 9001
-2021-10-25 00:37:40.857 INFO  com.tv.system.SystemApplication                   :61   [32m        [0;39m Started SystemApplication in 12.859 seconds (JVM running for 14.087)
-2021-10-25 00:37:40.858 INFO  com.tv.system.SystemApplication                   :16   [32m        [0;39m started successfully!!
-2021-10-25 00:37:40.858 INFO  com.tv.system.SystemApplication                   :17   [32m        [0;39m system address: 	http://127.0.0.1:9001
+2021-10-25 00:37:40.857 INFO  com.tv.SystemApplication                   :61   [32m        [0;39m Started SystemApplication in 12.859 seconds (JVM running for 14.087)
+2021-10-25 00:37:40.858 INFO  com.tv.SystemApplication                   :16   [32m        [0;39m started successfully!!
+2021-10-25 00:37:40.858 INFO  com.tv.SystemApplication                   :17   [32m        [0;39m system address: 	http://127.0.0.1:9001
 2021-10-25 00:37:44.318 ERROR c.n.d.s.t.decorator.RedirectingEurekaHttpClient   :83   [32m        [0;39m Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}
 com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused: connect
 	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187)
@@ -518,7 +518,7 @@ com.netflix.discovery.shared.transport.TransportException: Cannot execute reques
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at java.lang.Thread.run(Thread.java:748)
 2021-10-25 00:39:08.174 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-10-25 00:39:08.821 INFO  com.tv.system.SystemApplication                   :651  [32m        [0;39m No active profile set, falling back to default profiles: default
+2021-10-25 00:39:08.821 INFO  com.tv.SystemApplication                   :651  [32m        [0;39m No active profile set, falling back to default profiles: default
 2021-10-25 00:39:09.609 INFO  o.springframework.cloud.context.scope.GenericScope:295  [32m        [0;39m BeanFactory id=783ca635-c138-30c2-bec2-db8fbf7918fe
 2021-10-25 00:39:09.795 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
 2021-10-25 00:39:10.602 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :92   [32m        [0;39m Tomcat initialized with port(s): 9001 (http)
@@ -623,7 +623,7 @@ com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Con
 	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
 	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
-	at com.tv.system.SystemApplication.main(SystemApplication.java:15)
+	at com.tv.SystemApplication.main(SystemApplication.java:15)
 Caused by: java.net.ConnectException: Connection refused: connect
 	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
 	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:81)
@@ -703,7 +703,7 @@ com.netflix.discovery.shared.transport.TransportException: Cannot execute reques
 	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
 	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
-	at com.tv.system.SystemApplication.main(SystemApplication.java:15)
+	at com.tv.SystemApplication.main(SystemApplication.java:15)
 2021-10-25 00:39:18.945 WARN  com.netflix.discovery.DiscoveryClient             :297  [32m        [0;39m Using default backup registry implementation which does not do anything.
 2021-10-25 00:39:18.949 INFO  com.netflix.discovery.DiscoveryClient             :1288 [32m        [0;39m Starting heartbeat executor: renew interval is: 30
 2021-10-25 00:39:18.957 INFO  com.netflix.discovery.InstanceInfoReplicator      :60   [32m        [0;39m InstanceInfoReplicator onDemand update allowed rate per min is 4
@@ -714,9 +714,9 @@ com.netflix.discovery.shared.transport.TransportException: Cannot execute reques
 2021-10-25 00:39:18.986 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m        [0;39m Starting ProtocolHandler ["http-nio-9001"]
 2021-10-25 00:39:19.027 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :204  [32m        [0;39m Tomcat started on port(s): 9001 (http) with context path ''
 2021-10-25 00:39:19.027 INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration         :145  [32m        [0;39m Updating port to 9001
-2021-10-25 00:39:19.561 INFO  com.tv.system.SystemApplication                   :61   [32m        [0;39m Started SystemApplication in 13.063 seconds (JVM running for 14.046)
-2021-10-25 00:39:19.562 INFO  com.tv.system.SystemApplication                   :16   [32m        [0;39m started successfully!!
-2021-10-25 00:39:19.562 INFO  com.tv.system.SystemApplication                   :17   [32m        [0;39m system address: 	http://127.0.0.1:9001
+2021-10-25 00:39:19.561 INFO  com.tv.SystemApplication                   :61   [32m        [0;39m Started SystemApplication in 13.063 seconds (JVM running for 14.046)
+2021-10-25 00:39:19.562 INFO  com.tv.SystemApplication                   :16   [32m        [0;39m started successfully!!
+2021-10-25 00:39:19.562 INFO  com.tv.SystemApplication                   :17   [32m        [0;39m system address: 	http://127.0.0.1:9001
 2021-10-25 00:39:23.065 ERROR c.n.d.s.t.decorator.RedirectingEurekaHttpClient   :83   [32m        [0;39m Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}
 com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused: connect
 	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187)
@@ -1262,7 +1262,7 @@ com.netflix.discovery.shared.transport.TransportException: Cannot execute reques
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at java.lang.Thread.run(Thread.java:748)
 2021-10-25 00:44:10.740 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-10-25 00:44:11.426 INFO  com.tv.system.SystemApplication                   :651  [32m        [0;39m No active profile set, falling back to default profiles: default
+2021-10-25 00:44:11.426 INFO  com.tv.SystemApplication                   :651  [32m        [0;39m No active profile set, falling back to default profiles: default
 2021-10-25 00:44:12.265 INFO  o.springframework.cloud.context.scope.GenericScope:295  [32m        [0;39m BeanFactory id=783ca635-c138-30c2-bec2-db8fbf7918fe
 2021-10-25 00:44:12.446 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
 2021-10-25 00:44:13.140 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :92   [32m        [0;39m Tomcat initialized with port(s): 9001 (http)
@@ -1367,7 +1367,7 @@ com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Con
 	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
 	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
-	at com.tv.system.SystemApplication.main(SystemApplication.java:15)
+	at com.tv.SystemApplication.main(SystemApplication.java:15)
 Caused by: java.net.ConnectException: Connection refused: connect
 	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
 	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:81)
@@ -1447,7 +1447,7 @@ com.netflix.discovery.shared.transport.TransportException: Cannot execute reques
 	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
 	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
-	at com.tv.system.SystemApplication.main(SystemApplication.java:15)
+	at com.tv.SystemApplication.main(SystemApplication.java:15)
 2021-10-25 00:44:21.520 WARN  com.netflix.discovery.DiscoveryClient             :297  [32m        [0;39m Using default backup registry implementation which does not do anything.
 2021-10-25 00:44:21.522 INFO  com.netflix.discovery.DiscoveryClient             :1288 [32m        [0;39m Starting heartbeat executor: renew interval is: 30
 2021-10-25 00:44:21.527 INFO  com.netflix.discovery.InstanceInfoReplicator      :60   [32m        [0;39m InstanceInfoReplicator onDemand update allowed rate per min is 4
@@ -1458,9 +1458,9 @@ com.netflix.discovery.shared.transport.TransportException: Cannot execute reques
 2021-10-25 00:44:21.554 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m        [0;39m Starting ProtocolHandler ["http-nio-9001"]
 2021-10-25 00:44:21.580 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :204  [32m        [0;39m Tomcat started on port(s): 9001 (http) with context path ''
 2021-10-25 00:44:21.581 INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration         :145  [32m        [0;39m Updating port to 9001
-2021-10-25 00:44:22.154 INFO  com.tv.system.SystemApplication                   :61   [32m        [0;39m Started SystemApplication in 12.883 seconds (JVM running for 13.834)
-2021-10-25 00:44:22.155 INFO  com.tv.system.SystemApplication                   :16   [32m        [0;39m started successfully!!
-2021-10-25 00:44:22.155 INFO  com.tv.system.SystemApplication                   :17   [32m        [0;39m system address: 	http://127.0.0.1:9001
+2021-10-25 00:44:22.154 INFO  com.tv.SystemApplication                   :61   [32m        [0;39m Started SystemApplication in 12.883 seconds (JVM running for 13.834)
+2021-10-25 00:44:22.155 INFO  com.tv.SystemApplication                   :16   [32m        [0;39m started successfully!!
+2021-10-25 00:44:22.155 INFO  com.tv.SystemApplication                   :17   [32m        [0;39m system address: 	http://127.0.0.1:9001
 2021-10-25 00:44:25.618 ERROR c.n.d.s.t.decorator.RedirectingEurekaHttpClient   :83   [32m        [0;39m Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}
 com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused: connect
 	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187)
@@ -4287,7 +4287,7 @@ com.netflix.discovery.shared.transport.TransportException: Cannot execute reques
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at java.lang.Thread.run(Thread.java:748)
 2021-10-25 00:53:37.375 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-10-25 00:53:38.079 INFO  com.tv.system.SystemApplication                   :651  [32m        [0;39m No active profile set, falling back to default profiles: default
+2021-10-25 00:53:38.079 INFO  com.tv.SystemApplication                   :651  [32m        [0;39m No active profile set, falling back to default profiles: default
 2021-10-25 00:53:38.930 INFO  o.springframework.cloud.context.scope.GenericScope:295  [32m        [0;39m BeanFactory id=783ca635-c138-30c2-bec2-db8fbf7918fe
 2021-10-25 00:53:39.113 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
 2021-10-25 00:53:39.879 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :92   [32m        [0;39m Tomcat initialized with port(s): 9001 (http)
@@ -4392,7 +4392,7 @@ com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Con
 	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
 	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
-	at com.tv.system.SystemApplication.main(SystemApplication.java:15)
+	at com.tv.SystemApplication.main(SystemApplication.java:15)
 Caused by: java.net.ConnectException: Connection refused: connect
 	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
 	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:81)
@@ -4472,7 +4472,7 @@ com.netflix.discovery.shared.transport.TransportException: Cannot execute reques
 	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
 	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
-	at com.tv.system.SystemApplication.main(SystemApplication.java:15)
+	at com.tv.SystemApplication.main(SystemApplication.java:15)
 2021-10-25 00:53:48.526 WARN  com.netflix.discovery.DiscoveryClient             :297  [32m        [0;39m Using default backup registry implementation which does not do anything.
 2021-10-25 00:53:48.530 INFO  com.netflix.discovery.DiscoveryClient             :1288 [32m        [0;39m Starting heartbeat executor: renew interval is: 30
 2021-10-25 00:53:48.537 INFO  com.netflix.discovery.InstanceInfoReplicator      :60   [32m        [0;39m InstanceInfoReplicator onDemand update allowed rate per min is 4
@@ -4483,9 +4483,9 @@ com.netflix.discovery.shared.transport.TransportException: Cannot execute reques
 2021-10-25 00:53:48.579 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m        [0;39m Starting ProtocolHandler ["http-nio-9001"]
 2021-10-25 00:53:48.613 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :204  [32m        [0;39m Tomcat started on port(s): 9001 (http) with context path ''
 2021-10-25 00:53:48.614 INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration         :145  [32m        [0;39m Updating port to 9001
-2021-10-25 00:53:49.182 INFO  com.tv.system.SystemApplication                   :61   [32m        [0;39m Started SystemApplication in 13.602 seconds (JVM running for 14.624)
-2021-10-25 00:53:49.183 INFO  com.tv.system.SystemApplication                   :16   [32m        [0;39m started successfully!!
-2021-10-25 00:53:49.183 INFO  com.tv.system.SystemApplication                   :17   [32m        [0;39m system address: 	http://127.0.0.1:9001
+2021-10-25 00:53:49.182 INFO  com.tv.SystemApplication                   :61   [32m        [0;39m Started SystemApplication in 13.602 seconds (JVM running for 14.624)
+2021-10-25 00:53:49.183 INFO  com.tv.SystemApplication                   :16   [32m        [0;39m started successfully!!
+2021-10-25 00:53:49.183 INFO  com.tv.SystemApplication                   :17   [32m        [0;39m system address: 	http://127.0.0.1:9001
 2021-10-25 00:53:52.607 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m        [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
 2021-10-25 00:53:52.608 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m        [0;39m Initializing Servlet 'dispatcherServlet'
 2021-10-25 00:53:52.618 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m        [0;39m Completed initialization in 10 ms
@@ -5718,7 +5718,7 @@ com.netflix.discovery.shared.transport.TransportException: Cannot execute reques
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at java.lang.Thread.run(Thread.java:748)
 2021-10-25 00:57:08.210 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-10-25 00:57:08.866 INFO  com.tv.system.SystemApplication                   :651  [32m        [0;39m No active profile set, falling back to default profiles: default
+2021-10-25 00:57:08.866 INFO  com.tv.SystemApplication                   :651  [32m        [0;39m No active profile set, falling back to default profiles: default
 2021-10-25 00:57:09.670 INFO  o.springframework.cloud.context.scope.GenericScope:295  [32m        [0;39m BeanFactory id=783ca635-c138-30c2-bec2-db8fbf7918fe
 2021-10-25 00:57:09.858 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
 2021-10-25 00:57:10.555 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :92   [32m        [0;39m Tomcat initialized with port(s): 9001 (http)
@@ -5742,14 +5742,14 @@ com.netflix.discovery.shared.transport.TransportException: Cannot execute reques
 2021-10-25 00:57:13.361 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m        [0;39m Starting ProtocolHandler ["http-nio-9001"]
 2021-10-25 00:57:13.385 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :204  [32m        [0;39m Tomcat started on port(s): 9001 (http) with context path ''
 2021-10-25 00:57:13.386 INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration         :145  [32m        [0;39m Updating port to 9001
-2021-10-25 00:57:14.001 INFO  com.tv.system.SystemApplication                   :61   [32m        [0;39m Started SystemApplication in 7.237 seconds (JVM running for 8.134)
-2021-10-25 00:57:14.002 INFO  com.tv.system.SystemApplication                   :16   [32m        [0;39m started successfully!!
-2021-10-25 00:57:14.003 INFO  com.tv.system.SystemApplication                   :17   [32m        [0;39m system address: 	http://127.0.0.1:9001
+2021-10-25 00:57:14.001 INFO  com.tv.SystemApplication                   :61   [32m        [0;39m Started SystemApplication in 7.237 seconds (JVM running for 8.134)
+2021-10-25 00:57:14.002 INFO  com.tv.SystemApplication                   :16   [32m        [0;39m started successfully!!
+2021-10-25 00:57:14.003 INFO  com.tv.SystemApplication                   :17   [32m        [0;39m system address: 	http://127.0.0.1:9001
 2021-10-25 00:57:24.544 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m        [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
 2021-10-25 00:57:24.545 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m        [0;39m Initializing Servlet 'dispatcherServlet'
 2021-10-25 00:57:24.558 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m        [0;39m Completed initialization in 13 ms
 2021-10-25 00:59:57.975 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-10-25 00:59:58.631 INFO  com.tv.system.SystemApplication                   :651  [32m        [0;39m No active profile set, falling back to default profiles: default
+2021-10-25 00:59:58.631 INFO  com.tv.SystemApplication                   :651  [32m        [0;39m No active profile set, falling back to default profiles: default
 2021-10-25 00:59:59.430 INFO  o.springframework.cloud.context.scope.GenericScope:295  [32m        [0;39m BeanFactory id=28147c9f-6917-3301-adc9-a07499d4226b
 2021-10-25 00:59:59.621 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
 2021-10-25 01:00:00.400 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :92   [32m        [0;39m Tomcat initialized with port(s): 9001 (http)
@@ -5773,14 +5773,14 @@ com.netflix.discovery.shared.transport.TransportException: Cannot execute reques
 2021-10-25 01:00:03.429 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m        [0;39m Starting ProtocolHandler ["http-nio-9001"]
 2021-10-25 01:00:03.450 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :204  [32m        [0;39m Tomcat started on port(s): 9001 (http) with context path ''
 2021-10-25 01:00:03.451 INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration         :145  [32m        [0;39m Updating port to 9001
-2021-10-25 01:00:04.052 INFO  com.tv.system.SystemApplication                   :61   [32m        [0;39m Started SystemApplication in 7.485 seconds (JVM running for 8.423)
-2021-10-25 01:00:04.053 INFO  com.tv.system.SystemApplication                   :16   [32m        [0;39m started successfully!!
-2021-10-25 01:00:04.053 INFO  com.tv.system.SystemApplication                   :17   [32m        [0;39m system address: 	http://127.0.0.1:9001
+2021-10-25 01:00:04.052 INFO  com.tv.SystemApplication                   :61   [32m        [0;39m Started SystemApplication in 7.485 seconds (JVM running for 8.423)
+2021-10-25 01:00:04.053 INFO  com.tv.SystemApplication                   :16   [32m        [0;39m started successfully!!
+2021-10-25 01:00:04.053 INFO  com.tv.SystemApplication                   :17   [32m        [0;39m system address: 	http://127.0.0.1:9001
 2021-10-25 01:00:08.884 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m        [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
 2021-10-25 01:00:08.885 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m        [0;39m Initializing Servlet 'dispatcherServlet'
 2021-10-25 01:00:08.896 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m        [0;39m Completed initialization in 11 ms
 2021-10-25 01:08:36.722 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-10-25 01:08:37.491 INFO  com.tv.system.SystemApplication                   :651  [32m        [0;39m No active profile set, falling back to default profiles: default
+2021-10-25 01:08:37.491 INFO  com.tv.SystemApplication                   :651  [32m        [0;39m No active profile set, falling back to default profiles: default
 2021-10-25 01:08:38.409 INFO  o.springframework.cloud.context.scope.GenericScope:295  [32m        [0;39m BeanFactory id=28147c9f-6917-3301-adc9-a07499d4226b
 2021-10-25 01:08:38.612 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
 2021-10-25 01:08:39.407 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :92   [32m        [0;39m Tomcat initialized with port(s): 9001 (http)
@@ -5885,7 +5885,7 @@ com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Con
 	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
 	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
-	at com.tv.system.SystemApplication.main(SystemApplication.java:17)
+	at com.tv.SystemApplication.main(SystemApplication.java:17)
 Caused by: java.net.ConnectException: Connection refused: connect
 	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
 	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:81)
@@ -5965,7 +5965,7 @@ com.netflix.discovery.shared.transport.TransportException: Cannot execute reques
 	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
 	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
-	at com.tv.system.SystemApplication.main(SystemApplication.java:17)
+	at com.tv.SystemApplication.main(SystemApplication.java:17)
 2021-10-25 01:08:48.518 WARN  com.netflix.discovery.DiscoveryClient             :297  [32m        [0;39m Using default backup registry implementation which does not do anything.
 2021-10-25 01:08:48.520 INFO  com.netflix.discovery.DiscoveryClient             :1288 [32m        [0;39m Starting heartbeat executor: renew interval is: 30
 2021-10-25 01:08:48.526 INFO  com.netflix.discovery.InstanceInfoReplicator      :60   [32m        [0;39m InstanceInfoReplicator onDemand update allowed rate per min is 4
@@ -5976,9 +5976,9 @@ com.netflix.discovery.shared.transport.TransportException: Cannot execute reques
 2021-10-25 01:08:48.559 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m        [0;39m Starting ProtocolHandler ["http-nio-9001"]
 2021-10-25 01:08:48.594 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :204  [32m        [0;39m Tomcat started on port(s): 9001 (http) with context path ''
 2021-10-25 01:08:48.595 INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration         :145  [32m        [0;39m Updating port to 9001
-2021-10-25 01:08:49.219 INFO  com.tv.system.SystemApplication                   :61   [32m        [0;39m Started SystemApplication in 14.205 seconds (JVM running for 15.255)
-2021-10-25 01:08:49.220 INFO  com.tv.system.SystemApplication                   :18   [32m        [0;39m started successfully!!
-2021-10-25 01:08:49.220 INFO  com.tv.system.SystemApplication                   :19   [32m        [0;39m system address: 	http://127.0.0.1:9001
+2021-10-25 01:08:49.219 INFO  com.tv.SystemApplication                   :61   [32m        [0;39m Started SystemApplication in 14.205 seconds (JVM running for 15.255)
+2021-10-25 01:08:49.220 INFO  com.tv.SystemApplication                   :18   [32m        [0;39m started successfully!!
+2021-10-25 01:08:49.220 INFO  com.tv.SystemApplication                   :19   [32m        [0;39m system address: 	http://127.0.0.1:9001
 2021-10-25 01:08:52.620 ERROR c.n.d.s.t.decorator.RedirectingEurekaHttpClient   :83   [32m        [0;39m Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}
 com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused: connect
 	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187)
@@ -6774,7 +6774,7 @@ com.netflix.discovery.shared.transport.TransportException: Cannot execute reques
 2021-10-25 01:11:30.820 INFO  com.netflix.discovery.DiscoveryClient             :1065 [32m        [0;39m Getting all instance registry info from the eureka server
 2021-10-25 01:11:30.887 INFO  com.netflix.discovery.DiscoveryClient             :1074 [32m        [0;39m The response status is 200
 2021-10-25 01:12:06.080 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-10-25 01:12:06.771 INFO  com.tv.system.SystemApplication                   :651  [32m        [0;39m No active profile set, falling back to default profiles: default
+2021-10-25 01:12:06.771 INFO  com.tv.SystemApplication                   :651  [32m        [0;39m No active profile set, falling back to default profiles: default
 2021-10-25 01:12:07.668 INFO  o.springframework.cloud.context.scope.GenericScope:295  [32m        [0;39m BeanFactory id=28147c9f-6917-3301-adc9-a07499d4226b
 2021-10-25 01:12:07.885 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
 2021-10-25 01:12:08.654 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :92   [32m        [0;39m Tomcat initialized with port(s): 9001 (http)
@@ -6798,14 +6798,14 @@ com.netflix.discovery.shared.transport.TransportException: Cannot execute reques
 2021-10-25 01:12:11.545 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m        [0;39m Starting ProtocolHandler ["http-nio-9001"]
 2021-10-25 01:12:11.573 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :204  [32m        [0;39m Tomcat started on port(s): 9001 (http) with context path ''
 2021-10-25 01:12:11.574 INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration         :145  [32m        [0;39m Updating port to 9001
-2021-10-25 01:12:12.140 INFO  com.tv.system.SystemApplication                   :61   [32m        [0;39m Started SystemApplication in 7.575 seconds (JVM running for 8.458)
-2021-10-25 01:12:12.141 INFO  com.tv.system.SystemApplication                   :18   [32m        [0;39m started successfully!!
-2021-10-25 01:12:12.141 INFO  com.tv.system.SystemApplication                   :19   [32m        [0;39m system address: 	http://127.0.0.1:9001
+2021-10-25 01:12:12.140 INFO  com.tv.SystemApplication                   :61   [32m        [0;39m Started SystemApplication in 7.575 seconds (JVM running for 8.458)
+2021-10-25 01:12:12.141 INFO  com.tv.SystemApplication                   :18   [32m        [0;39m started successfully!!
+2021-10-25 01:12:12.141 INFO  com.tv.SystemApplication                   :19   [32m        [0;39m system address: 	http://127.0.0.1:9001
 2021-10-25 01:12:15.709 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m        [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
 2021-10-25 01:12:15.709 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m        [0;39m Initializing Servlet 'dispatcherServlet'
 2021-10-25 01:12:15.719 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m        [0;39m Completed initialization in 10 ms
 2021-10-25 02:59:53.422 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-10-25 02:59:54.071 INFO  com.tv.system.SystemApplication                   :651  [32m        [0;39m No active profile set, falling back to default profiles: default
+2021-10-25 02:59:54.071 INFO  com.tv.SystemApplication                   :651  [32m        [0;39m No active profile set, falling back to default profiles: default
 2021-10-25 02:59:54.848 INFO  o.springframework.cloud.context.scope.GenericScope:295  [32m        [0;39m BeanFactory id=28147c9f-6917-3301-adc9-a07499d4226b
 2021-10-25 02:59:55.014 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
 2021-10-25 02:59:55.696 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :92   [32m        [0;39m Tomcat initialized with port(s): 9001 (http)
@@ -6829,14 +6829,14 @@ com.netflix.discovery.shared.transport.TransportException: Cannot execute reques
 2021-10-25 02:59:58.397 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m        [0;39m Starting ProtocolHandler ["http-nio-9001"]
 2021-10-25 02:59:58.420 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :204  [32m        [0;39m Tomcat started on port(s): 9001 (http) with context path ''
 2021-10-25 02:59:58.421 INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration         :145  [32m        [0;39m Updating port to 9001
-2021-10-25 02:59:58.998 INFO  com.tv.system.SystemApplication                   :61   [32m        [0;39m Started SystemApplication in 7.089 seconds (JVM running for 8.034)
-2021-10-25 02:59:58.999 INFO  com.tv.system.SystemApplication                   :18   [32m        [0;39m started successfully!!
-2021-10-25 02:59:59.000 INFO  com.tv.system.SystemApplication                   :19   [32m        [0;39m system address: 	http://127.0.0.1:9001
+2021-10-25 02:59:58.998 INFO  com.tv.SystemApplication                   :61   [32m        [0;39m Started SystemApplication in 7.089 seconds (JVM running for 8.034)
+2021-10-25 02:59:58.999 INFO  com.tv.SystemApplication                   :18   [32m        [0;39m started successfully!!
+2021-10-25 02:59:59.000 INFO  com.tv.SystemApplication                   :19   [32m        [0;39m system address: 	http://127.0.0.1:9001
 2021-10-25 03:00:04.590 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m        [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
 2021-10-25 03:00:04.590 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m        [0;39m Initializing Servlet 'dispatcherServlet'
 2021-10-25 03:00:04.601 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m        [0;39m Completed initialization in 10 ms
 2021-10-25 03:06:22.409 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-10-25 03:06:23.087 INFO  com.tv.system.SystemApplication                   :651  [32m        [0;39m No active profile set, falling back to default profiles: default
+2021-10-25 03:06:23.087 INFO  com.tv.SystemApplication                   :651  [32m        [0;39m No active profile set, falling back to default profiles: default
 2021-10-25 03:06:23.893 INFO  o.springframework.cloud.context.scope.GenericScope:295  [32m        [0;39m BeanFactory id=28147c9f-6917-3301-adc9-a07499d4226b
 2021-10-25 03:06:24.095 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
 2021-10-25 03:06:24.843 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :92   [32m        [0;39m Tomcat initialized with port(s): 9001 (http)
@@ -6877,9 +6877,9 @@ com.netflix.discovery.shared.transport.TransportException: Cannot execute reques
 2021-10-25 03:06:29.540 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :204  [32m        [0;39m Tomcat started on port(s): 9001 (http) with context path ''
 2021-10-25 03:06:29.541 INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration         :145  [32m        [0;39m Updating port to 9001
 2021-10-25 03:06:29.793 INFO  com.netflix.discovery.DiscoveryClient             :853  [32m        [0;39m DiscoveryClient_SYSTEM/windows10.microdone.cn:system:9001 - registration status: 204
-2021-10-25 03:06:30.152 INFO  com.tv.system.SystemApplication                   :61   [32m        [0;39m Started SystemApplication in 9.365 seconds (JVM running for 10.267)
-2021-10-25 03:06:30.153 INFO  com.tv.system.SystemApplication                   :18   [32m        [0;39m started successfully!!
-2021-10-25 03:06:30.153 INFO  com.tv.system.SystemApplication                   :19   [32m        [0;39m system address: 	http://127.0.0.1:9001
+2021-10-25 03:06:30.152 INFO  com.tv.SystemApplication                   :61   [32m        [0;39m Started SystemApplication in 9.365 seconds (JVM running for 10.267)
+2021-10-25 03:06:30.153 INFO  com.tv.SystemApplication                   :18   [32m        [0;39m started successfully!!
+2021-10-25 03:06:30.153 INFO  com.tv.SystemApplication                   :19   [32m        [0;39m system address: 	http://127.0.0.1:9001
 2021-10-25 03:06:46.451 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m        [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
 2021-10-25 03:06:46.452 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m        [0;39m Initializing Servlet 'dispatcherServlet'
 2021-10-25 03:06:46.464 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m        [0;39m Completed initialization in 12 ms
@@ -6905,7 +6905,7 @@ com.netflix.discovery.shared.transport.TransportException: Cannot execute reques
 2021-10-25 03:07:29.587 INFO  com.netflix.discovery.DiscoveryClient             :1065 [32m        [0;39m Getting all instance registry info from the eureka server
 2021-10-25 03:07:29.671 INFO  com.netflix.discovery.DiscoveryClient             :1074 [32m        [0;39m The response status is 200
 2021-10-25 03:15:31.670 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-10-25 03:15:32.369 INFO  com.tv.system.SystemApplication                   :651  [32m        [0;39m No active profile set, falling back to default profiles: default
+2021-10-25 03:15:32.369 INFO  com.tv.SystemApplication                   :651  [32m        [0;39m No active profile set, falling back to default profiles: default
 2021-10-25 03:15:33.240 INFO  o.springframework.cloud.context.scope.GenericScope:295  [32m        [0;39m BeanFactory id=28147c9f-6917-3301-adc9-a07499d4226b
 2021-10-25 03:15:33.451 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
 2021-10-25 03:15:34.559 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :92   [32m        [0;39m Tomcat initialized with port(s): 9001 (http)
@@ -6946,12 +6946,12 @@ com.netflix.discovery.shared.transport.TransportException: Cannot execute reques
 2021-10-25 03:15:42.648 INFO  com.netflix.discovery.DiscoveryClient             :853  [32m        [0;39m DiscoveryClient_SYSTEM/windows10.microdone.cn:system:9001 - registration status: 204
 2021-10-25 03:15:42.660 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :204  [32m        [0;39m Tomcat started on port(s): 9001 (http) with context path ''
 2021-10-25 03:15:42.661 INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration         :145  [32m        [0;39m Updating port to 9001
-2021-10-25 03:15:43.374 INFO  com.tv.system.SystemApplication                   :61   [32m        [0;39m Started SystemApplication in 13.171 seconds (JVM running for 14.107)
-2021-10-25 03:15:43.375 INFO  com.tv.system.SystemApplication                   :18   [32m        [0;39m started successfully!!
-2021-10-25 03:15:43.376 INFO  com.tv.system.SystemApplication                   :19   [32m        [0;39m system address: 	http://127.0.0.1:9001
+2021-10-25 03:15:43.374 INFO  com.tv.SystemApplication                   :61   [32m        [0;39m Started SystemApplication in 13.171 seconds (JVM running for 14.107)
+2021-10-25 03:15:43.375 INFO  com.tv.SystemApplication                   :18   [32m        [0;39m started successfully!!
+2021-10-25 03:15:43.376 INFO  com.tv.SystemApplication                   :19   [32m        [0;39m system address: 	http://127.0.0.1:9001
 2021-10-25 03:20:42.074 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
 2021-10-25 03:23:01.283 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-10-25 03:23:02.304 INFO  com.tv.system.SystemApplication                   :651  [32m        [0;39m No active profile set, falling back to default profiles: default
+2021-10-25 03:23:02.304 INFO  com.tv.SystemApplication                   :651  [32m        [0;39m No active profile set, falling back to default profiles: default
 2021-10-25 03:23:03.530 INFO  o.springframework.cloud.context.scope.GenericScope:295  [32m        [0;39m BeanFactory id=28147c9f-6917-3301-adc9-a07499d4226b
 2021-10-25 03:23:03.738 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
 2021-10-25 03:23:04.850 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :92   [32m        [0;39m Tomcat initialized with port(s): 9001 (http)
@@ -6992,9 +6992,9 @@ com.netflix.discovery.shared.transport.TransportException: Cannot execute reques
 2021-10-25 03:23:11.464 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :204  [32m        [0;39m Tomcat started on port(s): 9001 (http) with context path '/system'
 2021-10-25 03:23:11.465 INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration         :145  [32m        [0;39m Updating port to 9001
 2021-10-25 03:23:11.473 INFO  com.netflix.discovery.DiscoveryClient             :853  [32m        [0;39m DiscoveryClient_SYSTEM/windows10.microdone.cn:system:9001 - registration status: 204
-2021-10-25 03:23:12.093 INFO  com.tv.system.SystemApplication                   :61   [32m        [0;39m Started SystemApplication in 12.441 seconds (JVM running for 13.457)
-2021-10-25 03:23:12.094 INFO  com.tv.system.SystemApplication                   :18   [32m        [0;39m started successfully!!
-2021-10-25 03:23:12.095 INFO  com.tv.system.SystemApplication                   :19   [32m        [0;39m system address: 	http://127.0.0.1:9001
+2021-10-25 03:23:12.093 INFO  com.tv.SystemApplication                   :61   [32m        [0;39m Started SystemApplication in 12.441 seconds (JVM running for 13.457)
+2021-10-25 03:23:12.094 INFO  com.tv.SystemApplication                   :18   [32m        [0;39m started successfully!!
+2021-10-25 03:23:12.095 INFO  com.tv.SystemApplication                   :19   [32m        [0;39m system address: 	http://127.0.0.1:9001
 2021-10-25 03:26:19.800 INFO  o.a.c.c.C.[Tomcat].[localhost].[/system]          :173  [32m        [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
 2021-10-25 03:26:19.801 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m        [0;39m Initializing Servlet 'dispatcherServlet'
 2021-10-25 03:26:19.812 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m        [0;39m Completed initialization in 11 ms
@@ -7302,7 +7302,7 @@ com.netflix.discovery.shared.transport.TransportException: Cannot execute reques
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at java.lang.Thread.run(Thread.java:748)
 2021-10-25 20:33:28.955 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-10-25 20:33:29.655 INFO  com.tv.system.SystemApplication                   :651  [32m        [0;39m No active profile set, falling back to default profiles: default
+2021-10-25 20:33:29.655 INFO  com.tv.SystemApplication                   :651  [32m        [0;39m No active profile set, falling back to default profiles: default
 2021-10-25 20:33:30.233 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :166  [32m        [0;39m No MyBatis mapper was found in '[com.tv.system]' package. Please check your configuration.
 2021-10-25 20:33:30.607 INFO  o.springframework.cloud.context.scope.GenericScope:295  [32m        [0;39m BeanFactory id=4081da1a-8802-302f-b831-4cf93cd71b4f
 2021-10-25 20:33:30.827 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
@@ -7345,9 +7345,9 @@ com.netflix.discovery.shared.transport.TransportException: Cannot execute reques
 2021-10-25 20:33:36.564 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :204  [32m        [0;39m Tomcat started on port(s): 9001 (http) with context path '/system'
 2021-10-25 20:33:36.568 INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration         :145  [32m        [0;39m Updating port to 9001
 2021-10-25 20:33:36.689 INFO  com.netflix.discovery.DiscoveryClient             :853  [32m        [0;39m DiscoveryClient_SYSTEM/windows10.microdone.cn:system:9001 - registration status: 204
-2021-10-25 20:33:37.184 INFO  com.tv.system.SystemApplication                   :61   [32m        [0;39m Started SystemApplication in 9.807 seconds (JVM running for 11.175)
-2021-10-25 20:33:37.185 INFO  com.tv.system.SystemApplication                   :18   [32m        [0;39m started successfully!!
-2021-10-25 20:33:37.186 INFO  com.tv.system.SystemApplication                   :19   [32m        [0;39m system address: 	http://127.0.0.1:9001
+2021-10-25 20:33:37.184 INFO  com.tv.SystemApplication                   :61   [32m        [0;39m Started SystemApplication in 9.807 seconds (JVM running for 11.175)
+2021-10-25 20:33:37.185 INFO  com.tv.SystemApplication                   :18   [32m        [0;39m started successfully!!
+2021-10-25 20:33:37.186 INFO  com.tv.SystemApplication                   :19   [32m        [0;39m system address: 	http://127.0.0.1:9001
 2021-10-25 20:34:06.497 INFO  com.netflix.discovery.DiscoveryClient             :976  [32m        [0;39m Disable delta property : false
 2021-10-25 20:34:06.498 INFO  com.netflix.discovery.DiscoveryClient             :977  [32m        [0;39m Single vip registry refresh property : null
 2021-10-25 20:34:06.498 INFO  com.netflix.discovery.DiscoveryClient             :978  [32m        [0;39m Force full registry fetch : false
@@ -7366,7 +7366,7 @@ com.netflix.discovery.shared.transport.TransportException: Cannot execute reques
 2021-10-25 21:13:36.296 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
 2021-10-25 21:18:36.298 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
 2021-10-25 21:23:01.462 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-10-25 21:23:02.140 INFO  com.tv.system.SystemApplication                   :651  [32m        [0;39m No active profile set, falling back to default profiles: default
+2021-10-25 21:23:02.140 INFO  com.tv.SystemApplication                   :651  [32m        [0;39m No active profile set, falling back to default profiles: default
 2021-10-25 21:23:02.569 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :166  [32m        [0;39m No MyBatis mapper was found in '[package com.tv.system.mapper;]' package. Please check your configuration.
 2021-10-25 21:23:02.680 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :166  [32m        [0;39m No MyBatis mapper was found in '[com.tv.system]' package. Please check your configuration.
 2021-10-25 21:23:02.998 INFO  o.springframework.cloud.context.scope.GenericScope:295  [32m        [0;39m BeanFactory id=94aad5ff-a722-3ad9-835d-f1b211b389d5
@@ -7378,7 +7378,7 @@ com.netflix.discovery.shared.transport.TransportException: Cannot execute reques
 2021-10-25 21:23:04.007 INFO  org.apache.catalina.core.StandardEngine           :173  [32m        [0;39m Starting Servlet engine: [Apache Tomcat/9.0.29]
 2021-10-25 21:23:04.222 INFO  o.a.c.c.C.[Tomcat].[localhost].[/system]          :173  [32m        [0;39m Initializing Spring embedded WebApplicationContext
 2021-10-25 21:23:04.222 INFO  org.springframework.web.context.ContextLoader     :284  [32m        [0;39m Root WebApplicationContext: initialization completed in 2064 ms
-2021-10-25 21:23:04.296 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext:558  [32m        [0;39m Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'testController': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'testService': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.tv.system.mapper.TestMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@javax.annotation.Resource(shareable=true, lookup=, name=, description=, authenticationType=CONTAINER, type=class java.lang.Object, mappedName=)}
+2021-10-25 21:23:04.296 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext:558  [32m        [0;39m Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'testController': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'testService': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.tv.TestMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@javax.annotation.Resource(shareable=true, lookup=, name=, description=, authenticationType=CONTAINER, type=class java.lang.Object, mappedName=)}
 2021-10-25 21:23:04.298 INFO  org.apache.catalina.core.StandardService          :173  [32m        [0;39m Stopping service [Tomcat]
 2021-10-25 21:23:04.311 WARN  org.apache.catalina.loader.WebappClassLoaderBase  :173  [32m        [0;39m The web application [system] appears to have started a thread named [Abandoned connection cleanup thread] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
  java.lang.Object.wait(Native Method)
@@ -7395,12 +7395,12 @@ APPLICATION FAILED TO START
 
 Description:
 
-A component required a bean of type 'com.tv.system.mapper.TestMapper' that could not be found.
+A component required a bean of type 'com.tv.TestMapper' that could not be found.
 
 
 Action:
 
-Consider defining a bean of type 'com.tv.system.mapper.TestMapper' in your configuration.
+Consider defining a bean of type 'com.tv.TestMapper' in your configuration.
 
 2021-10-25 21:23:36.301 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
 2021-10-25 21:28:36.316 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
@@ -7509,7 +7509,7 @@ Caused by: java.net.ConnectException: Connection refused: connect
 2021-10-25 21:34:13.823 WARN  c.n.d.s.t.decorator.RetryableEurekaHttpClient     :130  [32m        [0;39m Request execution failed with message: java.net.ConnectException: Connection refused: connect
 2021-10-25 21:34:13.823 WARN  c.n.d.s.t.decorator.RetryableEurekaHttpClient     :130  [32m        [0;39m Request execution failed with message: java.net.ConnectException: Connection refused: connect
 2021-10-25 21:34:57.576 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-10-25 21:34:58.247 INFO  com.tv.system.SystemApplication                   :651  [32m        [0;39m No active profile set, falling back to default profiles: default
+2021-10-25 21:34:58.247 INFO  com.tv.SystemApplication                   :651  [32m        [0;39m No active profile set, falling back to default profiles: default
 2021-10-25 21:34:58.701 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :166  [32m        [0;39m No MyBatis mapper was found in '[package com.tv.system.mapper;]' package. Please check your configuration.
 2021-10-25 21:34:58.824 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :166  [32m        [0;39m No MyBatis mapper was found in '[com.tv.system]' package. Please check your configuration.
 2021-10-25 21:34:59.171 INFO  o.springframework.cloud.context.scope.GenericScope:295  [32m        [0;39m BeanFactory id=94aad5ff-a722-3ad9-835d-f1b211b389d5
@@ -7521,7 +7521,7 @@ Caused by: java.net.ConnectException: Connection refused: connect
 2021-10-25 21:35:00.229 INFO  org.apache.catalina.core.StandardEngine           :173  [32m        [0;39m Starting Servlet engine: [Apache Tomcat/9.0.29]
 2021-10-25 21:35:00.463 INFO  o.a.c.c.C.[Tomcat].[localhost].[/system]          :173  [32m        [0;39m Initializing Spring embedded WebApplicationContext
 2021-10-25 21:35:00.463 INFO  org.springframework.web.context.ContextLoader     :284  [32m        [0;39m Root WebApplicationContext: initialization completed in 2196 ms
-2021-10-25 21:35:00.530 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext:558  [32m        [0;39m Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'testController': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'testService': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.tv.system.mapper.TestMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@javax.annotation.Resource(shareable=true, lookup=, name=, description=, authenticationType=CONTAINER, type=class java.lang.Object, mappedName=)}
+2021-10-25 21:35:00.530 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext:558  [32m        [0;39m Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'testController': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'testService': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.tv.TestMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@javax.annotation.Resource(shareable=true, lookup=, name=, description=, authenticationType=CONTAINER, type=class java.lang.Object, mappedName=)}
 2021-10-25 21:35:00.532 INFO  org.apache.catalina.core.StandardService          :173  [32m        [0;39m Stopping service [Tomcat]
 2021-10-25 21:35:00.545 WARN  org.apache.catalina.loader.WebappClassLoaderBase  :173  [32m        [0;39m The web application [system] appears to have started a thread named [Abandoned connection cleanup thread] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
  java.lang.Object.wait(Native Method)
@@ -7538,15 +7538,15 @@ APPLICATION FAILED TO START
 
 Description:
 
-A component required a bean of type 'com.tv.system.mapper.TestMapper' that could not be found.
+A component required a bean of type 'com.tv.TestMapper' that could not be found.
 
 
 Action:
 
-Consider defining a bean of type 'com.tv.system.mapper.TestMapper' in your configuration.
+Consider defining a bean of type 'com.tv.TestMapper' in your configuration.
 
 2021-10-25 21:37:09.986 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-10-25 21:37:10.665 INFO  com.tv.system.SystemApplication                   :651  [32m        [0;39m No active profile set, falling back to default profiles: default
+2021-10-25 21:37:10.665 INFO  com.tv.SystemApplication                   :651  [32m        [0;39m No active profile set, falling back to default profiles: default
 2021-10-25 21:37:11.069 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :166  [32m        [0;39m No MyBatis mapper was found in '[package com.tv.system.mapper]' package. Please check your configuration.
 2021-10-25 21:37:11.178 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :166  [32m        [0;39m No MyBatis mapper was found in '[com.tv.system]' package. Please check your configuration.
 2021-10-25 21:37:11.500 INFO  o.springframework.cloud.context.scope.GenericScope:295  [32m        [0;39m BeanFactory id=94aad5ff-a722-3ad9-835d-f1b211b389d5
@@ -7558,7 +7558,7 @@ Consider defining a bean of type 'com.tv.system.mapper.TestMapper' in your confi
 2021-10-25 21:37:12.473 INFO  org.apache.catalina.core.StandardEngine           :173  [32m        [0;39m Starting Servlet engine: [Apache Tomcat/9.0.29]
 2021-10-25 21:37:12.695 INFO  o.a.c.c.C.[Tomcat].[localhost].[/system]          :173  [32m        [0;39m Initializing Spring embedded WebApplicationContext
 2021-10-25 21:37:12.695 INFO  org.springframework.web.context.ContextLoader     :284  [32m        [0;39m Root WebApplicationContext: initialization completed in 2010 ms
-2021-10-25 21:37:12.771 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext:558  [32m        [0;39m Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'testController': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'testService': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.tv.system.mapper.TestMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@javax.annotation.Resource(shareable=true, lookup=, name=, description=, authenticationType=CONTAINER, type=class java.lang.Object, mappedName=)}
+2021-10-25 21:37:12.771 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext:558  [32m        [0;39m Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'testController': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'testService': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.tv.TestMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@javax.annotation.Resource(shareable=true, lookup=, name=, description=, authenticationType=CONTAINER, type=class java.lang.Object, mappedName=)}
 2021-10-25 21:37:12.772 INFO  org.apache.catalina.core.StandardService          :173  [32m        [0;39m Stopping service [Tomcat]
 2021-10-25 21:37:12.784 WARN  org.apache.catalina.loader.WebappClassLoaderBase  :173  [32m        [0;39m The web application [system] appears to have started a thread named [Abandoned connection cleanup thread] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
  java.lang.Object.wait(Native Method)
@@ -7575,15 +7575,15 @@ APPLICATION FAILED TO START
 
 Description:
 
-A component required a bean of type 'com.tv.system.mapper.TestMapper' that could not be found.
+A component required a bean of type 'com.tv.TestMapper' that could not be found.
 
 
 Action:
 
-Consider defining a bean of type 'com.tv.system.mapper.TestMapper' in your configuration.
+Consider defining a bean of type 'com.tv.TestMapper' in your configuration.
 
 2021-10-25 21:37:44.731 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-10-25 21:37:45.388 INFO  com.tv.system.SystemApplication                   :651  [32m        [0;39m No active profile set, falling back to default profiles: default
+2021-10-25 21:37:45.388 INFO  com.tv.SystemApplication                   :651  [32m        [0;39m No active profile set, falling back to default profiles: default
 2021-10-25 21:37:46.201 INFO  o.springframework.cloud.context.scope.GenericScope:295  [32m        [0;39m BeanFactory id=ce886363-1d93-3375-a315-b42787ceee6d
 2021-10-25 21:37:46.469 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
 2021-10-25 21:37:46.645 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
@@ -7625,9 +7625,9 @@ Consider defining a bean of type 'com.tv.system.mapper.TestMapper' in your confi
 2021-10-25 21:37:52.168 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :204  [32m        [0;39m Tomcat started on port(s): 9001 (http) with context path '/system'
 2021-10-25 21:37:52.169 INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration         :145  [32m        [0;39m Updating port to 9001
 2021-10-25 21:37:52.469 INFO  com.netflix.discovery.DiscoveryClient             :853  [32m        [0;39m DiscoveryClient_SYSTEM/windows10.microdone.cn:system:9001 - registration status: 204
-2021-10-25 21:37:52.833 INFO  com.tv.system.SystemApplication                   :61   [32m        [0;39m Started SystemApplication in 9.551 seconds (JVM running for 10.433)
-2021-10-25 21:37:52.834 INFO  com.tv.system.SystemApplication                   :22   [32m        [0;39m started successfully!!
-2021-10-25 21:37:52.834 INFO  com.tv.system.SystemApplication                   :23   [32m        [0;39m system address: 	http://127.0.0.1:9001
+2021-10-25 21:37:52.833 INFO  com.tv.SystemApplication                   :61   [32m        [0;39m Started SystemApplication in 9.551 seconds (JVM running for 10.433)
+2021-10-25 21:37:52.834 INFO  com.tv.SystemApplication                   :22   [32m        [0;39m started successfully!!
+2021-10-25 21:37:52.834 INFO  com.tv.SystemApplication                   :23   [32m        [0;39m system address: 	http://127.0.0.1:9001
 2021-10-25 21:38:09.630 INFO  o.a.c.c.C.[Tomcat].[localhost].[/system]          :173  [32m        [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
 2021-10-25 21:38:09.630 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m        [0;39m Initializing Servlet 'dispatcherServlet'
 2021-10-25 21:38:09.638 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m        [0;39m Completed initialization in 7 ms
@@ -7651,7 +7651,7 @@ Consider defining a bean of type 'com.tv.system.mapper.TestMapper' in your confi
 2021-10-25 22:17:52.059 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
 2021-10-25 22:22:52.071 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
 2021-10-25 23:44:30.585 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-10-25 23:44:31.360 INFO  com.tv.system.SystemApplication                   :651  [32m        [0;39m No active profile set, falling back to default profiles: default
+2021-10-25 23:44:31.360 INFO  com.tv.SystemApplication                   :651  [32m        [0;39m No active profile set, falling back to default profiles: default
 2021-10-25 23:44:32.658 INFO  o.springframework.cloud.context.scope.GenericScope:295  [32m        [0;39m BeanFactory id=ce886363-1d93-3375-a315-b42787ceee6d
 2021-10-25 23:44:32.872 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
 2021-10-25 23:44:33.024 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
@@ -7693,9 +7693,9 @@ Consider defining a bean of type 'com.tv.system.mapper.TestMapper' in your confi
 2021-10-25 23:44:38.403 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :204  [32m        [0;39m Tomcat started on port(s): 9001 (http) with context path '/system'
 2021-10-25 23:44:38.405 INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration         :145  [32m        [0;39m Updating port to 9001
 2021-10-25 23:44:38.517 INFO  com.netflix.discovery.DiscoveryClient             :853  [32m        [0;39m DiscoveryClient_SYSTEM/windows10.microdone.cn:system:9001 - registration status: 204
-2021-10-25 23:44:38.944 INFO  com.tv.system.SystemApplication                   :61   [32m        [0;39m Started SystemApplication in 10.563 seconds (JVM running for 12.025)
-2021-10-25 23:44:38.945 INFO  com.tv.system.SystemApplication                   :22   [32m        [0;39m started successfully!!
-2021-10-25 23:44:38.945 INFO  com.tv.system.SystemApplication                   :23   [32m        [0;39m system address: 	http://127.0.0.1:9001
+2021-10-25 23:44:38.944 INFO  com.tv.SystemApplication                   :61   [32m        [0;39m Started SystemApplication in 10.563 seconds (JVM running for 12.025)
+2021-10-25 23:44:38.945 INFO  com.tv.SystemApplication                   :22   [32m        [0;39m started successfully!!
+2021-10-25 23:44:38.945 INFO  com.tv.SystemApplication                   :23   [32m        [0;39m system address: 	http://127.0.0.1:9001
 2021-10-25 23:45:08.348 INFO  com.netflix.discovery.DiscoveryClient             :976  [32m        [0;39m Disable delta property : false
 2021-10-25 23:45:08.348 INFO  com.netflix.discovery.DiscoveryClient             :977  [32m        [0;39m Single vip registry refresh property : null
 2021-10-25 23:45:08.348 INFO  com.netflix.discovery.DiscoveryClient             :978  [32m        [0;39m Force full registry fetch : false
@@ -7713,7 +7713,7 @@ Consider defining a bean of type 'com.tv.system.mapper.TestMapper' in your confi
 2021-10-25 23:54:38.145 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
 2021-10-25 23:56:50.941 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :225  [32m        [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
 2021-10-25 23:56:51.266 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-10-25 23:56:52.367 INFO  com.tv.system.SystemApplication                   :651  [32m        [0;39m No active profile set, falling back to default profiles: default
+2021-10-25 23:56:52.367 INFO  com.tv.SystemApplication                   :651  [32m        [0;39m No active profile set, falling back to default profiles: default
 2021-10-25 23:56:53.757 INFO  o.springframework.cloud.context.scope.GenericScope:295  [32m        [0;39m BeanFactory id=aac7be20-b701-322b-9479-53936310ef25
 2021-10-25 23:56:54.028 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
 2021-10-25 23:56:54.292 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
@@ -7756,9 +7756,9 @@ Consider defining a bean of type 'com.tv.system.mapper.TestMapper' in your confi
 2021-10-25 23:57:01.167 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :204  [32m        [0;39m Tomcat started on port(s): 9001 (http) with context path '/system'
 2021-10-25 23:57:01.169 INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration         :145  [32m        [0;39m Updating port to 9001
 2021-10-25 23:57:01.313 INFO  com.netflix.discovery.DiscoveryClient             :853  [32m        [0;39m DiscoveryClient_SYSTEM/windows10.microdone.cn:system:9001 - registration status: 204
-2021-10-25 23:57:01.866 INFO  com.tv.system.SystemApplication                   :61   [32m        [0;39m Started SystemApplication in 13.148 seconds (JVM running for 15.126)
-2021-10-25 23:57:01.870 INFO  com.tv.system.SystemApplication                   :22   [32m        [0;39m started successfully!!
-2021-10-25 23:57:01.871 INFO  com.tv.system.SystemApplication                   :23   [32m        [0;39m system address: 	http://127.0.0.1:9001
+2021-10-25 23:57:01.866 INFO  com.tv.SystemApplication                   :61   [32m        [0;39m Started SystemApplication in 13.148 seconds (JVM running for 15.126)
+2021-10-25 23:57:01.870 INFO  com.tv.SystemApplication                   :22   [32m        [0;39m started successfully!!
+2021-10-25 23:57:01.871 INFO  com.tv.SystemApplication                   :23   [32m        [0;39m system address: 	http://127.0.0.1:9001
 2021-10-25 23:57:26.047 INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry   :65   [32m        [0;39m Unregistering application SYSTEM with eureka with status DOWN
 2021-10-25 23:57:26.047 WARN  com.netflix.discovery.DiscoveryClient             :1321 [32m        [0;39m Saw local status change event StatusChangeEvent [timestamp=1635202646047, current=DOWN, previous=UP]
 2021-10-25 23:57:26.048 INFO  com.netflix.discovery.DiscoveryClient             :844  [32m        [0;39m DiscoveryClient_SYSTEM/windows10.microdone.cn:system:9001: registering service...
@@ -7769,7 +7769,7 @@ Consider defining a bean of type 'com.tv.system.mapper.TestMapper' in your confi
 2021-10-25 23:57:29.092 INFO  com.netflix.discovery.DiscoveryClient             :942  [32m        [0;39m DiscoveryClient_SYSTEM/windows10.microdone.cn:system:9001 - deregister  status: 200
 2021-10-25 23:57:29.105 INFO  com.netflix.discovery.DiscoveryClient             :929  [32m        [0;39m Completed shut down of DiscoveryClient
 2021-10-25 23:57:30.366 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-10-25 23:57:30.937 INFO  com.tv.system.SystemApplication                   :651  [32m        [0;39m No active profile set, falling back to default profiles: default
+2021-10-25 23:57:30.937 INFO  com.tv.SystemApplication                   :651  [32m        [0;39m No active profile set, falling back to default profiles: default
 2021-10-25 23:57:31.284 INFO  o.springframework.cloud.context.scope.GenericScope:295  [32m        [0;39m BeanFactory id=aac7be20-b701-322b-9479-53936310ef25
 2021-10-25 23:57:31.303 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
 2021-10-25 23:57:31.307 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
@@ -7811,10 +7811,10 @@ Consider defining a bean of type 'com.tv.system.mapper.TestMapper' in your confi
 2021-10-25 23:57:33.736 INFO  com.netflix.discovery.DiscoveryClient             :853  [32m        [0;39m DiscoveryClient_SYSTEM/windows10.microdone.cn:system:9001 - registration status: 204
 2021-10-25 23:57:33.738 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :204  [32m        [0;39m Tomcat started on port(s): 9001 (http) with context path '/system'
 2021-10-25 23:57:33.739 INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration         :145  [32m        [0;39m Updating port to 9001
-2021-10-25 23:57:34.286 INFO  com.tv.system.SystemApplication                   :61   [32m        [0;39m Started SystemApplication in 4.549 seconds (JVM running for 47.546)
+2021-10-25 23:57:34.286 INFO  com.tv.SystemApplication                   :61   [32m        [0;39m Started SystemApplication in 4.549 seconds (JVM running for 47.546)
 2021-10-25 23:57:34.288 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m        [0;39m Condition evaluation unchanged
-2021-10-25 23:57:34.289 INFO  com.tv.system.SystemApplication                   :22   [32m        [0;39m started successfully!!
-2021-10-25 23:57:34.289 INFO  com.tv.system.SystemApplication                   :23   [32m        [0;39m system address: 	http://127.0.0.1:9001
+2021-10-25 23:57:34.289 INFO  com.tv.SystemApplication                   :22   [32m        [0;39m started successfully!!
+2021-10-25 23:57:34.289 INFO  com.tv.SystemApplication                   :23   [32m        [0;39m system address: 	http://127.0.0.1:9001
 2021-10-25 23:58:03.725 INFO  com.netflix.discovery.DiscoveryClient             :976  [32m        [0;39m Disable delta property : false
 2021-10-25 23:58:03.726 INFO  com.netflix.discovery.DiscoveryClient             :977  [32m        [0;39m Single vip registry refresh property : null
 2021-10-25 23:58:03.726 INFO  com.netflix.discovery.DiscoveryClient             :978  [32m        [0;39m Force full registry fetch : false
@@ -7833,7 +7833,7 @@ Consider defining a bean of type 'com.tv.system.mapper.TestMapper' in your confi
 2021-10-25 23:58:23.199 INFO  com.netflix.discovery.DiscoveryClient             :942  [32m        [0;39m DiscoveryClient_SYSTEM/windows10.microdone.cn:system:9001 - deregister  status: 200
 2021-10-25 23:58:23.206 INFO  com.netflix.discovery.DiscoveryClient             :929  [32m        [0;39m Completed shut down of DiscoveryClient
 2021-10-25 23:58:24.515 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-10-25 23:58:25.187 INFO  com.tv.system.SystemApplication                   :651  [32m        [0;39m No active profile set, falling back to default profiles: default
+2021-10-25 23:58:25.187 INFO  com.tv.SystemApplication                   :651  [32m        [0;39m No active profile set, falling back to default profiles: default
 2021-10-25 23:58:25.521 INFO  o.springframework.cloud.context.scope.GenericScope:295  [32m        [0;39m BeanFactory id=aac7be20-b701-322b-9479-53936310ef25
 2021-10-25 23:58:25.538 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
 2021-10-25 23:58:25.541 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
@@ -7875,10 +7875,10 @@ Consider defining a bean of type 'com.tv.system.mapper.TestMapper' in your confi
 2021-10-25 23:58:27.766 INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration         :145  [32m        [0;39m Updating port to 9002
 2021-10-25 23:58:27.777 INFO  com.netflix.discovery.DiscoveryClient             :844  [32m        [0;39m DiscoveryClient_SYSTEM/windows10.microdone.cn:system:9002: registering service...
 2021-10-25 23:58:27.792 INFO  com.netflix.discovery.DiscoveryClient             :853  [32m        [0;39m DiscoveryClient_SYSTEM/windows10.microdone.cn:system:9002 - registration status: 204
-2021-10-25 23:58:28.306 INFO  com.tv.system.SystemApplication                   :61   [32m        [0;39m Started SystemApplication in 4.533 seconds (JVM running for 101.567)
+2021-10-25 23:58:28.306 INFO  com.tv.SystemApplication                   :61   [32m        [0;39m Started SystemApplication in 4.533 seconds (JVM running for 101.567)
 2021-10-25 23:58:28.307 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m        [0;39m Condition evaluation unchanged
-2021-10-25 23:58:28.308 INFO  com.tv.system.SystemApplication                   :22   [32m        [0;39m started successfully!!
-2021-10-25 23:58:28.308 INFO  com.tv.system.SystemApplication                   :23   [32m        [0;39m system address: 	http://127.0.0.1:9002
+2021-10-25 23:58:28.308 INFO  com.tv.SystemApplication                   :22   [32m        [0;39m started successfully!!
+2021-10-25 23:58:28.308 INFO  com.tv.SystemApplication                   :23   [32m        [0;39m system address: 	http://127.0.0.1:9002
 2021-10-25 23:58:36.479 INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry   :65   [32m        [0;39m Unregistering application SYSTEM with eureka with status DOWN
 2021-10-25 23:58:36.479 WARN  com.netflix.discovery.DiscoveryClient             :1321 [32m        [0;39m Saw local status change event StatusChangeEvent [timestamp=1635202716479, current=DOWN, previous=UP]
 2021-10-25 23:58:36.479 INFO  com.netflix.discovery.DiscoveryClient             :844  [32m        [0;39m DiscoveryClient_SYSTEM/windows10.microdone.cn:system:9002: registering service...
@@ -7889,7 +7889,7 @@ Consider defining a bean of type 'com.tv.system.mapper.TestMapper' in your confi
 2021-10-25 23:58:36.509 INFO  com.netflix.discovery.DiscoveryClient             :942  [32m        [0;39m DiscoveryClient_SYSTEM/windows10.microdone.cn:system:9002 - deregister  status: 200
 2021-10-25 23:58:36.514 INFO  com.netflix.discovery.DiscoveryClient             :929  [32m        [0;39m Completed shut down of DiscoveryClient
 2021-10-25 23:58:37.818 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-10-25 23:58:38.393 INFO  com.tv.system.SystemApplication                   :651  [32m        [0;39m No active profile set, falling back to default profiles: default
+2021-10-25 23:58:38.393 INFO  com.tv.SystemApplication                   :651  [32m        [0;39m No active profile set, falling back to default profiles: default
 2021-10-25 23:58:38.630 INFO  o.springframework.cloud.context.scope.GenericScope:295  [32m        [0;39m BeanFactory id=aac7be20-b701-322b-9479-53936310ef25
 2021-10-25 23:58:38.649 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
 2021-10-25 23:58:38.653 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
@@ -7931,10 +7931,10 @@ Consider defining a bean of type 'com.tv.system.mapper.TestMapper' in your confi
 2021-10-25 23:58:40.791 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :204  [32m        [0;39m Tomcat started on port(s): 9001 (http) with context path '/system'
 2021-10-25 23:58:40.792 INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration         :145  [32m        [0;39m Updating port to 9001
 2021-10-25 23:58:40.805 INFO  com.netflix.discovery.DiscoveryClient             :853  [32m        [0;39m DiscoveryClient_SYSTEM/windows10.microdone.cn:system:9001 - registration status: 204
-2021-10-25 23:58:41.308 INFO  com.tv.system.SystemApplication                   :61   [32m        [0;39m Started SystemApplication in 4.169 seconds (JVM running for 114.568)
+2021-10-25 23:58:41.308 INFO  com.tv.SystemApplication                   :61   [32m        [0;39m Started SystemApplication in 4.169 seconds (JVM running for 114.568)
 2021-10-25 23:58:41.309 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m        [0;39m Condition evaluation unchanged
-2021-10-25 23:58:41.309 INFO  com.tv.system.SystemApplication                   :22   [32m        [0;39m started successfully!!
-2021-10-25 23:58:41.309 INFO  com.tv.system.SystemApplication                   :23   [32m        [0;39m system address: 	http://127.0.0.1:9001
+2021-10-25 23:58:41.309 INFO  com.tv.SystemApplication                   :22   [32m        [0;39m started successfully!!
+2021-10-25 23:58:41.309 INFO  com.tv.SystemApplication                   :23   [32m        [0;39m system address: 	http://127.0.0.1:9001
 2021-10-25 23:58:59.969 INFO  o.a.c.c.C.[Tomcat].[localhost].[/system]          :173  [32m        [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
 2021-10-25 23:58:59.969 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m        [0;39m Initializing Servlet 'dispatcherServlet'
 2021-10-25 23:58:59.978 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m        [0;39m Completed initialization in 9 ms

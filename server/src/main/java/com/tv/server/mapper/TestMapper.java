@@ -1,7 +1,8 @@
-package com.tv.system.mapper;
+package com.tv.server.mapper;
+
+import com.tv.server.domain.Test;
 
 import java.util.List;
-import com.tv.system.domain.Test;
 
 public interface TestMapper {
 
