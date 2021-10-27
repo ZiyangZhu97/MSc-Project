@@ -19,7 +19,7 @@
                                     <div class="widget-main">
                                         <h4 class="header blue lighter bigger">
                                             <i class="ace-icon fa fa-coffee green"></i>
-                                            Please Enter Your Information
+                                            请输入用户名密码
                                         </h4>
 
                                         <div class="space-6"></div>
@@ -27,24 +27,24 @@
                                         <form>
                                             <fieldset>
                                                 <label class="block clearfix">
-														<span class="block input-icon input-icon-right">
-															<input type="text" class="form-control" placeholder="Username" />
-															<i class="ace-icon fa fa-user"></i>
-														</span>
+                          <span class="block input-icon input-icon-right">
+                            <input type="text" class="form-control" placeholder="Username"/>
+                            <i class="ace-icon fa fa-user"></i>
+                          </span>
                                                 </label>
 
                                                 <label class="block clearfix">
-														<span class="block input-icon input-icon-right">
-															<input type="password" class="form-control" placeholder="Password" />
-															<i class="ace-icon fa fa-lock"></i>
-														</span>
+                          <span class="block input-icon input-icon-right">
+                            <input type="password" class="form-control" placeholder="Password"/>
+                            <i class="ace-icon fa fa-lock"></i>
+                          </span>
                                                 </label>
 
                                                 <div class="space"></div>
 
                                                 <div class="clearfix">
                                                     <label class="inline">
-                                                        <input type="checkbox" class="ace" />
+                                                        <input type="checkbox" class="ace"/>
                                                         <span class="lbl">Remember Me</span>
                                                     </label>
 
@@ -74,17 +74,17 @@
 </template>
 
 <script>
-export default {
-  name: 'login',
-  mounted: function() {
+  export default {
+    name: "login",
+    mounted: function() {
       $("body").removeClass("no-skin");
       $("body").attr("class", "login-layout light-login");
       // console.log("login");
     },
-  methods: {
+    methods: {
       login () {
-        this.$router.push("/admin")
+        this.$router.push("/welcome")
       }
     }
-}
+  }
 </script>
