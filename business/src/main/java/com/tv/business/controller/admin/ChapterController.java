@@ -4,6 +4,7 @@ import com.tv.server.domain.Chapter;
 import com.tv.server.dto.ChapterDto;
 import com.tv.server.dto.PageDto;
 import com.tv.server.service.ChapterService;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -19,7 +20,7 @@ public class ChapterController {
     private ChapterService chapterService;
 
     @RequestMapping("/list")
-    public PageDto list(PageDto pageDto) {
+    public PageDto list(@RequestBody PageDto pageDto) {
         chapterService.list(pageDto);
         return pageDto;
     }

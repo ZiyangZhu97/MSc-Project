@@ -1,5 +1,7 @@
 insert into `chapter` (id, program_id, name) values ('00000000', '00000000', 'test1');
 insert into `chapter` (id, program_id, name) values ('00000001', '00000000', 'test2');
+insert into `chapter` (id, program_id, name) values ('00000002', '00000000', 'test3');
+insert into `chapter` (id, program_id, name) values ('00000003', '00000000', 'test4');
 
 ---------------------- test
 insert into `test` (id, name) values (1, 'test');
