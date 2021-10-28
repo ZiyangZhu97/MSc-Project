@@ -136,6 +136,8 @@
             $("#form-modal").modal("hide");
             _this.list(1);
             Toast.success("Your file has been saved!");
+          } else {
+            Toast.warning(resp.message)
           }
         })
       },
