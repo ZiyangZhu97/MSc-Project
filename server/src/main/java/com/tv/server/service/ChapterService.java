@@ -1,5 +1,6 @@
 package com.tv.server.service;
 
+import com.github.pagehelper.PageHelper;
 import com.tv.server.domain.Chapter;
 import com.tv.server.domain.ChapterExample;
 import com.tv.server.dto.ChapterDto;
@@ -18,6 +19,7 @@ public class ChapterService {
     private ChapterMapper chapterMapper;
 
     public List<ChapterDto> list() {
+        PageHelper.startPage(1, 1);
         ChapterExample chapterExample = new ChapterExample();
 
         List<Chapter> chapterList = chapterMapper.selectByExample(chapterExample);
