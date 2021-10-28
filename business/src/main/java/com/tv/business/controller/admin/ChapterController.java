@@ -15,11 +15,13 @@ import java.util.List;
 @RequestMapping("/admin/chapter")
 
 public class ChapterController {
+    public static final String BUSINESS_NAME = "Chapter";
+
 
     @Resource
     private ChapterService chapterService;
 
-    @RequestMapping("/list")
+    @PostMapping("/list")
     public ResponseDto list(@RequestBody PageDto pageDto) {
         ResponseDto responseDto = new ResponseDto();
         chapterService.list(pageDto);
@@ -27,7 +29,7 @@ public class ChapterController {
         return responseDto;
     }
 
-    @RequestMapping("/save")
+    @PostMapping("/save")
     public ResponseDto save(@RequestBody ChapterDto chapterDto) {
         // 保存校验
         ValidatorUtil.require(chapterDto.getName(), "Title");
@@ -41,7 +43,7 @@ public class ChapterController {
     }
 
     @DeleteMapping("/delete/{id}")
-    public ResponseDto save(@PathVariable String id) {
+    public ResponseDto delete(@PathVariable String id) {
         ResponseDto responseDto = new ResponseDto();
         chapterService.delete(id);
         return responseDto;
