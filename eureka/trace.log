@@ -50,3 +50,140 @@
 2021-10-28 00:46:44.691 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1250 [32m        [0;39m Running the evict task with compensationTime 6ms
 2021-10-28 00:47:44.701 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1250 [32m        [0;39m Running the evict task with compensationTime 10ms
 2021-10-28 00:48:44.707 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1250 [32m        [0;39m Running the evict task with compensationTime 6ms
+2021-10-28 00:49:44.716 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1250 [32m        [0;39m Running the evict task with compensationTime 8ms
+2021-10-28 00:50:44.726 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1250 [32m        [0;39m Running the evict task with compensationTime 9ms
+2021-10-28 00:51:44.734 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1250 [32m        [0;39m Running the evict task with compensationTime 8ms
+2021-10-28 00:52:44.749 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1250 [32m        [0;39m Running the evict task with compensationTime 14ms
+2021-10-28 00:53:44.756 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1250 [32m        [0;39m Running the evict task with compensationTime 7ms
+2021-10-28 00:54:43.706 INFO  c.n.eureka.registry.PeerAwareInstanceRegistryImpl :539  [32m        [0;39m Current renewal threshold is : 3
+2021-10-28 00:54:44.766 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1250 [32m        [0;39m Running the evict task with compensationTime 9ms
+2021-10-28 00:55:44.776 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1250 [32m        [0;39m Running the evict task with compensationTime 10ms
+2021-10-28 00:56:44.784 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1250 [32m        [0;39m Running the evict task with compensationTime 7ms
+2021-10-28 00:57:44.784 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1250 [32m        [0;39m Running the evict task with compensationTime 0ms
+2021-10-28 00:58:44.791 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1250 [32m        [0;39m Running the evict task with compensationTime 6ms
+2021-10-28 00:59:44.797 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1250 [32m        [0;39m Running the evict task with compensationTime 5ms
+2021-10-28 01:00:44.807 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1250 [32m        [0;39m Running the evict task with compensationTime 10ms
+2021-10-28 01:01:44.822 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1250 [32m        [0;39m Running the evict task with compensationTime 14ms
+2021-10-28 01:02:44.824 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1250 [32m        [0;39m Running the evict task with compensationTime 1ms
+2021-10-28 01:03:44.836 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1250 [32m        [0;39m Running the evict task with compensationTime 12ms
+2021-10-28 01:04:44.844 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1250 [32m        [0;39m Running the evict task with compensationTime 7ms
+2021-10-28 01:05:44.858 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1250 [32m        [0;39m Running the evict task with compensationTime 14ms
+2021-10-28 01:06:44.866 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1250 [32m        [0;39m Running the evict task with compensationTime 8ms
+2021-10-28 01:07:00.992 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:266  [32m        [0;39m Registered instance BUSINESS/windows10.microdone.cn:business:9002 with status DOWN (replication=false)
+2021-10-28 01:07:01.001 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:330  [32m        [0;39m Cancelled instance BUSINESS/windows10.microdone.cn:business:9002 (replication=false)
+2021-10-28 01:07:01.512 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:266  [32m        [0;39m Registered instance BUSINESS/windows10.microdone.cn:business:9002 with status DOWN (replication=true)
+2021-10-28 01:07:01.512 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:330  [32m        [0;39m Cancelled instance BUSINESS/windows10.microdone.cn:business:9002 (replication=true)
+2021-10-28 01:07:05.957 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:266  [32m        [0;39m Registered instance BUSINESS/windows10.microdone.cn:business:9002 with status UP (replication=false)
+2021-10-28 01:07:06.477 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:266  [32m        [0;39m Registered instance BUSINESS/windows10.microdone.cn:business:9002 with status UP (replication=true)
+2021-10-28 01:07:44.873 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1250 [32m        [0;39m Running the evict task with compensationTime 6ms
+2021-10-28 01:08:44.881 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1250 [32m        [0;39m Running the evict task with compensationTime 7ms
+2021-10-28 01:09:43.719 INFO  c.n.eureka.registry.PeerAwareInstanceRegistryImpl :539  [32m        [0;39m Current renewal threshold is : 3
+2021-10-28 01:09:44.886 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1250 [32m        [0;39m Running the evict task with compensationTime 5ms
+2021-10-28 01:10:44.891 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1250 [32m        [0;39m Running the evict task with compensationTime 5ms
+2021-10-28 01:11:44.897 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1250 [32m        [0;39m Running the evict task with compensationTime 5ms
+2021-10-28 01:12:44.898 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1250 [32m        [0;39m Running the evict task with compensationTime 0ms
+2021-10-28 01:13:44.908 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1250 [32m        [0;39m Running the evict task with compensationTime 10ms
+2021-10-28 01:14:43.302 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:266  [32m        [0;39m Registered instance BUSINESS/windows10.microdone.cn:business:9002 with status DOWN (replication=false)
+2021-10-28 01:14:43.318 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:330  [32m        [0;39m Cancelled instance BUSINESS/windows10.microdone.cn:business:9002 (replication=false)
+2021-10-28 01:14:43.820 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:266  [32m        [0;39m Registered instance BUSINESS/windows10.microdone.cn:business:9002 with status DOWN (replication=true)
+2021-10-28 01:14:43.821 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:330  [32m        [0;39m Cancelled instance BUSINESS/windows10.microdone.cn:business:9002 (replication=true)
+2021-10-28 01:14:44.916 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1250 [32m        [0;39m Running the evict task with compensationTime 7ms
+2021-10-28 01:14:48.101 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:266  [32m        [0;39m Registered instance BUSINESS/windows10.microdone.cn:business:9002 with status UP (replication=false)
+2021-10-28 01:14:48.629 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:266  [32m        [0;39m Registered instance BUSINESS/windows10.microdone.cn:business:9002 with status UP (replication=true)
+2021-10-28 01:15:00.854 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:266  [32m        [0;39m Registered instance BUSINESS/windows10.microdone.cn:business:9002 with status DOWN (replication=false)
+2021-10-28 01:15:00.868 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:330  [32m        [0;39m Cancelled instance BUSINESS/windows10.microdone.cn:business:9002 (replication=false)
+2021-10-28 01:15:01.386 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:266  [32m        [0;39m Registered instance BUSINESS/windows10.microdone.cn:business:9002 with status DOWN (replication=true)
+2021-10-28 01:15:01.386 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:330  [32m        [0;39m Cancelled instance BUSINESS/windows10.microdone.cn:business:9002 (replication=true)
+2021-10-28 01:15:05.299 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:266  [32m        [0;39m Registered instance BUSINESS/windows10.microdone.cn:business:9002 with status UP (replication=false)
+2021-10-28 01:15:05.831 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:266  [32m        [0;39m Registered instance BUSINESS/windows10.microdone.cn:business:9002 with status UP (replication=true)
+2021-10-28 01:15:44.928 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1250 [32m        [0;39m Running the evict task with compensationTime 11ms
+2021-10-28 01:15:50.903 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:266  [32m        [0;39m Registered instance BUSINESS/windows10.microdone.cn:business:9002 with status DOWN (replication=false)
+2021-10-28 01:15:50.917 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:330  [32m        [0;39m Cancelled instance BUSINESS/windows10.microdone.cn:business:9002 (replication=false)
+2021-10-28 01:15:51.430 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:266  [32m        [0;39m Registered instance BUSINESS/windows10.microdone.cn:business:9002 with status DOWN (replication=true)
+2021-10-28 01:15:51.431 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:330  [32m        [0;39m Cancelled instance BUSINESS/windows10.microdone.cn:business:9002 (replication=true)
+2021-10-28 01:15:56.046 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:266  [32m        [0;39m Registered instance BUSINESS/windows10.microdone.cn:business:9002 with status UP (replication=false)
+2021-10-28 01:15:56.572 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:266  [32m        [0;39m Registered instance BUSINESS/windows10.microdone.cn:business:9002 with status UP (replication=true)
+2021-10-28 01:16:44.939 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1250 [32m        [0;39m Running the evict task with compensationTime 10ms
+2021-10-28 01:17:44.946 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1250 [32m        [0;39m Running the evict task with compensationTime 7ms
+2021-10-28 01:18:44.951 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1250 [32m        [0;39m Running the evict task with compensationTime 5ms
+2021-10-28 01:19:44.964 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1250 [32m        [0;39m Running the evict task with compensationTime 12ms
+2021-10-28 01:20:44.447 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:266  [32m        [0;39m Registered instance BUSINESS/windows10.microdone.cn:business:9002 with status DOWN (replication=false)
+2021-10-28 01:20:44.459 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:330  [32m        [0;39m Cancelled instance BUSINESS/windows10.microdone.cn:business:9002 (replication=false)
+2021-10-28 01:20:44.961 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:266  [32m        [0;39m Registered instance BUSINESS/windows10.microdone.cn:business:9002 with status DOWN (replication=true)
+2021-10-28 01:20:44.961 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:330  [32m        [0;39m Cancelled instance BUSINESS/windows10.microdone.cn:business:9002 (replication=true)
+2021-10-28 01:20:44.975 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1250 [32m        [0;39m Running the evict task with compensationTime 10ms
+2021-10-28 01:20:49.046 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:266  [32m        [0;39m Registered instance BUSINESS/windows10.microdone.cn:business:9002 with status UP (replication=false)
+2021-10-28 01:20:49.570 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:266  [32m        [0;39m Registered instance BUSINESS/windows10.microdone.cn:business:9002 with status UP (replication=true)
+2021-10-28 01:21:00.965 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:266  [32m        [0;39m Registered instance BUSINESS/windows10.microdone.cn:business:9002 with status DOWN (replication=false)
+2021-10-28 01:21:00.980 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:330  [32m        [0;39m Cancelled instance BUSINESS/windows10.microdone.cn:business:9002 (replication=false)
+2021-10-28 01:21:01.493 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:266  [32m        [0;39m Registered instance BUSINESS/windows10.microdone.cn:business:9002 with status DOWN (replication=true)
+2021-10-28 01:21:01.494 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:330  [32m        [0;39m Cancelled instance BUSINESS/windows10.microdone.cn:business:9002 (replication=true)
+2021-10-28 01:21:05.896 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:266  [32m        [0;39m Registered instance BUSINESS/windows10.microdone.cn:business:9002 with status UP (replication=false)
+2021-10-28 01:21:06.428 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:266  [32m        [0;39m Registered instance BUSINESS/windows10.microdone.cn:business:9002 with status UP (replication=true)
+2021-10-28 01:21:44.982 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1250 [32m        [0;39m Running the evict task with compensationTime 6ms
+2021-10-28 01:22:10.747 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:266  [32m        [0;39m Registered instance BUSINESS/windows10.microdone.cn:business:9002 with status DOWN (replication=false)
+2021-10-28 01:22:10.762 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:330  [32m        [0;39m Cancelled instance BUSINESS/windows10.microdone.cn:business:9002 (replication=false)
+2021-10-28 01:22:11.292 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:266  [32m        [0;39m Registered instance BUSINESS/windows10.microdone.cn:business:9002 with status DOWN (replication=true)
+2021-10-28 01:22:11.293 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:330  [32m        [0;39m Cancelled instance BUSINESS/windows10.microdone.cn:business:9002 (replication=true)
+2021-10-28 01:22:15.213 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:266  [32m        [0;39m Registered instance BUSINESS/windows10.microdone.cn:business:9002 with status UP (replication=false)
+2021-10-28 01:22:15.732 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:266  [32m        [0;39m Registered instance BUSINESS/windows10.microdone.cn:business:9002 with status UP (replication=true)
+2021-10-28 01:22:44.993 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1250 [32m        [0;39m Running the evict task with compensationTime 10ms
+2021-10-28 01:22:54.677 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:266  [32m        [0;39m Registered instance BUSINESS/windows10.microdone.cn:business:9002 with status DOWN (replication=false)
+2021-10-28 01:22:54.691 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:330  [32m        [0;39m Cancelled instance BUSINESS/windows10.microdone.cn:business:9002 (replication=false)
+2021-10-28 01:22:55.195 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:266  [32m        [0;39m Registered instance BUSINESS/windows10.microdone.cn:business:9002 with status DOWN (replication=true)
+2021-10-28 01:22:55.195 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:330  [32m        [0;39m Cancelled instance BUSINESS/windows10.microdone.cn:business:9002 (replication=true)
+2021-10-28 01:22:59.088 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:266  [32m        [0;39m Registered instance BUSINESS/windows10.microdone.cn:business:9002 with status UP (replication=false)
+2021-10-28 01:22:59.617 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:266  [32m        [0;39m Registered instance BUSINESS/windows10.microdone.cn:business:9002 with status UP (replication=true)
+2021-10-28 01:23:45.000 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1250 [32m        [0;39m Running the evict task with compensationTime 7ms
+2021-10-28 01:24:43.735 INFO  c.n.eureka.registry.PeerAwareInstanceRegistryImpl :539  [32m        [0;39m Current renewal threshold is : 3
+2021-10-28 01:24:45.014 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1250 [32m        [0;39m Running the evict task with compensationTime 13ms
+2021-10-28 01:25:45.018 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1250 [32m        [0;39m Running the evict task with compensationTime 4ms
+2021-10-28 01:26:45.027 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1250 [32m        [0;39m Running the evict task with compensationTime 8ms
+2021-10-28 01:27:45.035 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1250 [32m        [0;39m Running the evict task with compensationTime 8ms
+2021-10-28 01:28:45.036 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1250 [32m        [0;39m Running the evict task with compensationTime 0ms
+2021-10-28 01:29:45.046 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1250 [32m        [0;39m Running the evict task with compensationTime 10ms
+2021-10-28 01:30:45.059 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1250 [32m        [0;39m Running the evict task with compensationTime 13ms
+2021-10-28 01:31:45.063 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1250 [32m        [0;39m Running the evict task with compensationTime 3ms
+2021-10-28 01:32:45.063 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1250 [32m        [0;39m Running the evict task with compensationTime 0ms
+2021-10-28 01:33:45.076 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1250 [32m        [0;39m Running the evict task with compensationTime 13ms
+2021-10-28 01:34:45.088 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1250 [32m        [0;39m Running the evict task with compensationTime 11ms
+2021-10-28 01:35:45.098 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1250 [32m        [0;39m Running the evict task with compensationTime 10ms
+2021-10-28 01:36:45.112 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1250 [32m        [0;39m Running the evict task with compensationTime 13ms
+2021-10-28 01:37:45.126 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1250 [32m        [0;39m Running the evict task with compensationTime 14ms
+2021-10-28 01:38:45.136 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1250 [32m        [0;39m Running the evict task with compensationTime 9ms
+2021-10-28 01:39:43.744 INFO  c.n.eureka.registry.PeerAwareInstanceRegistryImpl :539  [32m        [0;39m Current renewal threshold is : 3
+2021-10-28 01:39:45.144 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1250 [32m        [0;39m Running the evict task with compensationTime 7ms
+2021-10-28 01:40:45.148 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1250 [32m        [0;39m Running the evict task with compensationTime 4ms
+2021-10-28 01:41:45.155 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1250 [32m        [0;39m Running the evict task with compensationTime 6ms
+2021-10-28 01:42:45.165 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1250 [32m        [0;39m Running the evict task with compensationTime 10ms
+2021-10-28 01:43:45.167 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1250 [32m        [0;39m Running the evict task with compensationTime 1ms
+2021-10-28 01:44:13.594 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:266  [32m        [0;39m Registered instance GATEWAY/windows10.microdone.cn:gateway:9000 with status UP (replication=false)
+2021-10-28 01:44:14.119 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:266  [32m        [0;39m Registered instance GATEWAY/windows10.microdone.cn:gateway:9000 with status UP (replication=true)
+2021-10-28 01:44:45.173 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1250 [32m        [0;39m Running the evict task with compensationTime 5ms
+2021-10-28 01:45:45.174 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1250 [32m        [0;39m Running the evict task with compensationTime 0ms
+2021-10-28 01:46:45.183 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1250 [32m        [0;39m Running the evict task with compensationTime 8ms
+2021-10-28 01:47:45.189 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1250 [32m        [0;39m Running the evict task with compensationTime 6ms
+2021-10-28 01:48:45.202 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1250 [32m        [0;39m Running the evict task with compensationTime 12ms
+2021-10-28 01:49:33.248 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:266  [32m        [0;39m Registered instance BUSINESS/windows10.microdone.cn:business:9002 with status DOWN (replication=false)
+2021-10-28 01:49:33.264 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:330  [32m        [0;39m Cancelled instance BUSINESS/windows10.microdone.cn:business:9002 (replication=false)
+2021-10-28 01:49:33.781 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:266  [32m        [0;39m Registered instance BUSINESS/windows10.microdone.cn:business:9002 with status DOWN (replication=true)
+2021-10-28 01:49:33.782 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:330  [32m        [0;39m Cancelled instance BUSINESS/windows10.microdone.cn:business:9002 (replication=true)
+2021-10-28 01:49:37.892 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:266  [32m        [0;39m Registered instance BUSINESS/windows10.microdone.cn:business:9002 with status UP (replication=false)
+2021-10-28 01:49:38.415 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:266  [32m        [0;39m Registered instance BUSINESS/windows10.microdone.cn:business:9002 with status UP (replication=true)
+2021-10-28 01:49:45.211 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1250 [32m        [0;39m Running the evict task with compensationTime 8ms
+2021-10-28 01:50:32.955 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:266  [32m        [0;39m Registered instance BUSINESS/windows10.microdone.cn:business:9002 with status UP (replication=false)
+2021-10-28 01:50:33.484 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:266  [32m        [0;39m Registered instance BUSINESS/windows10.microdone.cn:business:9002 with status UP (replication=true)
+2021-10-28 01:50:45.217 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1250 [32m        [0;39m Running the evict task with compensationTime 6ms
+2021-10-28 01:51:36.549 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:266  [32m        [0;39m Registered instance GATEWAY/windows10.microdone.cn:gateway:9000 with status UP (replication=false)
+2021-10-28 01:51:37.070 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:266  [32m        [0;39m Registered instance GATEWAY/windows10.microdone.cn:gateway:9000 with status UP (replication=true)
+2021-10-28 01:51:45.231 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1250 [32m        [0;39m Running the evict task with compensationTime 13ms
+2021-10-28 01:52:45.232 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1250 [32m        [0;39m Running the evict task with compensationTime 0ms
+2021-10-28 01:53:45.246 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1250 [32m        [0;39m Running the evict task with compensationTime 14ms
+2021-10-28 01:54:43.757 INFO  c.n.eureka.registry.PeerAwareInstanceRegistryImpl :539  [32m        [0;39m Current renewal threshold is : 5
+2021-10-28 01:54:45.260 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1250 [32m        [0;39m Running the evict task with compensationTime 14ms
+2021-10-28 01:55:45.266 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1250 [32m        [0;39m Running the evict task with compensationTime 5ms
+2021-10-28 01:56:45.270 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1250 [32m        [0;39m Running the evict task with compensationTime 3ms
+2021-10-28 01:57:45.271 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1250 [32m        [0;39m Running the evict task with compensationTime 1ms
+2021-10-28 01:58:45.279 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1250 [32m        [0;39m Running the evict task with compensationTime 8ms
+2021-10-28 01:59:45.282 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1250 [32m        [0;39m Running the evict task with compensationTime 3ms
+2021-10-28 02:00:45.289 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1250 [32m        [0;39m Running the evict task with compensationTime 7ms
