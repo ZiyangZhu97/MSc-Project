@@ -123,6 +123,12 @@
 
       save(page) {
         let _this = this;
+        // 保存校验
+        if (!Validator.require(_this.chapter.name, "Title")
+          || !Validator.require(_this.chapter.programId, "Program ID")
+          || !Validator.length(_this.chapter.programId, "Program ID", 1, 8)) {
+          return;
+        }
         _this.$ajax.post('http://127.0.0.1:9000/business/admin/chapter/save', _this.chapter).then((response)=>{
           console.log("保存大章列表结果：", response);
           let resp = response.data;
