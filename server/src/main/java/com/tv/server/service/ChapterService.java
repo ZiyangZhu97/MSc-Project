@@ -1,9 +1,11 @@
 package com.tv.server.service;
 
 import com.github.pagehelper.PageHelper;
+import com.github.pagehelper.PageInfo;
 import com.tv.server.domain.Chapter;
 import com.tv.server.domain.ChapterExample;
 import com.tv.server.dto.ChapterDto;
+import com.tv.server.dto.PageDto;
 import com.tv.server.mapper.ChapterMapper;
 import org.springframework.beans.BeanUtils;
 import org.springframework.stereotype.Service;
@@ -18,11 +20,15 @@ public class ChapterService {
     @Resource
     private ChapterMapper chapterMapper;
 
-    public List<ChapterDto> list() {
-        PageHelper.startPage(1, 1);
+    public void list(PageDto pageDto) {
+        PageHelper.startPage(pageDto.getPage(), pageDto.getSize());
         ChapterExample chapterExample = new ChapterExample();
 
         List<Chapter> chapterList = chapterMapper.selectByExample(chapterExample);
+        PageInfo<Chapter> pageInfo = new PageInfo<>(chapterList);
+
+        pageDto.setTotal(pageInfo.getTotal());
+
         List<ChapterDto> chapterDtoList = new ArrayList<ChapterDto>();
 
         for (int i = 0, l = chapterList.size(); i < l; i++) {
@@ -31,6 +37,6 @@ public class ChapterService {
             BeanUtils.copyProperties(chapter, chapterDto);
             chapterDtoList.add(chapterDto);
         }
-        return chapterDtoList;
+        pageDto.setList(chapterDtoList);
     }
 }
