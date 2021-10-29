@@ -1,3 +1,10 @@
+INSERT INTO `episode` (id, title, program_id, chapter_id, video, time, charge, sort, created_at, updated_at)
+VALUES ('00000001', 'testEpisode01', '00000001', '00000000', '', 500, 'F', 1, now(), now());
+
+
+
+
+
 insert into `chapter` (id, program_id, name) values ('00000001', '00000000', 'test01');
 insert into `chapter` (id, program_id, name) values ('00000002', '00000000', 'test02');
 insert into `chapter` (id, program_id, name) values ('00000003', '00000000', 'test03');
