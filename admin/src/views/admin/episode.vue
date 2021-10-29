@@ -23,7 +23,7 @@
         <th>Chapter ID</th>
         <th>Video</th>
         <th>Length (Seconds)</th>
-        <th>C charge, F free</th>
+        <th>Charge</th>
         <th>Order</th>
         <th>Operation</th>
       </tr>
@@ -37,7 +37,7 @@
         <td>{{episode.chapterId}}</td>
         <td>{{episode.video}}</td>
         <td>{{episode.time}}</td>
-        <td>{{episode.charge}}</td>
+        <td>{{CHARGE | optionKV(episode.charge)}}</td>
         <td>{{episode.sort}}</td>
       <td>
         <div class="hidden-sm hidden-xs btn-group">
@@ -93,9 +93,11 @@
                 </div>
               </div>
               <div class="form-group">
-                <label class="col-sm-2 control-label">C charge, F free</label>
+                <label class="col-sm-2 control-label">Charge</label>
                 <div class="col-sm-10">
-                  <input v-model="episode.charge" class="form-control">
+                  <select v-model="episode.charge" class="form-control">
+                    <option v-for="o in CHARGE" v-bind:value="o.key">{{o.value}}</option>
+                  </select>
                 </div>
               </div>
               <div class="form-group">
@@ -124,7 +126,9 @@
     data: function() {
       return {
         episode: {},
-        episodes: []
+        episodes: [],
+        CHARGE: [{key:"C", value:"Charge"},{key:"F", value:"Free"}],
+
       }
     },
     mounted: function() {
