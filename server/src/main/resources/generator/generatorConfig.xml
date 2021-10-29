@@ -40,6 +40,7 @@
 
         <!--        <table tableName="test" domainObjectName="Test"/>-->
         <!--        <table tableName="chapter" domainObjectName="Chapter"/>-->
-        <table tableName="episode" domainObjectName="Episode"/>
+<!--        <table tableName="episode" domainObjectName="Episode"/>-->
+        <table tableName="program" domainObjectName="Program"/>
     </context>
 </generatorConfiguration>

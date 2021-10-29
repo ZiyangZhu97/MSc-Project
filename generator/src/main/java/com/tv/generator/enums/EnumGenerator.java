@@ -1,7 +1,6 @@
 package com.tv.generator.enums;
 
-import com.tv.server.enums.EpisodeChargeEnum;
-import com.tv.server.enums.YesNoEnum;
+import com.tv.server.enums.*;
 
 import java.io.FileOutputStream;
 import java.io.OutputStreamWriter;
@@ -19,6 +18,9 @@ public class EnumGenerator {
         try {
             toJson(EpisodeChargeEnum.class, bufferObject, bufferArray);
             toJson(YesNoEnum.class, bufferObject, bufferArray);
+            toJson(ProgramChargeEnum.class, bufferObject, bufferArray);
+            toJson(ProgramStatusEnum.class, bufferObject, bufferArray);
+            toJson(ProgramTypeEnum.class, bufferObject, bufferArray);
 
             StringBuffer buffer = bufferObject.append("\r\n").append(bufferArray);
             writeJs(buffer);

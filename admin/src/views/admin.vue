@@ -404,10 +404,18 @@
             <b class="arrow"></b>
 
             <ul class="submenu">
+              <li class="active" id="business-program-sidebar">
+                <router-link to="/business/program">
+                  <i class="menu-icon fa fa-caret-right"></i>
+                  Program
+                </router-link>
+
+                <b class="arrow"></b>
+              </li>
               <li class="active" id="business-chapter-sidebar">
                 <router-link to="/business/chapter">
                   <i class="menu-icon fa fa-caret-right"></i>
-                  大章管理
+                  Season
                 </router-link>
 
                 <b class="arrow"></b>
@@ -415,7 +423,7 @@
               <li class="active" id="business-episode-sidebar">
                 <router-link to="/business/episode">
                   <i class="menu-icon fa fa-caret-right"></i>
-                  小节管理
+                  Episode
                 </router-link>
 
                 <b class="arrow"></b>
