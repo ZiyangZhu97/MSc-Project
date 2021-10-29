@@ -127,7 +127,7 @@
       return {
         episode: {},
         episodes: [],
-        CHARGE: [{key:"C", value:"Charge"},{key:"F", value:"Free"}],
+        CHARGE: CHARGE,
 
       }
     },
