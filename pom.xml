@@ -9,7 +9,10 @@
 		<module>gateway</module>
         <module>server</module>
         <module>business</module>
-    </modules>
+		<module>generator</module>
+		<module>generator</module>
+
+	</modules>
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
@@ -36,6 +39,7 @@
 				<type>pom</type>
 				<scope>import</scope>
 			</dependency>
+
 			<!-- 集成mybatis -->
 			<dependency>
 				<groupId>org.mybatis.spring.boot</groupId>
@@ -52,11 +56,19 @@
 				<artifactId>server</artifactId>
 				<version>0.0.1-SNAPSHOT</version>
 			</dependency>
+
 			<!-- mybatis分页插件pagehelper -->
 			<dependency>
 				<groupId>com.github.pagehelper</groupId>
 				<artifactId>pagehelper-spring-boot-starter</artifactId>
 				<version>1.2.10</version>
+			</dependency>
+
+			<!-- 模板引擎freemarker -->
+			<dependency>
+				<groupId>org.freemarker</groupId>
+				<artifactId>freemarker</artifactId>
+				<version>2.3.29</version>
 			</dependency>
 		</dependencies>
 
