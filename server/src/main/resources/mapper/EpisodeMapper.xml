@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.course.server.mapper.EpisodeMapper">
-  <resultMap id="BaseResultMap" type="com.course.server.domain.Episode">
+<mapper namespace="com.tv.server.mapper.EpisodeMapper">
+  <resultMap id="BaseResultMap" type="com.tv.server.domain.Episode">
     <id column="id" jdbcType="CHAR" property="id" />
     <result column="title" jdbcType="VARCHAR" property="title" />
     <result column="program_id" jdbcType="CHAR" property="programId" />
@@ -74,7 +74,7 @@
   <sql id="Base_Column_List">
     id, title, program_id, chapter_id, video, time, charge, sort, created_at, updated_at
   </sql>
-  <select id="selectByExample" parameterType="com.course.server.domain.EpisodeExample" resultMap="BaseResultMap">
+  <select id="selectByExample" parameterType="com.tv.server.domain.EpisodeExample" resultMap="BaseResultMap">
     select
     <if test="distinct">
       distinct
@@ -98,13 +98,13 @@
     delete from episode
     where id = #{id,jdbcType=CHAR}
   </delete>
-  <delete id="deleteByExample" parameterType="com.course.server.domain.EpisodeExample">
+  <delete id="deleteByExample" parameterType="com.tv.server.domain.EpisodeExample">
     delete from episode
     <if test="_parameter != null">
       <include refid="Example_Where_Clause" />
     </if>
   </delete>
-  <insert id="insert" parameterType="com.course.server.domain.Episode">
+  <insert id="insert" parameterType="com.tv.server.domain.Episode">
     insert into episode (id, title, program_id, 
       chapter_id, video, time, 
       charge, sort, created_at, 
@@ -114,7 +114,7 @@
       #{charge,jdbcType=CHAR}, #{sort,jdbcType=INTEGER}, #{createdAt,jdbcType=TIMESTAMP}, 
       #{updatedAt,jdbcType=TIMESTAMP})
   </insert>
-  <insert id="insertSelective" parameterType="com.course.server.domain.Episode">
+  <insert id="insertSelective" parameterType="com.tv.server.domain.Episode">
     insert into episode
     <trim prefix="(" suffix=")" suffixOverrides=",">
       <if test="id != null">
@@ -181,7 +181,7 @@
       </if>
     </trim>
   </insert>
-  <select id="countByExample" parameterType="com.course.server.domain.EpisodeExample" resultType="java.lang.Long">
+  <select id="countByExample" parameterType="com.tv.server.domain.EpisodeExample" resultType="java.lang.Long">
     select count(*) from episode
     <if test="_parameter != null">
       <include refid="Example_Where_Clause" />
@@ -241,7 +241,7 @@
       <include refid="Update_By_Example_Where_Clause" />
     </if>
   </update>
-  <update id="updateByPrimaryKeySelective" parameterType="com.course.server.domain.Episode">
+  <update id="updateByPrimaryKeySelective" parameterType="com.tv.server.domain.Episode">
     update episode
     <set>
       <if test="title != null">
@@ -274,7 +274,7 @@
     </set>
     where id = #{id,jdbcType=CHAR}
   </update>
-  <update id="updateByPrimaryKey" parameterType="com.course.server.domain.Episode">
+  <update id="updateByPrimaryKey" parameterType="com.tv.server.domain.Episode">
     update episode
     set title = #{title,jdbcType=VARCHAR},
       program_id = #{programId,jdbcType=CHAR},

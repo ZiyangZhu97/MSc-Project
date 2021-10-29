@@ -1,7 +1,7 @@
-package com.course.server.mapper;
+package com.tv.server.mapper;
 
-import com.course.server.domain.Episode;
-import com.course.server.domain.EpisodeExample;
+import com.tv.server.domain.Episode;
+import com.tv.server.domain.EpisodeExample;
 import java.util.List;
 import org.apache.ibatis.annotations.Param;
 

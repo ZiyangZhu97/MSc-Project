@@ -1,4 +1,4 @@
-package com.course.server.domain;
+package com.tv.server.domain;
 
 import java.util.Date;
 

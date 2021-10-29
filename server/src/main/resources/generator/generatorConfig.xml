@@ -27,7 +27,7 @@
 
         <!-- domain类的位置 -->
         <javaModelGenerator targetProject="src\main\java"
-                            targetPackage="com.course.server.domain"/>
+                            targetPackage="com.tv.server.domain"/>
 
         <!-- mapper xml的位置 -->
         <sqlMapGenerator targetProject="src\main\resources"
@@ -35,7 +35,7 @@
 
         <!-- mapper类的位置 -->
         <javaClientGenerator targetProject="src\main\java"
-                             targetPackage="com.course.server.mapper"
+                             targetPackage="com.tv.server.mapper"
                              type="XMLMAPPER" />
 
         <!--        <table tableName="test" domainObjectName="Test"/>-->
