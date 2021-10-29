@@ -16,7 +16,7 @@ import javax.annotation.Resource;
 public class EpisodeController {
 
     private static final Logger LOG = LoggerFactory.getLogger(EpisodeController.class);
-    public static final String BUSINESS_NAME = "Episode";
+    public static final String BUSINESS_NAME = "";
 
     @Resource
     private EpisodeService episodeService;
