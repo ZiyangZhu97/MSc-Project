@@ -38,6 +38,9 @@ public class EpisodeController {
     @PostMapping("/save")
     public ResponseDto save(@RequestBody EpisodeDto episodeDto) {
         // 保存校验
+        ValidatorUtil.require(episodeDto.getTitle(), "Title");
+        ValidatorUtil.length(episodeDto.getTitle(), "Title", 1, 50);
+        ValidatorUtil.length(episodeDto.getVideo(), "Video", 1, 200);
 
         ResponseDto responseDto = new ResponseDto();
         episodeService.save(episodeDto);

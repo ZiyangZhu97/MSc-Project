@@ -6,53 +6,53 @@ import com.fasterxml.jackson.annotation.JsonFormat;
 public class EpisodeDto {
 
     /**
-     * 
+     * ID
      */
     private String id;
 
     /**
-     * 
+     * Title
      */
     private String title;
 
     /**
-     * 
+     * Program ID
      */
     private String programId;
 
     /**
-     * 
+     * Chapter ID
      */
     private String chapterId;
 
     /**
-     * 
+     * Video
      */
     private String video;
 
     /**
-     * 时长，单位秒
+     * Length (Seconds)
      */
     private Integer time;
 
     /**
-     * C收费，F免费
+     * C charge, F free
      */
     private String charge;
 
     /**
-     * 顺序
+     * Order
      */
     private Integer sort;
 
     /**
-     * 创建时间
+     * Created Time
      */
     @JsonFormat(pattern="yyyy-MM-dd HH:mm:ss",timezone = "GMT+8")
     private Date createdAt;
 
     /**
-     * 修改时间
+     * Updated Time
      */
     @JsonFormat(pattern="yyyy-MM-dd HH:mm:ss",timezone = "GMT+8")
     private Date updatedAt;

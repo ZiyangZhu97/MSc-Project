@@ -22,8 +22,8 @@
         <th>Program ID</th>
         <th>Chapter ID</th>
         <th>Video</th>
-        <th>Length</th>
-        <th>Charge</th>
+        <th>Length (Seconds)</th>
+        <th>C charge, F free</th>
         <th>Order</th>
         <th>Created Time</th>
         <th>Updated Time</th>
@@ -79,13 +79,13 @@
                 </div>
               </div>
               <div class="form-group">
-                <label class="col-sm-2 control-label">Program</label>
+                <label class="col-sm-2 control-label">Program ID</label>
                 <div class="col-sm-10">
                   <input v-model="episode.programId" class="form-control">
                 </div>
               </div>
               <div class="form-group">
-                <label class="col-sm-2 control-label">Chapter</label>
+                <label class="col-sm-2 control-label">Chapter ID</label>
                 <div class="col-sm-10">
                   <input v-model="episode.chapterId" class="form-control">
                 </div>
@@ -97,13 +97,13 @@
                 </div>
               </div>
               <div class="form-group">
-                <label class="col-sm-2 control-label">Length</label>
+                <label class="col-sm-2 control-label">Length (Seconds)</label>
                 <div class="col-sm-10">
                   <input v-model="episode.time" class="form-control">
                 </div>
               </div>
               <div class="form-group">
-                <label class="col-sm-2 control-label">Charge</label>
+                <label class="col-sm-2 control-label">C charge, F free</label>
                 <div class="col-sm-10">
                   <input v-model="episode.charge" class="form-control">
                 </div>
@@ -199,6 +199,13 @@
         let _this = this;
 
         // 保存校验
+        if (1 != 1
+          || !Validator.require(_this.episode.title, "Title")
+          || !Validator.length(_this.episode.title, "Title", 1, 50)
+          || !Validator.length(_this.episode.video, "Video", 1, 200)
+        ) {
+          return;
+        }
 
         _this.$ajax.post(process.env.VUE_APP_SERVER + '/business/admin/episode/save', _this.episode).then((response)=>{
           let resp = response.data;
