@@ -27,7 +27,7 @@ public class ProgramDto {
     private Integer length;
 
     /**
-     * Price (CNY)
+     * Price (GBP)
      */
     private BigDecimal price;
 
@@ -37,17 +37,17 @@ public class ProgramDto {
     private String image;
 
     /**
-     * Type|MOVIE("M", "Movie"), SERIES("S", "Series")
+     * Type|枚举[ProgramTypeEnum]：MOVIE("M", "Movie"), SERIES("S", "Series")
      */
     private String type;
 
     /**
-     * Charge|CHARGE("C", "Charge"), FREE("F", "FREE")
+     * Charge|枚举[ProgramChargeEnum]：CHARGE("C", "Charge"), FREE("F", "FREE")
      */
     private String charge;
 
     /**
-     * Status|PUBLISH("P", "Publish"), DRAFT("D", "DRAFT")
+     * Status|枚举[ProgramStatusEnum]：PUBLISH("P", "Publish"), DRAFT("D", "DRAFT")
      */
     private String status;
 

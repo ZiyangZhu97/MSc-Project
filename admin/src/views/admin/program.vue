@@ -1,4 +1,4 @@
-<template>
+<template xmlns:v-bind="http://www.w3.org/1999/xhtml" xmlns:v-on="http://www.w3.org/1999/xhtml">
   <div>
     <p>
       <button v-on:click="add()" class="btn btn-white btn-default btn-round">
@@ -13,51 +13,92 @@
     </p>
 
     <pagination ref="pagination" v-bind:list="list" v-bind:itemCount="8"></pagination>
+    <div class="row">
+      <div v-for="program in programs" class="col-md-4">
+        <div class="thumbnail search-thumbnail">
+          <img v-show="!program.image" class="media-object" src="/static/image/demo-program.jpg" />
+          <img v-show="program.image" class="media-object" v-bind:src="program.image" />
+          <div class="caption">
+            <div class="clearfix">
+              <span class="pull-right label label-primary info-label">
+                {{PROGRAM_TYPE | optionKV(program.type)}}
+              </span>
+              <span class="pull-right label label-primary info-label">
+                {{PROGRAM_CHARGE | optionKV(program.charge)}}
+              </span>
+              <span class="pull-right label label-primary info-label">
+                {{PROGRAM_STATUS | optionKV(program.status)}}
+              </span>
+            </div>
 
-    <table id="simple-table" class="table  table-bordered table-hover">
-      <thead>
-      <tr>
-        <th>ID</th>
-        <th>Title</th>
-        <th>Summary</th>
-        <th>Length (Seconds)</th>
-        <th>Price (CNY)</th>
-        <th>Cover</th>
-        <th>Type</th>
-        <th>Charge</th>
-        <th>Status</th>
-        <th>Number of Favorites</th>
-        <th>Order</th>
-        <th>Operation</th>
-      </tr>
-      </thead>
-
-      <tbody>
-      <tr v-for="program in programs">
-        <td>{{program.id}}</td>
-        <td>{{program.title}}</td>
-        <td>{{program.summary}}</td>
-        <td>{{program.length}}</td>
-        <td>{{program.price}}</td>
-        <td>{{program.image}}</td>
-        <td>{{PROGRAM_TYPE | optionKV(program.type)}}</td>
-        <td>{{PROGRAM_CHARGE | optionKV(program.charge)}}</td>
-        <td>{{PROGRAM_STATUS | optionKV(program.status)}}</td>
-        <td>{{program.favorites}}</td>
-        <td>{{program.sort}}</td>
-      <td>
-        <div class="hidden-sm hidden-xs btn-group">
-          <button v-on:click="edit(program)" class="btn btn-xs btn-info">
-            <i class="ace-icon fa fa-pencil bigger-120"></i>
-          </button>
-          <button v-on:click="del(program.id)" class="btn btn-xs btn-danger">
-            <i class="ace-icon fa fa-trash-o bigger-120"></i>
-          </button>
+            <h3 class="search-title">
+              <a href="#" class="blue">{{program.name}}</a>
+            </h3>
+            <p>
+              <span class="blue bolder bigger-150">{{program.price}}&nbsp;<i class="fa fa-gbp"></i></span>&nbsp;
+            </p>
+            <p>{{program.summary}}</p>
+            <p>
+              <span class="badge badge-info">{{program.id}}</span>
+              <span class="badge badge-info">Order：{{program.sort}}</span>
+              <span class="badge badge-info">Length：{{program.time}}</span>
+            </p>
+            <p>
+              <button v-on:click="edit(program)" class="btn btn-white btn-xs btn-info btn-round">
+                Edit
+              </button>&nbsp;
+              <button v-on:click="del(program.id)" class="btn btn-white btn-xs btn-warning btn-round">
+                Delete
+              </button>
+            </p>
+          </div>
         </div>
-      </td>
-      </tr>
-      </tbody>
-    </table>
+      </div>
+    </div>
+<!--    <table id="simple-table" class="table  table-bordered table-hover">-->
+<!--      <thead>-->
+<!--      <tr>-->
+<!--        <th>ID</th>-->
+<!--        <th>Title</th>-->
+<!--        <th>Summary</th>-->
+<!--        <th>Length (Seconds)</th>-->
+<!--        <th>Price (GBP)</th>-->
+<!--        <th>Cover</th>-->
+<!--        <th>Type</th>-->
+<!--        <th>Charge</th>-->
+<!--        <th>Status</th>-->
+<!--        <th>Number of Favorites</th>-->
+<!--        <th>Order</th>-->
+<!--        <th>Operation</th>-->
+<!--      </tr>-->
+<!--      </thead>-->
+
+<!--      <tbody>-->
+<!--      <tr v-for="program in programs">-->
+<!--        <td>{{program.id}}</td>-->
+<!--        <td>{{program.title}}</td>-->
+<!--        <td>{{program.summary}}</td>-->
+<!--        <td>{{program.length}}</td>-->
+<!--        <td>{{program.price}}</td>-->
+<!--        <td>{{program.image}}</td>-->
+<!--        <td>{{PROGRAM_TYPE | optionKV(program.type)}}</td>-->
+<!--        <td>{{PROGRAM_CHARGE | optionKV(program.charge)}}</td>-->
+<!--        <td>{{PROGRAM_STATUS | optionKV(program.status)}}</td>-->
+<!--        <td>{{program.favorites}}</td>-->
+<!--        <td>{{program.sort}}</td>-->
+<!--      <td>-->
+<!--        <div class="hidden-sm hidden-xs btn-group">-->
+<!--          <button v-on:click="edit(program)" class="btn btn-xs btn-info">-->
+<!--            <i class="ace-icon fa fa-pencil bigger-120"></i>-->
+<!--          </button>-->
+<!--          <button v-on:click="del(program.id)" class="btn btn-xs btn-danger">-->
+<!--            <i class="ace-icon fa fa-trash-o bigger-120"></i>-->
+<!--          </button>-->
+<!--        </div>-->
+<!--      </td>-->
+<!--      </tr>-->
+<!--      </tbody>-->
+<!--    </table>-->
 
     <div id="form-modal" class="modal fade" tabindex="-1" role="dialog">
       <div class="modal-dialog" role="document">
@@ -87,7 +128,7 @@
                 </div>
               </div>
               <div class="form-group">
-                <label class="col-sm-2 control-label">Price (CNY)</label>
+                <label class="col-sm-2 control-label">Price (GBP)</label>
                 <div class="col-sm-10">
                   <input v-model="program.price" class="form-control">
                 </div>
@@ -104,7 +145,6 @@
                   <select v-model="program.type" class="form-control">
                     <option v-for="o in PROGRAM_TYPE" v-bind:value="o.key">{{o.value}}</option>
                   </select>
-
                 </div>
               </div>
               <div class="form-group">
@@ -121,7 +161,6 @@
                   <select v-model="program.status" class="form-control">
                     <option v-for="o in PROGRAM_STATUS" v-bind:value="o.key">{{o.value}}</option>
                   </select>
-
                 </div>
               </div>
               <div class="form-group">
@@ -157,9 +196,9 @@
       return {
         program: {},
         programs: [],
+        PROGRAM_TYPE: PROGRAM_TYPE,
         PROGRAM_CHARGE: PROGRAM_CHARGE,
         PROGRAM_STATUS: PROGRAM_STATUS,
-        PROGRAM_TYPE: PROGRAM_TYPE
       }
     },
     mounted: function() {
@@ -251,3 +290,9 @@
     }
   }
 </script>
+
+<style scoped>
+  .caption h3 {
+    font-size: 20px;
+  }
+</style>

@@ -37,7 +37,7 @@
             <option value="50">50</option>
             <option value="100">100</option>
         </select>
-        items，totally【{{total}}】items
+        items, totally【{{total}}】items
     </span>
   </div>
 </template>
