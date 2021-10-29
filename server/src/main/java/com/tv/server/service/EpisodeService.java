@@ -14,6 +14,7 @@ import org.springframework.util.StringUtils;
 
 import javax.annotation.Resource;
 import java.util.List;
+import java.util.Date;
 
 @Service
 public class EpisodeService {
@@ -27,6 +28,7 @@ public class EpisodeService {
     public void list(PageDto pageDto) {
         PageHelper.startPage(pageDto.getPage(), pageDto.getSize());
         EpisodeExample episodeExample = new EpisodeExample();
+        episodeExample.setOrderByClause("sort asc");
         List<Episode> episodeList = episodeMapper.selectByExample(episodeExample);
         PageInfo<Episode> pageInfo = new PageInfo<>(episodeList);
         pageDto.setTotal(pageInfo.getTotal());
@@ -50,6 +52,9 @@ public class EpisodeService {
      * 新增
      */
     private void insert(Episode episode) {
+        Date now = new Date();
+        episode.setCreatedAt(now);
+        episode.setUpdatedAt(now);
         episode.setId(UuidUtil.getShortUuid());
         episodeMapper.insert(episode);
     }
@@ -58,6 +63,7 @@ public class EpisodeService {
      * 更新
      */
     private void update(Episode episode) {
+        episode.setUpdatedAt(new Date());
         episodeMapper.updateByPrimaryKey(episode);
     }
 

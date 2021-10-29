@@ -25,8 +25,6 @@
         <th>Length (Seconds)</th>
         <th>C charge, F free</th>
         <th>Order</th>
-        <th>Created Time</th>
-        <th>Updated Time</th>
         <th>Operation</th>
       </tr>
       </thead>
@@ -41,8 +39,6 @@
         <td>{{episode.time}}</td>
         <td>{{episode.charge}}</td>
         <td>{{episode.sort}}</td>
-        <td>{{episode.createdAt}}</td>
-        <td>{{episode.updatedAt}}</td>
       <td>
         <div class="hidden-sm hidden-xs btn-group">
           <button v-on:click="edit(episode)" class="btn btn-xs btn-info">
@@ -66,12 +62,6 @@
           </div>
           <div class="modal-body">
             <form class="form-horizontal">
-              <div class="form-group">
-                <label class="col-sm-2 control-label">ID</label>
-                <div class="col-sm-10">
-                  <input v-model="episode.id" class="form-control">
-                </div>
-              </div>
               <div class="form-group">
                 <label class="col-sm-2 control-label">Title</label>
                 <div class="col-sm-10">
@@ -112,18 +102,6 @@
                 <label class="col-sm-2 control-label">Order</label>
                 <div class="col-sm-10">
                   <input v-model="episode.sort" class="form-control">
-                </div>
-              </div>
-              <div class="form-group">
-                <label class="col-sm-2 control-label">Created Time</label>
-                <div class="col-sm-10">
-                  <input v-model="episode.createdAt" class="form-control">
-                </div>
-              </div>
-              <div class="form-group">
-                <label class="col-sm-2 control-label">Updated Time</label>
-                <div class="col-sm-10">
-                  <input v-model="episode.updatedAt" class="form-control">
                 </div>
               </div>
             </form>
