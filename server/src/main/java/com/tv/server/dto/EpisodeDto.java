@@ -1,26 +1,60 @@
 package com.tv.server.dto;
 
 import java.util.Date;
+import com.fasterxml.jackson.annotation.JsonFormat;
 
 public class EpisodeDto {
+
+    /**
+     * 
+     */
     private String id;
 
+    /**
+     * 
+     */
     private String title;
 
+    /**
+     * 
+     */
     private String programId;
 
+    /**
+     * 
+     */
     private String chapterId;
 
+    /**
+     * 
+     */
     private String video;
 
+    /**
+     * 时长，单位秒
+     */
     private Integer time;
 
+    /**
+     * C收费，F免费
+     */
     private String charge;
 
+    /**
+     * 顺序
+     */
     private Integer sort;
 
+    /**
+     * 创建时间
+     */
+    @JsonFormat(pattern="yyyy-MM-dd HH:mm:ss",timezone = "GMT+8")
     private Date createdAt;
 
+    /**
+     * 修改时间
+     */
+    @JsonFormat(pattern="yyyy-MM-dd HH:mm:ss",timezone = "GMT+8")
     private Date updatedAt;
 
     public String getId() {
@@ -103,6 +137,7 @@ public class EpisodeDto {
         this.updatedAt = updatedAt;
     }
 
+
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
@@ -122,4 +157,5 @@ public class EpisodeDto {
         sb.append("]");
         return sb.toString();
     }
+
 }

@@ -1,4 +1,4 @@
-package com.tv.business.controller.admin;
+package com.tv.${module}.controller.admin;
 
 import com.tv.server.dto.${Domain}Dto;
 import com.tv.server.dto.PageDto;
