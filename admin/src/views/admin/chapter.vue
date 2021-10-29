@@ -110,7 +110,7 @@
         },
       list(page) {
         let _this = this;
-        _this.$ajax.post('http://127.0.0.1:9000/business/admin/chapter/list', {
+        _this.$ajax.post(process.env.VUE_APP_SERVER + '/business/admin/chapter/list', {
           page: page,
           size: _this.$refs.pagination.size,
         }).then((response)=>{
@@ -129,7 +129,7 @@
           || !Validator.length(_this.chapter.programId, "Program ID", 1, 8)) {
           return;
         }
-        _this.$ajax.post('http://127.0.0.1:9000/business/admin/chapter/save', _this.chapter).then((response)=>{
+        _this.$ajax.post(process.env.VUE_APP_SERVER + '/business/admin/chapter/save', _this.chapter).then((response)=>{
           console.log("保存大章列表结果：", response);
           let resp = response.data;
           if (resp.success) {
@@ -146,7 +146,7 @@
         let _this = this;
         Confirm.show("You won't be able to revert this!", function () {
 
-          _this.$ajax.delete('http://127.0.0.1:9000/business/admin/chapter/delete/' + id).then((response)=>{
+          _this.$ajax.delete(process.env.VUE_APP_SERVER + '/business/admin/chapter/delete/' + id).then((response)=>{
 
           console.log("删除大章列表结果：", response);
           let resp = response.data;
