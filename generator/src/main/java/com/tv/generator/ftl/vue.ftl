@@ -61,8 +61,8 @@
             </form>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
-            <button v-on:click="save()" type="button" class="btn btn-primary">保存</button>
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button v-on:click="save()" type="button" class="btn btn-primary">Save</button>
           </div>
         </div><!-- /.modal-content -->
       </div><!-- /.modal-dialog -->
@@ -131,6 +131,18 @@
         let _this = this;
 
         // 保存校验
+        if (1 != 1
+        <#list fieldList as field>
+          <#if !field.nullAble>
+          || !Validator.require(_this.${domain}.${field.nameHump}, "${field.nameCn}")
+          </#if>
+          <#if (field.length > 0)>
+          || !Validator.length(_this.${domain}.${field.nameHump}, "${field.nameCn}", 1, ${field.length})
+          </#if>
+        </#list>
+        ) {
+          return;
+        }
 
         _this.$ajax.post(process.env.VUE_APP_SERVER + '/${module}/admin/${domain}/save', _this.${domain}).then((response)=>{
           let resp = response.data;
