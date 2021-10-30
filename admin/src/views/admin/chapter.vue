@@ -1,6 +1,9 @@
 <template>
   <div>
-    <h3>{{program.title}}</h3>
+    <h4 class="lighter">
+      <router-link to="/business/program" class="pink"> {{program.title}} </router-link>
+    </h4>
+    <hr>
     <p>
       <router-link to="/business/program" class="btn btn-white btn-default btn-round">
         <i class="ace-icon fa fa-arrow-left"></i>
@@ -24,7 +27,6 @@
     <tr>
       <th>ID</th>
       <th>Title</th>
-      <th>Program ID</th>
       <th>Operation</th>
     </tr>
     </thead>
@@ -33,16 +35,17 @@
     <tr v-for="chapter in chapters">
       <td>{{chapter.id}}</td>
       <td>{{chapter.name}}</td>
-      <td>{{chapter.programId}}</td>
       <td>
         <div class="hidden-sm hidden-xs btn-group">
 
-          <button v-on:click="edit(chapter)" class="btn btn-xs btn-info">
-            <i class="ace-icon fa fa-pencil bigger-120"></i>
-          </button>
-
-          <button v-on:click="del(chapter.id)" class="btn btn-xs btn-danger">
-            <i class="ace-icon fa fa-trash-o bigger-120"></i>
+          <button v-on:click="toEpisode(chapter)" class="btn btn-white btn-xs btn-info btn-round">
+            Episode
+          </button>&nbsp;
+          <button v-on:click="edit(chapter)" class="btn btn-white btn-xs btn-info btn-round">
+            Edit
+          </button>&nbsp;
+          <button v-on:click="del(chapter.id)" class="btn btn-white btn-xs btn-warning btn-round">
+            Delete
           </button>
 
         </div>
@@ -170,6 +173,16 @@
           }
         })
       });
+      },
+
+      /**
+       * 点击【小节】
+       */
+      toEpisode(chapter) {
+        let _this = this;
+        SessionStorage.set("chapter", chapter);
+        _this.$router.push("/business/episode");
+
 //        Swal.fire({
 //          title: 'Are you sure',
 //          text: "You won't be able to revert this!",

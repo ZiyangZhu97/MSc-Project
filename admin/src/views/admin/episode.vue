@@ -1,5 +1,10 @@
 <template>
   <div>
+    <h4 class="lighter">
+      <router-link to="/business/program" class="pink"> {{program.title}} </router-link>：
+      <router-link to="/business/chapter" class="pink"> {{chapter.name}} </router-link>
+    </h4>
+    <hr>
     <p>
       <button v-on:click="add()" class="btn btn-white btn-default btn-round">
         <i class="ace-icon fa fa-edit"></i>
@@ -19,8 +24,6 @@
       <tr>
         <th>ID</th>
         <th>Title</th>
-        <th>Program ID</th>
-        <th>Chapter ID</th>
         <th>Video</th>
         <th>Length (Seconds)</th>
         <th>Charge</th>
@@ -33,8 +36,6 @@
       <tr v-for="episode in episodes">
         <td>{{episode.id}}</td>
         <td>{{episode.title}}</td>
-        <td>{{episode.programId}}</td>
-        <td>{{episode.chapterId}}</td>
         <td>{{episode.video}}</td>
         <td>{{episode.time}}</td>
         <td>{{EPISODE_CHARGE | optionKV(episode.charge)}}</td>
@@ -71,13 +72,13 @@
               <div class="form-group">
                 <label class="col-sm-2 control-label">Program ID</label>
                 <div class="col-sm-10">
-                  <input v-model="episode.programId" class="form-control">
+                  <p class="form-control-static">{{program.title}}</p>
                 </div>
               </div>
               <div class="form-group">
                 <label class="col-sm-2 control-label">Chapter ID</label>
                 <div class="col-sm-10">
-                  <input v-model="episode.chapterId" class="form-control">
+                  <p class="form-control-static">{{program.title}}</p>
                 </div>
               </div>
               <div class="form-group">
@@ -128,12 +129,20 @@
         episode: {},
         episodes: [],
         EPISODE_CHARGE: EPISODE_CHARGE,
-
+        program: {},
+        chapter: {},
       }
     },
     mounted: function() {
       let _this = this;
       _this.$refs.pagination.size = 5;
+            let program = SessionStorage.get("program") || {};
+      let chapter = SessionStorage.get("chapter") || {};
+      if (Tool.isEmpty(program) || Tool.isEmpty(chapter)) {
+        _this.$router.push("/welcome");
+      }
+      _this.program = program;
+      _this.chapter = chapter;
       _this.list(1);
       // sidebar激活样式方法一
       // this.$parent.activeSidebar("business-episode-sidebar");
@@ -166,6 +175,8 @@
         _this.$ajax.post(process.env.VUE_APP_SERVER + '/business/admin/episode/list', {
           page: page,
           size: _this.$refs.pagination.size,
+          programId: _this.program.id,
+          chapterId: _this.chapter.id
         }).then((response)=>{
           let resp = response.data;
           _this.episodes = resp.content.list;
@@ -188,6 +199,8 @@
         ) {
           return;
         }
+        _this.episode.programId = _this.program.id;
+        _this.episode.chapterId = _this.chapter.id;
 
         _this.$ajax.post(process.env.VUE_APP_SERVER + '/business/admin/episode/save', _this.episode).then((response)=>{
           let resp = response.data;

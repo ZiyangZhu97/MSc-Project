@@ -1,6 +1,7 @@
 package com.tv.business.controller.admin;
 
 import com.tv.server.dto.EpisodeDto;
+import com.tv.server.dto.EpisodePageDto;
 import com.tv.server.dto.PageDto;
 import com.tv.server.dto.ResponseDto;
 import com.tv.server.service.EpisodeService;
@@ -25,10 +26,12 @@ public class EpisodeController {
      * 列表查询
      */
     @PostMapping("/list")
-    public ResponseDto list(@RequestBody PageDto pageDto) {
+    public ResponseDto list(@RequestBody EpisodePageDto episodePageDto) {
         ResponseDto responseDto = new ResponseDto();
-        episodeService.list(pageDto);
-        responseDto.setContent(pageDto);
+        ValidatorUtil.require(episodePageDto.getProgramId(), "Program ID");
+        ValidatorUtil.require(episodePageDto.getChapterId(), "Chapter ID");
+        episodeService.list(episodePageDto);
+        responseDto.setContent(episodePageDto);
         return responseDto;
     }
 
