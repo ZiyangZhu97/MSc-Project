@@ -83,4 +83,15 @@ public class ProgramCategoryService {
             insert(programCategory);
         }
     }
+    /**
+     * 查找课程下所有分类
+     * @param programId
+     */
+    public List<ProgramCategoryDto> listByProgram(String programId) {
+        ProgramCategoryExample example = new ProgramCategoryExample();
+        example.createCriteria().andProgramIdEqualTo(programId);
+        List<ProgramCategory> programCategoryList = programCategoryMapper.selectByExample(example);
+        return CopyUtil.copyList(programCategoryList, ProgramCategoryDto.class);
+    }
+
 }

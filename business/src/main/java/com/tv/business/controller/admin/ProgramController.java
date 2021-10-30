@@ -1,8 +1,10 @@
 package com.tv.business.controller.admin;
 
+import com.tv.server.dto.ProgramCategoryDto;
 import com.tv.server.dto.ProgramDto;
 import com.tv.server.dto.PageDto;
 import com.tv.server.dto.ResponseDto;
+import com.tv.server.service.ProgramCategoryService;
 import com.tv.server.service.ProgramService;
 import com.tv.server.util.ValidatorUtil;
 import org.slf4j.Logger;
@@ -10,6 +12,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
+import java.util.List;
 
 @RestController
 @RequestMapping("/admin/program")
@@ -20,6 +23,8 @@ public class ProgramController {
 
     @Resource
     private ProgramService programService;
+    @Resource
+    private ProgramCategoryService programCategoryService;
 
     /**
      * 列表查询
@@ -55,6 +60,18 @@ public class ProgramController {
     public ResponseDto delete(@PathVariable String id) {
         ResponseDto responseDto = new ResponseDto();
         programService.delete(id);
+        return responseDto;
+    }
+
+    /**
+     * 查找课程下所有分类
+     * @param programId
+     */
+    @PostMapping("/list-category/{programId}")
+    public ResponseDto listCategory(@PathVariable(value = "programId") String programId) {
+        ResponseDto responseDto = new ResponseDto();
+        List<ProgramCategoryDto> dtoList = programCategoryService.listByProgram(programId);
+        responseDto.setContent(dtoList);
         return responseDto;
     }
 }

@@ -231,6 +231,7 @@
       add() {
         let _this = this;
         _this.program = {};
+        _this.tree.checkAllNodes(false);
         $("#form-modal").modal("show");
       },
 
@@ -240,6 +241,7 @@
       edit(program) {
         let _this = this;
         _this.program = $.extend({}, program);
+        _this.listCategory(program.id);
         $("#form-modal").modal("show");
       },
 
@@ -347,7 +349,29 @@
 
 
         _this.tree = $.fn.zTree.init($("#tree"), setting, zNodes);
-      }
+        // 展开所有的节点
+        _this.tree.expandAll(true);
+      },
+
+      /**
+       * 查找课程下所有分类
+       * @param programId
+       */
+      listCategory(programId) {
+        let _this = this;
+        _this.$ajax.post(process.env.VUE_APP_SERVER + '/business/admin/program/list-category/' + programId).then((res)=>{
+          console.log("查找课程下所有分类结果：", res);
+          let response = res.data;
+          let categorys = response.content;
+
+          // 勾选查询到的分类
+          _this.tree.checkAllNodes(false);
+          for (let i = 0; i < categorys.length; i++) {
+            let node = _this.tree.getNodeByParam("id", categorys[i].categoryId);
+            _this.tree.checkNode(node, true);
+          }
+        })
+      },
     }
   }
 </script>
