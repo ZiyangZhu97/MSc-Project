@@ -365,7 +365,7 @@
           <li class="">
             <a href="#" class="dropdown-toggle">
               <i class="menu-icon fa fa-list"></i>
-              <span class="menu-text"> 系统管理 </span>
+              <span class="menu-text"> Category </span>
 
               <b class="arrow fa fa-angle-down"></b>
             </a>
@@ -373,6 +373,16 @@
             <b class="arrow"></b>
 
             <ul class="submenu">
+
+              <li class="active" id="business-language-sidebar">
+                <router-link to="/business/language">
+                  <i class="menu-icon fa fa-caret-right"></i>
+                  Language
+                </router-link>
+
+                <b class="arrow"></b>
+              </li>
+
               <li class="">
                 <a href="tables.html">
                   <i class="menu-icon fa fa-caret-right"></i>
@@ -404,14 +414,7 @@
             <b class="arrow"></b>
 
             <ul class="submenu">
-              <li class="active" id="business-category-sidebar">
-                <router-link to="/business/category">
-                  <i class="menu-icon fa fa-caret-right"></i>
-                  Category
-                </router-link>
 
-                <b class="arrow"></b>
-              </li>
 
               <li class="active" id="business-program-sidebar">
                 <router-link to="/business/program">

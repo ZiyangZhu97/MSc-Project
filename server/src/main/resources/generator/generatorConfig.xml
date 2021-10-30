@@ -42,6 +42,8 @@
         <!--        <table tableName="chapter" domainObjectName="Chapter"/>-->
 <!--        <table tableName="episode" domainObjectName="Episode"/>-->
 <!--        <table tableName="program" domainObjectName="Program"/>-->
-        <table tableName="category" domainObjectName="Category"/>
+<!--        <table tableName="language" domainObjectName="Language"/>-->
+        <table tableName="genre" domainObjectName="Genre"/>
+
     </context>
 </generatorConfiguration>

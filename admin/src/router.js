@@ -3,7 +3,7 @@ import Router from "vue-router"
 import Login from "./views/login.vue"
 import Admin from "./views/admin.vue"
 import Welcome from "./views/admin/welcome.vue"
-import Category from "./views/admin/category.vue"
+import Language from "./views/admin/language.vue"
 import Program from "./views/admin/program.vue"
 import Chapter from "./views/admin/chapter.vue"
 import Episode from "./views/admin/episode.vue"
@@ -29,9 +29,9 @@ export default new Router({
             name: "welcome",
             component: Welcome,
         }, {
-            path: "business/category",
-            name: "business/category",
-            component: Category,
+            path: "business/language",
+            name: "business/language",
+            component: Language,
         }, {
             path: "business/program",
             name: "business/program",
