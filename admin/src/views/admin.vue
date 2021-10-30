@@ -381,6 +381,15 @@
                 </router-link>
 
                 <b class="arrow"></b>
+
+              <li class="active" id="business-genre-sidebar">
+                <router-link to="/business/genre">
+                  <i class="menu-icon fa fa-caret-right"></i>
+                  Genre
+                </router-link>
+
+                <b class="arrow"></b>
+
               </li>
 
               <li class="">
