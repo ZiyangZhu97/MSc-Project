@@ -32,7 +32,7 @@
             </div>
 
             <h3 class="search-title">
-              <a href="#" class="blue">{{program.name}}</a>
+              <a href="#" class="blue">{{program.title}}</a>
             </h3>
             <p>
               <span class="blue bolder bigger-150">{{program.price}}&nbsp;<i class="fa fa-gbp"></i></span>&nbsp;
@@ -44,6 +44,9 @@
               <span class="badge badge-info">Length：{{program.time}}</span>
             </p>
             <p>
+              <button v-on:click="toChapter(program)" class="btn btn-white btn-xs btn-info btn-round">
+                Season
+              </button>&nbsp;
               <button v-on:click="edit(program)" class="btn btn-white btn-xs btn-info btn-round">
                 Edit
               </button>&nbsp;
@@ -286,6 +289,14 @@
             }
           })
         });
+      },
+      /**
+       * 点击【大章】
+       */
+      toChapter(program) {
+        let _this = this;
+        SessionStorage.set("program", program);
+        _this.$router.push("/business/chapter");
       }
     }
   }

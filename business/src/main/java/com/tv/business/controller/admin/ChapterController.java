@@ -2,6 +2,7 @@ package com.tv.business.controller.admin;
 
 import com.tv.server.domain.Chapter;
 import com.tv.server.dto.ChapterDto;
+import com.tv.server.dto.ChapterPageDto;
 import com.tv.server.dto.PageDto;
 import com.tv.server.dto.ResponseDto;
 import com.tv.server.service.ChapterService;
@@ -22,10 +23,11 @@ public class ChapterController {
     private ChapterService chapterService;
 
     @PostMapping("/list")
-    public ResponseDto list(@RequestBody PageDto pageDto) {
+    public ResponseDto list(@RequestBody ChapterPageDto chapterPageDto) {
         ResponseDto responseDto = new ResponseDto();
-        chapterService.list(pageDto);
-        responseDto.setContent(pageDto);
+        ValidatorUtil.require(chapterPageDto.getProgramId(), "Program ID");
+        chapterService.list(chapterPageDto);
+        responseDto.setContent(chapterPageDto);
         return responseDto;
     }
 

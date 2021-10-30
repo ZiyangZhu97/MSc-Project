@@ -16,7 +16,7 @@
           <a href="index.html" class="navbar-brand">
             <small>
               <i class="fa fa-leaf"></i>
-              在线视频
+              Online Movie & Series
             </small>
           </a>
         </div>
@@ -356,7 +356,7 @@
           <li class="" id="welcome-sidebar">
             <router-link to="/welcome">
               <i class="menu-icon fa fa-tachometer"></i>
-              <span class="menu-text"> 欢迎 </span>
+              <span class="menu-text"> Welcome </span>
             </router-link>
 
             <b class="arrow"></b>
@@ -396,7 +396,7 @@
           <li class="active open">
             <a href="#" class="dropdown-toggle">
               <i class="menu-icon fa fa-list"></i>
-              <span class="menu-text"> 业务管理 </span>
+              <span class="menu-text"> Business </span>
 
               <b class="arrow fa fa-angle-down"></b>
             </a>
@@ -457,7 +457,7 @@
           <div class="footer-content">
 						<span class="bigger-120">
 							<span class="blue bolder">zzy</span>
-							在线视频 &copy; 2099-2099
+							video streaming &copy; 2099-2099
 						</span>
 
             &nbsp; &nbsp;

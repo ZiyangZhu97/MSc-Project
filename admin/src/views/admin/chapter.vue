@@ -1,6 +1,12 @@
 <template>
   <div>
+    <h3>{{program.title}}</h3>
     <p>
+      <router-link to="/business/program" class="btn btn-white btn-default btn-round">
+        <i class="ace-icon fa fa-arrow-left"></i>
+        Back to Program
+      </router-link>
+      &nbsp;
       <button v-on:click="add()" class="btn btn-white btn-default btn-round">
         <i class="ace-icon fa fa-edit"></i>
         Add
@@ -60,9 +66,9 @@
                 </div>
               </div>
               <div class="form-group">
-                <label class="col-sm-2 control-label">Program ID</label>
+                <label class="col-sm-2 control-label">Program</label>
                 <div class="col-sm-10">
-                  <input v-model="chapter.programId" class="form-control" placeholder="Program ID">
+                  <p class="form-control-static">{{program.title}}</p>
                 </div>
               </div>
             </form>
@@ -85,12 +91,18 @@
     data: function() {
       return {
         chapter: {},
-        chapters: []
+        chapters: [],
+        program: {},
       }
     },
     mounted: function() {
       let _this = this;
       _this.$refs.pagination.size = 5;
+            let program = SessionStorage.get("program") || {};
+      if (Tool.isEmpty(program)) {
+        _this.$router.push("/welcome");
+      }
+      _this.program = program;
       _this.list(1);
       // sidebar激活样式方法一
       // this.$parent.activeSidebar("business-chapter-sidebar");
@@ -113,6 +125,7 @@
         _this.$ajax.post(process.env.VUE_APP_SERVER + '/business/admin/chapter/list', {
           page: page,
           size: _this.$refs.pagination.size,
+          programId: _this.program.id
         }).then((response)=>{
           console.log("查询大章列表结果：", response);
           let resp = response.data;
@@ -125,10 +138,11 @@
         let _this = this;
         // 保存校验
         if (!Validator.require(_this.chapter.name, "Title")
-          || !Validator.require(_this.chapter.programId, "Program ID")
           || !Validator.length(_this.chapter.programId, "Program ID", 1, 8)) {
           return;
         }
+        _this.chapter.programId = _this.program.id;
+
         _this.$ajax.post(process.env.VUE_APP_SERVER + '/business/admin/chapter/save', _this.chapter).then((response)=>{
           console.log("保存大章列表结果：", response);
           let resp = response.data;
