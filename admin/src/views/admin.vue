@@ -404,6 +404,15 @@
             <b class="arrow"></b>
 
             <ul class="submenu">
+              <li class="active" id="business-category-sidebar">
+                <router-link to="/business/category">
+                  <i class="menu-icon fa fa-caret-right"></i>
+                  Category
+                </router-link>
+
+                <b class="arrow"></b>
+              </li>
+
               <li class="active" id="business-program-sidebar">
                 <router-link to="/business/program">
                   <i class="menu-icon fa fa-caret-right"></i>
