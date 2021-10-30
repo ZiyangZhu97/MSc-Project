@@ -21,6 +21,8 @@ public class EpisodeService {
 
     @Resource
     private EpisodeMapper episodeMapper;
+    @Resource
+    private ProgramService programService;
 
     /**
      * 列表查询
@@ -46,6 +48,8 @@ public class EpisodeService {
         } else {
             this.update(episode);
         }
+        //programService.updateTime(episodeDto.getProgramId());
+
     }
 
     /**

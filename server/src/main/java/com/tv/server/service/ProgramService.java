@@ -5,6 +5,7 @@ import com.tv.server.domain.ProgramExample;
 import com.tv.server.dto.ProgramDto;
 import com.tv.server.dto.PageDto;
 import com.tv.server.mapper.ProgramMapper;
+import com.tv.server.mapper.my.MyProgramMapper;
 import com.tv.server.util.CopyUtil;
 import com.tv.server.util.UuidUtil;
 import com.github.pagehelper.PageHelper;
@@ -21,6 +22,9 @@ public class ProgramService {
 
     @Resource
     private ProgramMapper programMapper;
+
+    @Resource
+    private MyProgramMapper myProgramMapper;
 
     /**
      * 列表查询
@@ -72,5 +76,14 @@ public class ProgramService {
      */
     public void delete(String id) {
         programMapper.deleteByPrimaryKey(id);
+    }
+
+    /**
+     * 更新课程时长
+     * @param programId
+     * @return
+     */
+    public void updateTime(String programId) {
+        myProgramMapper.updateTime(programId);
     }
 }

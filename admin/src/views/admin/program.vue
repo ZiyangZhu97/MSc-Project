@@ -41,7 +41,7 @@
             <p>
               <span class="badge badge-info">{{program.id}}</span>
               <span class="badge badge-info">Order：{{program.sort}}</span>
-              <span class="badge badge-info">Length：{{program.time}}</span>
+              <span class="badge badge-info">Length：{{program.length}}</span>
             </p>
             <p>
               <button v-on:click="toChapter(program)" class="btn btn-white btn-xs btn-info btn-round">
