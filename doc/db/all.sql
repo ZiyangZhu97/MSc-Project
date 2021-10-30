@@ -4,13 +4,16 @@ VALUES ('00000001', 'testEpisode01', '00000001', '00000000', '', 500, 'F', 1, no
 INSERT INTO program (id, title, summary, length, price, image, type, charge, status, favorites, sort, created_at, updated_at)
 VALUES ('00000001', 'testProgram01', 'a test program', 7200, 19.9, '', 'M', 'C', 'D', 100, 0, now(), now());
 
-insert into `language` (id, name, sort) values ('00000100', 'Chinese', 100);
-insert into `language` (id, name, sort) values ('00000101', 'Japanese', 101);
-insert into `language` (id, name, sort) values ('00000102', 'English', 102);
+insert into `category` (id, parent, name, sort) values ('00000100', '00000000', 'Language', 100);
+insert into `category` (id, parent, name, sort) values ('00000101', '00000100', 'Chinese', 101);
+insert into `category` (id, parent, name, sort) values ('00000102', '00000100', 'Japanese', 102);
+insert into `category` (id, parent, name, sort) values ('00000103', '00000100', 'Engilish', 103);
+insert into `category` (id, parent, name, sort) values ('00000104', '00000100', 'Others', 104);
 
-insert into `genre` (id, name, sort) values ('00000100', 'Action', 100);
-insert into `genre` (id, name, sort) values ('00000101', 'Comedy', 101);
-insert into `genre` (id, name, sort) values ('00000102', 'Romance', 102);
+insert into `category` (id, parent, name, sort) values ('00000200', '00000000', 'Genre', 200);
+insert into `category` (id, parent, name, sort) values ('00000201', '00000200', 'Action', 201);
+insert into `category` (id, parent, name, sort) values ('00000202', '00000200', 'Comedy', 202);
+insert into `category` (id, parent, name, sort) values ('00000203', '00000200', 'Romance', 203);
 
 
 
