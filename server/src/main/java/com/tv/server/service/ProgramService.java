@@ -10,6 +10,8 @@ import com.tv.server.util.CopyUtil;
 import com.tv.server.util.UuidUtil;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
 
@@ -24,6 +26,8 @@ public class ProgramService {
     private ProgramMapper programMapper;
     @Resource
     private MyProgramMapper myProgramMapper;
+
+    private static final Logger LOG = LoggerFactory.getLogger(ProgramService.class);
 
     /**
      * 列表查询
@@ -83,6 +87,9 @@ public class ProgramService {
      * @return
      */
     public void updateTime(String programId) {
+        LOG.info("更新课程时长：{}", programId);
         myProgramMapper.updateTime(programId);
     }
+
+
 }

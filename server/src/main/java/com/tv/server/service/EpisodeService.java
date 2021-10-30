@@ -10,6 +10,8 @@ import com.tv.server.util.CopyUtil;
 import com.tv.server.util.UuidUtil;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
 
@@ -24,6 +26,7 @@ public class EpisodeService {
     private EpisodeMapper episodeMapper;
     @Resource
     private ProgramService programService;
+
 
     /**
      * 列表查询
@@ -58,7 +61,7 @@ public class EpisodeService {
         } else {
             this.update(episode);
         }
-        //programService.updateTime(episodeDto.getProgramId());
+        programService.updateTime(episodeDto.getProgramId());
 
     }
 
@@ -87,4 +90,5 @@ public class EpisodeService {
     public void delete(String id) {
         episodeMapper.deleteByPrimaryKey(id);
     }
+
 }
