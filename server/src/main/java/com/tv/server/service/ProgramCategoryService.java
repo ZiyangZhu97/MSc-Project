@@ -2,6 +2,7 @@ package com.tv.server.service;
 
 import com.tv.server.domain.ProgramCategory;
 import com.tv.server.domain.ProgramCategoryExample;
+import com.tv.server.dto.CategoryDto;
 import com.tv.server.dto.ProgramCategoryDto;
 import com.tv.server.dto.PageDto;
 import com.tv.server.mapper.ProgramCategoryMapper;
@@ -66,5 +67,20 @@ public class ProgramCategoryService {
      */
     public void delete(String id) {
         programCategoryMapper.deleteByPrimaryKey(id);
+    }
+
+    
+    public void saveBatch(String programId, List<CategoryDto> dtoList) {
+        ProgramCategoryExample example = new ProgramCategoryExample();
+        example.createCriteria().andProgramIdEqualTo(programId);
+        programCategoryMapper.deleteByExample(example);
+        for (int i = 0, l = dtoList.size(); i < l; i++) {
+            CategoryDto categoryDto = dtoList.get(i);
+            ProgramCategory programCategory = new ProgramCategory();
+            programCategory.setId(UuidUtil.getShortUuid());
+            programCategory.setProgramId(programId);
+            programCategory.setCategoryId(categoryDto.getId());
+            insert(programCategory);
+        }
     }
 }

@@ -26,6 +26,8 @@ public class ProgramService {
     private ProgramMapper programMapper;
     @Resource
     private MyProgramMapper myProgramMapper;
+    @Resource
+    private ProgramCategoryService programCategoryService;
 
     private static final Logger LOG = LoggerFactory.getLogger(ProgramService.class);
 
@@ -53,6 +55,9 @@ public class ProgramService {
         } else {
             this.update(program);
         }
+        // 批量保存课程分类
+        programCategoryService.saveBatch(programDto.getId(), programDto.getCategorys());
+
     }
 
     /**

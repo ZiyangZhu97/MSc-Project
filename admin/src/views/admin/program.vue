@@ -211,6 +211,7 @@
         PROGRAM_CHARGE: PROGRAM_CHARGE,
         PROGRAM_STATUS: PROGRAM_STATUS,
         categorys: [],
+        tree: {},
 
       }
     },
@@ -273,6 +274,12 @@
         ) {
           return;
         }
+        let categorys = _this.tree.getCheckedNodes();
+        if (Tool.isEmpty(categorys)) {
+          Toast.warning("Choose category!");
+          return;
+        }
+        _this.program.categorys = categorys;
 
         _this.$ajax.post(process.env.VUE_APP_SERVER + '/business/admin/program/save', _this.program).then((response)=>{
           let resp = response.data;
@@ -339,7 +346,7 @@
         let zNodes = _this.categorys;
 
 
-        $.fn.zTree.init($("#tree"), setting, zNodes);
+        _this.tree = $.fn.zTree.init($("#tree"), setting, zNodes);
       }
     }
   }

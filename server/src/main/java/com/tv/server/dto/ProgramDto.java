@@ -2,9 +2,12 @@ package com.tv.server.dto;
 
 import java.math.BigDecimal;
 import java.util.Date;
+import java.util.List;
+
 import com.fasterxml.jackson.annotation.JsonFormat;
 
 public class ProgramDto {
+    private List<CategoryDto> categorys;
 
     /**
      * ID
@@ -177,6 +180,13 @@ public class ProgramDto {
         this.updatedAt = updatedAt;
     }
 
+    public List<CategoryDto> getCategorys() {
+        return categorys;
+    }
+
+    public void setCategorys(List<CategoryDto> categorys) {
+        this.categorys = categorys;
+    }
 
     @Override
     public String toString() {
