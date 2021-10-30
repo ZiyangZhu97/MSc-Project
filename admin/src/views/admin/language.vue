@@ -18,7 +18,6 @@
       <thead>
       <tr>
         <th>ID</th>
-        <th>Parent ID</th>
         <th>Name</th>
         <th>Order</th>
         <th>Operation</th>
@@ -26,17 +25,16 @@
       </thead>
 
       <tbody>
-      <tr v-for="category in categorys">
-        <td>{{category.id}}</td>
-        <td>{{category.parent}}</td>
-        <td>{{category.name}}</td>
-        <td>{{category.sort}}</td>
+      <tr v-for="language in languages">
+        <td>{{language.id}}</td>
+        <td>{{language.name}}</td>
+        <td>{{language.sort}}</td>
       <td>
         <div class="hidden-sm hidden-xs btn-group">
-          <button v-on:click="edit(category)" class="btn btn-xs btn-info">
+          <button v-on:click="edit(language)" class="btn btn-xs btn-info">
             <i class="ace-icon fa fa-pencil bigger-120"></i>
           </button>
-          <button v-on:click="del(category.id)" class="btn btn-xs btn-danger">
+          <button v-on:click="del(language.id)" class="btn btn-xs btn-danger">
             <i class="ace-icon fa fa-trash-o bigger-120"></i>
           </button>
         </div>
@@ -55,21 +53,15 @@
           <div class="modal-body">
             <form class="form-horizontal">
               <div class="form-group">
-                <label class="col-sm-2 control-label">Parent ID</label>
-                <div class="col-sm-10">
-                  <input v-model="category.parent" class="form-control">
-                </div>
-              </div>
-              <div class="form-group">
                 <label class="col-sm-2 control-label">Name</label>
                 <div class="col-sm-10">
-                  <input v-model="category.name" class="form-control">
+                  <input v-model="language.name" class="form-control">
                 </div>
               </div>
               <div class="form-group">
                 <label class="col-sm-2 control-label">Order</label>
                 <div class="col-sm-10">
-                  <input v-model="category.sort" class="form-control">
+                  <input v-model="language.sort" class="form-control">
                 </div>
               </div>
             </form>
@@ -88,11 +80,11 @@
   import Pagination from "../../components/pagination";
   export default {
     components: {Pagination},
-    name: "business-category",
+    name: "business-language",
     data: function() {
       return {
-        category: {},
-        categorys: [],
+        language: {},
+        languages: [],
       }
     },
     mounted: function() {
@@ -100,7 +92,7 @@
       _this.$refs.pagination.size = 5;
       _this.list(1);
       // sidebar激活样式方法一
-      // this.$parent.activeSidebar("business-category-sidebar");
+      // this.$parent.activeSidebar("business-language-sidebar");
 
     },
     methods: {
@@ -109,16 +101,16 @@
        */
       add() {
         let _this = this;
-        _this.category = {};
+        _this.language = {};
         $("#form-modal").modal("show");
       },
 
       /**
        * 点击【编辑】
        */
-      edit(category) {
+      edit(language) {
         let _this = this;
-        _this.category = $.extend({}, category);
+        _this.language = $.extend({}, language);
         $("#form-modal").modal("show");
       },
 
@@ -127,12 +119,12 @@
        */
       list(page) {
         let _this = this;
-        _this.$ajax.post(process.env.VUE_APP_SERVER + '/business/admin/category/list', {
+        _this.$ajax.post(process.env.VUE_APP_SERVER + '/business/admin/language/list', {
           page: page,
           size: _this.$refs.pagination.size,
         }).then((response)=>{
           let resp = response.data;
-          _this.categorys = resp.content.list;
+          _this.languages = resp.content.list;
           _this.$refs.pagination.render(page, resp.content.total);
 
         })
@@ -146,14 +138,13 @@
 
         // 保存校验
         if (1 != 1
-          || !Validator.require(_this.category.parent, "Parent ID")
-          || !Validator.require(_this.category.name, "Name")
-          || !Validator.length(_this.category.name, "Name", 1, 50)
+          || !Validator.require(_this.language.name, "Name")
+          || !Validator.length(_this.language.name, "Name", 1, 50)
         ) {
           return;
         }
 
-        _this.$ajax.post(process.env.VUE_APP_SERVER + '/business/admin/category/save', _this.category).then((response)=>{
+        _this.$ajax.post(process.env.VUE_APP_SERVER + '/business/admin/language/save', _this.language).then((response)=>{
           let resp = response.data;
           if (resp.success) {
             $("#form-modal").modal("hide");
@@ -171,7 +162,7 @@
       del(id) {
         let _this = this;
         Confirm.show("You won't be able to revert this!", function () {
-          _this.$ajax.delete(process.env.VUE_APP_SERVER + '/business/admin/category/delete/' + id).then((response)=>{
+          _this.$ajax.delete(process.env.VUE_APP_SERVER + '/business/admin/language/delete/' + id).then((response)=>{
             let resp = response.data;
             if (resp.success) {
               _this.list(1);
