@@ -22,7 +22,6 @@ public class ProgramService {
 
     @Resource
     private ProgramMapper programMapper;
-
     @Resource
     private MyProgramMapper myProgramMapper;
 

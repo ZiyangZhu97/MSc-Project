@@ -3,6 +3,7 @@ package com.tv.server.service;
 import com.tv.server.domain.Episode;
 import com.tv.server.domain.EpisodeExample;
 import com.tv.server.dto.EpisodeDto;
+import com.tv.server.dto.EpisodePageDto;
 import com.tv.server.dto.PageDto;
 import com.tv.server.mapper.EpisodeMapper;
 import com.tv.server.util.CopyUtil;
@@ -27,16 +28,25 @@ public class EpisodeService {
     /**
      * 列表查询
      */
-    public void list(PageDto pageDto) {
-        PageHelper.startPage(pageDto.getPage(), pageDto.getSize());
+    public void list(EpisodePageDto episodePageDto) {
+        PageHelper.startPage(episodePageDto.getPage(), episodePageDto.getSize());
         EpisodeExample episodeExample = new EpisodeExample();
+        EpisodeExample.Criteria criteria = episodeExample.createCriteria();
+        if (!StringUtils.isEmpty(episodePageDto.getProgramId())) {
+            criteria.andProgramIdEqualTo(episodePageDto.getProgramId());
+        }
+        if (!StringUtils.isEmpty(episodePageDto.getChapterId())) {
+            criteria.andChapterIdEqualTo(episodePageDto.getChapterId());
+        }
         episodeExample.setOrderByClause("sort asc");
         List<Episode> episodeList = episodeMapper.selectByExample(episodeExample);
         PageInfo<Episode> pageInfo = new PageInfo<>(episodeList);
-        pageDto.setTotal(pageInfo.getTotal());
+        episodePageDto.setTotal(pageInfo.getTotal());
         List<EpisodeDto> episodeDtoList = CopyUtil.copyList(episodeList, EpisodeDto.class);
-        pageDto.setList(episodeDtoList);
+        episodePageDto.setList(episodeDtoList);
     }
+
+
 
     /**
      * 保存，id有值时更新，无值时新增
