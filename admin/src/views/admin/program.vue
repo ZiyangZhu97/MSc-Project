@@ -16,8 +16,8 @@
     <div class="row">
       <div v-for="program in programs" class="col-md-4">
         <div class="thumbnail search-thumbnail">
-          <img v-show="!program.image" class="media-object" src="/static/image/demo-program.jpg" />
-          <img v-show="program.image" class="media-object" v-bind:src="program.image" />
+          <img v-show="!program.image" class="editable img-responsive editable-click editable-empty" src="/static/image/demo-program.jpg" />
+          <img v-show="program.image" class="editable img-responsive editable-click editable-empty" v-bind:src="program.image" />
           <div class="caption">
             <div class="clearfix">
               <span class="pull-right label label-primary info-label">
@@ -148,7 +148,11 @@
                 <label class="col-sm-2 control-label">Cover</label>
                 <div class="col-sm-10">
                   <input type = "file" v-on:change="uploadImage()" id="file-upload-input">
-                  <img v-bind:src="program.image" class="img-responsive">
+                  <div v-show="program.image" class="row">
+                    <div class="col-md-4">
+                      <img v-bind:src="program.image" class="img-responsive">
+                    </div>
+                  </div>
 
                 </div>
               </div>
