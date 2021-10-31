@@ -147,7 +147,7 @@
               <div class="form-group">
                 <label class="col-sm-2 control-label">Cover</label>
                 <div class="col-sm-10">
-                  <input v-model="program.image" class="form-control">
+                  <input type = "file" v-on:change="uploadImage()" id="file-upload-input">
                 </div>
               </div>
               <div class="form-group">
@@ -310,6 +310,23 @@
           })
         });
       },
+
+      /**
+       * 点击【上传】
+       */
+      uploadImage () {
+        let _this = this;
+        let formData = new window.FormData();
+        // key："file"必须和后端controller参数名一致
+        // 下面这行是和上面v-on:change="uploadImage()" id="file-upload-input"联动，拿到这张图片
+        formData.append('file', document.querySelector('#file-upload-input').files[0]);
+        // 下面这行是把上面的formData这个表单传给后端,upload对应UploadController
+        _this.$ajax.post(process.env.VUE_APP_SERVER + '/file/admin/upload', formData).then((response)=>{
+        //下面这行是拿到结果
+          let resp = response.data;
+        });
+      },
+
       /**
        * 点击【大章】
        */

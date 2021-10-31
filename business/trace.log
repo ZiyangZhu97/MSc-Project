@@ -1254,3 +1254,942 @@
 2021-10-31 01:52:03.167 TRACE com.tv.server.mapper.EpisodeMapper.selectByExample:165  [32m        [0;39m <==        Row: XxvPFRHC, 2, 0QIiNoVB, RLsbMYyl, null, 2, null, 2, 2021-10-30 08:07:35.0, 2021-10-31 01:16:24.489
 2021-10-31 01:52:03.167 TRACE com.tv.server.mapper.EpisodeMapper.selectByExample:165  [32m        [0;39m <==        Row: GbF6Bgke, 3, 0QIiNoVB, RLsbMYyl, null, 2, null, 3, 2021-10-30 17:06:10.0, 2021-10-31 01:17:02.724
 2021-10-31 01:52:03.168 DEBUG com.tv.server.mapper.EpisodeMapper.selectByExample:159  [32m        [0;39m <==      Total: 4
+2021-10-31 01:53:46.483 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-10-31 01:58:46.494 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-10-31 02:03:46.505 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-10-31 02:04:29.237 DEBUG c.tv.server.mapper.CategoryMapper.selectByExample :159  [32m        [0;39m ==>  Preparing: select id, parent, name, sort from category order by sort asc 
+2021-10-31 02:04:29.238 DEBUG c.tv.server.mapper.CategoryMapper.selectByExample :159  [32m        [0;39m ==> Parameters: 
+2021-10-31 02:04:29.239 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==    Columns: id, parent, name, sort
+2021-10-31 02:04:29.240 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000100, 00000000, Language, 100
+2021-10-31 02:04:29.240 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000101, 00000100, Chinese, 101
+2021-10-31 02:04:29.241 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000102, 00000100, Japanese, 102
+2021-10-31 02:04:29.241 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000103, 00000100, Engilish, 103
+2021-10-31 02:04:29.241 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 6ia3K5Ag, 00000100, Other, 199
+2021-10-31 02:04:29.242 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000200, 00000000, Genre, 200
+2021-10-31 02:04:29.242 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000201, 00000200, Action, 201
+2021-10-31 02:04:29.243 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000202, 00000200, Comedy, 202
+2021-10-31 02:04:29.243 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000203, 00000200, Romance, 203
+2021-10-31 02:04:29.243 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: NNvjDlnn, 00000200, Adventure, 204
+2021-10-31 02:04:29.243 DEBUG c.tv.server.mapper.CategoryMapper.selectByExample :159  [32m        [0;39m <==      Total: 10
+2021-10-31 02:04:29.890 DEBUG c.tv.server.mapper.CategoryMapper.selectByExample :159  [32m        [0;39m ==>  Preparing: select id, parent, name, sort from category order by sort asc 
+2021-10-31 02:04:29.890 DEBUG c.tv.server.mapper.CategoryMapper.selectByExample :159  [32m        [0;39m ==> Parameters: 
+2021-10-31 02:04:29.891 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==    Columns: id, parent, name, sort
+2021-10-31 02:04:29.892 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000100, 00000000, Language, 100
+2021-10-31 02:04:29.892 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000101, 00000100, Chinese, 101
+2021-10-31 02:04:29.893 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000102, 00000100, Japanese, 102
+2021-10-31 02:04:29.893 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000103, 00000100, Engilish, 103
+2021-10-31 02:04:29.893 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 6ia3K5Ag, 00000100, Other, 199
+2021-10-31 02:04:29.894 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000200, 00000000, Genre, 200
+2021-10-31 02:04:29.894 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000201, 00000200, Action, 201
+2021-10-31 02:04:29.895 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000202, 00000200, Comedy, 202
+2021-10-31 02:04:29.895 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000203, 00000200, Romance, 203
+2021-10-31 02:04:29.895 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: NNvjDlnn, 00000200, Adventure, 204
+2021-10-31 02:04:29.895 DEBUG c.tv.server.mapper.CategoryMapper.selectByExample :159  [32m        [0;39m <==      Total: 10
+2021-10-31 02:04:29.896 DEBUG c.t.s.mapper.ProgramMapper.selectByExample_COUNT  :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM program 
+2021-10-31 02:04:29.896 DEBUG c.t.s.mapper.ProgramMapper.selectByExample_COUNT  :159  [32m        [0;39m ==> Parameters: 
+2021-10-31 02:04:29.897 TRACE c.t.s.mapper.ProgramMapper.selectByExample_COUNT  :165  [32m        [0;39m <==    Columns: count(0)
+2021-10-31 02:04:29.897 TRACE c.t.s.mapper.ProgramMapper.selectByExample_COUNT  :165  [32m        [0;39m <==        Row: 1
+2021-10-31 02:04:29.897 DEBUG c.t.s.mapper.ProgramMapper.selectByExample_COUNT  :159  [32m        [0;39m <==      Total: 1
+2021-10-31 02:04:29.898 DEBUG com.tv.server.mapper.ProgramMapper.selectByExample:159  [32m        [0;39m ==>  Preparing: select id, title, summary, length, price, image, type, charge, status, favorites, sort, created_at, updated_at from program order by sort asc LIMIT ? 
+2021-10-31 02:04:29.899 DEBUG com.tv.server.mapper.ProgramMapper.selectByExample:159  [32m        [0;39m ==> Parameters: 5(Integer)
+2021-10-31 02:04:29.901 TRACE com.tv.server.mapper.ProgramMapper.selectByExample:165  [32m        [0;39m <==    Columns: id, title, summary, length, price, image, type, charge, status, favorites, sort, created_at, updated_at
+2021-10-31 02:04:29.901 TRACE com.tv.server.mapper.ProgramMapper.selectByExample:165  [32m        [0;39m <==        Row: 0QIiNoVB, 1111111111, test test test test test test test test test test test test test test test test test test test test test test , 6, null, null, S, C, D, null, null, 2021-10-30 07:56:08.0, 2021-10-31 00:55:24.46
+2021-10-31 02:04:29.902 DEBUG com.tv.server.mapper.ProgramMapper.selectByExample:159  [32m        [0;39m <==      Total: 1
+2021-10-31 02:04:31.403 DEBUG c.tv.server.mapper.CategoryMapper.selectByExample :159  [32m        [0;39m ==>  Preparing: select id, parent, name, sort from category order by sort asc 
+2021-10-31 02:04:31.404 DEBUG c.tv.server.mapper.CategoryMapper.selectByExample :159  [32m        [0;39m ==> Parameters: 
+2021-10-31 02:04:31.405 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==    Columns: id, parent, name, sort
+2021-10-31 02:04:31.405 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000100, 00000000, Language, 100
+2021-10-31 02:04:31.406 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000101, 00000100, Chinese, 101
+2021-10-31 02:04:31.406 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000102, 00000100, Japanese, 102
+2021-10-31 02:04:31.406 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000103, 00000100, Engilish, 103
+2021-10-31 02:04:31.407 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 6ia3K5Ag, 00000100, Other, 199
+2021-10-31 02:04:31.407 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000200, 00000000, Genre, 200
+2021-10-31 02:04:31.407 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000201, 00000200, Action, 201
+2021-10-31 02:04:31.407 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000202, 00000200, Comedy, 202
+2021-10-31 02:04:31.407 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000203, 00000200, Romance, 203
+2021-10-31 02:04:31.407 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: NNvjDlnn, 00000200, Adventure, 204
+2021-10-31 02:04:31.407 DEBUG c.tv.server.mapper.CategoryMapper.selectByExample :159  [32m        [0;39m <==      Total: 10
+2021-10-31 02:04:34.217 DEBUG c.tv.server.mapper.CategoryMapper.selectByExample :159  [32m        [0;39m ==>  Preparing: select id, parent, name, sort from category order by sort asc 
+2021-10-31 02:04:34.218 DEBUG c.t.s.mapper.ProgramMapper.selectByExample_COUNT  :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM program 
+2021-10-31 02:04:34.218 DEBUG c.tv.server.mapper.CategoryMapper.selectByExample :159  [32m        [0;39m ==> Parameters: 
+2021-10-31 02:04:34.218 DEBUG c.t.s.mapper.ProgramMapper.selectByExample_COUNT  :159  [32m        [0;39m ==> Parameters: 
+2021-10-31 02:04:34.219 TRACE c.t.s.mapper.ProgramMapper.selectByExample_COUNT  :165  [32m        [0;39m <==    Columns: count(0)
+2021-10-31 02:04:34.219 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==    Columns: id, parent, name, sort
+2021-10-31 02:04:34.219 TRACE c.t.s.mapper.ProgramMapper.selectByExample_COUNT  :165  [32m        [0;39m <==        Row: 1
+2021-10-31 02:04:34.219 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000100, 00000000, Language, 100
+2021-10-31 02:04:34.220 DEBUG c.t.s.mapper.ProgramMapper.selectByExample_COUNT  :159  [32m        [0;39m <==      Total: 1
+2021-10-31 02:04:34.220 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000101, 00000100, Chinese, 101
+2021-10-31 02:04:34.220 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000102, 00000100, Japanese, 102
+2021-10-31 02:04:34.220 DEBUG com.tv.server.mapper.ProgramMapper.selectByExample:159  [32m        [0;39m ==>  Preparing: select id, title, summary, length, price, image, type, charge, status, favorites, sort, created_at, updated_at from program order by sort asc LIMIT ? 
+2021-10-31 02:04:34.220 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000103, 00000100, Engilish, 103
+2021-10-31 02:04:34.220 DEBUG com.tv.server.mapper.ProgramMapper.selectByExample:159  [32m        [0;39m ==> Parameters: 5(Integer)
+2021-10-31 02:04:34.220 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 6ia3K5Ag, 00000100, Other, 199
+2021-10-31 02:04:34.221 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000200, 00000000, Genre, 200
+2021-10-31 02:04:34.221 TRACE com.tv.server.mapper.ProgramMapper.selectByExample:165  [32m        [0;39m <==    Columns: id, title, summary, length, price, image, type, charge, status, favorites, sort, created_at, updated_at
+2021-10-31 02:04:34.221 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000201, 00000200, Action, 201
+2021-10-31 02:04:34.221 TRACE com.tv.server.mapper.ProgramMapper.selectByExample:165  [32m        [0;39m <==        Row: 0QIiNoVB, 1111111111, test test test test test test test test test test test test test test test test test test test test test test , 6, null, null, S, C, D, null, null, 2021-10-30 07:56:08.0, 2021-10-31 00:55:24.46
+2021-10-31 02:04:34.221 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000202, 00000200, Comedy, 202
+2021-10-31 02:04:34.222 DEBUG com.tv.server.mapper.ProgramMapper.selectByExample:159  [32m        [0;39m <==      Total: 1
+2021-10-31 02:04:34.222 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000203, 00000200, Romance, 203
+2021-10-31 02:04:34.222 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: NNvjDlnn, 00000200, Adventure, 204
+2021-10-31 02:04:34.223 DEBUG c.tv.server.mapper.CategoryMapper.selectByExample :159  [32m        [0;39m <==      Total: 10
+2021-10-31 02:06:02.175 DEBUG c.t.s.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM chapter WHERE (program_id = ?) 
+2021-10-31 02:06:02.175 DEBUG c.t.s.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==> Parameters: 0QIiNoVB(String)
+2021-10-31 02:06:02.176 TRACE c.t.s.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==    Columns: count(0)
+2021-10-31 02:06:02.177 TRACE c.t.s.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==        Row: 2
+2021-10-31 02:06:02.177 DEBUG c.t.s.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m <==      Total: 1
+2021-10-31 02:06:02.177 DEBUG com.tv.server.mapper.ChapterMapper.selectByExample:159  [32m        [0;39m ==>  Preparing: select id, program_id, name from chapter WHERE ( program_id = ? ) LIMIT ? 
+2021-10-31 02:06:02.178 DEBUG com.tv.server.mapper.ChapterMapper.selectByExample:159  [32m        [0;39m ==> Parameters: 0QIiNoVB(String), 5(Integer)
+2021-10-31 02:06:02.179 TRACE com.tv.server.mapper.ChapterMapper.selectByExample:165  [32m        [0;39m <==    Columns: id, program_id, name
+2021-10-31 02:06:02.179 TRACE com.tv.server.mapper.ChapterMapper.selectByExample:165  [32m        [0;39m <==        Row: 0KpoxjMh, 0QIiNoVB, 2
+2021-10-31 02:06:02.180 TRACE com.tv.server.mapper.ChapterMapper.selectByExample:165  [32m        [0;39m <==        Row: RLsbMYyl, 0QIiNoVB, 1
+2021-10-31 02:06:02.180 DEBUG com.tv.server.mapper.ChapterMapper.selectByExample:159  [32m        [0;39m <==      Total: 2
+2021-10-31 02:06:19.450 DEBUG c.t.s.mapper.EpisodeMapper.selectByExample_COUNT  :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM episode WHERE (program_id = ? AND chapter_id = ?) 
+2021-10-31 02:06:19.451 DEBUG c.t.s.mapper.EpisodeMapper.selectByExample_COUNT  :159  [32m        [0;39m ==> Parameters: 0QIiNoVB(String), RLsbMYyl(String)
+2021-10-31 02:06:19.452 TRACE c.t.s.mapper.EpisodeMapper.selectByExample_COUNT  :165  [32m        [0;39m <==    Columns: count(0)
+2021-10-31 02:06:19.452 TRACE c.t.s.mapper.EpisodeMapper.selectByExample_COUNT  :165  [32m        [0;39m <==        Row: 4
+2021-10-31 02:06:19.452 DEBUG c.t.s.mapper.EpisodeMapper.selectByExample_COUNT  :159  [32m        [0;39m <==      Total: 1
+2021-10-31 02:06:19.453 DEBUG com.tv.server.mapper.EpisodeMapper.selectByExample:159  [32m        [0;39m ==>  Preparing: select id, title, program_id, chapter_id, video, time, charge, sort, created_at, updated_at from episode WHERE ( program_id = ? and chapter_id = ? ) order by sort asc LIMIT ? 
+2021-10-31 02:06:19.453 DEBUG com.tv.server.mapper.EpisodeMapper.selectByExample:159  [32m        [0;39m ==> Parameters: 0QIiNoVB(String), RLsbMYyl(String), 5(Integer)
+2021-10-31 02:06:19.454 TRACE com.tv.server.mapper.EpisodeMapper.selectByExample:165  [32m        [0;39m <==    Columns: id, title, program_id, chapter_id, video, time, charge, sort, created_at, updated_at
+2021-10-31 02:06:19.455 TRACE com.tv.server.mapper.EpisodeMapper.selectByExample:165  [32m        [0;39m <==        Row: Wi82ixLn, 4, 0QIiNoVB, RLsbMYyl, null, 1, null, 0, 2021-10-30 18:35:38.0, 2021-10-31 01:17:11.103
+2021-10-31 02:06:19.456 TRACE com.tv.server.mapper.EpisodeMapper.selectByExample:165  [32m        [0;39m <==        Row: 27bTKMiv, 1, 0QIiNoVB, RLsbMYyl, null, 1, null, 1, 2021-10-30 08:05:38.0, 2021-10-31 01:16:15.214
+2021-10-31 02:06:19.456 TRACE com.tv.server.mapper.EpisodeMapper.selectByExample:165  [32m        [0;39m <==        Row: XxvPFRHC, 2, 0QIiNoVB, RLsbMYyl, null, 2, null, 2, 2021-10-30 08:07:35.0, 2021-10-31 01:16:24.489
+2021-10-31 02:06:19.457 TRACE com.tv.server.mapper.EpisodeMapper.selectByExample:165  [32m        [0;39m <==        Row: GbF6Bgke, 3, 0QIiNoVB, RLsbMYyl, null, 2, null, 3, 2021-10-30 17:06:10.0, 2021-10-31 01:17:02.724
+2021-10-31 02:06:19.459 DEBUG com.tv.server.mapper.EpisodeMapper.selectByExample:159  [32m        [0;39m <==      Total: 4
+2021-10-31 02:06:50.286 DEBUG c.tv.server.mapper.CategoryMapper.selectByExample :159  [32m        [0;39m ==>  Preparing: select id, parent, name, sort from category order by sort asc 
+2021-10-31 02:06:50.286 DEBUG c.t.s.mapper.ProgramMapper.selectByExample_COUNT  :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM program 
+2021-10-31 02:06:50.286 DEBUG c.tv.server.mapper.CategoryMapper.selectByExample :159  [32m        [0;39m ==> Parameters: 
+2021-10-31 02:06:50.286 DEBUG c.t.s.mapper.ProgramMapper.selectByExample_COUNT  :159  [32m        [0;39m ==> Parameters: 
+2021-10-31 02:06:50.287 TRACE c.t.s.mapper.ProgramMapper.selectByExample_COUNT  :165  [32m        [0;39m <==    Columns: count(0)
+2021-10-31 02:06:50.288 TRACE c.t.s.mapper.ProgramMapper.selectByExample_COUNT  :165  [32m        [0;39m <==        Row: 1
+2021-10-31 02:06:50.288 DEBUG c.t.s.mapper.ProgramMapper.selectByExample_COUNT  :159  [32m        [0;39m <==      Total: 1
+2021-10-31 02:06:50.289 DEBUG com.tv.server.mapper.ProgramMapper.selectByExample:159  [32m        [0;39m ==>  Preparing: select id, title, summary, length, price, image, type, charge, status, favorites, sort, created_at, updated_at from program order by sort asc LIMIT ? 
+2021-10-31 02:06:50.289 DEBUG com.tv.server.mapper.ProgramMapper.selectByExample:159  [32m        [0;39m ==> Parameters: 5(Integer)
+2021-10-31 02:06:50.290 TRACE com.tv.server.mapper.ProgramMapper.selectByExample:165  [32m        [0;39m <==    Columns: id, title, summary, length, price, image, type, charge, status, favorites, sort, created_at, updated_at
+2021-10-31 02:06:50.290 TRACE com.tv.server.mapper.ProgramMapper.selectByExample:165  [32m        [0;39m <==        Row: 0QIiNoVB, 1111111111, test test test test test test test test test test test test test test test test test test test test test test , 6, null, null, S, C, D, null, null, 2021-10-30 07:56:08.0, 2021-10-31 00:55:24.46
+2021-10-31 02:06:50.291 DEBUG com.tv.server.mapper.ProgramMapper.selectByExample:159  [32m        [0;39m <==      Total: 1
+2021-10-31 02:06:50.291 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==    Columns: id, parent, name, sort
+2021-10-31 02:06:50.292 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000100, 00000000, Language, 100
+2021-10-31 02:06:50.293 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000101, 00000100, Chinese, 101
+2021-10-31 02:06:50.293 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000102, 00000100, Japanese, 102
+2021-10-31 02:06:50.294 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000103, 00000100, Engilish, 103
+2021-10-31 02:06:50.294 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 6ia3K5Ag, 00000100, Other, 199
+2021-10-31 02:06:50.295 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000200, 00000000, Genre, 200
+2021-10-31 02:06:50.295 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000201, 00000200, Action, 201
+2021-10-31 02:06:50.295 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000202, 00000200, Comedy, 202
+2021-10-31 02:06:50.295 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000203, 00000200, Romance, 203
+2021-10-31 02:06:50.295 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: NNvjDlnn, 00000200, Adventure, 204
+2021-10-31 02:06:50.296 DEBUG c.tv.server.mapper.CategoryMapper.selectByExample :159  [32m        [0;39m <==      Total: 10
+2021-10-31 02:06:53.016 DEBUG c.t.s.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM chapter WHERE (program_id = ?) 
+2021-10-31 02:06:53.017 DEBUG c.t.s.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==> Parameters: 0QIiNoVB(String)
+2021-10-31 02:06:53.018 TRACE c.t.s.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==    Columns: count(0)
+2021-10-31 02:06:53.018 TRACE c.t.s.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==        Row: 2
+2021-10-31 02:06:53.019 DEBUG c.t.s.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m <==      Total: 1
+2021-10-31 02:06:53.019 DEBUG com.tv.server.mapper.ChapterMapper.selectByExample:159  [32m        [0;39m ==>  Preparing: select id, program_id, name from chapter WHERE ( program_id = ? ) LIMIT ? 
+2021-10-31 02:06:53.020 DEBUG com.tv.server.mapper.ChapterMapper.selectByExample:159  [32m        [0;39m ==> Parameters: 0QIiNoVB(String), 5(Integer)
+2021-10-31 02:06:53.021 TRACE com.tv.server.mapper.ChapterMapper.selectByExample:165  [32m        [0;39m <==    Columns: id, program_id, name
+2021-10-31 02:06:53.021 TRACE com.tv.server.mapper.ChapterMapper.selectByExample:165  [32m        [0;39m <==        Row: 0KpoxjMh, 0QIiNoVB, 2
+2021-10-31 02:06:53.022 TRACE com.tv.server.mapper.ChapterMapper.selectByExample:165  [32m        [0;39m <==        Row: RLsbMYyl, 0QIiNoVB, 1
+2021-10-31 02:06:53.022 DEBUG com.tv.server.mapper.ChapterMapper.selectByExample:159  [32m        [0;39m <==      Total: 2
+2021-10-31 02:06:54.296 DEBUG c.t.s.mapper.EpisodeMapper.selectByExample_COUNT  :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM episode WHERE (program_id = ? AND chapter_id = ?) 
+2021-10-31 02:06:54.297 DEBUG c.t.s.mapper.EpisodeMapper.selectByExample_COUNT  :159  [32m        [0;39m ==> Parameters: 0QIiNoVB(String), RLsbMYyl(String)
+2021-10-31 02:06:54.298 TRACE c.t.s.mapper.EpisodeMapper.selectByExample_COUNT  :165  [32m        [0;39m <==    Columns: count(0)
+2021-10-31 02:06:54.298 TRACE c.t.s.mapper.EpisodeMapper.selectByExample_COUNT  :165  [32m        [0;39m <==        Row: 4
+2021-10-31 02:06:54.298 DEBUG c.t.s.mapper.EpisodeMapper.selectByExample_COUNT  :159  [32m        [0;39m <==      Total: 1
+2021-10-31 02:06:54.299 DEBUG com.tv.server.mapper.EpisodeMapper.selectByExample:159  [32m        [0;39m ==>  Preparing: select id, title, program_id, chapter_id, video, time, charge, sort, created_at, updated_at from episode WHERE ( program_id = ? and chapter_id = ? ) order by sort asc LIMIT ? 
+2021-10-31 02:06:54.300 DEBUG com.tv.server.mapper.EpisodeMapper.selectByExample:159  [32m        [0;39m ==> Parameters: 0QIiNoVB(String), RLsbMYyl(String), 5(Integer)
+2021-10-31 02:06:54.301 TRACE com.tv.server.mapper.EpisodeMapper.selectByExample:165  [32m        [0;39m <==    Columns: id, title, program_id, chapter_id, video, time, charge, sort, created_at, updated_at
+2021-10-31 02:06:54.302 TRACE com.tv.server.mapper.EpisodeMapper.selectByExample:165  [32m        [0;39m <==        Row: Wi82ixLn, 4, 0QIiNoVB, RLsbMYyl, null, 1, null, 0, 2021-10-30 18:35:38.0, 2021-10-31 01:17:11.103
+2021-10-31 02:06:54.302 TRACE com.tv.server.mapper.EpisodeMapper.selectByExample:165  [32m        [0;39m <==        Row: 27bTKMiv, 1, 0QIiNoVB, RLsbMYyl, null, 1, null, 1, 2021-10-30 08:05:38.0, 2021-10-31 01:16:15.214
+2021-10-31 02:06:54.302 TRACE com.tv.server.mapper.EpisodeMapper.selectByExample:165  [32m        [0;39m <==        Row: XxvPFRHC, 2, 0QIiNoVB, RLsbMYyl, null, 2, null, 2, 2021-10-30 08:07:35.0, 2021-10-31 01:16:24.489
+2021-10-31 02:06:54.303 TRACE com.tv.server.mapper.EpisodeMapper.selectByExample:165  [32m        [0;39m <==        Row: GbF6Bgke, 3, 0QIiNoVB, RLsbMYyl, null, 2, null, 3, 2021-10-30 17:06:10.0, 2021-10-31 01:17:02.724
+2021-10-31 02:06:54.303 DEBUG com.tv.server.mapper.EpisodeMapper.selectByExample:159  [32m        [0;39m <==      Total: 4
+2021-10-31 02:06:58.738 DEBUG c.tv.server.mapper.CategoryMapper.selectByExample :159  [32m        [0;39m ==>  Preparing: select id, parent, name, sort from category order by sort asc 
+2021-10-31 02:06:58.739 DEBUG c.tv.server.mapper.CategoryMapper.selectByExample :159  [32m        [0;39m ==> Parameters: 
+2021-10-31 02:06:58.740 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==    Columns: id, parent, name, sort
+2021-10-31 02:06:58.740 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000100, 00000000, Language, 100
+2021-10-31 02:06:58.741 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000101, 00000100, Chinese, 101
+2021-10-31 02:06:58.741 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000102, 00000100, Japanese, 102
+2021-10-31 02:06:58.741 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000103, 00000100, Engilish, 103
+2021-10-31 02:06:58.742 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 6ia3K5Ag, 00000100, Other, 199
+2021-10-31 02:06:58.742 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000200, 00000000, Genre, 200
+2021-10-31 02:06:58.742 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000201, 00000200, Action, 201
+2021-10-31 02:06:58.742 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000202, 00000200, Comedy, 202
+2021-10-31 02:06:58.743 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000203, 00000200, Romance, 203
+2021-10-31 02:06:58.743 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: NNvjDlnn, 00000200, Adventure, 204
+2021-10-31 02:06:58.744 DEBUG c.tv.server.mapper.CategoryMapper.selectByExample :159  [32m        [0;39m <==      Total: 10
+2021-10-31 02:06:58.751 DEBUG c.t.s.mapper.ProgramMapper.selectByExample_COUNT  :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM program 
+2021-10-31 02:06:58.751 DEBUG c.t.s.mapper.ProgramMapper.selectByExample_COUNT  :159  [32m        [0;39m ==> Parameters: 
+2021-10-31 02:06:58.753 TRACE c.t.s.mapper.ProgramMapper.selectByExample_COUNT  :165  [32m        [0;39m <==    Columns: count(0)
+2021-10-31 02:06:58.753 TRACE c.t.s.mapper.ProgramMapper.selectByExample_COUNT  :165  [32m        [0;39m <==        Row: 1
+2021-10-31 02:06:58.754 DEBUG c.t.s.mapper.ProgramMapper.selectByExample_COUNT  :159  [32m        [0;39m <==      Total: 1
+2021-10-31 02:06:58.754 DEBUG com.tv.server.mapper.ProgramMapper.selectByExample:159  [32m        [0;39m ==>  Preparing: select id, title, summary, length, price, image, type, charge, status, favorites, sort, created_at, updated_at from program order by sort asc LIMIT ? 
+2021-10-31 02:06:58.755 DEBUG com.tv.server.mapper.ProgramMapper.selectByExample:159  [32m        [0;39m ==> Parameters: 5(Integer)
+2021-10-31 02:06:58.756 TRACE com.tv.server.mapper.ProgramMapper.selectByExample:165  [32m        [0;39m <==    Columns: id, title, summary, length, price, image, type, charge, status, favorites, sort, created_at, updated_at
+2021-10-31 02:06:58.756 TRACE com.tv.server.mapper.ProgramMapper.selectByExample:165  [32m        [0;39m <==        Row: 0QIiNoVB, 1111111111, test test test test test test test test test test test test test test test test test test test test test test , 6, null, null, S, C, D, null, null, 2021-10-30 07:56:08.0, 2021-10-31 00:55:24.46
+2021-10-31 02:06:58.757 DEBUG com.tv.server.mapper.ProgramMapper.selectByExample:159  [32m        [0;39m <==      Total: 1
+2021-10-31 02:07:00.499 DEBUG c.t.s.mapper.ProgramCategoryMapper.selectByExample:159  [32m        [0;39m ==>  Preparing: select id, program_id, category_id from program_category WHERE ( program_id = ? ) 
+2021-10-31 02:07:00.499 DEBUG c.t.s.mapper.ProgramCategoryMapper.selectByExample:159  [32m        [0;39m ==> Parameters: 0QIiNoVB(String)
+2021-10-31 02:07:00.509 TRACE c.t.s.mapper.ProgramCategoryMapper.selectByExample:165  [32m        [0;39m <==    Columns: id, program_id, category_id
+2021-10-31 02:07:00.510 TRACE c.t.s.mapper.ProgramCategoryMapper.selectByExample:165  [32m        [0;39m <==        Row: 3jtu5DUP, 0QIiNoVB, 00000202
+2021-10-31 02:07:00.510 TRACE c.t.s.mapper.ProgramCategoryMapper.selectByExample:165  [32m        [0;39m <==        Row: dQKBRAtZ, 0QIiNoVB, 00000201
+2021-10-31 02:07:00.511 TRACE c.t.s.mapper.ProgramCategoryMapper.selectByExample:165  [32m        [0;39m <==        Row: e6UzkAdO, 0QIiNoVB, 00000102
+2021-10-31 02:07:00.512 TRACE c.t.s.mapper.ProgramCategoryMapper.selectByExample:165  [32m        [0;39m <==        Row: QazIxcMY, 0QIiNoVB, 00000100
+2021-10-31 02:07:00.512 TRACE c.t.s.mapper.ProgramCategoryMapper.selectByExample:165  [32m        [0;39m <==        Row: URoeTeEk, 0QIiNoVB, 00000200
+2021-10-31 02:07:00.512 DEBUG c.t.s.mapper.ProgramCategoryMapper.selectByExample:159  [32m        [0;39m <==      Total: 5
+2021-10-31 02:07:03.460 DEBUG c.t.s.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM chapter WHERE (program_id = ?) 
+2021-10-31 02:07:03.461 DEBUG c.t.s.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==> Parameters: 0QIiNoVB(String)
+2021-10-31 02:07:03.462 TRACE c.t.s.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==    Columns: count(0)
+2021-10-31 02:07:03.463 TRACE c.t.s.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==        Row: 2
+2021-10-31 02:07:03.463 DEBUG c.t.s.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m <==      Total: 1
+2021-10-31 02:07:03.464 DEBUG com.tv.server.mapper.ChapterMapper.selectByExample:159  [32m        [0;39m ==>  Preparing: select id, program_id, name from chapter WHERE ( program_id = ? ) LIMIT ? 
+2021-10-31 02:07:03.464 DEBUG com.tv.server.mapper.ChapterMapper.selectByExample:159  [32m        [0;39m ==> Parameters: 0QIiNoVB(String), 5(Integer)
+2021-10-31 02:07:03.466 TRACE com.tv.server.mapper.ChapterMapper.selectByExample:165  [32m        [0;39m <==    Columns: id, program_id, name
+2021-10-31 02:07:03.466 TRACE com.tv.server.mapper.ChapterMapper.selectByExample:165  [32m        [0;39m <==        Row: 0KpoxjMh, 0QIiNoVB, 2
+2021-10-31 02:07:03.467 TRACE com.tv.server.mapper.ChapterMapper.selectByExample:165  [32m        [0;39m <==        Row: RLsbMYyl, 0QIiNoVB, 1
+2021-10-31 02:07:03.468 DEBUG com.tv.server.mapper.ChapterMapper.selectByExample:159  [32m        [0;39m <==      Total: 2
+2021-10-31 02:07:09.319 DEBUG c.t.s.mapper.EpisodeMapper.selectByExample_COUNT  :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM episode WHERE (program_id = ? AND chapter_id = ?) 
+2021-10-31 02:07:09.320 DEBUG c.t.s.mapper.EpisodeMapper.selectByExample_COUNT  :159  [32m        [0;39m ==> Parameters: 0QIiNoVB(String), 0KpoxjMh(String)
+2021-10-31 02:07:09.321 TRACE c.t.s.mapper.EpisodeMapper.selectByExample_COUNT  :165  [32m        [0;39m <==    Columns: count(0)
+2021-10-31 02:07:09.321 TRACE c.t.s.mapper.EpisodeMapper.selectByExample_COUNT  :165  [32m        [0;39m <==        Row: 0
+2021-10-31 02:07:09.321 DEBUG c.t.s.mapper.EpisodeMapper.selectByExample_COUNT  :159  [32m        [0;39m <==      Total: 1
+2021-10-31 02:07:11.088 DEBUG c.tv.server.mapper.CategoryMapper.selectByExample :159  [32m        [0;39m ==>  Preparing: select id, parent, name, sort from category order by sort asc 
+2021-10-31 02:07:11.088 DEBUG c.tv.server.mapper.CategoryMapper.selectByExample :159  [32m        [0;39m ==> Parameters: 
+2021-10-31 02:07:11.089 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==    Columns: id, parent, name, sort
+2021-10-31 02:07:11.090 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000100, 00000000, Language, 100
+2021-10-31 02:07:11.090 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000101, 00000100, Chinese, 101
+2021-10-31 02:07:11.091 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000102, 00000100, Japanese, 102
+2021-10-31 02:07:11.092 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000103, 00000100, Engilish, 103
+2021-10-31 02:07:11.092 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 6ia3K5Ag, 00000100, Other, 199
+2021-10-31 02:07:11.092 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000200, 00000000, Genre, 200
+2021-10-31 02:07:11.093 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000201, 00000200, Action, 201
+2021-10-31 02:07:11.093 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000202, 00000200, Comedy, 202
+2021-10-31 02:07:11.093 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000203, 00000200, Romance, 203
+2021-10-31 02:07:11.094 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: NNvjDlnn, 00000200, Adventure, 204
+2021-10-31 02:07:11.094 DEBUG c.tv.server.mapper.CategoryMapper.selectByExample :159  [32m        [0;39m <==      Total: 10
+2021-10-31 02:07:11.096 DEBUG c.t.s.mapper.ProgramMapper.selectByExample_COUNT  :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM program 
+2021-10-31 02:07:11.097 DEBUG c.t.s.mapper.ProgramMapper.selectByExample_COUNT  :159  [32m        [0;39m ==> Parameters: 
+2021-10-31 02:07:11.097 TRACE c.t.s.mapper.ProgramMapper.selectByExample_COUNT  :165  [32m        [0;39m <==    Columns: count(0)
+2021-10-31 02:07:11.098 TRACE c.t.s.mapper.ProgramMapper.selectByExample_COUNT  :165  [32m        [0;39m <==        Row: 1
+2021-10-31 02:07:11.098 DEBUG c.t.s.mapper.ProgramMapper.selectByExample_COUNT  :159  [32m        [0;39m <==      Total: 1
+2021-10-31 02:07:11.099 DEBUG com.tv.server.mapper.ProgramMapper.selectByExample:159  [32m        [0;39m ==>  Preparing: select id, title, summary, length, price, image, type, charge, status, favorites, sort, created_at, updated_at from program order by sort asc LIMIT ? 
+2021-10-31 02:07:11.099 DEBUG com.tv.server.mapper.ProgramMapper.selectByExample:159  [32m        [0;39m ==> Parameters: 5(Integer)
+2021-10-31 02:07:11.100 TRACE com.tv.server.mapper.ProgramMapper.selectByExample:165  [32m        [0;39m <==    Columns: id, title, summary, length, price, image, type, charge, status, favorites, sort, created_at, updated_at
+2021-10-31 02:07:11.101 TRACE com.tv.server.mapper.ProgramMapper.selectByExample:165  [32m        [0;39m <==        Row: 0QIiNoVB, 1111111111, test test test test test test test test test test test test test test test test test test test test test test , 6, null, null, S, C, D, null, null, 2021-10-30 07:56:08.0, 2021-10-31 00:55:24.46
+2021-10-31 02:07:11.101 DEBUG com.tv.server.mapper.ProgramMapper.selectByExample:159  [32m        [0;39m <==      Total: 1
+2021-10-31 02:07:13.475 DEBUG c.t.s.mapper.EpisodeMapper.selectByExample_COUNT  :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM episode WHERE (program_id = ? AND chapter_id = ?) 
+2021-10-31 02:07:13.475 DEBUG c.t.s.mapper.EpisodeMapper.selectByExample_COUNT  :159  [32m        [0;39m ==> Parameters: 0QIiNoVB(String), 0KpoxjMh(String)
+2021-10-31 02:07:13.477 TRACE c.t.s.mapper.EpisodeMapper.selectByExample_COUNT  :165  [32m        [0;39m <==    Columns: count(0)
+2021-10-31 02:07:13.477 TRACE c.t.s.mapper.EpisodeMapper.selectByExample_COUNT  :165  [32m        [0;39m <==        Row: 0
+2021-10-31 02:07:13.478 DEBUG c.t.s.mapper.EpisodeMapper.selectByExample_COUNT  :159  [32m        [0;39m <==      Total: 1
+2021-10-31 02:07:15.792 DEBUG c.t.s.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM chapter WHERE (program_id = ?) 
+2021-10-31 02:07:15.793 DEBUG c.t.s.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==> Parameters: 0QIiNoVB(String)
+2021-10-31 02:07:15.794 TRACE c.t.s.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==    Columns: count(0)
+2021-10-31 02:07:15.794 TRACE c.t.s.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==        Row: 2
+2021-10-31 02:07:15.794 DEBUG c.t.s.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m <==      Total: 1
+2021-10-31 02:07:15.794 DEBUG com.tv.server.mapper.ChapterMapper.selectByExample:159  [32m        [0;39m ==>  Preparing: select id, program_id, name from chapter WHERE ( program_id = ? ) LIMIT ? 
+2021-10-31 02:07:15.795 DEBUG com.tv.server.mapper.ChapterMapper.selectByExample:159  [32m        [0;39m ==> Parameters: 0QIiNoVB(String), 5(Integer)
+2021-10-31 02:07:15.795 TRACE com.tv.server.mapper.ChapterMapper.selectByExample:165  [32m        [0;39m <==    Columns: id, program_id, name
+2021-10-31 02:07:15.797 TRACE com.tv.server.mapper.ChapterMapper.selectByExample:165  [32m        [0;39m <==        Row: 0KpoxjMh, 0QIiNoVB, 2
+2021-10-31 02:07:15.797 TRACE com.tv.server.mapper.ChapterMapper.selectByExample:165  [32m        [0;39m <==        Row: RLsbMYyl, 0QIiNoVB, 1
+2021-10-31 02:07:15.797 DEBUG com.tv.server.mapper.ChapterMapper.selectByExample:159  [32m        [0;39m <==      Total: 2
+2021-10-31 02:07:18.607 DEBUG c.t.s.mapper.EpisodeMapper.selectByExample_COUNT  :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM episode WHERE (program_id = ? AND chapter_id = ?) 
+2021-10-31 02:07:18.607 DEBUG c.t.s.mapper.EpisodeMapper.selectByExample_COUNT  :159  [32m        [0;39m ==> Parameters: 0QIiNoVB(String), RLsbMYyl(String)
+2021-10-31 02:07:18.608 TRACE c.t.s.mapper.EpisodeMapper.selectByExample_COUNT  :165  [32m        [0;39m <==    Columns: count(0)
+2021-10-31 02:07:18.608 TRACE c.t.s.mapper.EpisodeMapper.selectByExample_COUNT  :165  [32m        [0;39m <==        Row: 4
+2021-10-31 02:07:18.609 DEBUG c.t.s.mapper.EpisodeMapper.selectByExample_COUNT  :159  [32m        [0;39m <==      Total: 1
+2021-10-31 02:07:18.609 DEBUG com.tv.server.mapper.EpisodeMapper.selectByExample:159  [32m        [0;39m ==>  Preparing: select id, title, program_id, chapter_id, video, time, charge, sort, created_at, updated_at from episode WHERE ( program_id = ? and chapter_id = ? ) order by sort asc LIMIT ? 
+2021-10-31 02:07:18.610 DEBUG com.tv.server.mapper.EpisodeMapper.selectByExample:159  [32m        [0;39m ==> Parameters: 0QIiNoVB(String), RLsbMYyl(String), 5(Integer)
+2021-10-31 02:07:18.611 TRACE com.tv.server.mapper.EpisodeMapper.selectByExample:165  [32m        [0;39m <==    Columns: id, title, program_id, chapter_id, video, time, charge, sort, created_at, updated_at
+2021-10-31 02:07:18.611 TRACE com.tv.server.mapper.EpisodeMapper.selectByExample:165  [32m        [0;39m <==        Row: Wi82ixLn, 4, 0QIiNoVB, RLsbMYyl, null, 1, null, 0, 2021-10-30 18:35:38.0, 2021-10-31 01:17:11.103
+2021-10-31 02:07:18.612 TRACE com.tv.server.mapper.EpisodeMapper.selectByExample:165  [32m        [0;39m <==        Row: 27bTKMiv, 1, 0QIiNoVB, RLsbMYyl, null, 1, null, 1, 2021-10-30 08:05:38.0, 2021-10-31 01:16:15.214
+2021-10-31 02:07:18.612 TRACE com.tv.server.mapper.EpisodeMapper.selectByExample:165  [32m        [0;39m <==        Row: XxvPFRHC, 2, 0QIiNoVB, RLsbMYyl, null, 2, null, 2, 2021-10-30 08:07:35.0, 2021-10-31 01:16:24.489
+2021-10-31 02:07:18.612 TRACE com.tv.server.mapper.EpisodeMapper.selectByExample:165  [32m        [0;39m <==        Row: GbF6Bgke, 3, 0QIiNoVB, RLsbMYyl, null, 2, null, 3, 2021-10-30 17:06:10.0, 2021-10-31 01:17:02.724
+2021-10-31 02:07:18.613 DEBUG com.tv.server.mapper.EpisodeMapper.selectByExample:159  [32m        [0;39m <==      Total: 4
+2021-10-31 02:08:46.519 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-10-31 02:13:46.532 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-10-31 02:18:46.537 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-10-31 02:23:46.541 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-10-31 02:28:02.916 INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry   :65   [32m        [0;39m Unregistering application BUSINESS with eureka with status DOWN
+2021-10-31 02:28:02.916 WARN  com.netflix.discovery.DiscoveryClient             :1321 [32m        [0;39m Saw local status change event StatusChangeEvent [timestamp=1635647282916, current=DOWN, previous=UP]
+2021-10-31 02:28:02.917 INFO  com.netflix.discovery.DiscoveryClient             :844  [32m        [0;39m DiscoveryClient_BUSINESS/windows10.microdone.cn:business:9002: registering service...
+2021-10-31 02:28:02.922 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :208  [32m        [0;39m Shutting down ExecutorService 'applicationTaskExecutor'
+2021-10-31 02:28:02.923 INFO  com.netflix.discovery.DiscoveryClient             :906  [32m        [0;39m Shutting down DiscoveryClient ...
+2021-10-31 02:28:02.938 INFO  com.netflix.discovery.DiscoveryClient             :853  [32m        [0;39m DiscoveryClient_BUSINESS/windows10.microdone.cn:business:9002 - registration status: 204
+2021-10-31 02:28:02.939 INFO  com.netflix.discovery.DiscoveryClient             :940  [32m        [0;39m Unregistering ...
+2021-10-31 02:28:02.950 INFO  com.netflix.discovery.DiscoveryClient             :942  [32m        [0;39m DiscoveryClient_BUSINESS/windows10.microdone.cn:business:9002 - deregister  status: 200
+2021-10-31 02:28:02.955 INFO  com.netflix.discovery.DiscoveryClient             :929  [32m        [0;39m Completed shut down of DiscoveryClient
+2021-10-31 02:28:02.956 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m        [0;39m HikariPool-28 - Shutdown initiated...
+2021-10-31 02:28:02.964 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m        [0;39m HikariPool-28 - Shutdown completed.
+2021-10-31 02:28:05.162 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-10-31 02:28:06.681 INFO  com.tv.business.config.BusinessApplication        :651  [32m        [0;39m No active profile set, falling back to default profiles: default
+2021-10-31 02:28:07.343 INFO  o.springframework.cloud.context.scope.GenericScope:295  [32m        [0;39m BeanFactory id=93cf187d-1bf7-3c2e-9ca4-45016fb71853
+2021-10-31 02:28:07.363 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-10-31 02:28:07.369 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-10-31 02:28:07.395 WARN  org.apache.tomcat.util.modeler.Registry           :173  [32m        [0;39m The MBean registry cannot be disabled because it has already been initialised
+2021-10-31 02:28:07.637 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :92   [32m        [0;39m Tomcat initialized with port(s): 9002 (http)
+2021-10-31 02:28:07.637 INFO  org.apache.catalina.core.StandardService          :173  [32m        [0;39m Starting service [Tomcat]
+2021-10-31 02:28:07.638 INFO  org.apache.catalina.core.StandardEngine           :173  [32m        [0;39m Starting Servlet engine: [Apache Tomcat/9.0.29]
+2021-10-31 02:28:07.684 INFO  o.a.c.c.C.[Tomcat-15].[localhost].[/business]     :173  [32m        [0;39m Initializing Spring embedded WebApplicationContext
+2021-10-31 02:28:07.684 INFO  org.springframework.web.context.ContextLoader     :284  [32m        [0;39m Root WebApplicationContext: initialization completed in 998 ms
+2021-10-31 02:28:07.883 WARN  com.netflix.config.sources.URLConfigurationSource :121  [32m        [0;39m No URLs will be polled as dynamic configuration sources.
+2021-10-31 02:28:07.883 INFO  com.netflix.config.sources.URLConfigurationSource :122  [32m        [0;39m To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-10-31 02:28:07.940 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :171  [32m        [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2021-10-31 02:28:08.042 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m        [0;39m LiveReload server is running on port 35729
+2021-10-31 02:28:10.424 WARN  o.s.c.l.c.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger:106  [32m        [0;39m You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2021-10-31 02:28:10.430 WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger:81   [32m        [0;39m Spring Cloud LoadBalancer is currently working with default default cache. You can switch to using Caffeine cache, by adding it to the classpath.
+2021-10-31 02:28:10.442 INFO  o.s.cloud.netflix.eureka.InstanceInfoFactory      :72   [32m        [0;39m Setting initial instance status as: STARTING
+2021-10-31 02:28:10.444 INFO  com.netflix.discovery.DiscoveryClient             :365  [32m        [0;39m Initializing Eureka in region us-east-1
+2021-10-31 02:28:10.446 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :70   [32m        [0;39m Using JSON encoding codec LegacyJacksonJson
+2021-10-31 02:28:10.446 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :71   [32m        [0;39m Using JSON decoding codec LegacyJacksonJson
+2021-10-31 02:28:10.447 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :80   [32m        [0;39m Using XML encoding codec XStreamXml
+2021-10-31 02:28:10.448 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :81   [32m        [0;39m Using XML decoding codec XStreamXml
+2021-10-31 02:28:10.526 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-10-31 02:28:10.527 INFO  com.netflix.discovery.DiscoveryClient             :976  [32m        [0;39m Disable delta property : false
+2021-10-31 02:28:10.527 INFO  com.netflix.discovery.DiscoveryClient             :977  [32m        [0;39m Single vip registry refresh property : null
+2021-10-31 02:28:10.527 INFO  com.netflix.discovery.DiscoveryClient             :978  [32m        [0;39m Force full registry fetch : false
+2021-10-31 02:28:10.528 INFO  com.netflix.discovery.DiscoveryClient             :979  [32m        [0;39m Application is null : false
+2021-10-31 02:28:10.528 INFO  com.netflix.discovery.DiscoveryClient             :980  [32m        [0;39m Registered Applications size is zero : true
+2021-10-31 02:28:10.528 INFO  com.netflix.discovery.DiscoveryClient             :982  [32m        [0;39m Application version is -1: true
+2021-10-31 02:28:10.528 INFO  com.netflix.discovery.DiscoveryClient             :1065 [32m        [0;39m Getting all instance registry info from the eureka server
+2021-10-31 02:28:10.535 INFO  com.netflix.discovery.DiscoveryClient             :1074 [32m        [0;39m The response status is 200
+2021-10-31 02:28:10.536 INFO  com.netflix.discovery.DiscoveryClient             :1288 [32m        [0;39m Starting heartbeat executor: renew interval is: 30
+2021-10-31 02:28:10.537 INFO  com.netflix.discovery.InstanceInfoReplicator      :60   [32m        [0;39m InstanceInfoReplicator onDemand update allowed rate per min is 4
+2021-10-31 02:28:10.538 INFO  com.netflix.discovery.DiscoveryClient             :465  [32m        [0;39m Discovery Client initialized at timestamp 1635647290538 with initial instances count: 2
+2021-10-31 02:28:10.540 INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry   :41   [32m        [0;39m Registering application BUSINESS with eureka with status UP
+2021-10-31 02:28:10.540 INFO  com.netflix.discovery.DiscoveryClient             :1323 [32m        [0;39m Saw local status change event StatusChangeEvent [timestamp=1635647290540, current=UP, previous=STARTING]
+2021-10-31 02:28:10.540 INFO  com.netflix.discovery.DiscoveryClient             :844  [32m        [0;39m DiscoveryClient_BUSINESS/windows10.microdone.cn:business:9002: registering service...
+2021-10-31 02:28:10.547 INFO  com.netflix.discovery.DiscoveryClient             :853  [32m        [0;39m DiscoveryClient_BUSINESS/windows10.microdone.cn:business:9002 - registration status: 204
+2021-10-31 02:28:10.554 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :204  [32m        [0;39m Tomcat started on port(s): 9002 (http) with context path '/business'
+2021-10-31 02:28:10.554 INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration         :145  [32m        [0;39m Updating port to 9002
+2021-10-31 02:28:11.324 INFO  com.tv.business.config.BusinessApplication        :61   [32m        [0;39m Started BusinessApplication in 7.315 seconds (JVM running for 36328.774)
+2021-10-31 02:28:11.325 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m        [0;39m Condition evaluation unchanged
+2021-10-31 02:28:11.326 INFO  com.tv.business.config.BusinessApplication        :22   [32m        [0;39m started successfully!!
+2021-10-31 02:28:11.326 INFO  com.tv.business.config.BusinessApplication        :23   [32m        [0;39m business address: 	http://127.0.0.1:9002
+2021-10-31 02:28:34.235 INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry   :65   [32m        [0;39m Unregistering application BUSINESS with eureka with status DOWN
+2021-10-31 02:28:34.236 WARN  com.netflix.discovery.DiscoveryClient             :1321 [32m        [0;39m Saw local status change event StatusChangeEvent [timestamp=1635647314236, current=DOWN, previous=UP]
+2021-10-31 02:28:34.236 INFO  com.netflix.discovery.DiscoveryClient             :844  [32m        [0;39m DiscoveryClient_BUSINESS/windows10.microdone.cn:business:9002: registering service...
+2021-10-31 02:28:34.238 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :208  [32m        [0;39m Shutting down ExecutorService 'applicationTaskExecutor'
+2021-10-31 02:28:34.239 INFO  com.netflix.discovery.DiscoveryClient             :906  [32m        [0;39m Shutting down DiscoveryClient ...
+2021-10-31 02:28:34.246 INFO  com.netflix.discovery.DiscoveryClient             :853  [32m        [0;39m DiscoveryClient_BUSINESS/windows10.microdone.cn:business:9002 - registration status: 204
+2021-10-31 02:28:34.246 INFO  com.netflix.discovery.DiscoveryClient             :940  [32m        [0;39m Unregistering ...
+2021-10-31 02:28:34.262 INFO  com.netflix.discovery.DiscoveryClient             :942  [32m        [0;39m DiscoveryClient_BUSINESS/windows10.microdone.cn:business:9002 - deregister  status: 200
+2021-10-31 02:28:34.265 INFO  com.netflix.discovery.DiscoveryClient             :929  [32m        [0;39m Completed shut down of DiscoveryClient
+2021-10-31 02:28:35.765 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-10-31 02:28:36.657 INFO  com.tv.business.config.BusinessApplication        :651  [32m        [0;39m No active profile set, falling back to default profiles: default
+2021-10-31 02:28:37.031 INFO  o.springframework.cloud.context.scope.GenericScope:295  [32m        [0;39m BeanFactory id=93cf187d-1bf7-3c2e-9ca4-45016fb71853
+2021-10-31 02:28:37.048 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-10-31 02:28:37.051 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-10-31 02:28:37.072 WARN  org.apache.tomcat.util.modeler.Registry           :173  [32m        [0;39m The MBean registry cannot be disabled because it has already been initialised
+2021-10-31 02:28:37.256 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :92   [32m        [0;39m Tomcat initialized with port(s): 9002 (http)
+2021-10-31 02:28:37.257 INFO  org.apache.catalina.core.StandardService          :173  [32m        [0;39m Starting service [Tomcat]
+2021-10-31 02:28:37.257 INFO  org.apache.catalina.core.StandardEngine           :173  [32m        [0;39m Starting Servlet engine: [Apache Tomcat/9.0.29]
+2021-10-31 02:28:37.300 INFO  o.a.c.c.C.[Tomcat-15].[localhost].[/business]     :173  [32m        [0;39m Initializing Spring embedded WebApplicationContext
+2021-10-31 02:28:37.300 INFO  org.springframework.web.context.ContextLoader     :284  [32m        [0;39m Root WebApplicationContext: initialization completed in 640 ms
+2021-10-31 02:28:37.384 WARN  com.netflix.config.sources.URLConfigurationSource :121  [32m        [0;39m No URLs will be polled as dynamic configuration sources.
+2021-10-31 02:28:37.385 INFO  com.netflix.config.sources.URLConfigurationSource :122  [32m        [0;39m To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-10-31 02:28:37.419 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :171  [32m        [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2021-10-31 02:28:37.476 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m        [0;39m LiveReload server is running on port 35729
+2021-10-31 02:28:39.233 WARN  o.s.c.l.c.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger:106  [32m        [0;39m You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2021-10-31 02:28:39.237 WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger:81   [32m        [0;39m Spring Cloud LoadBalancer is currently working with default default cache. You can switch to using Caffeine cache, by adding it to the classpath.
+2021-10-31 02:28:39.243 INFO  o.s.cloud.netflix.eureka.InstanceInfoFactory      :72   [32m        [0;39m Setting initial instance status as: STARTING
+2021-10-31 02:28:39.245 INFO  com.netflix.discovery.DiscoveryClient             :365  [32m        [0;39m Initializing Eureka in region us-east-1
+2021-10-31 02:28:39.246 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :70   [32m        [0;39m Using JSON encoding codec LegacyJacksonJson
+2021-10-31 02:28:39.246 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :71   [32m        [0;39m Using JSON decoding codec LegacyJacksonJson
+2021-10-31 02:28:39.246 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :80   [32m        [0;39m Using XML encoding codec XStreamXml
+2021-10-31 02:28:39.246 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :81   [32m        [0;39m Using XML decoding codec XStreamXml
+2021-10-31 02:28:39.288 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-10-31 02:28:39.289 INFO  com.netflix.discovery.DiscoveryClient             :976  [32m        [0;39m Disable delta property : false
+2021-10-31 02:28:39.289 INFO  com.netflix.discovery.DiscoveryClient             :977  [32m        [0;39m Single vip registry refresh property : null
+2021-10-31 02:28:39.289 INFO  com.netflix.discovery.DiscoveryClient             :978  [32m        [0;39m Force full registry fetch : false
+2021-10-31 02:28:39.289 INFO  com.netflix.discovery.DiscoveryClient             :979  [32m        [0;39m Application is null : false
+2021-10-31 02:28:39.290 INFO  com.netflix.discovery.DiscoveryClient             :980  [32m        [0;39m Registered Applications size is zero : true
+2021-10-31 02:28:39.290 INFO  com.netflix.discovery.DiscoveryClient             :982  [32m        [0;39m Application version is -1: true
+2021-10-31 02:28:39.290 INFO  com.netflix.discovery.DiscoveryClient             :1065 [32m        [0;39m Getting all instance registry info from the eureka server
+2021-10-31 02:28:39.292 INFO  com.netflix.discovery.DiscoveryClient             :1074 [32m        [0;39m The response status is 200
+2021-10-31 02:28:39.293 INFO  com.netflix.discovery.DiscoveryClient             :1288 [32m        [0;39m Starting heartbeat executor: renew interval is: 30
+2021-10-31 02:28:39.293 INFO  com.netflix.discovery.InstanceInfoReplicator      :60   [32m        [0;39m InstanceInfoReplicator onDemand update allowed rate per min is 4
+2021-10-31 02:28:39.294 INFO  com.netflix.discovery.DiscoveryClient             :465  [32m        [0;39m Discovery Client initialized at timestamp 1635647319294 with initial instances count: 2
+2021-10-31 02:28:39.294 INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry   :41   [32m        [0;39m Registering application BUSINESS with eureka with status UP
+2021-10-31 02:28:39.294 INFO  com.netflix.discovery.DiscoveryClient             :1323 [32m        [0;39m Saw local status change event StatusChangeEvent [timestamp=1635647319294, current=UP, previous=STARTING]
+2021-10-31 02:28:39.295 INFO  com.netflix.discovery.DiscoveryClient             :844  [32m        [0;39m DiscoveryClient_BUSINESS/windows10.microdone.cn:business:9002: registering service...
+2021-10-31 02:28:39.302 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :204  [32m        [0;39m Tomcat started on port(s): 9002 (http) with context path '/business'
+2021-10-31 02:28:39.302 INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration         :145  [32m        [0;39m Updating port to 9002
+2021-10-31 02:28:39.306 INFO  com.netflix.discovery.DiscoveryClient             :853  [32m        [0;39m DiscoveryClient_BUSINESS/windows10.microdone.cn:business:9002 - registration status: 204
+2021-10-31 02:28:39.865 INFO  com.tv.business.config.BusinessApplication        :61   [32m        [0;39m Started BusinessApplication in 4.807 seconds (JVM running for 36357.315)
+2021-10-31 02:28:39.866 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m        [0;39m Condition evaluation unchanged
+2021-10-31 02:28:39.866 INFO  com.tv.business.config.BusinessApplication        :22   [32m        [0;39m started successfully!!
+2021-10-31 02:28:39.866 INFO  com.tv.business.config.BusinessApplication        :23   [32m        [0;39m business address: 	http://127.0.0.1:9002
+2021-10-31 02:28:55.550 INFO  o.a.c.c.C.[Tomcat-15].[localhost].[/business]     :173  [32m        [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-10-31 02:28:55.551 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m        [0;39m Initializing Servlet 'dispatcherServlet'
+2021-10-31 02:28:55.554 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m        [0;39m Completed initialization in 3 ms
+2021-10-31 02:28:55.567 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m        [0;39m HikariPool-29 - Starting...
+2021-10-31 02:28:55.573 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m        [0;39m HikariPool-29 - Start completed.
+2021-10-31 02:28:55.573 DEBUG c.tv.server.mapper.CategoryMapper.selectByExample :159  [32m        [0;39m ==>  Preparing: select id, parent, name, sort from category order by sort asc 
+2021-10-31 02:28:55.575 DEBUG c.tv.server.mapper.CategoryMapper.selectByExample :159  [32m        [0;39m ==> Parameters: 
+2021-10-31 02:28:55.576 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==    Columns: id, parent, name, sort
+2021-10-31 02:28:55.576 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000100, 00000000, Language, 100
+2021-10-31 02:28:55.576 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000101, 00000100, Chinese, 101
+2021-10-31 02:28:55.577 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000102, 00000100, Japanese, 102
+2021-10-31 02:28:55.577 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000103, 00000100, Engilish, 103
+2021-10-31 02:28:55.578 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 6ia3K5Ag, 00000100, Other, 199
+2021-10-31 02:28:55.578 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000200, 00000000, Genre, 200
+2021-10-31 02:28:55.579 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000201, 00000200, Action, 201
+2021-10-31 02:28:55.578 DEBUG c.t.s.mapper.ProgramMapper.selectByExample_COUNT  :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM program 
+2021-10-31 02:28:55.579 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000202, 00000200, Comedy, 202
+2021-10-31 02:28:55.579 DEBUG c.t.s.mapper.ProgramMapper.selectByExample_COUNT  :159  [32m        [0;39m ==> Parameters: 
+2021-10-31 02:28:55.579 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000203, 00000200, Romance, 203
+2021-10-31 02:28:55.581 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: NNvjDlnn, 00000200, Adventure, 204
+2021-10-31 02:28:55.581 DEBUG c.tv.server.mapper.CategoryMapper.selectByExample :159  [32m        [0;39m <==      Total: 10
+2021-10-31 02:28:55.581 TRACE c.t.s.mapper.ProgramMapper.selectByExample_COUNT  :165  [32m        [0;39m <==    Columns: count(0)
+2021-10-31 02:28:55.582 TRACE c.t.s.mapper.ProgramMapper.selectByExample_COUNT  :165  [32m        [0;39m <==        Row: 1
+2021-10-31 02:28:55.582 DEBUG c.t.s.mapper.ProgramMapper.selectByExample_COUNT  :159  [32m        [0;39m <==      Total: 1
+2021-10-31 02:28:55.583 DEBUG com.tv.server.mapper.ProgramMapper.selectByExample:159  [32m        [0;39m ==>  Preparing: select id, title, summary, length, price, image, type, charge, status, favorites, sort, created_at, updated_at from program order by sort asc LIMIT ? 
+2021-10-31 02:28:55.583 DEBUG com.tv.server.mapper.ProgramMapper.selectByExample:159  [32m        [0;39m ==> Parameters: 5(Integer)
+2021-10-31 02:28:55.584 TRACE com.tv.server.mapper.ProgramMapper.selectByExample:165  [32m        [0;39m <==    Columns: id, title, summary, length, price, image, type, charge, status, favorites, sort, created_at, updated_at
+2021-10-31 02:28:55.585 TRACE com.tv.server.mapper.ProgramMapper.selectByExample:165  [32m        [0;39m <==        Row: 0QIiNoVB, 1111111111, test test test test test test test test test test test test test test test test test test test test test test , 6, null, null, S, C, D, null, null, 2021-10-30 07:56:08.0, 2021-10-31 00:55:24.46
+2021-10-31 02:28:55.585 DEBUG com.tv.server.mapper.ProgramMapper.selectByExample:159  [32m        [0;39m <==      Total: 1
+2021-10-31 02:28:59.110 DEBUG c.t.s.mapper.ProgramCategoryMapper.selectByExample:159  [32m        [0;39m ==>  Preparing: select id, program_id, category_id from program_category WHERE ( program_id = ? ) 
+2021-10-31 02:28:59.111 DEBUG c.t.s.mapper.ProgramCategoryMapper.selectByExample:159  [32m        [0;39m ==> Parameters: 0QIiNoVB(String)
+2021-10-31 02:28:59.115 TRACE c.t.s.mapper.ProgramCategoryMapper.selectByExample:165  [32m        [0;39m <==    Columns: id, program_id, category_id
+2021-10-31 02:28:59.115 TRACE c.t.s.mapper.ProgramCategoryMapper.selectByExample:165  [32m        [0;39m <==        Row: 3jtu5DUP, 0QIiNoVB, 00000202
+2021-10-31 02:28:59.116 TRACE c.t.s.mapper.ProgramCategoryMapper.selectByExample:165  [32m        [0;39m <==        Row: dQKBRAtZ, 0QIiNoVB, 00000201
+2021-10-31 02:28:59.116 TRACE c.t.s.mapper.ProgramCategoryMapper.selectByExample:165  [32m        [0;39m <==        Row: e6UzkAdO, 0QIiNoVB, 00000102
+2021-10-31 02:28:59.116 TRACE c.t.s.mapper.ProgramCategoryMapper.selectByExample:165  [32m        [0;39m <==        Row: QazIxcMY, 0QIiNoVB, 00000100
+2021-10-31 02:28:59.117 TRACE c.t.s.mapper.ProgramCategoryMapper.selectByExample:165  [32m        [0;39m <==        Row: URoeTeEk, 0QIiNoVB, 00000200
+2021-10-31 02:28:59.117 DEBUG c.t.s.mapper.ProgramCategoryMapper.selectByExample:159  [32m        [0;39m <==      Total: 5
+2021-10-31 02:31:32.016 DEBUG c.tv.server.mapper.CategoryMapper.selectByExample :159  [32m        [0;39m ==>  Preparing: select id, parent, name, sort from category order by sort asc 
+2021-10-31 02:31:32.017 DEBUG c.tv.server.mapper.CategoryMapper.selectByExample :159  [32m        [0;39m ==> Parameters: 
+2021-10-31 02:31:32.018 DEBUG c.t.s.mapper.ProgramMapper.selectByExample_COUNT  :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM program 
+2021-10-31 02:31:32.018 DEBUG c.t.s.mapper.ProgramMapper.selectByExample_COUNT  :159  [32m        [0;39m ==> Parameters: 
+2021-10-31 02:31:32.018 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==    Columns: id, parent, name, sort
+2021-10-31 02:31:32.019 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000100, 00000000, Language, 100
+2021-10-31 02:31:32.019 TRACE c.t.s.mapper.ProgramMapper.selectByExample_COUNT  :165  [32m        [0;39m <==    Columns: count(0)
+2021-10-31 02:31:32.019 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000101, 00000100, Chinese, 101
+2021-10-31 02:31:32.019 TRACE c.t.s.mapper.ProgramMapper.selectByExample_COUNT  :165  [32m        [0;39m <==        Row: 1
+2021-10-31 02:31:32.019 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000102, 00000100, Japanese, 102
+2021-10-31 02:31:32.020 DEBUG c.t.s.mapper.ProgramMapper.selectByExample_COUNT  :159  [32m        [0;39m <==      Total: 1
+2021-10-31 02:31:32.020 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000103, 00000100, Engilish, 103
+2021-10-31 02:31:32.020 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 6ia3K5Ag, 00000100, Other, 199
+2021-10-31 02:31:32.020 DEBUG com.tv.server.mapper.ProgramMapper.selectByExample:159  [32m        [0;39m ==>  Preparing: select id, title, summary, length, price, image, type, charge, status, favorites, sort, created_at, updated_at from program order by sort asc LIMIT ? 
+2021-10-31 02:31:32.020 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000200, 00000000, Genre, 200
+2021-10-31 02:31:32.020 DEBUG com.tv.server.mapper.ProgramMapper.selectByExample:159  [32m        [0;39m ==> Parameters: 5(Integer)
+2021-10-31 02:31:32.021 TRACE com.tv.server.mapper.ProgramMapper.selectByExample:165  [32m        [0;39m <==    Columns: id, title, summary, length, price, image, type, charge, status, favorites, sort, created_at, updated_at
+2021-10-31 02:31:32.022 TRACE com.tv.server.mapper.ProgramMapper.selectByExample:165  [32m        [0;39m <==        Row: 0QIiNoVB, 1111111111, test test test test test test test test test test test test test test test test test test test test test test , 6, null, null, S, C, D, null, null, 2021-10-30 07:56:08.0, 2021-10-31 00:55:24.46
+2021-10-31 02:31:32.023 DEBUG com.tv.server.mapper.ProgramMapper.selectByExample:159  [32m        [0;39m <==      Total: 1
+2021-10-31 02:31:32.023 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000201, 00000200, Action, 201
+2021-10-31 02:31:32.024 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000202, 00000200, Comedy, 202
+2021-10-31 02:31:32.024 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000203, 00000200, Romance, 203
+2021-10-31 02:31:32.025 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: NNvjDlnn, 00000200, Adventure, 204
+2021-10-31 02:31:32.026 DEBUG c.tv.server.mapper.CategoryMapper.selectByExample :159  [32m        [0;39m <==      Total: 10
+2021-10-31 02:31:44.174 DEBUG c.t.s.mapper.ProgramCategoryMapper.selectByExample:159  [32m        [0;39m ==>  Preparing: select id, program_id, category_id from program_category WHERE ( program_id = ? ) 
+2021-10-31 02:31:44.174 DEBUG c.t.s.mapper.ProgramCategoryMapper.selectByExample:159  [32m        [0;39m ==> Parameters: 0QIiNoVB(String)
+2021-10-31 02:31:44.175 TRACE c.t.s.mapper.ProgramCategoryMapper.selectByExample:165  [32m        [0;39m <==    Columns: id, program_id, category_id
+2021-10-31 02:31:44.175 TRACE c.t.s.mapper.ProgramCategoryMapper.selectByExample:165  [32m        [0;39m <==        Row: 3jtu5DUP, 0QIiNoVB, 00000202
+2021-10-31 02:31:44.176 TRACE c.t.s.mapper.ProgramCategoryMapper.selectByExample:165  [32m        [0;39m <==        Row: dQKBRAtZ, 0QIiNoVB, 00000201
+2021-10-31 02:31:44.176 TRACE c.t.s.mapper.ProgramCategoryMapper.selectByExample:165  [32m        [0;39m <==        Row: e6UzkAdO, 0QIiNoVB, 00000102
+2021-10-31 02:31:44.176 TRACE c.t.s.mapper.ProgramCategoryMapper.selectByExample:165  [32m        [0;39m <==        Row: QazIxcMY, 0QIiNoVB, 00000100
+2021-10-31 02:31:44.176 TRACE c.t.s.mapper.ProgramCategoryMapper.selectByExample:165  [32m        [0;39m <==        Row: URoeTeEk, 0QIiNoVB, 00000200
+2021-10-31 02:31:44.176 DEBUG c.t.s.mapper.ProgramCategoryMapper.selectByExample:159  [32m        [0;39m <==      Total: 5
+2021-10-31 02:32:41.331 DEBUG c.t.s.mapper.ProgramCategoryMapper.selectByExample:159  [32m        [0;39m ==>  Preparing: select id, program_id, category_id from program_category WHERE ( program_id = ? ) 
+2021-10-31 02:32:41.332 DEBUG c.t.s.mapper.ProgramCategoryMapper.selectByExample:159  [32m        [0;39m ==> Parameters: 0QIiNoVB(String)
+2021-10-31 02:32:41.333 TRACE c.t.s.mapper.ProgramCategoryMapper.selectByExample:165  [32m        [0;39m <==    Columns: id, program_id, category_id
+2021-10-31 02:32:41.333 TRACE c.t.s.mapper.ProgramCategoryMapper.selectByExample:165  [32m        [0;39m <==        Row: 3jtu5DUP, 0QIiNoVB, 00000202
+2021-10-31 02:32:41.334 TRACE c.t.s.mapper.ProgramCategoryMapper.selectByExample:165  [32m        [0;39m <==        Row: dQKBRAtZ, 0QIiNoVB, 00000201
+2021-10-31 02:32:41.334 TRACE c.t.s.mapper.ProgramCategoryMapper.selectByExample:165  [32m        [0;39m <==        Row: e6UzkAdO, 0QIiNoVB, 00000102
+2021-10-31 02:32:41.334 TRACE c.t.s.mapper.ProgramCategoryMapper.selectByExample:165  [32m        [0;39m <==        Row: QazIxcMY, 0QIiNoVB, 00000100
+2021-10-31 02:32:41.334 TRACE c.t.s.mapper.ProgramCategoryMapper.selectByExample:165  [32m        [0;39m <==        Row: URoeTeEk, 0QIiNoVB, 00000200
+2021-10-31 02:32:41.334 DEBUG c.t.s.mapper.ProgramCategoryMapper.selectByExample:159  [32m        [0;39m <==      Total: 5
+2021-10-31 02:33:39.296 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-10-31 02:35:42.364 DEBUG c.t.s.mapper.ProgramCategoryMapper.selectByExample:159  [32m        [0;39m ==>  Preparing: select id, program_id, category_id from program_category WHERE ( program_id = ? ) 
+2021-10-31 02:35:42.364 DEBUG c.t.s.mapper.ProgramCategoryMapper.selectByExample:159  [32m        [0;39m ==> Parameters: 0QIiNoVB(String)
+2021-10-31 02:35:42.367 TRACE c.t.s.mapper.ProgramCategoryMapper.selectByExample:165  [32m        [0;39m <==    Columns: id, program_id, category_id
+2021-10-31 02:35:42.368 TRACE c.t.s.mapper.ProgramCategoryMapper.selectByExample:165  [32m        [0;39m <==        Row: 3jtu5DUP, 0QIiNoVB, 00000202
+2021-10-31 02:35:42.369 TRACE c.t.s.mapper.ProgramCategoryMapper.selectByExample:165  [32m        [0;39m <==        Row: dQKBRAtZ, 0QIiNoVB, 00000201
+2021-10-31 02:35:42.370 TRACE c.t.s.mapper.ProgramCategoryMapper.selectByExample:165  [32m        [0;39m <==        Row: e6UzkAdO, 0QIiNoVB, 00000102
+2021-10-31 02:35:42.370 TRACE c.t.s.mapper.ProgramCategoryMapper.selectByExample:165  [32m        [0;39m <==        Row: QazIxcMY, 0QIiNoVB, 00000100
+2021-10-31 02:35:42.370 TRACE c.t.s.mapper.ProgramCategoryMapper.selectByExample:165  [32m        [0;39m <==        Row: URoeTeEk, 0QIiNoVB, 00000200
+2021-10-31 02:35:42.371 DEBUG c.t.s.mapper.ProgramCategoryMapper.selectByExample:159  [32m        [0;39m <==      Total: 5
+2021-10-31 02:38:39.302 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-10-31 02:43:39.303 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-10-31 02:45:38.275 DEBUG c.tv.server.mapper.CategoryMapper.selectByExample :159  [32m        [0;39m ==>  Preparing: select id, parent, name, sort from category order by sort asc 
+2021-10-31 02:45:38.275 DEBUG c.tv.server.mapper.CategoryMapper.selectByExample :159  [32m        [0;39m ==> Parameters: 
+2021-10-31 02:45:38.275 DEBUG c.t.s.mapper.ProgramMapper.selectByExample_COUNT  :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM program 
+2021-10-31 02:45:38.276 DEBUG c.t.s.mapper.ProgramMapper.selectByExample_COUNT  :159  [32m        [0;39m ==> Parameters: 
+2021-10-31 02:45:38.276 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==    Columns: id, parent, name, sort
+2021-10-31 02:45:38.276 TRACE c.t.s.mapper.ProgramMapper.selectByExample_COUNT  :165  [32m        [0;39m <==    Columns: count(0)
+2021-10-31 02:45:38.277 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000100, 00000000, Language, 100
+2021-10-31 02:45:38.277 TRACE c.t.s.mapper.ProgramMapper.selectByExample_COUNT  :165  [32m        [0;39m <==        Row: 1
+2021-10-31 02:45:38.277 DEBUG c.t.s.mapper.ProgramMapper.selectByExample_COUNT  :159  [32m        [0;39m <==      Total: 1
+2021-10-31 02:45:38.277 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000101, 00000100, Chinese, 101
+2021-10-31 02:45:38.277 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000102, 00000100, Japanese, 102
+2021-10-31 02:45:38.278 DEBUG com.tv.server.mapper.ProgramMapper.selectByExample:159  [32m        [0;39m ==>  Preparing: select id, title, summary, length, price, image, type, charge, status, favorites, sort, created_at, updated_at from program order by sort asc LIMIT ? 
+2021-10-31 02:45:38.278 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000103, 00000100, Engilish, 103
+2021-10-31 02:45:38.278 DEBUG com.tv.server.mapper.ProgramMapper.selectByExample:159  [32m        [0;39m ==> Parameters: 5(Integer)
+2021-10-31 02:45:38.278 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 6ia3K5Ag, 00000100, Other, 199
+2021-10-31 02:45:38.278 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000200, 00000000, Genre, 200
+2021-10-31 02:45:38.279 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000201, 00000200, Action, 201
+2021-10-31 02:45:38.279 TRACE com.tv.server.mapper.ProgramMapper.selectByExample:165  [32m        [0;39m <==    Columns: id, title, summary, length, price, image, type, charge, status, favorites, sort, created_at, updated_at
+2021-10-31 02:45:38.279 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000202, 00000200, Comedy, 202
+2021-10-31 02:45:38.279 TRACE com.tv.server.mapper.ProgramMapper.selectByExample:165  [32m        [0;39m <==        Row: 0QIiNoVB, 1111111111, test test test test test test test test test test test test test test test test test test test test test test , 6, null, null, S, C, D, null, null, 2021-10-30 07:56:08.0, 2021-10-31 00:55:24.46
+2021-10-31 02:45:38.280 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000203, 00000200, Romance, 203
+2021-10-31 02:45:38.280 DEBUG com.tv.server.mapper.ProgramMapper.selectByExample:159  [32m        [0;39m <==      Total: 1
+2021-10-31 02:45:38.280 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: NNvjDlnn, 00000200, Adventure, 204
+2021-10-31 02:45:38.280 DEBUG c.tv.server.mapper.CategoryMapper.selectByExample :159  [32m        [0;39m <==      Total: 10
+2021-10-31 02:46:32.645 DEBUG c.tv.server.mapper.CategoryMapper.selectByExample :159  [32m        [0;39m ==>  Preparing: select id, parent, name, sort from category order by sort asc 
+2021-10-31 02:46:32.645 DEBUG c.tv.server.mapper.CategoryMapper.selectByExample :159  [32m        [0;39m ==> Parameters: 
+2021-10-31 02:46:32.646 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==    Columns: id, parent, name, sort
+2021-10-31 02:46:32.647 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000100, 00000000, Language, 100
+2021-10-31 02:46:32.647 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000101, 00000100, Chinese, 101
+2021-10-31 02:46:32.647 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000102, 00000100, Japanese, 102
+2021-10-31 02:46:32.647 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000103, 00000100, Engilish, 103
+2021-10-31 02:46:32.647 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 6ia3K5Ag, 00000100, Other, 199
+2021-10-31 02:46:32.648 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000200, 00000000, Genre, 200
+2021-10-31 02:46:32.648 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000201, 00000200, Action, 201
+2021-10-31 02:46:32.648 DEBUG c.t.s.mapper.ProgramMapper.selectByExample_COUNT  :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM program 
+2021-10-31 02:46:32.648 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000202, 00000200, Comedy, 202
+2021-10-31 02:46:32.648 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000203, 00000200, Romance, 203
+2021-10-31 02:46:32.648 DEBUG c.t.s.mapper.ProgramMapper.selectByExample_COUNT  :159  [32m        [0;39m ==> Parameters: 
+2021-10-31 02:46:32.648 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: NNvjDlnn, 00000200, Adventure, 204
+2021-10-31 02:46:32.648 DEBUG c.tv.server.mapper.CategoryMapper.selectByExample :159  [32m        [0;39m <==      Total: 10
+2021-10-31 02:46:32.649 TRACE c.t.s.mapper.ProgramMapper.selectByExample_COUNT  :165  [32m        [0;39m <==    Columns: count(0)
+2021-10-31 02:46:32.649 TRACE c.t.s.mapper.ProgramMapper.selectByExample_COUNT  :165  [32m        [0;39m <==        Row: 1
+2021-10-31 02:46:32.649 DEBUG c.t.s.mapper.ProgramMapper.selectByExample_COUNT  :159  [32m        [0;39m <==      Total: 1
+2021-10-31 02:46:32.650 DEBUG com.tv.server.mapper.ProgramMapper.selectByExample:159  [32m        [0;39m ==>  Preparing: select id, title, summary, length, price, image, type, charge, status, favorites, sort, created_at, updated_at from program order by sort asc LIMIT ? 
+2021-10-31 02:46:32.650 DEBUG com.tv.server.mapper.ProgramMapper.selectByExample:159  [32m        [0;39m ==> Parameters: 5(Integer)
+2021-10-31 02:46:32.651 TRACE com.tv.server.mapper.ProgramMapper.selectByExample:165  [32m        [0;39m <==    Columns: id, title, summary, length, price, image, type, charge, status, favorites, sort, created_at, updated_at
+2021-10-31 02:46:32.652 TRACE com.tv.server.mapper.ProgramMapper.selectByExample:165  [32m        [0;39m <==        Row: 0QIiNoVB, 1111111111, test test test test test test test test test test test test test test test test test test test test test test , 6, null, null, S, C, D, null, null, 2021-10-30 07:56:08.0, 2021-10-31 00:55:24.46
+2021-10-31 02:46:32.652 DEBUG com.tv.server.mapper.ProgramMapper.selectByExample:159  [32m        [0;39m <==      Total: 1
+2021-10-31 02:46:40.766 DEBUG c.t.s.mapper.ProgramMapper.selectByExample_COUNT  :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM program 
+2021-10-31 02:46:40.766 DEBUG c.t.s.mapper.ProgramMapper.selectByExample_COUNT  :159  [32m        [0;39m ==> Parameters: 
+2021-10-31 02:46:40.767 TRACE c.t.s.mapper.ProgramMapper.selectByExample_COUNT  :165  [32m        [0;39m <==    Columns: count(0)
+2021-10-31 02:46:40.767 DEBUG c.tv.server.mapper.CategoryMapper.selectByExample :159  [32m        [0;39m ==>  Preparing: select id, parent, name, sort from category order by sort asc 
+2021-10-31 02:46:40.767 TRACE c.t.s.mapper.ProgramMapper.selectByExample_COUNT  :165  [32m        [0;39m <==        Row: 1
+2021-10-31 02:46:40.767 DEBUG c.tv.server.mapper.CategoryMapper.selectByExample :159  [32m        [0;39m ==> Parameters: 
+2021-10-31 02:46:40.768 DEBUG c.t.s.mapper.ProgramMapper.selectByExample_COUNT  :159  [32m        [0;39m <==      Total: 1
+2021-10-31 02:46:40.768 DEBUG com.tv.server.mapper.ProgramMapper.selectByExample:159  [32m        [0;39m ==>  Preparing: select id, title, summary, length, price, image, type, charge, status, favorites, sort, created_at, updated_at from program order by sort asc LIMIT ? 
+2021-10-31 02:46:40.768 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==    Columns: id, parent, name, sort
+2021-10-31 02:46:40.768 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000100, 00000000, Language, 100
+2021-10-31 02:46:40.768 DEBUG com.tv.server.mapper.ProgramMapper.selectByExample:159  [32m        [0;39m ==> Parameters: 5(Integer)
+2021-10-31 02:46:40.769 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000101, 00000100, Chinese, 101
+2021-10-31 02:46:40.769 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000102, 00000100, Japanese, 102
+2021-10-31 02:46:40.769 TRACE com.tv.server.mapper.ProgramMapper.selectByExample:165  [32m        [0;39m <==    Columns: id, title, summary, length, price, image, type, charge, status, favorites, sort, created_at, updated_at
+2021-10-31 02:46:40.769 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000103, 00000100, Engilish, 103
+2021-10-31 02:46:40.770 TRACE com.tv.server.mapper.ProgramMapper.selectByExample:165  [32m        [0;39m <==        Row: 0QIiNoVB, 1111111111, test test test test test test test test test test test test test test test test test test test test test test , 6, null, null, S, C, D, null, null, 2021-10-30 07:56:08.0, 2021-10-31 00:55:24.46
+2021-10-31 02:46:40.770 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 6ia3K5Ag, 00000100, Other, 199
+2021-10-31 02:46:40.770 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000200, 00000000, Genre, 200
+2021-10-31 02:46:40.770 DEBUG com.tv.server.mapper.ProgramMapper.selectByExample:159  [32m        [0;39m <==      Total: 1
+2021-10-31 02:46:40.770 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000201, 00000200, Action, 201
+2021-10-31 02:46:40.770 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000202, 00000200, Comedy, 202
+2021-10-31 02:46:40.771 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000203, 00000200, Romance, 203
+2021-10-31 02:46:40.771 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: NNvjDlnn, 00000200, Adventure, 204
+2021-10-31 02:46:40.771 DEBUG c.tv.server.mapper.CategoryMapper.selectByExample :159  [32m        [0;39m <==      Total: 10
+2021-10-31 02:46:42.041 DEBUG c.tv.server.mapper.CategoryMapper.selectByExample :159  [32m        [0;39m ==>  Preparing: select id, parent, name, sort from category order by sort asc 
+2021-10-31 02:46:42.042 DEBUG c.tv.server.mapper.CategoryMapper.selectByExample :159  [32m        [0;39m ==> Parameters: 
+2021-10-31 02:46:42.043 DEBUG c.t.s.mapper.ProgramMapper.selectByExample_COUNT  :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM program 
+2021-10-31 02:46:42.042 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==    Columns: id, parent, name, sort
+2021-10-31 02:46:42.043 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000100, 00000000, Language, 100
+2021-10-31 02:46:42.043 DEBUG c.t.s.mapper.ProgramMapper.selectByExample_COUNT  :159  [32m        [0;39m ==> Parameters: 
+2021-10-31 02:46:42.043 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000101, 00000100, Chinese, 101
+2021-10-31 02:46:42.043 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000102, 00000100, Japanese, 102
+2021-10-31 02:46:42.043 TRACE c.t.s.mapper.ProgramMapper.selectByExample_COUNT  :165  [32m        [0;39m <==    Columns: count(0)
+2021-10-31 02:46:42.044 TRACE c.t.s.mapper.ProgramMapper.selectByExample_COUNT  :165  [32m        [0;39m <==        Row: 1
+2021-10-31 02:46:42.044 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000103, 00000100, Engilish, 103
+2021-10-31 02:46:42.044 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 6ia3K5Ag, 00000100, Other, 199
+2021-10-31 02:46:42.044 DEBUG c.t.s.mapper.ProgramMapper.selectByExample_COUNT  :159  [32m        [0;39m <==      Total: 1
+2021-10-31 02:46:42.044 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000200, 00000000, Genre, 200
+2021-10-31 02:46:42.044 DEBUG com.tv.server.mapper.ProgramMapper.selectByExample:159  [32m        [0;39m ==>  Preparing: select id, title, summary, length, price, image, type, charge, status, favorites, sort, created_at, updated_at from program order by sort asc LIMIT ? 
+2021-10-31 02:46:42.044 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000201, 00000200, Action, 201
+2021-10-31 02:46:42.045 DEBUG com.tv.server.mapper.ProgramMapper.selectByExample:159  [32m        [0;39m ==> Parameters: 5(Integer)
+2021-10-31 02:46:42.045 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000202, 00000200, Comedy, 202
+2021-10-31 02:46:42.045 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000203, 00000200, Romance, 203
+2021-10-31 02:46:42.045 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: NNvjDlnn, 00000200, Adventure, 204
+2021-10-31 02:46:42.045 TRACE com.tv.server.mapper.ProgramMapper.selectByExample:165  [32m        [0;39m <==    Columns: id, title, summary, length, price, image, type, charge, status, favorites, sort, created_at, updated_at
+2021-10-31 02:46:42.045 DEBUG c.tv.server.mapper.CategoryMapper.selectByExample :159  [32m        [0;39m <==      Total: 10
+2021-10-31 02:46:42.046 TRACE com.tv.server.mapper.ProgramMapper.selectByExample:165  [32m        [0;39m <==        Row: 0QIiNoVB, 1111111111, test test test test test test test test test test test test test test test test test test test test test test , 6, null, null, S, C, D, null, null, 2021-10-30 07:56:08.0, 2021-10-31 00:55:24.46
+2021-10-31 02:46:42.046 DEBUG com.tv.server.mapper.ProgramMapper.selectByExample:159  [32m        [0;39m <==      Total: 1
+2021-10-31 02:47:15.228 DEBUG c.tv.server.mapper.CategoryMapper.selectByExample :159  [32m        [0;39m ==>  Preparing: select id, parent, name, sort from category order by sort asc 
+2021-10-31 02:47:15.229 DEBUG c.tv.server.mapper.CategoryMapper.selectByExample :159  [32m        [0;39m ==> Parameters: 
+2021-10-31 02:47:15.230 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==    Columns: id, parent, name, sort
+2021-10-31 02:47:15.230 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000100, 00000000, Language, 100
+2021-10-31 02:47:15.230 DEBUG c.t.s.mapper.ProgramMapper.selectByExample_COUNT  :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM program 
+2021-10-31 02:47:15.230 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000101, 00000100, Chinese, 101
+2021-10-31 02:47:15.231 DEBUG c.t.s.mapper.ProgramMapper.selectByExample_COUNT  :159  [32m        [0;39m ==> Parameters: 
+2021-10-31 02:47:15.231 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000102, 00000100, Japanese, 102
+2021-10-31 02:47:15.231 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000103, 00000100, Engilish, 103
+2021-10-31 02:47:15.231 TRACE c.t.s.mapper.ProgramMapper.selectByExample_COUNT  :165  [32m        [0;39m <==    Columns: count(0)
+2021-10-31 02:47:15.231 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 6ia3K5Ag, 00000100, Other, 199
+2021-10-31 02:47:15.231 TRACE c.t.s.mapper.ProgramMapper.selectByExample_COUNT  :165  [32m        [0;39m <==        Row: 1
+2021-10-31 02:47:15.232 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000200, 00000000, Genre, 200
+2021-10-31 02:47:15.232 DEBUG c.t.s.mapper.ProgramMapper.selectByExample_COUNT  :159  [32m        [0;39m <==      Total: 1
+2021-10-31 02:47:15.232 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000201, 00000200, Action, 201
+2021-10-31 02:47:15.232 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000202, 00000200, Comedy, 202
+2021-10-31 02:47:15.232 DEBUG com.tv.server.mapper.ProgramMapper.selectByExample:159  [32m        [0;39m ==>  Preparing: select id, title, summary, length, price, image, type, charge, status, favorites, sort, created_at, updated_at from program order by sort asc LIMIT ? 
+2021-10-31 02:47:15.232 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000203, 00000200, Romance, 203
+2021-10-31 02:47:15.232 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: NNvjDlnn, 00000200, Adventure, 204
+2021-10-31 02:47:15.232 DEBUG com.tv.server.mapper.ProgramMapper.selectByExample:159  [32m        [0;39m ==> Parameters: 5(Integer)
+2021-10-31 02:47:15.232 DEBUG c.tv.server.mapper.CategoryMapper.selectByExample :159  [32m        [0;39m <==      Total: 10
+2021-10-31 02:47:15.233 TRACE com.tv.server.mapper.ProgramMapper.selectByExample:165  [32m        [0;39m <==    Columns: id, title, summary, length, price, image, type, charge, status, favorites, sort, created_at, updated_at
+2021-10-31 02:47:15.233 TRACE com.tv.server.mapper.ProgramMapper.selectByExample:165  [32m        [0;39m <==        Row: 0QIiNoVB, 1111111111, test test test test test test test test test test test test test test test test test test test test test test , 6, null, null, S, C, D, null, null, 2021-10-30 07:56:08.0, 2021-10-31 00:55:24.46
+2021-10-31 02:47:15.233 DEBUG com.tv.server.mapper.ProgramMapper.selectByExample:159  [32m        [0;39m <==      Total: 1
+2021-10-31 02:47:52.073 DEBUG c.tv.server.mapper.CategoryMapper.selectByExample :159  [32m        [0;39m ==>  Preparing: select id, parent, name, sort from category order by sort asc 
+2021-10-31 02:47:52.074 DEBUG c.tv.server.mapper.CategoryMapper.selectByExample :159  [32m        [0;39m ==> Parameters: 
+2021-10-31 02:47:52.074 DEBUG c.t.s.mapper.ProgramMapper.selectByExample_COUNT  :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM program 
+2021-10-31 02:47:52.074 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==    Columns: id, parent, name, sort
+2021-10-31 02:47:52.075 DEBUG c.t.s.mapper.ProgramMapper.selectByExample_COUNT  :159  [32m        [0;39m ==> Parameters: 
+2021-10-31 02:47:52.075 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000100, 00000000, Language, 100
+2021-10-31 02:47:52.075 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000101, 00000100, Chinese, 101
+2021-10-31 02:47:52.076 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000102, 00000100, Japanese, 102
+2021-10-31 02:47:52.075 TRACE c.t.s.mapper.ProgramMapper.selectByExample_COUNT  :165  [32m        [0;39m <==    Columns: count(0)
+2021-10-31 02:47:52.076 TRACE c.t.s.mapper.ProgramMapper.selectByExample_COUNT  :165  [32m        [0;39m <==        Row: 1
+2021-10-31 02:47:52.076 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000103, 00000100, Engilish, 103
+2021-10-31 02:47:52.076 DEBUG c.t.s.mapper.ProgramMapper.selectByExample_COUNT  :159  [32m        [0;39m <==      Total: 1
+2021-10-31 02:47:52.076 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 6ia3K5Ag, 00000100, Other, 199
+2021-10-31 02:47:52.077 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000200, 00000000, Genre, 200
+2021-10-31 02:47:52.077 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000201, 00000200, Action, 201
+2021-10-31 02:47:52.077 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000202, 00000200, Comedy, 202
+2021-10-31 02:47:52.077 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000203, 00000200, Romance, 203
+2021-10-31 02:47:52.078 DEBUG com.tv.server.mapper.ProgramMapper.selectByExample:159  [32m        [0;39m ==>  Preparing: select id, title, summary, length, price, image, type, charge, status, favorites, sort, created_at, updated_at from program order by sort asc LIMIT ? 
+2021-10-31 02:47:52.078 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: NNvjDlnn, 00000200, Adventure, 204
+2021-10-31 02:47:52.078 DEBUG com.tv.server.mapper.ProgramMapper.selectByExample:159  [32m        [0;39m ==> Parameters: 5(Integer)
+2021-10-31 02:47:52.078 DEBUG c.tv.server.mapper.CategoryMapper.selectByExample :159  [32m        [0;39m <==      Total: 10
+2021-10-31 02:47:52.079 TRACE com.tv.server.mapper.ProgramMapper.selectByExample:165  [32m        [0;39m <==    Columns: id, title, summary, length, price, image, type, charge, status, favorites, sort, created_at, updated_at
+2021-10-31 02:47:52.079 TRACE com.tv.server.mapper.ProgramMapper.selectByExample:165  [32m        [0;39m <==        Row: 0QIiNoVB, 1111111111, test test test test test test test test test test test test test test test test test test test test test test , 6, null, null, S, C, D, null, null, 2021-10-30 07:56:08.0, 2021-10-31 00:55:24.46
+2021-10-31 02:47:52.079 DEBUG com.tv.server.mapper.ProgramMapper.selectByExample:159  [32m        [0;39m <==      Total: 1
+2021-10-31 02:48:39.317 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-10-31 02:48:39.472 DEBUG c.tv.server.mapper.CategoryMapper.selectByExample :159  [32m        [0;39m ==>  Preparing: select id, parent, name, sort from category order by sort asc 
+2021-10-31 02:48:39.473 DEBUG c.tv.server.mapper.CategoryMapper.selectByExample :159  [32m        [0;39m ==> Parameters: 
+2021-10-31 02:48:39.474 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==    Columns: id, parent, name, sort
+2021-10-31 02:48:39.474 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000100, 00000000, Language, 100
+2021-10-31 02:48:39.474 DEBUG c.t.s.mapper.ProgramMapper.selectByExample_COUNT  :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM program 
+2021-10-31 02:48:39.474 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000101, 00000100, Chinese, 101
+2021-10-31 02:48:39.474 DEBUG c.t.s.mapper.ProgramMapper.selectByExample_COUNT  :159  [32m        [0;39m ==> Parameters: 
+2021-10-31 02:48:39.475 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000102, 00000100, Japanese, 102
+2021-10-31 02:48:39.475 TRACE c.t.s.mapper.ProgramMapper.selectByExample_COUNT  :165  [32m        [0;39m <==    Columns: count(0)
+2021-10-31 02:48:39.475 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000103, 00000100, Engilish, 103
+2021-10-31 02:48:39.475 TRACE c.t.s.mapper.ProgramMapper.selectByExample_COUNT  :165  [32m        [0;39m <==        Row: 1
+2021-10-31 02:48:39.475 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 6ia3K5Ag, 00000100, Other, 199
+2021-10-31 02:48:39.475 DEBUG c.t.s.mapper.ProgramMapper.selectByExample_COUNT  :159  [32m        [0;39m <==      Total: 1
+2021-10-31 02:48:39.476 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000200, 00000000, Genre, 200
+2021-10-31 02:48:39.476 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000201, 00000200, Action, 201
+2021-10-31 02:48:39.476 DEBUG com.tv.server.mapper.ProgramMapper.selectByExample:159  [32m        [0;39m ==>  Preparing: select id, title, summary, length, price, image, type, charge, status, favorites, sort, created_at, updated_at from program order by sort asc LIMIT ? 
+2021-10-31 02:48:39.476 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000202, 00000200, Comedy, 202
+2021-10-31 02:48:39.476 DEBUG com.tv.server.mapper.ProgramMapper.selectByExample:159  [32m        [0;39m ==> Parameters: 5(Integer)
+2021-10-31 02:48:39.476 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000203, 00000200, Romance, 203
+2021-10-31 02:48:39.477 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: NNvjDlnn, 00000200, Adventure, 204
+2021-10-31 02:48:39.477 TRACE com.tv.server.mapper.ProgramMapper.selectByExample:165  [32m        [0;39m <==    Columns: id, title, summary, length, price, image, type, charge, status, favorites, sort, created_at, updated_at
+2021-10-31 02:48:39.477 DEBUG c.tv.server.mapper.CategoryMapper.selectByExample :159  [32m        [0;39m <==      Total: 10
+2021-10-31 02:48:39.477 TRACE com.tv.server.mapper.ProgramMapper.selectByExample:165  [32m        [0;39m <==        Row: 0QIiNoVB, 1111111111, test test test test test test test test test test test test test test test test test test test test test test , 6, null, null, S, C, D, null, null, 2021-10-30 07:56:08.0, 2021-10-31 00:55:24.46
+2021-10-31 02:48:39.477 DEBUG com.tv.server.mapper.ProgramMapper.selectByExample:159  [32m        [0;39m <==      Total: 1
+2021-10-31 02:48:47.011 DEBUG c.tv.server.mapper.CategoryMapper.selectByExample :159  [32m        [0;39m ==>  Preparing: select id, parent, name, sort from category order by sort asc 
+2021-10-31 02:48:47.012 DEBUG c.tv.server.mapper.CategoryMapper.selectByExample :159  [32m        [0;39m ==> Parameters: 
+2021-10-31 02:48:47.013 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==    Columns: id, parent, name, sort
+2021-10-31 02:48:47.013 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000100, 00000000, Language, 100
+2021-10-31 02:48:47.013 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000101, 00000100, Chinese, 101
+2021-10-31 02:48:47.014 DEBUG c.t.s.mapper.ProgramMapper.selectByExample_COUNT  :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM program 
+2021-10-31 02:48:47.014 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000102, 00000100, Japanese, 102
+2021-10-31 02:48:47.014 DEBUG c.t.s.mapper.ProgramMapper.selectByExample_COUNT  :159  [32m        [0;39m ==> Parameters: 
+2021-10-31 02:48:47.014 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000103, 00000100, Engilish, 103
+2021-10-31 02:48:47.014 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 6ia3K5Ag, 00000100, Other, 199
+2021-10-31 02:48:47.014 TRACE c.t.s.mapper.ProgramMapper.selectByExample_COUNT  :165  [32m        [0;39m <==    Columns: count(0)
+2021-10-31 02:48:47.015 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000200, 00000000, Genre, 200
+2021-10-31 02:48:47.015 TRACE c.t.s.mapper.ProgramMapper.selectByExample_COUNT  :165  [32m        [0;39m <==        Row: 1
+2021-10-31 02:48:47.015 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000201, 00000200, Action, 201
+2021-10-31 02:48:47.015 DEBUG c.t.s.mapper.ProgramMapper.selectByExample_COUNT  :159  [32m        [0;39m <==      Total: 1
+2021-10-31 02:48:47.015 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000202, 00000200, Comedy, 202
+2021-10-31 02:48:47.015 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000203, 00000200, Romance, 203
+2021-10-31 02:48:47.015 DEBUG com.tv.server.mapper.ProgramMapper.selectByExample:159  [32m        [0;39m ==>  Preparing: select id, title, summary, length, price, image, type, charge, status, favorites, sort, created_at, updated_at from program order by sort asc LIMIT ? 
+2021-10-31 02:48:47.015 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: NNvjDlnn, 00000200, Adventure, 204
+2021-10-31 02:48:47.016 DEBUG c.tv.server.mapper.CategoryMapper.selectByExample :159  [32m        [0;39m <==      Total: 10
+2021-10-31 02:48:47.016 DEBUG com.tv.server.mapper.ProgramMapper.selectByExample:159  [32m        [0;39m ==> Parameters: 5(Integer)
+2021-10-31 02:48:47.016 TRACE com.tv.server.mapper.ProgramMapper.selectByExample:165  [32m        [0;39m <==    Columns: id, title, summary, length, price, image, type, charge, status, favorites, sort, created_at, updated_at
+2021-10-31 02:48:47.017 TRACE com.tv.server.mapper.ProgramMapper.selectByExample:165  [32m        [0;39m <==        Row: 0QIiNoVB, 1111111111, test test test test test test test test test test test test test test test test test test test test test test , 6, null, null, S, C, D, null, null, 2021-10-30 07:56:08.0, 2021-10-31 00:55:24.46
+2021-10-31 02:48:47.017 DEBUG com.tv.server.mapper.ProgramMapper.selectByExample:159  [32m        [0;39m <==      Total: 1
+2021-10-31 02:49:30.107 DEBUG c.tv.server.mapper.CategoryMapper.selectByExample :159  [32m        [0;39m ==>  Preparing: select id, parent, name, sort from category order by sort asc 
+2021-10-31 02:49:30.108 DEBUG c.tv.server.mapper.CategoryMapper.selectByExample :159  [32m        [0;39m ==> Parameters: 
+2021-10-31 02:49:30.108 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==    Columns: id, parent, name, sort
+2021-10-31 02:49:30.109 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000100, 00000000, Language, 100
+2021-10-31 02:49:30.109 DEBUG c.t.s.mapper.ProgramMapper.selectByExample_COUNT  :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM program 
+2021-10-31 02:49:30.109 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000101, 00000100, Chinese, 101
+2021-10-31 02:49:30.109 DEBUG c.t.s.mapper.ProgramMapper.selectByExample_COUNT  :159  [32m        [0;39m ==> Parameters: 
+2021-10-31 02:49:30.110 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000102, 00000100, Japanese, 102
+2021-10-31 02:49:30.110 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000103, 00000100, Engilish, 103
+2021-10-31 02:49:30.110 TRACE c.t.s.mapper.ProgramMapper.selectByExample_COUNT  :165  [32m        [0;39m <==    Columns: count(0)
+2021-10-31 02:49:30.110 TRACE c.t.s.mapper.ProgramMapper.selectByExample_COUNT  :165  [32m        [0;39m <==        Row: 1
+2021-10-31 02:49:30.110 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 6ia3K5Ag, 00000100, Other, 199
+2021-10-31 02:49:30.111 DEBUG c.t.s.mapper.ProgramMapper.selectByExample_COUNT  :159  [32m        [0;39m <==      Total: 1
+2021-10-31 02:49:30.111 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000200, 00000000, Genre, 200
+2021-10-31 02:49:30.111 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000201, 00000200, Action, 201
+2021-10-31 02:49:30.111 DEBUG com.tv.server.mapper.ProgramMapper.selectByExample:159  [32m        [0;39m ==>  Preparing: select id, title, summary, length, price, image, type, charge, status, favorites, sort, created_at, updated_at from program order by sort asc LIMIT ? 
+2021-10-31 02:49:30.111 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000202, 00000200, Comedy, 202
+2021-10-31 02:49:30.111 DEBUG com.tv.server.mapper.ProgramMapper.selectByExample:159  [32m        [0;39m ==> Parameters: 5(Integer)
+2021-10-31 02:49:30.111 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000203, 00000200, Romance, 203
+2021-10-31 02:49:30.112 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: NNvjDlnn, 00000200, Adventure, 204
+2021-10-31 02:49:30.112 DEBUG c.tv.server.mapper.CategoryMapper.selectByExample :159  [32m        [0;39m <==      Total: 10
+2021-10-31 02:49:30.112 TRACE com.tv.server.mapper.ProgramMapper.selectByExample:165  [32m        [0;39m <==    Columns: id, title, summary, length, price, image, type, charge, status, favorites, sort, created_at, updated_at
+2021-10-31 02:49:30.112 TRACE com.tv.server.mapper.ProgramMapper.selectByExample:165  [32m        [0;39m <==        Row: 0QIiNoVB, 1111111111, test test test test test test test test test test test test test test test test test test test test test test , 6, null, null, S, C, D, null, null, 2021-10-30 07:56:08.0, 2021-10-31 00:55:24.46
+2021-10-31 02:49:30.113 DEBUG com.tv.server.mapper.ProgramMapper.selectByExample:159  [32m        [0;39m <==      Total: 1
+2021-10-31 02:52:44.892 DEBUG c.tv.server.mapper.CategoryMapper.selectByExample :159  [32m        [0;39m ==>  Preparing: select id, parent, name, sort from category order by sort asc 
+2021-10-31 02:52:44.893 DEBUG c.tv.server.mapper.CategoryMapper.selectByExample :159  [32m        [0;39m ==> Parameters: 
+2021-10-31 02:52:44.894 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==    Columns: id, parent, name, sort
+2021-10-31 02:52:44.895 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000100, 00000000, Language, 100
+2021-10-31 02:52:44.895 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000101, 00000100, Chinese, 101
+2021-10-31 02:52:44.895 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000102, 00000100, Japanese, 102
+2021-10-31 02:52:44.896 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000103, 00000100, Engilish, 103
+2021-10-31 02:52:44.896 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 6ia3K5Ag, 00000100, Other, 199
+2021-10-31 02:52:44.896 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000200, 00000000, Genre, 200
+2021-10-31 02:52:44.897 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000201, 00000200, Action, 201
+2021-10-31 02:52:44.897 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000202, 00000200, Comedy, 202
+2021-10-31 02:52:44.897 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000203, 00000200, Romance, 203
+2021-10-31 02:52:44.898 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: NNvjDlnn, 00000200, Adventure, 204
+2021-10-31 02:52:44.898 DEBUG c.tv.server.mapper.CategoryMapper.selectByExample :159  [32m        [0;39m <==      Total: 10
+2021-10-31 02:52:44.901 DEBUG c.t.s.mapper.ProgramMapper.selectByExample_COUNT  :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM program 
+2021-10-31 02:52:44.901 DEBUG c.t.s.mapper.ProgramMapper.selectByExample_COUNT  :159  [32m        [0;39m ==> Parameters: 
+2021-10-31 02:52:44.902 TRACE c.t.s.mapper.ProgramMapper.selectByExample_COUNT  :165  [32m        [0;39m <==    Columns: count(0)
+2021-10-31 02:52:44.902 TRACE c.t.s.mapper.ProgramMapper.selectByExample_COUNT  :165  [32m        [0;39m <==        Row: 1
+2021-10-31 02:52:44.903 DEBUG c.t.s.mapper.ProgramMapper.selectByExample_COUNT  :159  [32m        [0;39m <==      Total: 1
+2021-10-31 02:52:44.903 DEBUG com.tv.server.mapper.ProgramMapper.selectByExample:159  [32m        [0;39m ==>  Preparing: select id, title, summary, length, price, image, type, charge, status, favorites, sort, created_at, updated_at from program order by sort asc LIMIT ? 
+2021-10-31 02:52:44.903 DEBUG com.tv.server.mapper.ProgramMapper.selectByExample:159  [32m        [0;39m ==> Parameters: 5(Integer)
+2021-10-31 02:52:44.904 TRACE com.tv.server.mapper.ProgramMapper.selectByExample:165  [32m        [0;39m <==    Columns: id, title, summary, length, price, image, type, charge, status, favorites, sort, created_at, updated_at
+2021-10-31 02:52:44.905 TRACE com.tv.server.mapper.ProgramMapper.selectByExample:165  [32m        [0;39m <==        Row: 0QIiNoVB, 1111111111, test test test test test test test test test test test test test test test test test test test test test test , 6, null, null, S, C, D, null, null, 2021-10-30 07:56:08.0, 2021-10-31 00:55:24.46
+2021-10-31 02:52:44.905 DEBUG com.tv.server.mapper.ProgramMapper.selectByExample:159  [32m        [0;39m <==      Total: 1
+2021-10-31 02:52:56.336 DEBUG c.tv.server.mapper.CategoryMapper.selectByExample :159  [32m        [0;39m ==>  Preparing: select id, parent, name, sort from category order by sort asc 
+2021-10-31 02:52:56.337 DEBUG c.tv.server.mapper.CategoryMapper.selectByExample :159  [32m        [0;39m ==> Parameters: 
+2021-10-31 02:52:56.337 DEBUG c.t.s.mapper.ProgramMapper.selectByExample_COUNT  :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM program 
+2021-10-31 02:52:56.337 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==    Columns: id, parent, name, sort
+2021-10-31 02:52:56.338 DEBUG c.t.s.mapper.ProgramMapper.selectByExample_COUNT  :159  [32m        [0;39m ==> Parameters: 
+2021-10-31 02:52:56.338 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000100, 00000000, Language, 100
+2021-10-31 02:52:56.338 TRACE c.t.s.mapper.ProgramMapper.selectByExample_COUNT  :165  [32m        [0;39m <==    Columns: count(0)
+2021-10-31 02:52:56.338 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000101, 00000100, Chinese, 101
+2021-10-31 02:52:56.338 TRACE c.t.s.mapper.ProgramMapper.selectByExample_COUNT  :165  [32m        [0;39m <==        Row: 1
+2021-10-31 02:52:56.338 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000102, 00000100, Japanese, 102
+2021-10-31 02:52:56.339 DEBUG c.t.s.mapper.ProgramMapper.selectByExample_COUNT  :159  [32m        [0;39m <==      Total: 1
+2021-10-31 02:52:56.339 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000103, 00000100, Engilish, 103
+2021-10-31 02:52:56.339 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 6ia3K5Ag, 00000100, Other, 199
+2021-10-31 02:52:56.339 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000200, 00000000, Genre, 200
+2021-10-31 02:52:56.339 DEBUG com.tv.server.mapper.ProgramMapper.selectByExample:159  [32m        [0;39m ==>  Preparing: select id, title, summary, length, price, image, type, charge, status, favorites, sort, created_at, updated_at from program order by sort asc LIMIT ? 
+2021-10-31 02:52:56.339 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000201, 00000200, Action, 201
+2021-10-31 02:52:56.339 DEBUG com.tv.server.mapper.ProgramMapper.selectByExample:159  [32m        [0;39m ==> Parameters: 5(Integer)
+2021-10-31 02:52:56.339 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000202, 00000200, Comedy, 202
+2021-10-31 02:52:56.340 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000203, 00000200, Romance, 203
+2021-10-31 02:52:56.340 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: NNvjDlnn, 00000200, Adventure, 204
+2021-10-31 02:52:56.340 DEBUG c.tv.server.mapper.CategoryMapper.selectByExample :159  [32m        [0;39m <==      Total: 10
+2021-10-31 02:52:56.340 TRACE com.tv.server.mapper.ProgramMapper.selectByExample:165  [32m        [0;39m <==    Columns: id, title, summary, length, price, image, type, charge, status, favorites, sort, created_at, updated_at
+2021-10-31 02:52:56.340 TRACE com.tv.server.mapper.ProgramMapper.selectByExample:165  [32m        [0;39m <==        Row: 0QIiNoVB, 1111111111, test test test test test test test test test test test test test test test test test test test test test test , 6, null, null, S, C, D, null, null, 2021-10-30 07:56:08.0, 2021-10-31 00:55:24.46
+2021-10-31 02:52:56.340 DEBUG com.tv.server.mapper.ProgramMapper.selectByExample:159  [32m        [0;39m <==      Total: 1
+2021-10-31 02:53:03.196 DEBUG c.tv.server.mapper.CategoryMapper.selectByExample :159  [32m        [0;39m ==>  Preparing: select id, parent, name, sort from category order by sort asc 
+2021-10-31 02:53:03.196 DEBUG c.tv.server.mapper.CategoryMapper.selectByExample :159  [32m        [0;39m ==> Parameters: 
+2021-10-31 02:53:03.197 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==    Columns: id, parent, name, sort
+2021-10-31 02:53:03.197 DEBUG c.t.s.mapper.ProgramMapper.selectByExample_COUNT  :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM program 
+2021-10-31 02:53:03.198 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000100, 00000000, Language, 100
+2021-10-31 02:53:03.198 DEBUG c.t.s.mapper.ProgramMapper.selectByExample_COUNT  :159  [32m        [0;39m ==> Parameters: 
+2021-10-31 02:53:03.198 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000101, 00000100, Chinese, 101
+2021-10-31 02:53:03.198 TRACE c.t.s.mapper.ProgramMapper.selectByExample_COUNT  :165  [32m        [0;39m <==    Columns: count(0)
+2021-10-31 02:53:03.198 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000102, 00000100, Japanese, 102
+2021-10-31 02:53:03.199 TRACE c.t.s.mapper.ProgramMapper.selectByExample_COUNT  :165  [32m        [0;39m <==        Row: 1
+2021-10-31 02:53:03.199 DEBUG c.t.s.mapper.ProgramMapper.selectByExample_COUNT  :159  [32m        [0;39m <==      Total: 1
+2021-10-31 02:53:03.199 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000103, 00000100, Engilish, 103
+2021-10-31 02:53:03.199 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 6ia3K5Ag, 00000100, Other, 199
+2021-10-31 02:53:03.199 DEBUG com.tv.server.mapper.ProgramMapper.selectByExample:159  [32m        [0;39m ==>  Preparing: select id, title, summary, length, price, image, type, charge, status, favorites, sort, created_at, updated_at from program order by sort asc LIMIT ? 
+2021-10-31 02:53:03.200 DEBUG com.tv.server.mapper.ProgramMapper.selectByExample:159  [32m        [0;39m ==> Parameters: 5(Integer)
+2021-10-31 02:53:03.200 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000200, 00000000, Genre, 200
+2021-10-31 02:53:03.200 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000201, 00000200, Action, 201
+2021-10-31 02:53:03.200 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000202, 00000200, Comedy, 202
+2021-10-31 02:53:03.200 TRACE com.tv.server.mapper.ProgramMapper.selectByExample:165  [32m        [0;39m <==    Columns: id, title, summary, length, price, image, type, charge, status, favorites, sort, created_at, updated_at
+2021-10-31 02:53:03.201 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000203, 00000200, Romance, 203
+2021-10-31 02:53:03.201 TRACE com.tv.server.mapper.ProgramMapper.selectByExample:165  [32m        [0;39m <==        Row: 0QIiNoVB, 1111111111, test test test test test test test test test test test test test test test test test test test test test test , 6, null, null, S, C, D, null, null, 2021-10-30 07:56:08.0, 2021-10-31 00:55:24.46
+2021-10-31 02:53:03.201 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: NNvjDlnn, 00000200, Adventure, 204
+2021-10-31 02:53:03.201 DEBUG com.tv.server.mapper.ProgramMapper.selectByExample:159  [32m        [0;39m <==      Total: 1
+2021-10-31 02:53:03.201 DEBUG c.tv.server.mapper.CategoryMapper.selectByExample :159  [32m        [0;39m <==      Total: 10
+2021-10-31 02:53:39.328 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-10-31 02:58:39.328 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-10-31 03:03:39.336 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-10-31 03:07:30.392 DEBUG c.tv.server.mapper.CategoryMapper.selectByExample :159  [32m        [0;39m ==>  Preparing: select id, parent, name, sort from category order by sort asc 
+2021-10-31 03:07:30.393 DEBUG c.t.s.mapper.ProgramMapper.selectByExample_COUNT  :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM program 
+2021-10-31 03:07:30.394 DEBUG c.tv.server.mapper.CategoryMapper.selectByExample :159  [32m        [0;39m ==> Parameters: 
+2021-10-31 03:07:30.395 DEBUG c.t.s.mapper.ProgramMapper.selectByExample_COUNT  :159  [32m        [0;39m ==> Parameters: 
+2021-10-31 03:07:30.396 TRACE c.t.s.mapper.ProgramMapper.selectByExample_COUNT  :165  [32m        [0;39m <==    Columns: count(0)
+2021-10-31 03:07:30.396 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==    Columns: id, parent, name, sort
+2021-10-31 03:07:30.396 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000100, 00000000, Language, 100
+2021-10-31 03:07:30.396 TRACE c.t.s.mapper.ProgramMapper.selectByExample_COUNT  :165  [32m        [0;39m <==        Row: 1
+2021-10-31 03:07:30.396 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000101, 00000100, Chinese, 101
+2021-10-31 03:07:30.397 DEBUG c.t.s.mapper.ProgramMapper.selectByExample_COUNT  :159  [32m        [0;39m <==      Total: 1
+2021-10-31 03:07:30.397 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000102, 00000100, Japanese, 102
+2021-10-31 03:07:30.397 DEBUG com.tv.server.mapper.ProgramMapper.selectByExample:159  [32m        [0;39m ==>  Preparing: select id, title, summary, length, price, image, type, charge, status, favorites, sort, created_at, updated_at from program order by sort asc LIMIT ? 
+2021-10-31 03:07:30.397 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000103, 00000100, Engilish, 103
+2021-10-31 03:07:30.398 DEBUG com.tv.server.mapper.ProgramMapper.selectByExample:159  [32m        [0;39m ==> Parameters: 5(Integer)
+2021-10-31 03:07:30.397 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 6ia3K5Ag, 00000100, Other, 199
+2021-10-31 03:07:30.398 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000200, 00000000, Genre, 200
+2021-10-31 03:07:30.398 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000201, 00000200, Action, 201
+2021-10-31 03:07:30.399 TRACE com.tv.server.mapper.ProgramMapper.selectByExample:165  [32m        [0;39m <==    Columns: id, title, summary, length, price, image, type, charge, status, favorites, sort, created_at, updated_at
+2021-10-31 03:07:30.399 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000202, 00000200, Comedy, 202
+2021-10-31 03:07:30.399 TRACE com.tv.server.mapper.ProgramMapper.selectByExample:165  [32m        [0;39m <==        Row: 0QIiNoVB, 1111111111, test test test test test test test test test test test test test test test test test test test test test test , 6, null, null, S, C, D, null, null, 2021-10-30 07:56:08.0, 2021-10-31 00:55:24.46
+2021-10-31 03:07:30.399 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000203, 00000200, Romance, 203
+2021-10-31 03:07:30.399 DEBUG com.tv.server.mapper.ProgramMapper.selectByExample:159  [32m        [0;39m <==      Total: 1
+2021-10-31 03:07:30.400 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: NNvjDlnn, 00000200, Adventure, 204
+2021-10-31 03:07:30.400 DEBUG c.tv.server.mapper.CategoryMapper.selectByExample :159  [32m        [0;39m <==      Total: 10
+2021-10-31 03:07:32.562 DEBUG c.t.s.mapper.ProgramCategoryMapper.selectByExample:159  [32m        [0;39m ==>  Preparing: select id, program_id, category_id from program_category WHERE ( program_id = ? ) 
+2021-10-31 03:07:32.563 DEBUG c.t.s.mapper.ProgramCategoryMapper.selectByExample:159  [32m        [0;39m ==> Parameters: 0QIiNoVB(String)
+2021-10-31 03:07:32.564 TRACE c.t.s.mapper.ProgramCategoryMapper.selectByExample:165  [32m        [0;39m <==    Columns: id, program_id, category_id
+2021-10-31 03:07:32.565 TRACE c.t.s.mapper.ProgramCategoryMapper.selectByExample:165  [32m        [0;39m <==        Row: 3jtu5DUP, 0QIiNoVB, 00000202
+2021-10-31 03:07:32.565 TRACE c.t.s.mapper.ProgramCategoryMapper.selectByExample:165  [32m        [0;39m <==        Row: dQKBRAtZ, 0QIiNoVB, 00000201
+2021-10-31 03:07:32.565 TRACE c.t.s.mapper.ProgramCategoryMapper.selectByExample:165  [32m        [0;39m <==        Row: e6UzkAdO, 0QIiNoVB, 00000102
+2021-10-31 03:07:32.566 TRACE c.t.s.mapper.ProgramCategoryMapper.selectByExample:165  [32m        [0;39m <==        Row: QazIxcMY, 0QIiNoVB, 00000100
+2021-10-31 03:07:32.566 TRACE c.t.s.mapper.ProgramCategoryMapper.selectByExample:165  [32m        [0;39m <==        Row: URoeTeEk, 0QIiNoVB, 00000200
+2021-10-31 03:07:32.566 DEBUG c.t.s.mapper.ProgramCategoryMapper.selectByExample:159  [32m        [0;39m <==      Total: 5
+2021-10-31 03:08:39.351 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-10-31 03:10:52.269 DEBUG c.t.s.mapper.ProgramCategoryMapper.selectByExample:159  [32m        [0;39m ==>  Preparing: select id, program_id, category_id from program_category WHERE ( program_id = ? ) 
+2021-10-31 03:10:52.269 DEBUG c.t.s.mapper.ProgramCategoryMapper.selectByExample:159  [32m        [0;39m ==> Parameters: 0QIiNoVB(String)
+2021-10-31 03:10:52.270 TRACE c.t.s.mapper.ProgramCategoryMapper.selectByExample:165  [32m        [0;39m <==    Columns: id, program_id, category_id
+2021-10-31 03:10:52.270 TRACE c.t.s.mapper.ProgramCategoryMapper.selectByExample:165  [32m        [0;39m <==        Row: 3jtu5DUP, 0QIiNoVB, 00000202
+2021-10-31 03:10:52.271 TRACE c.t.s.mapper.ProgramCategoryMapper.selectByExample:165  [32m        [0;39m <==        Row: dQKBRAtZ, 0QIiNoVB, 00000201
+2021-10-31 03:10:52.271 TRACE c.t.s.mapper.ProgramCategoryMapper.selectByExample:165  [32m        [0;39m <==        Row: e6UzkAdO, 0QIiNoVB, 00000102
+2021-10-31 03:10:52.271 TRACE c.t.s.mapper.ProgramCategoryMapper.selectByExample:165  [32m        [0;39m <==        Row: QazIxcMY, 0QIiNoVB, 00000100
+2021-10-31 03:10:52.272 TRACE c.t.s.mapper.ProgramCategoryMapper.selectByExample:165  [32m        [0;39m <==        Row: URoeTeEk, 0QIiNoVB, 00000200
+2021-10-31 03:10:52.272 DEBUG c.t.s.mapper.ProgramCategoryMapper.selectByExample:159  [32m        [0;39m <==      Total: 5
+2021-10-31 03:13:39.366 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-10-31 03:18:39.382 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-10-31 03:23:39.393 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-10-31 03:25:49.771 DEBUG c.tv.server.mapper.CategoryMapper.selectByExample :159  [32m        [0;39m ==>  Preparing: select id, parent, name, sort from category order by sort asc 
+2021-10-31 03:25:49.772 DEBUG c.t.s.mapper.ProgramMapper.selectByExample_COUNT  :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM program 
+2021-10-31 03:25:49.772 DEBUG c.tv.server.mapper.CategoryMapper.selectByExample :159  [32m        [0;39m ==> Parameters: 
+2021-10-31 03:25:49.773 DEBUG c.t.s.mapper.ProgramMapper.selectByExample_COUNT  :159  [32m        [0;39m ==> Parameters: 
+2021-10-31 03:25:49.774 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==    Columns: id, parent, name, sort
+2021-10-31 03:25:49.774 TRACE c.t.s.mapper.ProgramMapper.selectByExample_COUNT  :165  [32m        [0;39m <==    Columns: count(0)
+2021-10-31 03:25:49.775 TRACE c.t.s.mapper.ProgramMapper.selectByExample_COUNT  :165  [32m        [0;39m <==        Row: 1
+2021-10-31 03:25:49.774 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000100, 00000000, Language, 100
+2021-10-31 03:25:49.775 DEBUG c.t.s.mapper.ProgramMapper.selectByExample_COUNT  :159  [32m        [0;39m <==      Total: 1
+2021-10-31 03:25:49.775 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000101, 00000100, Chinese, 101
+2021-10-31 03:25:49.775 DEBUG com.tv.server.mapper.ProgramMapper.selectByExample:159  [32m        [0;39m ==>  Preparing: select id, title, summary, length, price, image, type, charge, status, favorites, sort, created_at, updated_at from program order by sort asc LIMIT ? 
+2021-10-31 03:25:49.776 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000102, 00000100, Japanese, 102
+2021-10-31 03:25:49.776 DEBUG com.tv.server.mapper.ProgramMapper.selectByExample:159  [32m        [0;39m ==> Parameters: 5(Integer)
+2021-10-31 03:25:49.776 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000103, 00000100, Engilish, 103
+2021-10-31 03:25:49.776 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 6ia3K5Ag, 00000100, Other, 199
+2021-10-31 03:25:49.777 TRACE com.tv.server.mapper.ProgramMapper.selectByExample:165  [32m        [0;39m <==    Columns: id, title, summary, length, price, image, type, charge, status, favorites, sort, created_at, updated_at
+2021-10-31 03:25:49.777 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000200, 00000000, Genre, 200
+2021-10-31 03:25:49.777 TRACE com.tv.server.mapper.ProgramMapper.selectByExample:165  [32m        [0;39m <==        Row: 0QIiNoVB, 1111111111, test test test test test test test test test test test test test test test test test test test test test test , 6, null, null, S, C, D, null, null, 2021-10-30 07:56:08.0, 2021-10-31 00:55:24.46
+2021-10-31 03:25:49.778 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000201, 00000200, Action, 201
+2021-10-31 03:25:49.778 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000202, 00000200, Comedy, 202
+2021-10-31 03:25:49.778 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000203, 00000200, Romance, 203
+2021-10-31 03:25:49.778 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: NNvjDlnn, 00000200, Adventure, 204
+2021-10-31 03:25:49.779 DEBUG c.tv.server.mapper.CategoryMapper.selectByExample :159  [32m        [0;39m <==      Total: 10
+2021-10-31 03:25:49.781 DEBUG com.tv.server.mapper.ProgramMapper.selectByExample:159  [32m        [0;39m <==      Total: 1
+2021-10-31 03:25:53.831 DEBUG c.t.s.mapper.ProgramCategoryMapper.selectByExample:159  [32m        [0;39m ==>  Preparing: select id, program_id, category_id from program_category WHERE ( program_id = ? ) 
+2021-10-31 03:25:53.832 DEBUG c.t.s.mapper.ProgramCategoryMapper.selectByExample:159  [32m        [0;39m ==> Parameters: 0QIiNoVB(String)
+2021-10-31 03:25:53.833 TRACE c.t.s.mapper.ProgramCategoryMapper.selectByExample:165  [32m        [0;39m <==    Columns: id, program_id, category_id
+2021-10-31 03:25:53.834 TRACE c.t.s.mapper.ProgramCategoryMapper.selectByExample:165  [32m        [0;39m <==        Row: 3jtu5DUP, 0QIiNoVB, 00000202
+2021-10-31 03:25:53.834 TRACE c.t.s.mapper.ProgramCategoryMapper.selectByExample:165  [32m        [0;39m <==        Row: dQKBRAtZ, 0QIiNoVB, 00000201
+2021-10-31 03:25:53.834 TRACE c.t.s.mapper.ProgramCategoryMapper.selectByExample:165  [32m        [0;39m <==        Row: e6UzkAdO, 0QIiNoVB, 00000102
+2021-10-31 03:25:53.835 TRACE c.t.s.mapper.ProgramCategoryMapper.selectByExample:165  [32m        [0;39m <==        Row: QazIxcMY, 0QIiNoVB, 00000100
+2021-10-31 03:25:53.835 TRACE c.t.s.mapper.ProgramCategoryMapper.selectByExample:165  [32m        [0;39m <==        Row: URoeTeEk, 0QIiNoVB, 00000200
+2021-10-31 03:25:53.835 DEBUG c.t.s.mapper.ProgramCategoryMapper.selectByExample:159  [32m        [0;39m <==      Total: 5
+2021-10-31 03:26:14.305 DEBUG c.t.s.mapper.ProgramCategoryMapper.selectByExample:159  [32m        [0;39m ==>  Preparing: select id, program_id, category_id from program_category WHERE ( program_id = ? ) 
+2021-10-31 03:26:14.306 DEBUG c.t.s.mapper.ProgramCategoryMapper.selectByExample:159  [32m        [0;39m ==> Parameters: 0QIiNoVB(String)
+2021-10-31 03:26:14.307 TRACE c.t.s.mapper.ProgramCategoryMapper.selectByExample:165  [32m        [0;39m <==    Columns: id, program_id, category_id
+2021-10-31 03:26:14.307 TRACE c.t.s.mapper.ProgramCategoryMapper.selectByExample:165  [32m        [0;39m <==        Row: 3jtu5DUP, 0QIiNoVB, 00000202
+2021-10-31 03:26:14.308 TRACE c.t.s.mapper.ProgramCategoryMapper.selectByExample:165  [32m        [0;39m <==        Row: dQKBRAtZ, 0QIiNoVB, 00000201
+2021-10-31 03:26:14.308 TRACE c.t.s.mapper.ProgramCategoryMapper.selectByExample:165  [32m        [0;39m <==        Row: e6UzkAdO, 0QIiNoVB, 00000102
+2021-10-31 03:26:14.308 TRACE c.t.s.mapper.ProgramCategoryMapper.selectByExample:165  [32m        [0;39m <==        Row: QazIxcMY, 0QIiNoVB, 00000100
+2021-10-31 03:26:14.308 TRACE c.t.s.mapper.ProgramCategoryMapper.selectByExample:165  [32m        [0;39m <==        Row: URoeTeEk, 0QIiNoVB, 00000200
+2021-10-31 03:26:14.309 DEBUG c.t.s.mapper.ProgramCategoryMapper.selectByExample:159  [32m        [0;39m <==      Total: 5
+2021-10-31 03:27:09.159 DEBUG c.t.s.mapper.ProgramCategoryMapper.selectByExample:159  [32m        [0;39m ==>  Preparing: select id, program_id, category_id from program_category WHERE ( program_id = ? ) 
+2021-10-31 03:27:09.160 DEBUG c.t.s.mapper.ProgramCategoryMapper.selectByExample:159  [32m        [0;39m ==> Parameters: 0QIiNoVB(String)
+2021-10-31 03:27:09.160 TRACE c.t.s.mapper.ProgramCategoryMapper.selectByExample:165  [32m        [0;39m <==    Columns: id, program_id, category_id
+2021-10-31 03:27:09.161 TRACE c.t.s.mapper.ProgramCategoryMapper.selectByExample:165  [32m        [0;39m <==        Row: 3jtu5DUP, 0QIiNoVB, 00000202
+2021-10-31 03:27:09.161 TRACE c.t.s.mapper.ProgramCategoryMapper.selectByExample:165  [32m        [0;39m <==        Row: dQKBRAtZ, 0QIiNoVB, 00000201
+2021-10-31 03:27:09.161 TRACE c.t.s.mapper.ProgramCategoryMapper.selectByExample:165  [32m        [0;39m <==        Row: e6UzkAdO, 0QIiNoVB, 00000102
+2021-10-31 03:27:09.161 TRACE c.t.s.mapper.ProgramCategoryMapper.selectByExample:165  [32m        [0;39m <==        Row: QazIxcMY, 0QIiNoVB, 00000100
+2021-10-31 03:27:09.161 TRACE c.t.s.mapper.ProgramCategoryMapper.selectByExample:165  [32m        [0;39m <==        Row: URoeTeEk, 0QIiNoVB, 00000200
+2021-10-31 03:27:09.162 DEBUG c.t.s.mapper.ProgramCategoryMapper.selectByExample:159  [32m        [0;39m <==      Total: 5
+2021-10-31 03:27:20.672 DEBUG c.t.server.mapper.ProgramMapper.updateByPrimaryKey:159  [32m        [0;39m ==>  Preparing: update program set title = ?, summary = ?, length = ?, price = ?, image = ?, type = ?, charge = ?, status = ?, favorites = ?, sort = ?, created_at = ?, updated_at = ? where id = ? 
+2021-10-31 03:27:20.674 DEBUG c.t.server.mapper.ProgramMapper.updateByPrimaryKey:159  [32m        [0;39m ==> Parameters: 1111111111(String), test test test test test test test test test test test test test test test test test test test test test test (String), 6(Integer), null, null, S(String), C(String), D(String), null, null, 2021-10-30 07:56:08.0(Timestamp), 2021-10-31 03:27:20.671(Timestamp), 0QIiNoVB(String)
+2021-10-31 03:27:20.677 DEBUG c.t.server.mapper.ProgramMapper.updateByPrimaryKey:159  [32m        [0;39m <==    Updates: 1
+2021-10-31 03:27:20.678 DEBUG c.t.s.mapper.ProgramCategoryMapper.deleteByExample:159  [32m        [0;39m ==>  Preparing: delete from program_category WHERE ( program_id = ? ) 
+2021-10-31 03:27:20.679 DEBUG c.t.s.mapper.ProgramCategoryMapper.deleteByExample:159  [32m        [0;39m ==> Parameters: 0QIiNoVB(String)
+2021-10-31 03:27:20.680 DEBUG c.t.s.mapper.ProgramCategoryMapper.deleteByExample:159  [32m        [0;39m <==    Updates: 5
+2021-10-31 03:27:20.684 DEBUG com.tv.server.mapper.ProgramCategoryMapper.insert :159  [32m        [0;39m ==>  Preparing: insert into program_category (id, program_id, category_id ) values (?, ?, ? ) 
+2021-10-31 03:27:20.685 DEBUG com.tv.server.mapper.ProgramCategoryMapper.insert :159  [32m        [0;39m ==> Parameters: DCoft6NR(String), 0QIiNoVB(String), 00000100(String)
+2021-10-31 03:27:20.686 DEBUG com.tv.server.mapper.ProgramCategoryMapper.insert :159  [32m        [0;39m <==    Updates: 1
+2021-10-31 03:27:20.687 DEBUG com.tv.server.mapper.ProgramCategoryMapper.insert :159  [32m        [0;39m ==>  Preparing: insert into program_category (id, program_id, category_id ) values (?, ?, ? ) 
+2021-10-31 03:27:20.688 DEBUG com.tv.server.mapper.ProgramCategoryMapper.insert :159  [32m        [0;39m ==> Parameters: CYef7QL9(String), 0QIiNoVB(String), 00000102(String)
+2021-10-31 03:27:20.688 DEBUG com.tv.server.mapper.ProgramCategoryMapper.insert :159  [32m        [0;39m <==    Updates: 1
+2021-10-31 03:27:20.689 DEBUG com.tv.server.mapper.ProgramCategoryMapper.insert :159  [32m        [0;39m ==>  Preparing: insert into program_category (id, program_id, category_id ) values (?, ?, ? ) 
+2021-10-31 03:27:20.689 DEBUG com.tv.server.mapper.ProgramCategoryMapper.insert :159  [32m        [0;39m ==> Parameters: dqyE67fe(String), 0QIiNoVB(String), 00000200(String)
+2021-10-31 03:27:20.690 DEBUG com.tv.server.mapper.ProgramCategoryMapper.insert :159  [32m        [0;39m <==    Updates: 1
+2021-10-31 03:27:20.691 DEBUG com.tv.server.mapper.ProgramCategoryMapper.insert :159  [32m        [0;39m ==>  Preparing: insert into program_category (id, program_id, category_id ) values (?, ?, ? ) 
+2021-10-31 03:27:20.692 DEBUG com.tv.server.mapper.ProgramCategoryMapper.insert :159  [32m        [0;39m ==> Parameters: JIFGEP6p(String), 0QIiNoVB(String), 00000201(String)
+2021-10-31 03:27:20.692 DEBUG com.tv.server.mapper.ProgramCategoryMapper.insert :159  [32m        [0;39m <==    Updates: 1
+2021-10-31 03:27:20.693 DEBUG com.tv.server.mapper.ProgramCategoryMapper.insert :159  [32m        [0;39m ==>  Preparing: insert into program_category (id, program_id, category_id ) values (?, ?, ? ) 
+2021-10-31 03:27:20.693 DEBUG com.tv.server.mapper.ProgramCategoryMapper.insert :159  [32m        [0;39m ==> Parameters: 9qBIrtix(String), 0QIiNoVB(String), 00000202(String)
+2021-10-31 03:27:20.694 DEBUG com.tv.server.mapper.ProgramCategoryMapper.insert :159  [32m        [0;39m <==    Updates: 1
+2021-10-31 03:27:20.720 DEBUG c.t.s.mapper.ProgramMapper.selectByExample_COUNT  :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM program 
+2021-10-31 03:27:20.720 DEBUG c.t.s.mapper.ProgramMapper.selectByExample_COUNT  :159  [32m        [0;39m ==> Parameters: 
+2021-10-31 03:27:20.721 TRACE c.t.s.mapper.ProgramMapper.selectByExample_COUNT  :165  [32m        [0;39m <==    Columns: count(0)
+2021-10-31 03:27:20.721 TRACE c.t.s.mapper.ProgramMapper.selectByExample_COUNT  :165  [32m        [0;39m <==        Row: 1
+2021-10-31 03:27:20.722 DEBUG c.t.s.mapper.ProgramMapper.selectByExample_COUNT  :159  [32m        [0;39m <==      Total: 1
+2021-10-31 03:27:20.722 DEBUG com.tv.server.mapper.ProgramMapper.selectByExample:159  [32m        [0;39m ==>  Preparing: select id, title, summary, length, price, image, type, charge, status, favorites, sort, created_at, updated_at from program order by sort asc LIMIT ? 
+2021-10-31 03:27:20.722 DEBUG com.tv.server.mapper.ProgramMapper.selectByExample:159  [32m        [0;39m ==> Parameters: 5(Integer)
+2021-10-31 03:27:20.723 TRACE com.tv.server.mapper.ProgramMapper.selectByExample:165  [32m        [0;39m <==    Columns: id, title, summary, length, price, image, type, charge, status, favorites, sort, created_at, updated_at
+2021-10-31 03:27:20.723 TRACE com.tv.server.mapper.ProgramMapper.selectByExample:165  [32m        [0;39m <==        Row: 0QIiNoVB, 1111111111, test test test test test test test test test test test test test test test test test test test test test test , 6, null, null, S, C, D, null, null, 2021-10-30 07:56:08.0, 2021-10-31 03:27:20.671
+2021-10-31 03:27:20.723 DEBUG com.tv.server.mapper.ProgramMapper.selectByExample:159  [32m        [0;39m <==      Total: 1
+2021-10-31 03:28:39.402 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-10-31 03:29:18.663 DEBUG c.t.s.mapper.ProgramCategoryMapper.selectByExample:159  [32m        [0;39m ==>  Preparing: select id, program_id, category_id from program_category WHERE ( program_id = ? ) 
+2021-10-31 03:29:18.664 DEBUG c.t.s.mapper.ProgramCategoryMapper.selectByExample:159  [32m        [0;39m ==> Parameters: 0QIiNoVB(String)
+2021-10-31 03:29:18.667 TRACE c.t.s.mapper.ProgramCategoryMapper.selectByExample:165  [32m        [0;39m <==    Columns: id, program_id, category_id
+2021-10-31 03:29:18.667 TRACE c.t.s.mapper.ProgramCategoryMapper.selectByExample:165  [32m        [0;39m <==        Row: 9qBIrtix, 0QIiNoVB, 00000202
+2021-10-31 03:29:18.668 TRACE c.t.s.mapper.ProgramCategoryMapper.selectByExample:165  [32m        [0;39m <==        Row: CYef7QL9, 0QIiNoVB, 00000102
+2021-10-31 03:29:18.668 TRACE c.t.s.mapper.ProgramCategoryMapper.selectByExample:165  [32m        [0;39m <==        Row: DCoft6NR, 0QIiNoVB, 00000100
+2021-10-31 03:29:18.668 TRACE c.t.s.mapper.ProgramCategoryMapper.selectByExample:165  [32m        [0;39m <==        Row: dqyE67fe, 0QIiNoVB, 00000200
+2021-10-31 03:29:18.669 TRACE c.t.s.mapper.ProgramCategoryMapper.selectByExample:165  [32m        [0;39m <==        Row: JIFGEP6p, 0QIiNoVB, 00000201
+2021-10-31 03:29:18.669 DEBUG c.t.s.mapper.ProgramCategoryMapper.selectByExample:159  [32m        [0;39m <==      Total: 5
+2021-10-31 03:30:00.284 DEBUG c.t.server.mapper.ProgramMapper.updateByPrimaryKey:159  [32m        [0;39m ==>  Preparing: update program set title = ?, summary = ?, length = ?, price = ?, image = ?, type = ?, charge = ?, status = ?, favorites = ?, sort = ?, created_at = ?, updated_at = ? where id = ? 
+2021-10-31 03:30:00.285 DEBUG c.t.server.mapper.ProgramMapper.updateByPrimaryKey:159  [32m        [0;39m ==> Parameters: 1111111111(String), test test test test test test test test test test test test test test test test test test test test test test (String), 6(Integer), null, null, S(String), C(String), D(String), null, null, 2021-10-30 07:56:08.0(Timestamp), 2021-10-31 03:30:00.284(Timestamp), 0QIiNoVB(String)
+2021-10-31 03:30:00.287 DEBUG c.t.server.mapper.ProgramMapper.updateByPrimaryKey:159  [32m        [0;39m <==    Updates: 1
+2021-10-31 03:30:00.287 DEBUG c.t.s.mapper.ProgramCategoryMapper.deleteByExample:159  [32m        [0;39m ==>  Preparing: delete from program_category WHERE ( program_id = ? ) 
+2021-10-31 03:30:00.288 DEBUG c.t.s.mapper.ProgramCategoryMapper.deleteByExample:159  [32m        [0;39m ==> Parameters: 0QIiNoVB(String)
+2021-10-31 03:30:00.288 DEBUG c.t.s.mapper.ProgramCategoryMapper.deleteByExample:159  [32m        [0;39m <==    Updates: 5
+2021-10-31 03:30:00.289 DEBUG com.tv.server.mapper.ProgramCategoryMapper.insert :159  [32m        [0;39m ==>  Preparing: insert into program_category (id, program_id, category_id ) values (?, ?, ? ) 
+2021-10-31 03:30:00.289 DEBUG com.tv.server.mapper.ProgramCategoryMapper.insert :159  [32m        [0;39m ==> Parameters: XntIf86V(String), 0QIiNoVB(String), 00000100(String)
+2021-10-31 03:30:00.290 DEBUG com.tv.server.mapper.ProgramCategoryMapper.insert :159  [32m        [0;39m <==    Updates: 1
+2021-10-31 03:30:00.290 DEBUG com.tv.server.mapper.ProgramCategoryMapper.insert :159  [32m        [0;39m ==>  Preparing: insert into program_category (id, program_id, category_id ) values (?, ?, ? ) 
+2021-10-31 03:30:00.291 DEBUG com.tv.server.mapper.ProgramCategoryMapper.insert :159  [32m        [0;39m ==> Parameters: VIBYhtW1(String), 0QIiNoVB(String), 00000102(String)
+2021-10-31 03:30:00.291 DEBUG com.tv.server.mapper.ProgramCategoryMapper.insert :159  [32m        [0;39m <==    Updates: 1
+2021-10-31 03:30:00.292 DEBUG com.tv.server.mapper.ProgramCategoryMapper.insert :159  [32m        [0;39m ==>  Preparing: insert into program_category (id, program_id, category_id ) values (?, ?, ? ) 
+2021-10-31 03:30:00.292 DEBUG com.tv.server.mapper.ProgramCategoryMapper.insert :159  [32m        [0;39m ==> Parameters: R9ktKHM5(String), 0QIiNoVB(String), 00000200(String)
+2021-10-31 03:30:00.293 DEBUG com.tv.server.mapper.ProgramCategoryMapper.insert :159  [32m        [0;39m <==    Updates: 1
+2021-10-31 03:30:00.293 DEBUG com.tv.server.mapper.ProgramCategoryMapper.insert :159  [32m        [0;39m ==>  Preparing: insert into program_category (id, program_id, category_id ) values (?, ?, ? ) 
+2021-10-31 03:30:00.294 DEBUG com.tv.server.mapper.ProgramCategoryMapper.insert :159  [32m        [0;39m ==> Parameters: wF3bUBLO(String), 0QIiNoVB(String), 00000201(String)
+2021-10-31 03:30:00.295 DEBUG com.tv.server.mapper.ProgramCategoryMapper.insert :159  [32m        [0;39m <==    Updates: 1
+2021-10-31 03:30:00.295 DEBUG com.tv.server.mapper.ProgramCategoryMapper.insert :159  [32m        [0;39m ==>  Preparing: insert into program_category (id, program_id, category_id ) values (?, ?, ? ) 
+2021-10-31 03:30:00.296 DEBUG com.tv.server.mapper.ProgramCategoryMapper.insert :159  [32m        [0;39m ==> Parameters: Zx7KSjYO(String), 0QIiNoVB(String), 00000202(String)
+2021-10-31 03:30:00.296 DEBUG com.tv.server.mapper.ProgramCategoryMapper.insert :159  [32m        [0;39m <==    Updates: 1
+2021-10-31 03:30:00.319 DEBUG c.t.s.mapper.ProgramMapper.selectByExample_COUNT  :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM program 
+2021-10-31 03:30:00.319 DEBUG c.t.s.mapper.ProgramMapper.selectByExample_COUNT  :159  [32m        [0;39m ==> Parameters: 
+2021-10-31 03:30:00.320 TRACE c.t.s.mapper.ProgramMapper.selectByExample_COUNT  :165  [32m        [0;39m <==    Columns: count(0)
+2021-10-31 03:30:00.320 TRACE c.t.s.mapper.ProgramMapper.selectByExample_COUNT  :165  [32m        [0;39m <==        Row: 1
+2021-10-31 03:30:00.320 DEBUG c.t.s.mapper.ProgramMapper.selectByExample_COUNT  :159  [32m        [0;39m <==      Total: 1
+2021-10-31 03:30:00.320 DEBUG com.tv.server.mapper.ProgramMapper.selectByExample:159  [32m        [0;39m ==>  Preparing: select id, title, summary, length, price, image, type, charge, status, favorites, sort, created_at, updated_at from program order by sort asc LIMIT ? 
+2021-10-31 03:30:00.321 DEBUG com.tv.server.mapper.ProgramMapper.selectByExample:159  [32m        [0;39m ==> Parameters: 5(Integer)
+2021-10-31 03:30:00.321 TRACE com.tv.server.mapper.ProgramMapper.selectByExample:165  [32m        [0;39m <==    Columns: id, title, summary, length, price, image, type, charge, status, favorites, sort, created_at, updated_at
+2021-10-31 03:30:00.322 TRACE com.tv.server.mapper.ProgramMapper.selectByExample:165  [32m        [0;39m <==        Row: 0QIiNoVB, 1111111111, test test test test test test test test test test test test test test test test test test test test test test , 6, null, null, S, C, D, null, null, 2021-10-30 07:56:08.0, 2021-10-31 03:30:00.284
+2021-10-31 03:30:00.322 DEBUG com.tv.server.mapper.ProgramMapper.selectByExample:159  [32m        [0;39m <==      Total: 1
+2021-10-31 03:30:02.893 DEBUG c.t.s.mapper.ProgramCategoryMapper.selectByExample:159  [32m        [0;39m ==>  Preparing: select id, program_id, category_id from program_category WHERE ( program_id = ? ) 
+2021-10-31 03:30:02.893 DEBUG c.t.s.mapper.ProgramCategoryMapper.selectByExample:159  [32m        [0;39m ==> Parameters: 0QIiNoVB(String)
+2021-10-31 03:30:02.894 TRACE c.t.s.mapper.ProgramCategoryMapper.selectByExample:165  [32m        [0;39m <==    Columns: id, program_id, category_id
+2021-10-31 03:30:02.894 TRACE c.t.s.mapper.ProgramCategoryMapper.selectByExample:165  [32m        [0;39m <==        Row: R9ktKHM5, 0QIiNoVB, 00000200
+2021-10-31 03:30:02.895 TRACE c.t.s.mapper.ProgramCategoryMapper.selectByExample:165  [32m        [0;39m <==        Row: VIBYhtW1, 0QIiNoVB, 00000102
+2021-10-31 03:30:02.895 TRACE c.t.s.mapper.ProgramCategoryMapper.selectByExample:165  [32m        [0;39m <==        Row: wF3bUBLO, 0QIiNoVB, 00000201
+2021-10-31 03:30:02.895 TRACE c.t.s.mapper.ProgramCategoryMapper.selectByExample:165  [32m        [0;39m <==        Row: XntIf86V, 0QIiNoVB, 00000100
+2021-10-31 03:30:02.895 TRACE c.t.s.mapper.ProgramCategoryMapper.selectByExample:165  [32m        [0;39m <==        Row: Zx7KSjYO, 0QIiNoVB, 00000202
+2021-10-31 03:30:02.895 DEBUG c.t.s.mapper.ProgramCategoryMapper.selectByExample:159  [32m        [0;39m <==      Total: 5
+2021-10-31 03:32:49.677 DEBUG c.t.s.mapper.ProgramCategoryMapper.selectByExample:159  [32m        [0;39m ==>  Preparing: select id, program_id, category_id from program_category WHERE ( program_id = ? ) 
+2021-10-31 03:32:49.678 DEBUG c.t.s.mapper.ProgramCategoryMapper.selectByExample:159  [32m        [0;39m ==> Parameters: 0QIiNoVB(String)
+2021-10-31 03:32:49.679 TRACE c.t.s.mapper.ProgramCategoryMapper.selectByExample:165  [32m        [0;39m <==    Columns: id, program_id, category_id
+2021-10-31 03:32:49.679 TRACE c.t.s.mapper.ProgramCategoryMapper.selectByExample:165  [32m        [0;39m <==        Row: R9ktKHM5, 0QIiNoVB, 00000200
+2021-10-31 03:32:49.680 TRACE c.t.s.mapper.ProgramCategoryMapper.selectByExample:165  [32m        [0;39m <==        Row: VIBYhtW1, 0QIiNoVB, 00000102
+2021-10-31 03:32:49.680 TRACE c.t.s.mapper.ProgramCategoryMapper.selectByExample:165  [32m        [0;39m <==        Row: wF3bUBLO, 0QIiNoVB, 00000201
+2021-10-31 03:32:49.680 TRACE c.t.s.mapper.ProgramCategoryMapper.selectByExample:165  [32m        [0;39m <==        Row: XntIf86V, 0QIiNoVB, 00000100
+2021-10-31 03:32:49.681 TRACE c.t.s.mapper.ProgramCategoryMapper.selectByExample:165  [32m        [0;39m <==        Row: Zx7KSjYO, 0QIiNoVB, 00000202
+2021-10-31 03:32:49.681 DEBUG c.t.s.mapper.ProgramCategoryMapper.selectByExample:159  [32m        [0;39m <==      Total: 5
+2021-10-31 03:33:39.403 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
