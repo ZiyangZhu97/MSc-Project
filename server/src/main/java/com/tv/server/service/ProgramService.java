@@ -56,7 +56,7 @@ public class ProgramService {
             this.update(program);
         }
         // 批量保存课程分类
-        programCategoryService.saveBatch(programDto.getId(), programDto.getCategorys());
+        programCategoryService.saveBatch(program.getId(), programDto.getCategorys());
 
     }
 

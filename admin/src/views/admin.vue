@@ -421,22 +421,22 @@
 
                 <b class="arrow"></b>
               </li>
-              <li class="active" id="business-chapter-sidebar">
-                <router-link to="/business/chapter">
-                  <i class="menu-icon fa fa-caret-right"></i>
-                  Season
-                </router-link>
+<!--              <li class="active" id="business-chapter-sidebar">-->
+<!--                <router-link to="/business/chapter">-->
+<!--                  <i class="menu-icon fa fa-caret-right"></i>-->
+<!--                  Season-->
+<!--                </router-link>-->
 
-                <b class="arrow"></b>
-              </li>
-              <li class="active" id="business-episode-sidebar">
-                <router-link to="/business/episode">
-                  <i class="menu-icon fa fa-caret-right"></i>
-                  Episode
-                </router-link>
+<!--                <b class="arrow"></b>-->
+<!--              </li>-->
+<!--              <li class="active" id="business-episode-sidebar">-->
+<!--                <router-link to="/business/episode">-->
+<!--                  <i class="menu-icon fa fa-caret-right"></i>-->
+<!--                  Episode-->
+<!--                </router-link>-->
 
-                <b class="arrow"></b>
-              </li>
+<!--                <b class="arrow"></b>-->
+<!--              </li>-->
             </ul>
           </li>
 
