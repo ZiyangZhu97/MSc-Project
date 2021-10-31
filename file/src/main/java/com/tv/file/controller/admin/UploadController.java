@@ -24,6 +24,13 @@ public class UploadController {
 
     public static final String BUSINESS_NAME = "文件上传";
 
+//    @Resource
+//    private TestService testService;
+//    @RequestMapping("/upload")
+//    public List<Test> test() {
+//        return testService.list();
+//    }
+
     @RequestMapping("/upload")
     //file参数接收.vue里append()里的‘file’
     public ResponseDto upload(@RequestParam MultipartFile file) throws IOException {
@@ -34,7 +41,7 @@ public class UploadController {
         // 保存文件到本地
         String fileName = file.getOriginalFilename();
         String key = UuidUtil.getShortUuid();
-        String fullPath = "D:/project_file/tv/program/" + key + "-" + fileName;
+        String fullPath = "D:/MScProject/tv_file/program/" + key + "-" + fileName;
         File dest = new File(fullPath);
         file.transferTo(dest);
         LOG.info(dest.getAbsolutePath());
