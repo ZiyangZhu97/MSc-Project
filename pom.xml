@@ -11,8 +11,9 @@
         <module>business</module>
 		<module>generator</module>
 		<module>generator</module>
+        <module>file</module>
 
-	</modules>
+    </modules>
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
