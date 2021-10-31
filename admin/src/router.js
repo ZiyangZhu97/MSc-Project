@@ -7,7 +7,7 @@ import Category from "./views/admin/category.vue"
 import Program from "./views/admin/program.vue"
 import Chapter from "./views/admin/chapter.vue"
 import Episode from "./views/admin/episode.vue"
-
+import File from "./views/admin/file.vue"
 
 Vue.use(Router);
 
@@ -44,6 +44,10 @@ export default new Router({
             path: "business/episode",
             name: "business/episode",
             component: Episode,
+        }, {
+            path: "file/file",
+            name: "file/file",
+            component: File,
         }]
     }]
 })

@@ -5164,3 +5164,181 @@
 2021-10-31 22:20:38.958 TRACE com.tv.server.mapper.ProgramMapper.selectByExample:165  [32m        [0;39m <==        Row: 0QIiNoVB, 1111111111, test test test test test test test test test test test test test test test test test test test test test test , 6, null, http://127.0.0.1:9000/file/f/cover/OCl4l4Xq-8ffebb2762d0f70357a6df1404fa513d2497c5d4.jpg, S, C, D, null, null, 2021-10-30 07:56:08.0, 2021-10-31 22:20:12.98
 2021-10-31 22:20:38.958 TRACE com.tv.server.mapper.ProgramMapper.selectByExample:165  [32m        [0;39m <==        Row: EJuu5hxD, 222222, null, null, null, http://127.0.0.1:9000/file/f/cover/UjWZYIeq--64xyuQ5-eef1K3ToS48-3e.jpg, null, null, null, null, null, 2021-10-31 19:24:01.0, 2021-10-31 22:20:38.917
 2021-10-31 22:20:38.959 DEBUG com.tv.server.mapper.ProgramMapper.selectByExample:159  [32m        [0;39m <==      Total: 2
+2021-10-31 22:24:09.617 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-10-31 22:29:09.624 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-10-31 22:34:09.625 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-10-31 22:39:09.641 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-10-31 22:44:09.646 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-10-31 22:49:09.649 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-10-31 22:54:09.657 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-10-31 22:59:09.659 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-10-31 23:04:09.669 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-10-31 23:09:09.675 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-10-31 23:09:32.494 INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry   :65   [32m        [0;39m Unregistering application BUSINESS with eureka with status DOWN
+2021-10-31 23:09:32.496 WARN  com.netflix.discovery.DiscoveryClient             :1321 [32m        [0;39m Saw local status change event StatusChangeEvent [timestamp=1635721772496, current=DOWN, previous=UP]
+2021-10-31 23:09:32.498 INFO  com.netflix.discovery.DiscoveryClient             :844  [32m        [0;39m DiscoveryClient_BUSINESS/windows10.microdone.cn:business:9002: registering service...
+2021-10-31 23:09:32.521 INFO  com.netflix.discovery.DiscoveryClient             :853  [32m        [0;39m DiscoveryClient_BUSINESS/windows10.microdone.cn:business:9002 - registration status: 204
+2021-10-31 23:09:32.525 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :208  [32m        [0;39m Shutting down ExecutorService 'applicationTaskExecutor'
+2021-10-31 23:09:32.530 INFO  com.netflix.discovery.DiscoveryClient             :906  [32m        [0;39m Shutting down DiscoveryClient ...
+2021-10-31 23:09:35.557 INFO  com.netflix.discovery.DiscoveryClient             :940  [32m        [0;39m Unregistering ...
+2021-10-31 23:09:35.562 INFO  com.netflix.discovery.DiscoveryClient             :942  [32m        [0;39m DiscoveryClient_BUSINESS/windows10.microdone.cn:business:9002 - deregister  status: 200
+2021-10-31 23:09:35.567 INFO  com.netflix.discovery.DiscoveryClient             :929  [32m        [0;39m Completed shut down of DiscoveryClient
+2021-10-31 23:09:35.567 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m        [0;39m HikariPool-31 - Shutdown initiated...
+2021-10-31 23:09:35.578 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m        [0;39m HikariPool-31 - Shutdown completed.
+2021-10-31 23:09:37.698 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-10-31 23:09:38.343 INFO  com.tv.business.config.BusinessApplication        :651  [32m        [0;39m No active profile set, falling back to default profiles: default
+2021-10-31 23:09:38.649 INFO  o.springframework.cloud.context.scope.GenericScope:295  [32m        [0;39m BeanFactory id=93cf187d-1bf7-3c2e-9ca4-45016fb71853
+2021-10-31 23:09:38.664 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-10-31 23:09:38.666 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-10-31 23:09:38.683 WARN  org.apache.tomcat.util.modeler.Registry           :173  [32m        [0;39m The MBean registry cannot be disabled because it has already been initialised
+2021-10-31 23:09:38.837 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :92   [32m        [0;39m Tomcat initialized with port(s): 9002 (http)
+2021-10-31 23:09:38.838 INFO  org.apache.catalina.core.StandardService          :173  [32m        [0;39m Starting service [Tomcat]
+2021-10-31 23:09:38.838 INFO  org.apache.catalina.core.StandardEngine           :173  [32m        [0;39m Starting Servlet engine: [Apache Tomcat/9.0.29]
+2021-10-31 23:09:38.889 INFO  o.a.c.c.C.[Tomcat-15].[localhost].[/business]     :173  [32m        [0;39m Initializing Spring embedded WebApplicationContext
+2021-10-31 23:09:38.889 INFO  org.springframework.web.context.ContextLoader     :284  [32m        [0;39m Root WebApplicationContext: initialization completed in 544 ms
+2021-10-31 23:09:38.975 WARN  com.netflix.config.sources.URLConfigurationSource :121  [32m        [0;39m No URLs will be polled as dynamic configuration sources.
+2021-10-31 23:09:38.975 INFO  com.netflix.config.sources.URLConfigurationSource :122  [32m        [0;39m To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-10-31 23:09:39.022 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :171  [32m        [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2021-10-31 23:09:39.080 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m        [0;39m LiveReload server is running on port 35729
+2021-10-31 23:09:40.831 WARN  o.s.c.l.c.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger:106  [32m        [0;39m You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2021-10-31 23:09:40.835 WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger:81   [32m        [0;39m Spring Cloud LoadBalancer is currently working with default default cache. You can switch to using Caffeine cache, by adding it to the classpath.
+2021-10-31 23:09:40.843 INFO  o.s.cloud.netflix.eureka.InstanceInfoFactory      :72   [32m        [0;39m Setting initial instance status as: STARTING
+2021-10-31 23:09:40.844 INFO  com.netflix.discovery.DiscoveryClient             :365  [32m        [0;39m Initializing Eureka in region us-east-1
+2021-10-31 23:09:40.845 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :70   [32m        [0;39m Using JSON encoding codec LegacyJacksonJson
+2021-10-31 23:09:40.846 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :71   [32m        [0;39m Using JSON decoding codec LegacyJacksonJson
+2021-10-31 23:09:40.846 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :80   [32m        [0;39m Using XML encoding codec XStreamXml
+2021-10-31 23:09:40.846 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :81   [32m        [0;39m Using XML decoding codec XStreamXml
+2021-10-31 23:09:40.895 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-10-31 23:09:40.896 INFO  com.netflix.discovery.DiscoveryClient             :976  [32m        [0;39m Disable delta property : false
+2021-10-31 23:09:40.897 INFO  com.netflix.discovery.DiscoveryClient             :977  [32m        [0;39m Single vip registry refresh property : null
+2021-10-31 23:09:40.897 INFO  com.netflix.discovery.DiscoveryClient             :978  [32m        [0;39m Force full registry fetch : false
+2021-10-31 23:09:40.897 INFO  com.netflix.discovery.DiscoveryClient             :979  [32m        [0;39m Application is null : false
+2021-10-31 23:09:40.897 INFO  com.netflix.discovery.DiscoveryClient             :980  [32m        [0;39m Registered Applications size is zero : true
+2021-10-31 23:09:40.897 INFO  com.netflix.discovery.DiscoveryClient             :982  [32m        [0;39m Application version is -1: true
+2021-10-31 23:09:40.897 INFO  com.netflix.discovery.DiscoveryClient             :1065 [32m        [0;39m Getting all instance registry info from the eureka server
+2021-10-31 23:09:40.900 INFO  com.netflix.discovery.DiscoveryClient             :1074 [32m        [0;39m The response status is 200
+2021-10-31 23:09:40.900 INFO  com.netflix.discovery.DiscoveryClient             :1288 [32m        [0;39m Starting heartbeat executor: renew interval is: 30
+2021-10-31 23:09:40.901 INFO  com.netflix.discovery.InstanceInfoReplicator      :60   [32m        [0;39m InstanceInfoReplicator onDemand update allowed rate per min is 4
+2021-10-31 23:09:40.902 INFO  com.netflix.discovery.DiscoveryClient             :465  [32m        [0;39m Discovery Client initialized at timestamp 1635721780902 with initial instances count: 3
+2021-10-31 23:09:40.902 INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry   :41   [32m        [0;39m Registering application BUSINESS with eureka with status UP
+2021-10-31 23:09:40.903 INFO  com.netflix.discovery.DiscoveryClient             :1323 [32m        [0;39m Saw local status change event StatusChangeEvent [timestamp=1635721780903, current=UP, previous=STARTING]
+2021-10-31 23:09:40.903 INFO  com.netflix.discovery.DiscoveryClient             :844  [32m        [0;39m DiscoveryClient_BUSINESS/windows10.microdone.cn:business:9002: registering service...
+2021-10-31 23:09:40.911 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :204  [32m        [0;39m Tomcat started on port(s): 9002 (http) with context path '/business'
+2021-10-31 23:09:40.911 INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration         :145  [32m        [0;39m Updating port to 9002
+2021-10-31 23:09:40.915 INFO  com.netflix.discovery.DiscoveryClient             :853  [32m        [0;39m DiscoveryClient_BUSINESS/windows10.microdone.cn:business:9002 - registration status: 204
+2021-10-31 23:09:41.511 INFO  com.tv.business.config.BusinessApplication        :61   [32m        [0;39m Started BusinessApplication in 4.567 seconds (JVM running for 110820.537)
+2021-10-31 23:09:41.512 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m        [0;39m Condition evaluation unchanged
+2021-10-31 23:09:41.512 INFO  com.tv.business.config.BusinessApplication        :22   [32m        [0;39m started successfully!!
+2021-10-31 23:09:41.512 INFO  com.tv.business.config.BusinessApplication        :23   [32m        [0;39m business address: 	http://127.0.0.1:9002
+2021-10-31 23:12:49.719 INFO  o.a.c.c.C.[Tomcat-15].[localhost].[/business]     :173  [32m        [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-10-31 23:12:49.719 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m        [0;39m Initializing Servlet 'dispatcherServlet'
+2021-10-31 23:12:49.723 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m        [0;39m Completed initialization in 4 ms
+2021-10-31 23:12:49.751 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m        [0;39m HikariPool-32 - Starting...
+2021-10-31 23:12:49.759 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m        [0;39m HikariPool-32 - Start completed.
+2021-10-31 23:12:49.764 DEBUG c.tv.server.mapper.CategoryMapper.selectByExample :159  [32m        [0;39m ==>  Preparing: select id, parent, name, sort from category order by sort asc 
+2021-10-31 23:12:49.765 DEBUG c.tv.server.mapper.CategoryMapper.selectByExample :159  [32m        [0;39m ==> Parameters: 
+2021-10-31 23:12:49.766 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==    Columns: id, parent, name, sort
+2021-10-31 23:12:49.767 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000100, 00000000, Language, 100
+2021-10-31 23:12:49.768 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000101, 00000100, Chinese, 101
+2021-10-31 23:12:49.768 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000102, 00000100, Japanese, 102
+2021-10-31 23:12:49.768 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000103, 00000100, Engilish, 103
+2021-10-31 23:12:49.769 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 6ia3K5Ag, 00000100, Other, 199
+2021-10-31 23:12:49.769 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000200, 00000000, Genre, 200
+2021-10-31 23:12:49.769 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000201, 00000200, Action, 201
+2021-10-31 23:12:49.770 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000202, 00000200, Comedy, 202
+2021-10-31 23:12:49.770 DEBUG c.t.s.mapper.ProgramMapper.selectByExample_COUNT  :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM program 
+2021-10-31 23:12:49.770 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000203, 00000200, Romance, 203
+2021-10-31 23:12:49.771 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: NNvjDlnn, 00000200, Adventure, 204
+2021-10-31 23:12:49.772 DEBUG c.tv.server.mapper.CategoryMapper.selectByExample :159  [32m        [0;39m <==      Total: 10
+2021-10-31 23:12:49.771 DEBUG c.t.s.mapper.ProgramMapper.selectByExample_COUNT  :159  [32m        [0;39m ==> Parameters: 
+2021-10-31 23:12:49.774 TRACE c.t.s.mapper.ProgramMapper.selectByExample_COUNT  :165  [32m        [0;39m <==    Columns: count(0)
+2021-10-31 23:12:49.775 TRACE c.t.s.mapper.ProgramMapper.selectByExample_COUNT  :165  [32m        [0;39m <==        Row: 2
+2021-10-31 23:12:49.775 DEBUG c.t.s.mapper.ProgramMapper.selectByExample_COUNT  :159  [32m        [0;39m <==      Total: 1
+2021-10-31 23:12:49.776 DEBUG com.tv.server.mapper.ProgramMapper.selectByExample:159  [32m        [0;39m ==>  Preparing: select id, title, summary, length, price, image, type, charge, status, favorites, sort, created_at, updated_at from program order by sort asc LIMIT ? 
+2021-10-31 23:12:49.776 DEBUG com.tv.server.mapper.ProgramMapper.selectByExample:159  [32m        [0;39m ==> Parameters: 5(Integer)
+2021-10-31 23:12:49.777 TRACE com.tv.server.mapper.ProgramMapper.selectByExample:165  [32m        [0;39m <==    Columns: id, title, summary, length, price, image, type, charge, status, favorites, sort, created_at, updated_at
+2021-10-31 23:12:49.778 TRACE com.tv.server.mapper.ProgramMapper.selectByExample:165  [32m        [0;39m <==        Row: 0QIiNoVB, 1111111111, test test test test test test test test test test test test test test test test test test test test test test , 6, null, http://127.0.0.1:9000/file/f/cover/OCl4l4Xq-8ffebb2762d0f70357a6df1404fa513d2497c5d4.jpg, S, C, D, null, null, 2021-10-30 07:56:08.0, 2021-10-31 22:20:12.98
+2021-10-31 23:12:49.778 TRACE com.tv.server.mapper.ProgramMapper.selectByExample:165  [32m        [0;39m <==        Row: EJuu5hxD, 222222, null, null, null, http://127.0.0.1:9000/file/f/cover/UjWZYIeq--64xyuQ5-eef1K3ToS48-3e.jpg, null, null, null, null, null, 2021-10-31 19:24:01.0, 2021-10-31 22:20:38.917
+2021-10-31 23:12:49.779 DEBUG com.tv.server.mapper.ProgramMapper.selectByExample:159  [32m        [0;39m <==      Total: 2
+2021-10-31 23:12:51.066 DEBUG c.tv.server.mapper.CategoryMapper.selectByExample :159  [32m        [0;39m ==>  Preparing: select id, parent, name, sort from category order by sort asc 
+2021-10-31 23:12:51.067 DEBUG c.tv.server.mapper.CategoryMapper.selectByExample :159  [32m        [0;39m ==> Parameters: 
+2021-10-31 23:12:51.068 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==    Columns: id, parent, name, sort
+2021-10-31 23:12:51.068 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000100, 00000000, Language, 100
+2021-10-31 23:12:51.069 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000101, 00000100, Chinese, 101
+2021-10-31 23:12:51.069 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000102, 00000100, Japanese, 102
+2021-10-31 23:12:51.070 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000103, 00000100, Engilish, 103
+2021-10-31 23:12:51.070 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 6ia3K5Ag, 00000100, Other, 199
+2021-10-31 23:12:51.070 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000200, 00000000, Genre, 200
+2021-10-31 23:12:51.072 DEBUG c.t.s.mapper.ProgramMapper.selectByExample_COUNT  :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM program 
+2021-10-31 23:12:51.073 DEBUG c.t.s.mapper.ProgramMapper.selectByExample_COUNT  :159  [32m        [0;39m ==> Parameters: 
+2021-10-31 23:12:51.073 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000201, 00000200, Action, 201
+2021-10-31 23:12:51.074 TRACE c.t.s.mapper.ProgramMapper.selectByExample_COUNT  :165  [32m        [0;39m <==    Columns: count(0)
+2021-10-31 23:12:51.074 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000202, 00000200, Comedy, 202
+2021-10-31 23:12:51.074 TRACE c.t.s.mapper.ProgramMapper.selectByExample_COUNT  :165  [32m        [0;39m <==        Row: 2
+2021-10-31 23:12:51.074 DEBUG c.t.s.mapper.ProgramMapper.selectByExample_COUNT  :159  [32m        [0;39m <==      Total: 1
+2021-10-31 23:12:51.074 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000203, 00000200, Romance, 203
+2021-10-31 23:12:51.074 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: NNvjDlnn, 00000200, Adventure, 204
+2021-10-31 23:12:51.075 DEBUG c.tv.server.mapper.CategoryMapper.selectByExample :159  [32m        [0;39m <==      Total: 10
+2021-10-31 23:12:51.075 DEBUG com.tv.server.mapper.ProgramMapper.selectByExample:159  [32m        [0;39m ==>  Preparing: select id, title, summary, length, price, image, type, charge, status, favorites, sort, created_at, updated_at from program order by sort asc LIMIT ? 
+2021-10-31 23:12:51.075 DEBUG com.tv.server.mapper.ProgramMapper.selectByExample:159  [32m        [0;39m ==> Parameters: 5(Integer)
+2021-10-31 23:12:51.076 TRACE com.tv.server.mapper.ProgramMapper.selectByExample:165  [32m        [0;39m <==    Columns: id, title, summary, length, price, image, type, charge, status, favorites, sort, created_at, updated_at
+2021-10-31 23:12:51.076 TRACE com.tv.server.mapper.ProgramMapper.selectByExample:165  [32m        [0;39m <==        Row: 0QIiNoVB, 1111111111, test test test test test test test test test test test test test test test test test test test test test test , 6, null, http://127.0.0.1:9000/file/f/cover/OCl4l4Xq-8ffebb2762d0f70357a6df1404fa513d2497c5d4.jpg, S, C, D, null, null, 2021-10-30 07:56:08.0, 2021-10-31 22:20:12.98
+2021-10-31 23:12:51.077 TRACE com.tv.server.mapper.ProgramMapper.selectByExample:165  [32m        [0;39m <==        Row: EJuu5hxD, 222222, null, null, null, http://127.0.0.1:9000/file/f/cover/UjWZYIeq--64xyuQ5-eef1K3ToS48-3e.jpg, null, null, null, null, null, 2021-10-31 19:24:01.0, 2021-10-31 22:20:38.917
+2021-10-31 23:12:51.077 DEBUG com.tv.server.mapper.ProgramMapper.selectByExample:159  [32m        [0;39m <==      Total: 2
+2021-10-31 23:14:40.906 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-10-31 23:17:35.107 INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry   :65   [32m        [0;39m Unregistering application BUSINESS with eureka with status DOWN
+2021-10-31 23:17:35.107 WARN  com.netflix.discovery.DiscoveryClient             :1321 [32m        [0;39m Saw local status change event StatusChangeEvent [timestamp=1635722255107, current=DOWN, previous=UP]
+2021-10-31 23:17:35.107 INFO  com.netflix.discovery.DiscoveryClient             :844  [32m        [0;39m DiscoveryClient_BUSINESS/windows10.microdone.cn:business:9002: registering service...
+2021-10-31 23:17:35.109 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :208  [32m        [0;39m Shutting down ExecutorService 'applicationTaskExecutor'
+2021-10-31 23:17:35.110 INFO  com.netflix.discovery.DiscoveryClient             :906  [32m        [0;39m Shutting down DiscoveryClient ...
+2021-10-31 23:17:35.119 INFO  com.netflix.discovery.DiscoveryClient             :853  [32m        [0;39m DiscoveryClient_BUSINESS/windows10.microdone.cn:business:9002 - registration status: 204
+2021-10-31 23:17:35.119 INFO  com.netflix.discovery.DiscoveryClient             :940  [32m        [0;39m Unregistering ...
+2021-10-31 23:17:35.134 INFO  com.netflix.discovery.DiscoveryClient             :942  [32m        [0;39m DiscoveryClient_BUSINESS/windows10.microdone.cn:business:9002 - deregister  status: 200
+2021-10-31 23:17:35.138 INFO  com.netflix.discovery.DiscoveryClient             :929  [32m        [0;39m Completed shut down of DiscoveryClient
+2021-10-31 23:17:35.138 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m        [0;39m HikariPool-32 - Shutdown initiated...
+2021-10-31 23:17:35.141 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m        [0;39m HikariPool-32 - Shutdown completed.
+2021-10-31 23:17:37.210 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-10-31 23:17:38.041 INFO  com.tv.business.config.BusinessApplication        :651  [32m        [0;39m No active profile set, falling back to default profiles: default
+2021-10-31 23:17:38.581 INFO  o.springframework.cloud.context.scope.GenericScope:295  [32m        [0;39m BeanFactory id=93cf187d-1bf7-3c2e-9ca4-45016fb71853
+2021-10-31 23:17:38.645 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-10-31 23:17:38.650 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-10-31 23:17:38.732 WARN  org.apache.tomcat.util.modeler.Registry           :173  [32m        [0;39m The MBean registry cannot be disabled because it has already been initialised
+2021-10-31 23:17:39.712 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :92   [32m        [0;39m Tomcat initialized with port(s): 9002 (http)
+2021-10-31 23:17:39.713 INFO  org.apache.catalina.core.StandardService          :173  [32m        [0;39m Starting service [Tomcat]
+2021-10-31 23:17:39.713 INFO  org.apache.catalina.core.StandardEngine           :173  [32m        [0;39m Starting Servlet engine: [Apache Tomcat/9.0.29]
+2021-10-31 23:17:39.787 INFO  o.a.c.c.C.[Tomcat-15].[localhost].[/business]     :173  [32m        [0;39m Initializing Spring embedded WebApplicationContext
+2021-10-31 23:17:39.787 INFO  org.springframework.web.context.ContextLoader     :284  [32m        [0;39m Root WebApplicationContext: initialization completed in 1743 ms
+2021-10-31 23:17:39.972 WARN  com.netflix.config.sources.URLConfigurationSource :121  [32m        [0;39m No URLs will be polled as dynamic configuration sources.
+2021-10-31 23:17:39.972 INFO  com.netflix.config.sources.URLConfigurationSource :122  [32m        [0;39m To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-10-31 23:17:40.026 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :171  [32m        [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2021-10-31 23:17:40.184 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m        [0;39m LiveReload server is running on port 35729
+2021-10-31 23:17:43.964 WARN  o.s.c.l.c.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger:106  [32m        [0;39m You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2021-10-31 23:17:43.968 WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger:81   [32m        [0;39m Spring Cloud LoadBalancer is currently working with default default cache. You can switch to using Caffeine cache, by adding it to the classpath.
+2021-10-31 23:17:43.975 INFO  o.s.cloud.netflix.eureka.InstanceInfoFactory      :72   [32m        [0;39m Setting initial instance status as: STARTING
+2021-10-31 23:17:43.977 INFO  com.netflix.discovery.DiscoveryClient             :365  [32m        [0;39m Initializing Eureka in region us-east-1
+2021-10-31 23:17:43.978 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :70   [32m        [0;39m Using JSON encoding codec LegacyJacksonJson
+2021-10-31 23:17:43.979 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :71   [32m        [0;39m Using JSON decoding codec LegacyJacksonJson
+2021-10-31 23:17:43.979 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :80   [32m        [0;39m Using XML encoding codec XStreamXml
+2021-10-31 23:17:43.979 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :81   [32m        [0;39m Using XML decoding codec XStreamXml
+2021-10-31 23:17:44.033 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-10-31 23:17:44.034 INFO  com.netflix.discovery.DiscoveryClient             :976  [32m        [0;39m Disable delta property : false
+2021-10-31 23:17:44.034 INFO  com.netflix.discovery.DiscoveryClient             :977  [32m        [0;39m Single vip registry refresh property : null
+2021-10-31 23:17:44.034 INFO  com.netflix.discovery.DiscoveryClient             :978  [32m        [0;39m Force full registry fetch : false
+2021-10-31 23:17:44.034 INFO  com.netflix.discovery.DiscoveryClient             :979  [32m        [0;39m Application is null : false
+2021-10-31 23:17:44.034 INFO  com.netflix.discovery.DiscoveryClient             :980  [32m        [0;39m Registered Applications size is zero : true
+2021-10-31 23:17:44.034 INFO  com.netflix.discovery.DiscoveryClient             :982  [32m        [0;39m Application version is -1: true
+2021-10-31 23:17:44.035 INFO  com.netflix.discovery.DiscoveryClient             :1065 [32m        [0;39m Getting all instance registry info from the eureka server
+2021-10-31 23:17:44.037 INFO  com.netflix.discovery.DiscoveryClient             :1074 [32m        [0;39m The response status is 200
+2021-10-31 23:17:44.037 INFO  com.netflix.discovery.DiscoveryClient             :1288 [32m        [0;39m Starting heartbeat executor: renew interval is: 30
+2021-10-31 23:17:44.037 INFO  com.netflix.discovery.InstanceInfoReplicator      :60   [32m        [0;39m InstanceInfoReplicator onDemand update allowed rate per min is 4
+2021-10-31 23:17:44.038 INFO  com.netflix.discovery.DiscoveryClient             :465  [32m        [0;39m Discovery Client initialized at timestamp 1635722264038 with initial instances count: 3
+2021-10-31 23:17:44.039 INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry   :41   [32m        [0;39m Registering application BUSINESS with eureka with status UP
+2021-10-31 23:17:44.039 INFO  com.netflix.discovery.DiscoveryClient             :1323 [32m        [0;39m Saw local status change event StatusChangeEvent [timestamp=1635722264039, current=UP, previous=STARTING]
+2021-10-31 23:17:44.039 INFO  com.netflix.discovery.DiscoveryClient             :844  [32m        [0;39m DiscoveryClient_BUSINESS/windows10.microdone.cn:business:9002: registering service...
+2021-10-31 23:17:44.045 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :204  [32m        [0;39m Tomcat started on port(s): 9002 (http) with context path '/business'
+2021-10-31 23:17:44.045 INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration         :145  [32m        [0;39m Updating port to 9002
+2021-10-31 23:17:44.048 INFO  com.netflix.discovery.DiscoveryClient             :853  [32m        [0;39m DiscoveryClient_BUSINESS/windows10.microdone.cn:business:9002 - registration status: 204
+2021-10-31 23:17:44.729 INFO  com.tv.business.config.BusinessApplication        :61   [32m        [0;39m Started BusinessApplication in 8.604 seconds (JVM running for 111303.755)
+2021-10-31 23:17:44.730 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m        [0;39m Condition evaluation unchanged
+2021-10-31 23:17:44.730 INFO  com.tv.business.config.BusinessApplication        :22   [32m        [0;39m started successfully!!
+2021-10-31 23:17:44.730 INFO  com.tv.business.config.BusinessApplication        :23   [32m        [0;39m business address: 	http://127.0.0.1:9002
