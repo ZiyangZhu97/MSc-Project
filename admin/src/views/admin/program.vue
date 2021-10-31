@@ -147,7 +147,7 @@
               <div class="form-group">
                 <label class="col-sm-2 control-label">Cover</label>
                 <div class="col-sm-10">
-                  <input type = "file" v-on:change="uploadImage()" id="file-upload-input">
+                  <input type = "file" ref="file" v-on:change="uploadImage()" id="file-upload-input">
                   <div v-show="program.image" class="row">
                     <div class="col-md-4">
                       <img v-bind:src="program.image" class="img-responsive">
@@ -318,14 +318,32 @@
       },
 
       /**
-       * 点击【上传】
+       * 点击【上传图片】
        */
       uploadImage () {
         let _this = this;
         let formData = new window.FormData();
+        let file = _this.$refs.file.files[0];
+
+        // 判断文件格式
+        let suffixs = ["jpg", "jpeg", "png"];
+        let fileName = file.name;
+        let suffix = fileName.substring(fileName.lastIndexOf(".") + 1, fileName.length).toLowerCase();
+        let validateSuffix = false;
+        for (let i = 0; i < suffixs.length; i++) {
+          if (suffixs[i].toLowerCase() === suffix) {
+            validateSuffix = true;
+            break;
+          }
+        }
+        if (!validateSuffix) {
+          Toast.warning("only support: " + suffixs.join(",") + " file");
+          return;
+        }
         // key："file"必须和后端controller参数名一致
         // 下面这行是和上面v-on:change="uploadImage()" id="file-upload-input"联动，拿到这张图片
-        formData.append('file', document.querySelector('#file-upload-input').files[0]);
+        //formData.append('file', document.querySelector('#file-upload-input').files[0]);
+        formData.append('file', file);
         // 下面这行是把上面的formData这个表单传给后端,upload对应UploadController
         _this.$ajax.post(process.env.VUE_APP_SERVER + '/file/admin/upload', formData).then((response)=>{
         //下面这行是拿到结果
