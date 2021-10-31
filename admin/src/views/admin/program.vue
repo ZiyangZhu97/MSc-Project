@@ -114,7 +114,7 @@
             <form class="form-horizontal">
               <div class="form-group">
                 <label class="col-sm-2 control-label">
-                  分类
+                  Category
                 </label>
                 <div class="col-sm-10">
                   <ul id="tree" class="ztree"></ul>
@@ -148,6 +148,8 @@
                 <label class="col-sm-2 control-label">Cover</label>
                 <div class="col-sm-10">
                   <input type = "file" v-on:change="uploadImage()" id="file-upload-input">
+                  <img v-bind:src="program.image" class="img-responsive">
+
                 </div>
               </div>
               <div class="form-group">
@@ -324,6 +326,9 @@
         _this.$ajax.post(process.env.VUE_APP_SERVER + '/file/admin/upload', formData).then((response)=>{
         //下面这行是拿到结果
           let resp = response.data;
+          let image = resp.content;
+          console.log("新封面地址：", image);
+          _this.program.image = image;
         });
       },
 
