@@ -13,3 +13,16 @@
 2021-11-01 01:04:39.857 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
 2021-11-01 01:09:39.863 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
 2021-11-01 01:14:39.867 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-01 01:19:39.886 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-01 01:24:39.892 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-01 01:29:39.907 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-01 01:34:39.917 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-01 01:39:39.925 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-01 01:44:39.940 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-01 01:49:39.956 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-01 01:54:39.968 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-01 01:59:39.974 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-01 02:02:20.168 WARN  reactor.netty.channel.FluxReceive                 :294  [32m        [0;39m [id: 0x68d7dcc6, L:/127.0.0.1:9000 - R:/127.0.0.1:2099] An exception has been observed post termination, use DEBUG level to see the full stack: java.io.IOException: 你的主机中的软件中止了一个已建立的连接。
+2021-11-01 02:04:39.985 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-01 02:08:15.166 WARN  reactor.netty.channel.FluxReceive                 :294  [32m        [0;39m [id: 0xec9bd56c, L:/127.0.0.1:9000 - R:/127.0.0.1:8332] An exception has been observed post termination, use DEBUG level to see the full stack: java.io.IOException: 你的主机中的软件中止了一个已建立的连接。
+2021-11-01 02:09:39.994 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
