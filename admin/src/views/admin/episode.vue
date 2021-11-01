@@ -84,9 +84,9 @@
               <div class="form-group">
                 <label class="col-sm-2 control-label">Video</label>
                 <div class="col-sm-10">
-                  <file v-bind:input-id="'video-upload'"
+                  <big-file v-bind:input-id="'video-upload'"
                         v-bind:suffixs="['mp4']"
-                        v-bind:after-upload="afterUpload"></file>
+                        v-bind:after-upload="afterUpload"></big-file>
                   <div v-show="episode.video" class="row">
                     <div class="col-md-9">
                       <video v-bind:src="episode.video" id="video" controls="controls"></video>
@@ -128,10 +128,10 @@
 
 <script>
   import Pagination from "../../components/pagination";
-  import File from "../../components/file";
+  import BigFile from "../../components/big-file";
 
   export default {
-    components: {Pagination, File},
+    components: {Pagination, BigFile},
     name: "episode",
     data: function() {
       return {
