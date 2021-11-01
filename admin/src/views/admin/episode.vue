@@ -84,7 +84,7 @@
               <div class="form-group">
                 <label class="col-sm-2 control-label">Video</label>
                 <div class="col-sm-10">
-                  <file v-bind:id="'video-upload'"
+                  <file v-bind:input-id="'video-upload'"
                         v-bind:suffixs="['mp4']"
                         v-bind:after-upload="afterUpload"></file>
                   <div v-show="episode.video" class="row">

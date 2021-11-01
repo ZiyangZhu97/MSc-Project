@@ -147,7 +147,7 @@
               <div class="form-group">
                 <label class="col-sm-2 control-label">Cover</label>
                 <div class="col-sm-10">
-                  <file v-bind:id="'image-upload'"
+                  <file v-bind:input-id="'image-upload'"
                         v-bind:suffixs="['jpg', 'jpeg', 'png']"
                         v-bind:after-upload="afterUpload"></file>
                   <div v-show="program.image" class="row">
