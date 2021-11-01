@@ -1,7 +1,9 @@
 package com.tv.file.controller.admin;
 
 import com.tv.server.domain.Test;
+import com.tv.server.dto.FileDto;
 import com.tv.server.dto.ResponseDto;
+import com.tv.server.service.FileService;
 import com.tv.server.service.TestService;
 import com.tv.server.util.UuidUtil;
 import org.slf4j.Logger;
@@ -31,6 +33,9 @@ public class UploadController {
     @Value("${file.path}")
     private String FILE_PATH;
 
+    @Resource
+    private FileService fileService;
+
 //    @Resource
 //    private TestService testService;
 //    @RequestMapping("/test")
@@ -48,13 +53,23 @@ public class UploadController {
         // 保存文件到本地
         String fileName = file.getOriginalFilename();
         String key = UuidUtil.getShortUuid();
-        String fullPath = FILE_PATH + "cover/" + key + "-" + fileName;
+        String suffix = fileName.substring(fileName.lastIndexOf(".") + 1).toLowerCase();
+        String path = "cover/" + key + "." + suffix;//保存的时候去掉了原来的文件名
+        String fullPath = FILE_PATH + path;
+
         File dest = new File(fullPath);
         file.transferTo(dest);
         LOG.info(dest.getAbsolutePath());
+        LOG.info("保存文件记录开始");
+        FileDto fileDto = new FileDto();
+        fileDto.setPath(path);
+        fileDto.setName(fileName);
+        fileDto.setSize(Math.toIntExact(file.getSize()));
+        fileDto.setSuffix(suffix);
+        fileService.save(fileDto);
 
         ResponseDto responseDto = new ResponseDto();
-        responseDto.setContent(FILE_DOMAIN + "f/cover/" + key + "-" + fileName);
+        responseDto.setContent(FILE_DOMAIN + path);
 
         return responseDto;
 
