@@ -48,27 +48,33 @@ public class UploadController {
 
     @RequestMapping("/upload")
     //file参数接收.vue里append()里的‘file’
-    public ResponseDto upload(@RequestParam MultipartFile file) throws IOException {
-        LOG.info("上传文件开始：{}", file);
-        LOG.info(file.getOriginalFilename());
-        LOG.info(String.valueOf(file.getSize()));
+    public ResponseDto upload(@RequestParam MultipartFile shard,
+                              String name,
+                              String suffix,
+                              Integer size,
+                              Integer shardIndex,
+                              Integer shardSize,
+                              Integer shardTotal,
+                              String key) throws IOException {
+        LOG.info("上传文件开始");
 
         // 保存文件到本地
-        String fileName = file.getOriginalFilename();
-        String key = UuidUtil.getShortUuid();
-        String suffix = fileName.substring(fileName.lastIndexOf(".") + 1).toLowerCase();
         String path = "cover/" + key + "." + suffix;//保存的时候去掉了原来的文件名
         String fullPath = FILE_PATH + path;
 
         File dest = new File(fullPath);
-        file.transferTo(dest);
+        shard.transferTo(dest);
         LOG.info(dest.getAbsolutePath());
         LOG.info("保存文件记录开始");
         FileDto fileDto = new FileDto();
         fileDto.setPath(path);
-        fileDto.setName(fileName);
-        fileDto.setSize(Math.toIntExact(file.getSize()));
+        fileDto.setName(name);
+        fileDto.setSize(size);
         fileDto.setSuffix(suffix);
+        fileDto.setShardIndex(shardIndex);
+        fileDto.setShardSize(shardSize);
+        fileDto.setShardTotal(shardTotal);
+        fileDto.setKey(key);
         fileService.save(fileDto);
 
         ResponseDto responseDto = new ResponseDto();
