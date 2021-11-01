@@ -326,7 +326,8 @@
        */
       afterUpload(resp) {
         let _this = this;
-        let image = resp.content;
+        //下面这个resp.content就等于一个FileDto对象，.path就是这个对象的path值
+        let image = resp.content.path;
         _this.program.image = image;
       },
 
