@@ -84,7 +84,14 @@
               <div class="form-group">
                 <label class="col-sm-2 control-label">Video</label>
                 <div class="col-sm-10">
-                  <input v-model="episode.video" class="form-control">
+                  <file v-bind:id="'video-upload'"
+                        v-bind:suffixs="['mp4']"
+                        v-bind:after-upload="afterUpload"></file>
+                  <div v-show="episode.video" class="row">
+                    <div class="col-md-9">
+                      <video v-bind:src="episode.video" controls="controls"></video>
+                    </div>
+                  </div>
                 </div>
               </div>
               <div class="form-group">
@@ -121,8 +128,10 @@
 
 <script>
   import Pagination from "../../components/pagination";
+  import File from "../../components/file";
+
   export default {
-    components: {Pagination},
+    components: {Pagination, File},
     name: "episode",
     data: function() {
       return {
@@ -228,7 +237,21 @@
             }
           })
         });
+      },
+
+      afterUpload(resp) {
+        let _this = this;
+        let video = resp.content.path;
+        _this.episode.video = video;
       }
     }
   }
 </script>
+
+<style scoped>
+  video {
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+  }
+</style>
