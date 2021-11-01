@@ -10,7 +10,7 @@ public class ValidatorUtil {
      */
     public static void require(String str, String fieldName) {
         if (StringUtils.isEmpty(str)) {
-            throw new ValidatorException(fieldName + "不能为空");
+            throw new ValidatorException(fieldName + "cannot be empty");
         }
     }
 
@@ -26,7 +26,7 @@ public class ValidatorUtil {
             length = str.length();
         }
         if (length < min || length > max) {
-            throw new ValidatorException(fieldName + "长度" + min + "~" + max + "位");
+            throw new ValidatorException(fieldName + "length" + min + "~" + max + "figures");
         }
     }
 }
