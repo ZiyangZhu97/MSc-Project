@@ -31,30 +31,4 @@ public class FileController {
         responseDto.setContent(pageDto);
         return responseDto;
     }
-
-    /**
-     * 保存，id有值时更新，无值时新增
-     */
-    @PostMapping("/save")
-    public ResponseDto save(@RequestBody FileDto fileDto) {
-        // 保存校验
-        ValidatorUtil.require(fileDto.getPath(), "Relative Path");
-        ValidatorUtil.length(fileDto.getPath(), "Relative Path", 1, 100);
-        ValidatorUtil.length(fileDto.getName(), "File Name", 1, 100);
-        ValidatorUtil.length(fileDto.getSuffix(), "File Suffix", 1, 10);
-        ResponseDto responseDto = new ResponseDto();
-        fileService.save(fileDto);
-        responseDto.setContent(fileDto);
-        return responseDto;
-    }
-
-    /**
-     * 删除
-     */
-    @DeleteMapping("/delete/{id}")
-    public ResponseDto delete(@PathVariable String id) {
-        ResponseDto responseDto = new ResponseDto();
-        fileService.delete(id);
-        return responseDto;
-    }
 }
