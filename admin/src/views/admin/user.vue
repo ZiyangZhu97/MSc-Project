@@ -150,11 +150,11 @@
           || !Validator.length(_this.user.loginName, "Login Name", 1, 50)
           || !Validator.length(_this.user.name, "Username", 1, 50)
           || !Validator.require(_this.user.password, "Password")
-          || !Validator.length(_this.user.password, "Password", 8, 32)
+          || !Validator.length(_this.user.password, "Password", 8, 16)
         ) {
           return;
         }
-
+        _this.user.password = hex_md5(_this.user.password + KEY);
         _this.$ajax.post(process.env.VUE_APP_SERVER + '/system/admin/user/save', _this.user).then((response)=>{
           let resp = response.data;
           if (resp.success) {
