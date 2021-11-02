@@ -526,6 +526,7 @@
       // console.log("admin");
       // sidebar激活样式方法二
       _this.activeSidebar(_this.$route.name.replace("/", "-") + "-sidebar");
+      $.getScript('/ace/assets/js/ace.min.js');
     },
     watch: {
       $route: {
@@ -558,6 +559,7 @@
         let parentLi = $("#" + id).parents("li");
         if (parentLi) {
           parentLi.siblings().removeClass("open active");
+          parentLi.siblings().find("li").removeClass("active");
           parentLi.addClass("open active");
         }
       }
