@@ -2778,3 +2778,261 @@ com.mysql.jdbc.MysqlDataTruncation: Data truncation: Data too long for column 'p
 2021-11-02 02:38:43.577 TRACE com.tv.server.mapper.UserMapper.selectByExample   :165  [32m        [0;39m <==        Row: YoDuFnN0, 3, 1, PaPassword
 2021-11-02 02:38:43.578 DEBUG com.tv.server.mapper.UserMapper.selectByExample   :159  [32m        [0;39m <==      Total: 3
 2021-11-02 02:39:51.811 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-02 02:44:46.604 DEBUG c.t.server.mapper.UserMapper.selectByExample_COUNT:159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM user 
+2021-11-02 02:44:46.605 DEBUG c.t.server.mapper.UserMapper.selectByExample_COUNT:159  [32m        [0;39m ==> Parameters: 
+2021-11-02 02:44:46.606 TRACE c.t.server.mapper.UserMapper.selectByExample_COUNT:165  [32m        [0;39m <==    Columns: count(0)
+2021-11-02 02:44:46.607 TRACE c.t.server.mapper.UserMapper.selectByExample_COUNT:165  [32m        [0;39m <==        Row: 3
+2021-11-02 02:44:46.607 DEBUG c.t.server.mapper.UserMapper.selectByExample_COUNT:159  [32m        [0;39m <==      Total: 1
+2021-11-02 02:44:46.608 DEBUG com.tv.server.mapper.UserMapper.selectByExample   :159  [32m        [0;39m ==>  Preparing: select id, login_name, `name`, `password` from user LIMIT ? 
+2021-11-02 02:44:46.609 DEBUG com.tv.server.mapper.UserMapper.selectByExample   :159  [32m        [0;39m ==> Parameters: 5(Integer)
+2021-11-02 02:44:46.610 TRACE com.tv.server.mapper.UserMapper.selectByExample   :165  [32m        [0;39m <==    Columns: id, login_name, name, password
+2021-11-02 02:44:46.610 TRACE com.tv.server.mapper.UserMapper.selectByExample   :165  [32m        [0;39m <==        Row: DPBAmvjP, 1, 1, 1
+2021-11-02 02:44:46.611 TRACE com.tv.server.mapper.UserMapper.selectByExample   :165  [32m        [0;39m <==        Row: gtvNwAtx, 2, 1, 1
+2021-11-02 02:44:46.611 TRACE com.tv.server.mapper.UserMapper.selectByExample   :165  [32m        [0;39m <==        Row: YoDuFnN0, 3, 1, PaPassword
+2021-11-02 02:44:46.612 DEBUG com.tv.server.mapper.UserMapper.selectByExample   :159  [32m        [0;39m <==      Total: 3
+2021-11-02 02:44:51.812 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-02 02:45:30.524 DEBUG c.t.server.mapper.UserMapper.selectByExample_COUNT:159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM user 
+2021-11-02 02:45:30.525 DEBUG c.t.server.mapper.UserMapper.selectByExample_COUNT:159  [32m        [0;39m ==> Parameters: 
+2021-11-02 02:45:30.526 TRACE c.t.server.mapper.UserMapper.selectByExample_COUNT:165  [32m        [0;39m <==    Columns: count(0)
+2021-11-02 02:45:30.526 TRACE c.t.server.mapper.UserMapper.selectByExample_COUNT:165  [32m        [0;39m <==        Row: 3
+2021-11-02 02:45:30.527 DEBUG c.t.server.mapper.UserMapper.selectByExample_COUNT:159  [32m        [0;39m <==      Total: 1
+2021-11-02 02:45:30.527 DEBUG com.tv.server.mapper.UserMapper.selectByExample   :159  [32m        [0;39m ==>  Preparing: select id, login_name, `name`, `password` from user LIMIT ? 
+2021-11-02 02:45:30.528 DEBUG com.tv.server.mapper.UserMapper.selectByExample   :159  [32m        [0;39m ==> Parameters: 5(Integer)
+2021-11-02 02:45:30.529 TRACE com.tv.server.mapper.UserMapper.selectByExample   :165  [32m        [0;39m <==    Columns: id, login_name, name, password
+2021-11-02 02:45:30.529 TRACE com.tv.server.mapper.UserMapper.selectByExample   :165  [32m        [0;39m <==        Row: DPBAmvjP, 1, 1, 1
+2021-11-02 02:45:30.530 TRACE com.tv.server.mapper.UserMapper.selectByExample   :165  [32m        [0;39m <==        Row: gtvNwAtx, 2, 1, 1
+2021-11-02 02:45:30.531 TRACE com.tv.server.mapper.UserMapper.selectByExample   :165  [32m        [0;39m <==        Row: YoDuFnN0, 3, 1, PaPassword
+2021-11-02 02:45:30.532 DEBUG com.tv.server.mapper.UserMapper.selectByExample   :159  [32m        [0;39m <==      Total: 3
+2021-11-02 02:46:33.586 DEBUG c.t.server.mapper.UserMapper.selectByExample_COUNT:159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM user 
+2021-11-02 02:46:33.587 DEBUG c.t.server.mapper.UserMapper.selectByExample_COUNT:159  [32m        [0;39m ==> Parameters: 
+2021-11-02 02:46:33.587 TRACE c.t.server.mapper.UserMapper.selectByExample_COUNT:165  [32m        [0;39m <==    Columns: count(0)
+2021-11-02 02:46:33.588 TRACE c.t.server.mapper.UserMapper.selectByExample_COUNT:165  [32m        [0;39m <==        Row: 3
+2021-11-02 02:46:33.588 DEBUG c.t.server.mapper.UserMapper.selectByExample_COUNT:159  [32m        [0;39m <==      Total: 1
+2021-11-02 02:46:33.589 DEBUG com.tv.server.mapper.UserMapper.selectByExample   :159  [32m        [0;39m ==>  Preparing: select id, login_name, `name`, `password` from user LIMIT ? 
+2021-11-02 02:46:33.589 DEBUG com.tv.server.mapper.UserMapper.selectByExample   :159  [32m        [0;39m ==> Parameters: 5(Integer)
+2021-11-02 02:46:33.590 TRACE com.tv.server.mapper.UserMapper.selectByExample   :165  [32m        [0;39m <==    Columns: id, login_name, name, password
+2021-11-02 02:46:33.590 TRACE com.tv.server.mapper.UserMapper.selectByExample   :165  [32m        [0;39m <==        Row: DPBAmvjP, 1, 1, 1
+2021-11-02 02:46:33.592 TRACE com.tv.server.mapper.UserMapper.selectByExample   :165  [32m        [0;39m <==        Row: gtvNwAtx, 2, 1, 1
+2021-11-02 02:46:33.593 TRACE com.tv.server.mapper.UserMapper.selectByExample   :165  [32m        [0;39m <==        Row: YoDuFnN0, 3, 1, PaPassword
+2021-11-02 02:46:33.593 DEBUG com.tv.server.mapper.UserMapper.selectByExample   :159  [32m        [0;39m <==      Total: 3
+2021-11-02 02:46:38.276 DEBUG c.t.server.mapper.UserMapper.selectByExample_COUNT:159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM user 
+2021-11-02 02:46:38.277 DEBUG c.t.server.mapper.UserMapper.selectByExample_COUNT:159  [32m        [0;39m ==> Parameters: 
+2021-11-02 02:46:38.277 TRACE c.t.server.mapper.UserMapper.selectByExample_COUNT:165  [32m        [0;39m <==    Columns: count(0)
+2021-11-02 02:46:38.278 TRACE c.t.server.mapper.UserMapper.selectByExample_COUNT:165  [32m        [0;39m <==        Row: 3
+2021-11-02 02:46:38.278 DEBUG c.t.server.mapper.UserMapper.selectByExample_COUNT:159  [32m        [0;39m <==      Total: 1
+2021-11-02 02:46:38.279 DEBUG com.tv.server.mapper.UserMapper.selectByExample   :159  [32m        [0;39m ==>  Preparing: select id, login_name, `name`, `password` from user LIMIT ? 
+2021-11-02 02:46:38.280 DEBUG com.tv.server.mapper.UserMapper.selectByExample   :159  [32m        [0;39m ==> Parameters: 5(Integer)
+2021-11-02 02:46:38.281 TRACE com.tv.server.mapper.UserMapper.selectByExample   :165  [32m        [0;39m <==    Columns: id, login_name, name, password
+2021-11-02 02:46:38.281 TRACE com.tv.server.mapper.UserMapper.selectByExample   :165  [32m        [0;39m <==        Row: DPBAmvjP, 1, 1, 1
+2021-11-02 02:46:38.281 TRACE com.tv.server.mapper.UserMapper.selectByExample   :165  [32m        [0;39m <==        Row: gtvNwAtx, 2, 1, 1
+2021-11-02 02:46:38.282 TRACE com.tv.server.mapper.UserMapper.selectByExample   :165  [32m        [0;39m <==        Row: YoDuFnN0, 3, 1, PaPassword
+2021-11-02 02:46:38.282 DEBUG com.tv.server.mapper.UserMapper.selectByExample   :159  [32m        [0;39m <==      Total: 3
+2021-11-02 02:49:51.828 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-02 02:50:26.217 DEBUG c.t.server.mapper.UserMapper.selectByExample_COUNT:159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM user 
+2021-11-02 02:50:26.217 DEBUG c.t.server.mapper.UserMapper.selectByExample_COUNT:159  [32m        [0;39m ==> Parameters: 
+2021-11-02 02:50:26.219 TRACE c.t.server.mapper.UserMapper.selectByExample_COUNT:165  [32m        [0;39m <==    Columns: count(0)
+2021-11-02 02:50:26.219 TRACE c.t.server.mapper.UserMapper.selectByExample_COUNT:165  [32m        [0;39m <==        Row: 3
+2021-11-02 02:50:26.220 DEBUG c.t.server.mapper.UserMapper.selectByExample_COUNT:159  [32m        [0;39m <==      Total: 1
+2021-11-02 02:50:26.220 DEBUG com.tv.server.mapper.UserMapper.selectByExample   :159  [32m        [0;39m ==>  Preparing: select id, login_name, `name`, `password` from user LIMIT ? 
+2021-11-02 02:50:26.221 DEBUG com.tv.server.mapper.UserMapper.selectByExample   :159  [32m        [0;39m ==> Parameters: 5(Integer)
+2021-11-02 02:50:26.222 TRACE com.tv.server.mapper.UserMapper.selectByExample   :165  [32m        [0;39m <==    Columns: id, login_name, name, password
+2021-11-02 02:50:26.222 TRACE com.tv.server.mapper.UserMapper.selectByExample   :165  [32m        [0;39m <==        Row: DPBAmvjP, 1, 1, 1
+2021-11-02 02:50:26.223 TRACE com.tv.server.mapper.UserMapper.selectByExample   :165  [32m        [0;39m <==        Row: gtvNwAtx, 2, 1, 1
+2021-11-02 02:50:26.223 TRACE com.tv.server.mapper.UserMapper.selectByExample   :165  [32m        [0;39m <==        Row: YoDuFnN0, 3, 1, PaPassword
+2021-11-02 02:50:26.224 DEBUG com.tv.server.mapper.UserMapper.selectByExample   :159  [32m        [0;39m <==      Total: 3
+2021-11-02 02:53:04.887 DEBUG c.t.server.mapper.UserMapper.selectByExample_COUNT:159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM user 
+2021-11-02 02:53:04.888 DEBUG c.t.server.mapper.UserMapper.selectByExample_COUNT:159  [32m        [0;39m ==> Parameters: 
+2021-11-02 02:53:04.889 TRACE c.t.server.mapper.UserMapper.selectByExample_COUNT:165  [32m        [0;39m <==    Columns: count(0)
+2021-11-02 02:53:04.889 TRACE c.t.server.mapper.UserMapper.selectByExample_COUNT:165  [32m        [0;39m <==        Row: 3
+2021-11-02 02:53:04.890 DEBUG c.t.server.mapper.UserMapper.selectByExample_COUNT:159  [32m        [0;39m <==      Total: 1
+2021-11-02 02:53:04.891 DEBUG com.tv.server.mapper.UserMapper.selectByExample   :159  [32m        [0;39m ==>  Preparing: select id, login_name, `name`, `password` from user LIMIT ? 
+2021-11-02 02:53:04.892 DEBUG com.tv.server.mapper.UserMapper.selectByExample   :159  [32m        [0;39m ==> Parameters: 5(Integer)
+2021-11-02 02:53:04.893 TRACE com.tv.server.mapper.UserMapper.selectByExample   :165  [32m        [0;39m <==    Columns: id, login_name, name, password
+2021-11-02 02:53:04.894 TRACE com.tv.server.mapper.UserMapper.selectByExample   :165  [32m        [0;39m <==        Row: DPBAmvjP, 1, 1, 1
+2021-11-02 02:53:04.894 TRACE com.tv.server.mapper.UserMapper.selectByExample   :165  [32m        [0;39m <==        Row: gtvNwAtx, 2, 1, 1
+2021-11-02 02:53:04.895 TRACE com.tv.server.mapper.UserMapper.selectByExample   :165  [32m        [0;39m <==        Row: YoDuFnN0, 3, 1, PaPassword
+2021-11-02 02:53:04.895 DEBUG com.tv.server.mapper.UserMapper.selectByExample   :159  [32m        [0;39m <==      Total: 3
+2021-11-02 02:53:12.306 DEBUG c.t.server.mapper.UserMapper.selectByExample_COUNT:159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM user 
+2021-11-02 02:53:12.306 DEBUG c.t.server.mapper.UserMapper.selectByExample_COUNT:159  [32m        [0;39m ==> Parameters: 
+2021-11-02 02:53:12.307 TRACE c.t.server.mapper.UserMapper.selectByExample_COUNT:165  [32m        [0;39m <==    Columns: count(0)
+2021-11-02 02:53:12.308 TRACE c.t.server.mapper.UserMapper.selectByExample_COUNT:165  [32m        [0;39m <==        Row: 3
+2021-11-02 02:53:12.308 DEBUG c.t.server.mapper.UserMapper.selectByExample_COUNT:159  [32m        [0;39m <==      Total: 1
+2021-11-02 02:53:12.309 DEBUG com.tv.server.mapper.UserMapper.selectByExample   :159  [32m        [0;39m ==>  Preparing: select id, login_name, `name`, `password` from user LIMIT ? 
+2021-11-02 02:53:12.310 DEBUG com.tv.server.mapper.UserMapper.selectByExample   :159  [32m        [0;39m ==> Parameters: 5(Integer)
+2021-11-02 02:53:12.311 TRACE com.tv.server.mapper.UserMapper.selectByExample   :165  [32m        [0;39m <==    Columns: id, login_name, name, password
+2021-11-02 02:53:12.311 TRACE com.tv.server.mapper.UserMapper.selectByExample   :165  [32m        [0;39m <==        Row: DPBAmvjP, 1, 1, 1
+2021-11-02 02:53:12.312 TRACE com.tv.server.mapper.UserMapper.selectByExample   :165  [32m        [0;39m <==        Row: gtvNwAtx, 2, 1, 1
+2021-11-02 02:53:12.312 TRACE com.tv.server.mapper.UserMapper.selectByExample   :165  [32m        [0;39m <==        Row: YoDuFnN0, 3, 1, PaPassword
+2021-11-02 02:53:12.313 DEBUG com.tv.server.mapper.UserMapper.selectByExample   :159  [32m        [0;39m <==      Total: 3
+2021-11-02 02:53:15.319 DEBUG c.t.server.mapper.UserMapper.selectByExample_COUNT:159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM user 
+2021-11-02 02:53:15.320 DEBUG c.t.server.mapper.UserMapper.selectByExample_COUNT:159  [32m        [0;39m ==> Parameters: 
+2021-11-02 02:53:15.321 TRACE c.t.server.mapper.UserMapper.selectByExample_COUNT:165  [32m        [0;39m <==    Columns: count(0)
+2021-11-02 02:53:15.321 TRACE c.t.server.mapper.UserMapper.selectByExample_COUNT:165  [32m        [0;39m <==        Row: 3
+2021-11-02 02:53:15.322 DEBUG c.t.server.mapper.UserMapper.selectByExample_COUNT:159  [32m        [0;39m <==      Total: 1
+2021-11-02 02:53:15.322 DEBUG com.tv.server.mapper.UserMapper.selectByExample   :159  [32m        [0;39m ==>  Preparing: select id, login_name, `name`, `password` from user LIMIT ? 
+2021-11-02 02:53:15.322 DEBUG com.tv.server.mapper.UserMapper.selectByExample   :159  [32m        [0;39m ==> Parameters: 5(Integer)
+2021-11-02 02:53:15.323 TRACE com.tv.server.mapper.UserMapper.selectByExample   :165  [32m        [0;39m <==    Columns: id, login_name, name, password
+2021-11-02 02:53:15.323 TRACE com.tv.server.mapper.UserMapper.selectByExample   :165  [32m        [0;39m <==        Row: DPBAmvjP, 1, 1, 1
+2021-11-02 02:53:15.324 TRACE com.tv.server.mapper.UserMapper.selectByExample   :165  [32m        [0;39m <==        Row: gtvNwAtx, 2, 1, 1
+2021-11-02 02:53:15.324 TRACE com.tv.server.mapper.UserMapper.selectByExample   :165  [32m        [0;39m <==        Row: YoDuFnN0, 3, 1, PaPassword
+2021-11-02 02:53:15.324 DEBUG com.tv.server.mapper.UserMapper.selectByExample   :159  [32m        [0;39m <==      Total: 3
+2021-11-02 02:53:19.083 DEBUG c.t.server.mapper.UserMapper.selectByExample_COUNT:159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM user 
+2021-11-02 02:53:19.084 DEBUG c.t.server.mapper.UserMapper.selectByExample_COUNT:159  [32m        [0;39m ==> Parameters: 
+2021-11-02 02:53:19.085 TRACE c.t.server.mapper.UserMapper.selectByExample_COUNT:165  [32m        [0;39m <==    Columns: count(0)
+2021-11-02 02:53:19.086 TRACE c.t.server.mapper.UserMapper.selectByExample_COUNT:165  [32m        [0;39m <==        Row: 3
+2021-11-02 02:53:19.086 DEBUG c.t.server.mapper.UserMapper.selectByExample_COUNT:159  [32m        [0;39m <==      Total: 1
+2021-11-02 02:53:19.087 DEBUG com.tv.server.mapper.UserMapper.selectByExample   :159  [32m        [0;39m ==>  Preparing: select id, login_name, `name`, `password` from user LIMIT ? 
+2021-11-02 02:53:19.087 DEBUG com.tv.server.mapper.UserMapper.selectByExample   :159  [32m        [0;39m ==> Parameters: 5(Integer)
+2021-11-02 02:53:19.088 TRACE com.tv.server.mapper.UserMapper.selectByExample   :165  [32m        [0;39m <==    Columns: id, login_name, name, password
+2021-11-02 02:53:19.088 TRACE com.tv.server.mapper.UserMapper.selectByExample   :165  [32m        [0;39m <==        Row: DPBAmvjP, 1, 1, 1
+2021-11-02 02:53:19.089 TRACE com.tv.server.mapper.UserMapper.selectByExample   :165  [32m        [0;39m <==        Row: gtvNwAtx, 2, 1, 1
+2021-11-02 02:53:19.089 TRACE com.tv.server.mapper.UserMapper.selectByExample   :165  [32m        [0;39m <==        Row: YoDuFnN0, 3, 1, PaPassword
+2021-11-02 02:53:19.090 DEBUG com.tv.server.mapper.UserMapper.selectByExample   :159  [32m        [0;39m <==      Total: 3
+2021-11-02 02:53:26.851 DEBUG c.t.server.mapper.UserMapper.selectByExample_COUNT:159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM user 
+2021-11-02 02:53:26.852 DEBUG c.t.server.mapper.UserMapper.selectByExample_COUNT:159  [32m        [0;39m ==> Parameters: 
+2021-11-02 02:53:26.853 TRACE c.t.server.mapper.UserMapper.selectByExample_COUNT:165  [32m        [0;39m <==    Columns: count(0)
+2021-11-02 02:53:26.853 TRACE c.t.server.mapper.UserMapper.selectByExample_COUNT:165  [32m        [0;39m <==        Row: 3
+2021-11-02 02:53:26.854 DEBUG c.t.server.mapper.UserMapper.selectByExample_COUNT:159  [32m        [0;39m <==      Total: 1
+2021-11-02 02:53:26.854 DEBUG com.tv.server.mapper.UserMapper.selectByExample   :159  [32m        [0;39m ==>  Preparing: select id, login_name, `name`, `password` from user LIMIT ? 
+2021-11-02 02:53:26.854 DEBUG com.tv.server.mapper.UserMapper.selectByExample   :159  [32m        [0;39m ==> Parameters: 5(Integer)
+2021-11-02 02:53:26.855 TRACE com.tv.server.mapper.UserMapper.selectByExample   :165  [32m        [0;39m <==    Columns: id, login_name, name, password
+2021-11-02 02:53:26.855 TRACE com.tv.server.mapper.UserMapper.selectByExample   :165  [32m        [0;39m <==        Row: DPBAmvjP, 1, 1, 1
+2021-11-02 02:53:26.856 TRACE com.tv.server.mapper.UserMapper.selectByExample   :165  [32m        [0;39m <==        Row: gtvNwAtx, 2, 1, 1
+2021-11-02 02:53:26.856 TRACE com.tv.server.mapper.UserMapper.selectByExample   :165  [32m        [0;39m <==        Row: YoDuFnN0, 3, 1, PaPassword
+2021-11-02 02:53:26.856 DEBUG com.tv.server.mapper.UserMapper.selectByExample   :159  [32m        [0;39m <==      Total: 3
+2021-11-02 02:53:29.204 DEBUG c.t.server.mapper.UserMapper.selectByExample_COUNT:159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM user 
+2021-11-02 02:53:29.205 DEBUG c.t.server.mapper.UserMapper.selectByExample_COUNT:159  [32m        [0;39m ==> Parameters: 
+2021-11-02 02:53:29.206 TRACE c.t.server.mapper.UserMapper.selectByExample_COUNT:165  [32m        [0;39m <==    Columns: count(0)
+2021-11-02 02:53:29.207 TRACE c.t.server.mapper.UserMapper.selectByExample_COUNT:165  [32m        [0;39m <==        Row: 3
+2021-11-02 02:53:29.207 DEBUG c.t.server.mapper.UserMapper.selectByExample_COUNT:159  [32m        [0;39m <==      Total: 1
+2021-11-02 02:53:29.208 DEBUG com.tv.server.mapper.UserMapper.selectByExample   :159  [32m        [0;39m ==>  Preparing: select id, login_name, `name`, `password` from user LIMIT ? 
+2021-11-02 02:53:29.208 DEBUG com.tv.server.mapper.UserMapper.selectByExample   :159  [32m        [0;39m ==> Parameters: 5(Integer)
+2021-11-02 02:53:29.209 TRACE com.tv.server.mapper.UserMapper.selectByExample   :165  [32m        [0;39m <==    Columns: id, login_name, name, password
+2021-11-02 02:53:29.210 TRACE com.tv.server.mapper.UserMapper.selectByExample   :165  [32m        [0;39m <==        Row: DPBAmvjP, 1, 1, 1
+2021-11-02 02:53:29.210 TRACE com.tv.server.mapper.UserMapper.selectByExample   :165  [32m        [0;39m <==        Row: gtvNwAtx, 2, 1, 1
+2021-11-02 02:53:29.211 TRACE com.tv.server.mapper.UserMapper.selectByExample   :165  [32m        [0;39m <==        Row: YoDuFnN0, 3, 1, PaPassword
+2021-11-02 02:53:29.211 DEBUG com.tv.server.mapper.UserMapper.selectByExample   :159  [32m        [0;39m <==      Total: 3
+2021-11-02 02:53:32.336 DEBUG c.t.server.mapper.UserMapper.selectByExample_COUNT:159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM user 
+2021-11-02 02:53:32.336 DEBUG c.t.server.mapper.UserMapper.selectByExample_COUNT:159  [32m        [0;39m ==> Parameters: 
+2021-11-02 02:53:32.337 TRACE c.t.server.mapper.UserMapper.selectByExample_COUNT:165  [32m        [0;39m <==    Columns: count(0)
+2021-11-02 02:53:32.337 TRACE c.t.server.mapper.UserMapper.selectByExample_COUNT:165  [32m        [0;39m <==        Row: 3
+2021-11-02 02:53:32.338 DEBUG c.t.server.mapper.UserMapper.selectByExample_COUNT:159  [32m        [0;39m <==      Total: 1
+2021-11-02 02:53:32.339 DEBUG com.tv.server.mapper.UserMapper.selectByExample   :159  [32m        [0;39m ==>  Preparing: select id, login_name, `name`, `password` from user LIMIT ? 
+2021-11-02 02:53:32.339 DEBUG com.tv.server.mapper.UserMapper.selectByExample   :159  [32m        [0;39m ==> Parameters: 5(Integer)
+2021-11-02 02:53:32.340 TRACE com.tv.server.mapper.UserMapper.selectByExample   :165  [32m        [0;39m <==    Columns: id, login_name, name, password
+2021-11-02 02:53:32.341 TRACE com.tv.server.mapper.UserMapper.selectByExample   :165  [32m        [0;39m <==        Row: DPBAmvjP, 1, 1, 1
+2021-11-02 02:53:32.341 TRACE com.tv.server.mapper.UserMapper.selectByExample   :165  [32m        [0;39m <==        Row: gtvNwAtx, 2, 1, 1
+2021-11-02 02:53:32.341 TRACE com.tv.server.mapper.UserMapper.selectByExample   :165  [32m        [0;39m <==        Row: YoDuFnN0, 3, 1, PaPassword
+2021-11-02 02:53:32.341 DEBUG com.tv.server.mapper.UserMapper.selectByExample   :159  [32m        [0;39m <==      Total: 3
+2021-11-02 02:53:35.681 DEBUG c.t.server.mapper.UserMapper.selectByExample_COUNT:159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM user 
+2021-11-02 02:53:35.682 DEBUG c.t.server.mapper.UserMapper.selectByExample_COUNT:159  [32m        [0;39m ==> Parameters: 
+2021-11-02 02:53:35.683 TRACE c.t.server.mapper.UserMapper.selectByExample_COUNT:165  [32m        [0;39m <==    Columns: count(0)
+2021-11-02 02:53:35.684 TRACE c.t.server.mapper.UserMapper.selectByExample_COUNT:165  [32m        [0;39m <==        Row: 3
+2021-11-02 02:53:35.684 DEBUG c.t.server.mapper.UserMapper.selectByExample_COUNT:159  [32m        [0;39m <==      Total: 1
+2021-11-02 02:53:35.685 DEBUG com.tv.server.mapper.UserMapper.selectByExample   :159  [32m        [0;39m ==>  Preparing: select id, login_name, `name`, `password` from user LIMIT ? 
+2021-11-02 02:53:35.685 DEBUG com.tv.server.mapper.UserMapper.selectByExample   :159  [32m        [0;39m ==> Parameters: 5(Integer)
+2021-11-02 02:53:35.686 TRACE com.tv.server.mapper.UserMapper.selectByExample   :165  [32m        [0;39m <==    Columns: id, login_name, name, password
+2021-11-02 02:53:35.686 TRACE com.tv.server.mapper.UserMapper.selectByExample   :165  [32m        [0;39m <==        Row: DPBAmvjP, 1, 1, 1
+2021-11-02 02:53:35.687 TRACE com.tv.server.mapper.UserMapper.selectByExample   :165  [32m        [0;39m <==        Row: gtvNwAtx, 2, 1, 1
+2021-11-02 02:53:35.687 TRACE com.tv.server.mapper.UserMapper.selectByExample   :165  [32m        [0;39m <==        Row: YoDuFnN0, 3, 1, PaPassword
+2021-11-02 02:53:35.687 DEBUG com.tv.server.mapper.UserMapper.selectByExample   :159  [32m        [0;39m <==      Total: 3
+2021-11-02 02:53:41.893 DEBUG c.t.server.mapper.UserMapper.selectByExample_COUNT:159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM user 
+2021-11-02 02:53:41.894 DEBUG c.t.server.mapper.UserMapper.selectByExample_COUNT:159  [32m        [0;39m ==> Parameters: 
+2021-11-02 02:53:41.895 TRACE c.t.server.mapper.UserMapper.selectByExample_COUNT:165  [32m        [0;39m <==    Columns: count(0)
+2021-11-02 02:53:41.895 TRACE c.t.server.mapper.UserMapper.selectByExample_COUNT:165  [32m        [0;39m <==        Row: 3
+2021-11-02 02:53:41.895 DEBUG c.t.server.mapper.UserMapper.selectByExample_COUNT:159  [32m        [0;39m <==      Total: 1
+2021-11-02 02:53:41.896 DEBUG com.tv.server.mapper.UserMapper.selectByExample   :159  [32m        [0;39m ==>  Preparing: select id, login_name, `name`, `password` from user LIMIT ? 
+2021-11-02 02:53:41.896 DEBUG com.tv.server.mapper.UserMapper.selectByExample   :159  [32m        [0;39m ==> Parameters: 5(Integer)
+2021-11-02 02:53:41.897 TRACE com.tv.server.mapper.UserMapper.selectByExample   :165  [32m        [0;39m <==    Columns: id, login_name, name, password
+2021-11-02 02:53:41.897 TRACE com.tv.server.mapper.UserMapper.selectByExample   :165  [32m        [0;39m <==        Row: DPBAmvjP, 1, 1, 1
+2021-11-02 02:53:41.898 TRACE com.tv.server.mapper.UserMapper.selectByExample   :165  [32m        [0;39m <==        Row: gtvNwAtx, 2, 1, 1
+2021-11-02 02:53:41.898 TRACE com.tv.server.mapper.UserMapper.selectByExample   :165  [32m        [0;39m <==        Row: YoDuFnN0, 3, 1, PaPassword
+2021-11-02 02:53:41.898 DEBUG com.tv.server.mapper.UserMapper.selectByExample   :159  [32m        [0;39m <==      Total: 3
+2021-11-02 02:53:49.511 DEBUG c.t.server.mapper.UserMapper.selectByExample_COUNT:159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM user 
+2021-11-02 02:53:49.511 DEBUG c.t.server.mapper.UserMapper.selectByExample_COUNT:159  [32m        [0;39m ==> Parameters: 
+2021-11-02 02:53:49.512 TRACE c.t.server.mapper.UserMapper.selectByExample_COUNT:165  [32m        [0;39m <==    Columns: count(0)
+2021-11-02 02:53:49.512 TRACE c.t.server.mapper.UserMapper.selectByExample_COUNT:165  [32m        [0;39m <==        Row: 3
+2021-11-02 02:53:49.513 DEBUG c.t.server.mapper.UserMapper.selectByExample_COUNT:159  [32m        [0;39m <==      Total: 1
+2021-11-02 02:53:49.513 DEBUG com.tv.server.mapper.UserMapper.selectByExample   :159  [32m        [0;39m ==>  Preparing: select id, login_name, `name`, `password` from user LIMIT ? 
+2021-11-02 02:53:49.514 DEBUG com.tv.server.mapper.UserMapper.selectByExample   :159  [32m        [0;39m ==> Parameters: 5(Integer)
+2021-11-02 02:53:49.515 TRACE com.tv.server.mapper.UserMapper.selectByExample   :165  [32m        [0;39m <==    Columns: id, login_name, name, password
+2021-11-02 02:53:49.515 TRACE com.tv.server.mapper.UserMapper.selectByExample   :165  [32m        [0;39m <==        Row: DPBAmvjP, 1, 1, 1
+2021-11-02 02:53:49.516 TRACE com.tv.server.mapper.UserMapper.selectByExample   :165  [32m        [0;39m <==        Row: gtvNwAtx, 2, 1, 1
+2021-11-02 02:53:49.516 TRACE com.tv.server.mapper.UserMapper.selectByExample   :165  [32m        [0;39m <==        Row: YoDuFnN0, 3, 1, PaPassword
+2021-11-02 02:53:49.517 DEBUG com.tv.server.mapper.UserMapper.selectByExample   :159  [32m        [0;39m <==      Total: 3
+2021-11-02 02:54:51.829 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-02 02:56:27.935 DEBUG c.t.server.mapper.UserMapper.selectByExample_COUNT:159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM user 
+2021-11-02 02:56:27.936 DEBUG c.t.server.mapper.UserMapper.selectByExample_COUNT:159  [32m        [0;39m ==> Parameters: 
+2021-11-02 02:56:27.937 TRACE c.t.server.mapper.UserMapper.selectByExample_COUNT:165  [32m        [0;39m <==    Columns: count(0)
+2021-11-02 02:56:27.937 TRACE c.t.server.mapper.UserMapper.selectByExample_COUNT:165  [32m        [0;39m <==        Row: 3
+2021-11-02 02:56:27.938 DEBUG c.t.server.mapper.UserMapper.selectByExample_COUNT:159  [32m        [0;39m <==      Total: 1
+2021-11-02 02:56:27.938 DEBUG com.tv.server.mapper.UserMapper.selectByExample   :159  [32m        [0;39m ==>  Preparing: select id, login_name, `name`, `password` from user LIMIT ? 
+2021-11-02 02:56:27.939 DEBUG com.tv.server.mapper.UserMapper.selectByExample   :159  [32m        [0;39m ==> Parameters: 5(Integer)
+2021-11-02 02:56:27.940 TRACE com.tv.server.mapper.UserMapper.selectByExample   :165  [32m        [0;39m <==    Columns: id, login_name, name, password
+2021-11-02 02:56:27.940 TRACE com.tv.server.mapper.UserMapper.selectByExample   :165  [32m        [0;39m <==        Row: DPBAmvjP, 1, 1, 1
+2021-11-02 02:56:27.941 TRACE com.tv.server.mapper.UserMapper.selectByExample   :165  [32m        [0;39m <==        Row: gtvNwAtx, 2, 1, 1
+2021-11-02 02:56:27.941 TRACE com.tv.server.mapper.UserMapper.selectByExample   :165  [32m        [0;39m <==        Row: YoDuFnN0, 3, 1, PaPassword
+2021-11-02 02:56:27.941 DEBUG com.tv.server.mapper.UserMapper.selectByExample   :159  [32m        [0;39m <==      Total: 3
+2021-11-02 02:56:35.690 DEBUG c.t.server.mapper.UserMapper.selectByExample_COUNT:159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM user 
+2021-11-02 02:56:35.691 DEBUG c.t.server.mapper.UserMapper.selectByExample_COUNT:159  [32m        [0;39m ==> Parameters: 
+2021-11-02 02:56:35.692 TRACE c.t.server.mapper.UserMapper.selectByExample_COUNT:165  [32m        [0;39m <==    Columns: count(0)
+2021-11-02 02:56:35.692 TRACE c.t.server.mapper.UserMapper.selectByExample_COUNT:165  [32m        [0;39m <==        Row: 3
+2021-11-02 02:56:35.692 DEBUG c.t.server.mapper.UserMapper.selectByExample_COUNT:159  [32m        [0;39m <==      Total: 1
+2021-11-02 02:56:35.693 DEBUG com.tv.server.mapper.UserMapper.selectByExample   :159  [32m        [0;39m ==>  Preparing: select id, login_name, `name`, `password` from user LIMIT ? 
+2021-11-02 02:56:35.693 DEBUG com.tv.server.mapper.UserMapper.selectByExample   :159  [32m        [0;39m ==> Parameters: 5(Integer)
+2021-11-02 02:56:35.694 TRACE com.tv.server.mapper.UserMapper.selectByExample   :165  [32m        [0;39m <==    Columns: id, login_name, name, password
+2021-11-02 02:56:35.695 TRACE com.tv.server.mapper.UserMapper.selectByExample   :165  [32m        [0;39m <==        Row: DPBAmvjP, 1, 1, 1
+2021-11-02 02:56:35.695 TRACE com.tv.server.mapper.UserMapper.selectByExample   :165  [32m        [0;39m <==        Row: gtvNwAtx, 2, 1, 1
+2021-11-02 02:56:35.696 TRACE com.tv.server.mapper.UserMapper.selectByExample   :165  [32m        [0;39m <==        Row: YoDuFnN0, 3, 1, PaPassword
+2021-11-02 02:56:35.696 DEBUG com.tv.server.mapper.UserMapper.selectByExample   :159  [32m        [0;39m <==      Total: 3
+2021-11-02 02:56:47.094 DEBUG c.t.server.mapper.UserMapper.selectByExample_COUNT:159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM user 
+2021-11-02 02:56:47.094 DEBUG c.t.server.mapper.UserMapper.selectByExample_COUNT:159  [32m        [0;39m ==> Parameters: 
+2021-11-02 02:56:47.095 TRACE c.t.server.mapper.UserMapper.selectByExample_COUNT:165  [32m        [0;39m <==    Columns: count(0)
+2021-11-02 02:56:47.096 TRACE c.t.server.mapper.UserMapper.selectByExample_COUNT:165  [32m        [0;39m <==        Row: 3
+2021-11-02 02:56:47.096 DEBUG c.t.server.mapper.UserMapper.selectByExample_COUNT:159  [32m        [0;39m <==      Total: 1
+2021-11-02 02:56:47.097 DEBUG com.tv.server.mapper.UserMapper.selectByExample   :159  [32m        [0;39m ==>  Preparing: select id, login_name, `name`, `password` from user LIMIT ? 
+2021-11-02 02:56:47.097 DEBUG com.tv.server.mapper.UserMapper.selectByExample   :159  [32m        [0;39m ==> Parameters: 5(Integer)
+2021-11-02 02:56:47.098 TRACE com.tv.server.mapper.UserMapper.selectByExample   :165  [32m        [0;39m <==    Columns: id, login_name, name, password
+2021-11-02 02:56:47.099 TRACE com.tv.server.mapper.UserMapper.selectByExample   :165  [32m        [0;39m <==        Row: DPBAmvjP, 1, 1, 1
+2021-11-02 02:56:47.099 TRACE com.tv.server.mapper.UserMapper.selectByExample   :165  [32m        [0;39m <==        Row: gtvNwAtx, 2, 1, 1
+2021-11-02 02:56:47.100 TRACE com.tv.server.mapper.UserMapper.selectByExample   :165  [32m        [0;39m <==        Row: YoDuFnN0, 3, 1, PaPassword
+2021-11-02 02:56:47.100 DEBUG com.tv.server.mapper.UserMapper.selectByExample   :159  [32m        [0;39m <==      Total: 3
+2021-11-02 02:59:51.845 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-02 03:04:51.848 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-02 03:09:51.850 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-02 03:14:51.852 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-02 03:19:51.853 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-02 03:24:51.855 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-02 03:29:51.856 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-02 03:34:51.858 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-02 03:39:51.859 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-02 03:44:51.870 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-02 03:49:51.878 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-02 03:54:51.881 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-02 03:59:51.897 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-02 11:12:43.674 WARN  com.zaxxer.hikari.pool.HikariPool                 :787  [32m        [0;39m HikariPool-6 - Thread starvation or clock leap detected (housekeeper delta=7h12m39s412ms632µs800ns).
+2021-11-02 11:16:57.937 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-02 11:21:57.946 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-02 11:26:57.961 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-02 11:31:57.972 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-02 11:36:57.975 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-02 11:41:57.990 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-02 11:46:58.006 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-02 11:51:58.015 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-02 11:56:58.021 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-02 12:01:58.023 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-02 12:02:14.436 DEBUG c.t.server.mapper.UserMapper.selectByExample_COUNT:159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM user 
+2021-11-02 12:02:14.439 DEBUG c.t.server.mapper.UserMapper.selectByExample_COUNT:159  [32m        [0;39m ==> Parameters: 
+2021-11-02 12:02:14.441 TRACE c.t.server.mapper.UserMapper.selectByExample_COUNT:165  [32m        [0;39m <==    Columns: count(0)
+2021-11-02 12:02:14.442 TRACE c.t.server.mapper.UserMapper.selectByExample_COUNT:165  [32m        [0;39m <==        Row: 3
+2021-11-02 12:02:14.443 DEBUG c.t.server.mapper.UserMapper.selectByExample_COUNT:159  [32m        [0;39m <==      Total: 1
+2021-11-02 12:02:14.444 DEBUG com.tv.server.mapper.UserMapper.selectByExample   :159  [32m        [0;39m ==>  Preparing: select id, login_name, `name`, `password` from user LIMIT ? 
+2021-11-02 12:02:14.445 DEBUG com.tv.server.mapper.UserMapper.selectByExample   :159  [32m        [0;39m ==> Parameters: 5(Integer)
+2021-11-02 12:02:14.445 TRACE com.tv.server.mapper.UserMapper.selectByExample   :165  [32m        [0;39m <==    Columns: id, login_name, name, password
+2021-11-02 12:02:14.445 TRACE com.tv.server.mapper.UserMapper.selectByExample   :165  [32m        [0;39m <==        Row: DPBAmvjP, 1, 1, 1
+2021-11-02 12:02:14.447 TRACE com.tv.server.mapper.UserMapper.selectByExample   :165  [32m        [0;39m <==        Row: gtvNwAtx, 2, 1, 1
+2021-11-02 12:02:14.447 TRACE com.tv.server.mapper.UserMapper.selectByExample   :165  [32m        [0;39m <==        Row: YoDuFnN0, 3, 1, PaPassword
+2021-11-02 12:02:14.447 DEBUG com.tv.server.mapper.UserMapper.selectByExample   :159  [32m        [0;39m <==      Total: 3
+2021-11-02 12:06:58.031 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-02 12:11:58.043 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-02 12:16:58.057 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration

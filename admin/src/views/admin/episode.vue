@@ -210,8 +210,9 @@
         }
         _this.episode.programId = _this.program.id;
         _this.episode.chapterId = _this.chapter.id;
-
+        Loading.show();
         _this.$ajax.post(process.env.VUE_APP_SERVER + '/business/admin/episode/save', _this.episode).then((response)=>{
+        Loading.hide();
           let resp = response.data;
           if (resp.success) {
             $("#form-modal").modal("hide");

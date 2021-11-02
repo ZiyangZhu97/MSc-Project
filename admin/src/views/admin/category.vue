@@ -229,8 +229,9 @@
         ) {
           return;
         }
-
+        Loading.show();
         _this.$ajax.post(process.env.VUE_APP_SERVER + '/business/admin/category/save', _this.category).then((response)=>{
+        Loading.hide();
           let resp = response.data;
           if (resp.success) {
             $("#form-modal").modal("hide");

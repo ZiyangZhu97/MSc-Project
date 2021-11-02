@@ -292,8 +292,9 @@
           return;
         }
         _this.program.categorys = categorys;
-
+        Loading.show();
         _this.$ajax.post(process.env.VUE_APP_SERVER + '/business/admin/program/save', _this.program).then((response)=>{
+        Loading.hide();
           let resp = response.data;
           if (resp.success) {
             $("#form-modal").modal("hide");

@@ -2199,3 +2199,220 @@ Identify and stop the process that's listening on port 9003 or configure this ap
 2021-11-02 02:29:51.399 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
 2021-11-02 02:34:51.401 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
 2021-11-02 02:39:51.408 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-02 02:44:51.422 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-02 02:49:51.437 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-02 02:53:08.345 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m        [0;39m Initializing Servlet 'dispatcherServlet'
+2021-11-02 02:53:08.348 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m        [0;39m Completed initialization in 3 ms
+2021-11-02 02:53:09.762 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m        [0;39m HikariPool-2 - Starting...
+2021-11-02 02:53:09.769 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m        [0;39m HikariPool-2 - Start completed.
+2021-11-02 02:53:09.771 DEBUG c.t.server.mapper.FileMapper.selectByExample_COUNT:159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM file 
+2021-11-02 02:53:09.772 DEBUG c.t.server.mapper.FileMapper.selectByExample_COUNT:159  [32m        [0;39m ==> Parameters: 
+2021-11-02 02:53:09.775 TRACE c.t.server.mapper.FileMapper.selectByExample_COUNT:165  [32m        [0;39m <==    Columns: count(0)
+2021-11-02 02:53:09.775 TRACE c.t.server.mapper.FileMapper.selectByExample_COUNT:165  [32m        [0;39m <==        Row: 10
+2021-11-02 02:53:09.775 DEBUG c.t.server.mapper.FileMapper.selectByExample_COUNT:159  [32m        [0;39m <==      Total: 1
+2021-11-02 02:53:09.776 DEBUG com.tv.server.mapper.FileMapper.selectByExample   :159  [32m        [0;39m ==>  Preparing: select id, `path`, `name`, suffix, `size`, created_at, updated_at from file LIMIT ? 
+2021-11-02 02:53:09.776 DEBUG com.tv.server.mapper.FileMapper.selectByExample   :159  [32m        [0;39m ==> Parameters: 5(Integer)
+2021-11-02 02:53:09.777 TRACE com.tv.server.mapper.FileMapper.selectByExample   :165  [32m        [0;39m <==    Columns: id, path, name, suffix, size, created_at, updated_at
+2021-11-02 02:53:09.777 TRACE com.tv.server.mapper.FileMapper.selectByExample   :165  [32m        [0;39m <==        Row: 1RcjzzZb, cover/XCNWHerY.mp3, 「只因有你」 .mp3, mp3, 10977807, 2021-11-02 00:39:23.689, 2021-11-02 00:39:23.689
+2021-11-02 02:53:09.777 TRACE com.tv.server.mapper.FileMapper.selectByExample   :165  [32m        [0;39m <==        Row: 1TthEQFj, cover/YjeKFZEL.flv, [高清 720P] 【竖琴小杏仁】空之境界_杀人考察（前）M01.flv, flv, 34107622, 2021-11-02 00:38:51.19, 2021-11-02 00:38:51.19
+2021-11-02 02:53:09.778 TRACE com.tv.server.mapper.FileMapper.selectByExample   :165  [32m        [0;39m <==        Row: 3EMOMjWW, cover/JOa4dN3O.mp4, xvideos.com_1d41d80e8827eb1ca9443983d71ad3e7.mp4, mp4, 33270223, 2021-11-01 22:40:10.29, 2021-11-01 22:40:10.29
+2021-11-02 02:53:09.778 TRACE com.tv.server.mapper.FileMapper.selectByExample   :165  [32m        [0;39m <==        Row: cePmNOKO, cover/uQctnmEu.mp4, xvideos.com_e7b04d1e31716ad7bc24c686f42bc6c2-1.mp4, mp4, 712406, 2021-11-02 00:09:27.887, 2021-11-02 00:09:27.887
+2021-11-02 02:53:09.778 TRACE com.tv.server.mapper.FileMapper.selectByExample   :165  [32m        [0;39m <==        Row: CNyPZRON, cover/N5e8cH7V.mp4, xvideos.com_1d41d80e8827eb1ca9443983d71ad3e7.mp4, mp4, 33270223, 2021-11-01 22:39:23.947, 2021-11-01 22:39:23.947
+2021-11-02 02:53:09.778 DEBUG com.tv.server.mapper.FileMapper.selectByExample   :159  [32m        [0;39m <==      Total: 5
+2021-11-02 02:53:23.241 DEBUG c.t.server.mapper.FileMapper.selectByExample_COUNT:159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM file 
+2021-11-02 02:53:23.243 DEBUG c.t.server.mapper.FileMapper.selectByExample_COUNT:159  [32m        [0;39m ==> Parameters: 
+2021-11-02 02:53:23.244 TRACE c.t.server.mapper.FileMapper.selectByExample_COUNT:165  [32m        [0;39m <==    Columns: count(0)
+2021-11-02 02:53:23.244 TRACE c.t.server.mapper.FileMapper.selectByExample_COUNT:165  [32m        [0;39m <==        Row: 10
+2021-11-02 02:53:23.245 DEBUG c.t.server.mapper.FileMapper.selectByExample_COUNT:159  [32m        [0;39m <==      Total: 1
+2021-11-02 02:53:23.245 DEBUG com.tv.server.mapper.FileMapper.selectByExample   :159  [32m        [0;39m ==>  Preparing: select id, `path`, `name`, suffix, `size`, created_at, updated_at from file LIMIT ? 
+2021-11-02 02:53:23.246 DEBUG com.tv.server.mapper.FileMapper.selectByExample   :159  [32m        [0;39m ==> Parameters: 5(Integer)
+2021-11-02 02:53:23.246 TRACE com.tv.server.mapper.FileMapper.selectByExample   :165  [32m        [0;39m <==    Columns: id, path, name, suffix, size, created_at, updated_at
+2021-11-02 02:53:23.247 TRACE com.tv.server.mapper.FileMapper.selectByExample   :165  [32m        [0;39m <==        Row: 1RcjzzZb, cover/XCNWHerY.mp3, 「只因有你」 .mp3, mp3, 10977807, 2021-11-02 00:39:23.689, 2021-11-02 00:39:23.689
+2021-11-02 02:53:23.247 TRACE com.tv.server.mapper.FileMapper.selectByExample   :165  [32m        [0;39m <==        Row: 1TthEQFj, cover/YjeKFZEL.flv, [高清 720P] 【竖琴小杏仁】空之境界_杀人考察（前）M01.flv, flv, 34107622, 2021-11-02 00:38:51.19, 2021-11-02 00:38:51.19
+2021-11-02 02:53:23.248 TRACE com.tv.server.mapper.FileMapper.selectByExample   :165  [32m        [0;39m <==        Row: 3EMOMjWW, cover/JOa4dN3O.mp4, xvideos.com_1d41d80e8827eb1ca9443983d71ad3e7.mp4, mp4, 33270223, 2021-11-01 22:40:10.29, 2021-11-01 22:40:10.29
+2021-11-02 02:53:23.248 TRACE com.tv.server.mapper.FileMapper.selectByExample   :165  [32m        [0;39m <==        Row: cePmNOKO, cover/uQctnmEu.mp4, xvideos.com_e7b04d1e31716ad7bc24c686f42bc6c2-1.mp4, mp4, 712406, 2021-11-02 00:09:27.887, 2021-11-02 00:09:27.887
+2021-11-02 02:53:23.249 TRACE com.tv.server.mapper.FileMapper.selectByExample   :165  [32m        [0;39m <==        Row: CNyPZRON, cover/N5e8cH7V.mp4, xvideos.com_1d41d80e8827eb1ca9443983d71ad3e7.mp4, mp4, 33270223, 2021-11-01 22:39:23.947, 2021-11-01 22:39:23.947
+2021-11-02 02:53:23.249 DEBUG com.tv.server.mapper.FileMapper.selectByExample   :159  [32m        [0;39m <==      Total: 5
+2021-11-02 02:53:26.098 DEBUG c.t.server.mapper.FileMapper.selectByExample_COUNT:159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM file 
+2021-11-02 02:53:26.099 DEBUG c.t.server.mapper.FileMapper.selectByExample_COUNT:159  [32m        [0;39m ==> Parameters: 
+2021-11-02 02:53:26.100 TRACE c.t.server.mapper.FileMapper.selectByExample_COUNT:165  [32m        [0;39m <==    Columns: count(0)
+2021-11-02 02:53:26.101 TRACE c.t.server.mapper.FileMapper.selectByExample_COUNT:165  [32m        [0;39m <==        Row: 10
+2021-11-02 02:53:26.101 DEBUG c.t.server.mapper.FileMapper.selectByExample_COUNT:159  [32m        [0;39m <==      Total: 1
+2021-11-02 02:53:26.101 DEBUG com.tv.server.mapper.FileMapper.selectByExample   :159  [32m        [0;39m ==>  Preparing: select id, `path`, `name`, suffix, `size`, created_at, updated_at from file LIMIT ? 
+2021-11-02 02:53:26.102 DEBUG com.tv.server.mapper.FileMapper.selectByExample   :159  [32m        [0;39m ==> Parameters: 5(Integer)
+2021-11-02 02:53:26.102 TRACE com.tv.server.mapper.FileMapper.selectByExample   :165  [32m        [0;39m <==    Columns: id, path, name, suffix, size, created_at, updated_at
+2021-11-02 02:53:26.102 TRACE com.tv.server.mapper.FileMapper.selectByExample   :165  [32m        [0;39m <==        Row: 1RcjzzZb, cover/XCNWHerY.mp3, 「只因有你」 .mp3, mp3, 10977807, 2021-11-02 00:39:23.689, 2021-11-02 00:39:23.689
+2021-11-02 02:53:26.103 TRACE com.tv.server.mapper.FileMapper.selectByExample   :165  [32m        [0;39m <==        Row: 1TthEQFj, cover/YjeKFZEL.flv, [高清 720P] 【竖琴小杏仁】空之境界_杀人考察（前）M01.flv, flv, 34107622, 2021-11-02 00:38:51.19, 2021-11-02 00:38:51.19
+2021-11-02 02:53:26.103 TRACE com.tv.server.mapper.FileMapper.selectByExample   :165  [32m        [0;39m <==        Row: 3EMOMjWW, cover/JOa4dN3O.mp4, xvideos.com_1d41d80e8827eb1ca9443983d71ad3e7.mp4, mp4, 33270223, 2021-11-01 22:40:10.29, 2021-11-01 22:40:10.29
+2021-11-02 02:53:26.104 TRACE com.tv.server.mapper.FileMapper.selectByExample   :165  [32m        [0;39m <==        Row: cePmNOKO, cover/uQctnmEu.mp4, xvideos.com_e7b04d1e31716ad7bc24c686f42bc6c2-1.mp4, mp4, 712406, 2021-11-02 00:09:27.887, 2021-11-02 00:09:27.887
+2021-11-02 02:53:26.104 TRACE com.tv.server.mapper.FileMapper.selectByExample   :165  [32m        [0;39m <==        Row: CNyPZRON, cover/N5e8cH7V.mp4, xvideos.com_1d41d80e8827eb1ca9443983d71ad3e7.mp4, mp4, 33270223, 2021-11-01 22:39:23.947, 2021-11-01 22:39:23.947
+2021-11-02 02:53:26.104 DEBUG com.tv.server.mapper.FileMapper.selectByExample   :159  [32m        [0;39m <==      Total: 5
+2021-11-02 02:53:31.446 DEBUG c.t.server.mapper.FileMapper.selectByExample_COUNT:159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM file 
+2021-11-02 02:53:31.447 DEBUG c.t.server.mapper.FileMapper.selectByExample_COUNT:159  [32m        [0;39m ==> Parameters: 
+2021-11-02 02:53:31.448 TRACE c.t.server.mapper.FileMapper.selectByExample_COUNT:165  [32m        [0;39m <==    Columns: count(0)
+2021-11-02 02:53:31.448 TRACE c.t.server.mapper.FileMapper.selectByExample_COUNT:165  [32m        [0;39m <==        Row: 10
+2021-11-02 02:53:31.449 DEBUG c.t.server.mapper.FileMapper.selectByExample_COUNT:159  [32m        [0;39m <==      Total: 1
+2021-11-02 02:53:31.449 DEBUG com.tv.server.mapper.FileMapper.selectByExample   :159  [32m        [0;39m ==>  Preparing: select id, `path`, `name`, suffix, `size`, created_at, updated_at from file LIMIT ? 
+2021-11-02 02:53:31.450 DEBUG com.tv.server.mapper.FileMapper.selectByExample   :159  [32m        [0;39m ==> Parameters: 5(Integer)
+2021-11-02 02:53:31.451 TRACE com.tv.server.mapper.FileMapper.selectByExample   :165  [32m        [0;39m <==    Columns: id, path, name, suffix, size, created_at, updated_at
+2021-11-02 02:53:31.452 TRACE com.tv.server.mapper.FileMapper.selectByExample   :165  [32m        [0;39m <==        Row: 1RcjzzZb, cover/XCNWHerY.mp3, 「只因有你」 .mp3, mp3, 10977807, 2021-11-02 00:39:23.689, 2021-11-02 00:39:23.689
+2021-11-02 02:53:31.454 TRACE com.tv.server.mapper.FileMapper.selectByExample   :165  [32m        [0;39m <==        Row: 1TthEQFj, cover/YjeKFZEL.flv, [高清 720P] 【竖琴小杏仁】空之境界_杀人考察（前）M01.flv, flv, 34107622, 2021-11-02 00:38:51.19, 2021-11-02 00:38:51.19
+2021-11-02 02:53:31.455 TRACE com.tv.server.mapper.FileMapper.selectByExample   :165  [32m        [0;39m <==        Row: 3EMOMjWW, cover/JOa4dN3O.mp4, xvideos.com_1d41d80e8827eb1ca9443983d71ad3e7.mp4, mp4, 33270223, 2021-11-01 22:40:10.29, 2021-11-01 22:40:10.29
+2021-11-02 02:53:31.455 TRACE com.tv.server.mapper.FileMapper.selectByExample   :165  [32m        [0;39m <==        Row: cePmNOKO, cover/uQctnmEu.mp4, xvideos.com_e7b04d1e31716ad7bc24c686f42bc6c2-1.mp4, mp4, 712406, 2021-11-02 00:09:27.887, 2021-11-02 00:09:27.887
+2021-11-02 02:53:31.456 TRACE com.tv.server.mapper.FileMapper.selectByExample   :165  [32m        [0;39m <==        Row: CNyPZRON, cover/N5e8cH7V.mp4, xvideos.com_1d41d80e8827eb1ca9443983d71ad3e7.mp4, mp4, 33270223, 2021-11-01 22:39:23.947, 2021-11-01 22:39:23.947
+2021-11-02 02:53:31.456 DEBUG com.tv.server.mapper.FileMapper.selectByExample   :159  [32m        [0;39m <==      Total: 5
+2021-11-02 02:53:47.872 DEBUG c.t.server.mapper.FileMapper.selectByExample_COUNT:159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM file 
+2021-11-02 02:53:47.872 DEBUG c.t.server.mapper.FileMapper.selectByExample_COUNT:159  [32m        [0;39m ==> Parameters: 
+2021-11-02 02:53:47.873 TRACE c.t.server.mapper.FileMapper.selectByExample_COUNT:165  [32m        [0;39m <==    Columns: count(0)
+2021-11-02 02:53:47.873 TRACE c.t.server.mapper.FileMapper.selectByExample_COUNT:165  [32m        [0;39m <==        Row: 10
+2021-11-02 02:53:47.874 DEBUG c.t.server.mapper.FileMapper.selectByExample_COUNT:159  [32m        [0;39m <==      Total: 1
+2021-11-02 02:53:47.874 DEBUG com.tv.server.mapper.FileMapper.selectByExample   :159  [32m        [0;39m ==>  Preparing: select id, `path`, `name`, suffix, `size`, created_at, updated_at from file LIMIT ? 
+2021-11-02 02:53:47.875 DEBUG com.tv.server.mapper.FileMapper.selectByExample   :159  [32m        [0;39m ==> Parameters: 5(Integer)
+2021-11-02 02:53:47.875 TRACE com.tv.server.mapper.FileMapper.selectByExample   :165  [32m        [0;39m <==    Columns: id, path, name, suffix, size, created_at, updated_at
+2021-11-02 02:53:47.876 TRACE com.tv.server.mapper.FileMapper.selectByExample   :165  [32m        [0;39m <==        Row: 1RcjzzZb, cover/XCNWHerY.mp3, 「只因有你」 .mp3, mp3, 10977807, 2021-11-02 00:39:23.689, 2021-11-02 00:39:23.689
+2021-11-02 02:53:47.876 TRACE com.tv.server.mapper.FileMapper.selectByExample   :165  [32m        [0;39m <==        Row: 1TthEQFj, cover/YjeKFZEL.flv, [高清 720P] 【竖琴小杏仁】空之境界_杀人考察（前）M01.flv, flv, 34107622, 2021-11-02 00:38:51.19, 2021-11-02 00:38:51.19
+2021-11-02 02:53:47.877 TRACE com.tv.server.mapper.FileMapper.selectByExample   :165  [32m        [0;39m <==        Row: 3EMOMjWW, cover/JOa4dN3O.mp4, xvideos.com_1d41d80e8827eb1ca9443983d71ad3e7.mp4, mp4, 33270223, 2021-11-01 22:40:10.29, 2021-11-01 22:40:10.29
+2021-11-02 02:53:47.877 TRACE com.tv.server.mapper.FileMapper.selectByExample   :165  [32m        [0;39m <==        Row: cePmNOKO, cover/uQctnmEu.mp4, xvideos.com_e7b04d1e31716ad7bc24c686f42bc6c2-1.mp4, mp4, 712406, 2021-11-02 00:09:27.887, 2021-11-02 00:09:27.887
+2021-11-02 02:53:47.878 TRACE com.tv.server.mapper.FileMapper.selectByExample   :165  [32m        [0;39m <==        Row: CNyPZRON, cover/N5e8cH7V.mp4, xvideos.com_1d41d80e8827eb1ca9443983d71ad3e7.mp4, mp4, 33270223, 2021-11-01 22:39:23.947, 2021-11-01 22:39:23.947
+2021-11-02 02:53:47.878 DEBUG com.tv.server.mapper.FileMapper.selectByExample   :159  [32m        [0;39m <==      Total: 5
+2021-11-02 02:53:53.197 DEBUG c.t.server.mapper.FileMapper.selectByExample_COUNT:159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM file 
+2021-11-02 02:53:53.197 DEBUG c.t.server.mapper.FileMapper.selectByExample_COUNT:159  [32m        [0;39m ==> Parameters: 
+2021-11-02 02:53:53.198 TRACE c.t.server.mapper.FileMapper.selectByExample_COUNT:165  [32m        [0;39m <==    Columns: count(0)
+2021-11-02 02:53:53.199 TRACE c.t.server.mapper.FileMapper.selectByExample_COUNT:165  [32m        [0;39m <==        Row: 10
+2021-11-02 02:53:53.199 DEBUG c.t.server.mapper.FileMapper.selectByExample_COUNT:159  [32m        [0;39m <==      Total: 1
+2021-11-02 02:53:53.199 DEBUG com.tv.server.mapper.FileMapper.selectByExample   :159  [32m        [0;39m ==>  Preparing: select id, `path`, `name`, suffix, `size`, created_at, updated_at from file LIMIT ? 
+2021-11-02 02:53:53.200 DEBUG com.tv.server.mapper.FileMapper.selectByExample   :159  [32m        [0;39m ==> Parameters: 5(Integer)
+2021-11-02 02:53:53.201 TRACE com.tv.server.mapper.FileMapper.selectByExample   :165  [32m        [0;39m <==    Columns: id, path, name, suffix, size, created_at, updated_at
+2021-11-02 02:53:53.201 TRACE com.tv.server.mapper.FileMapper.selectByExample   :165  [32m        [0;39m <==        Row: 1RcjzzZb, cover/XCNWHerY.mp3, 「只因有你」 .mp3, mp3, 10977807, 2021-11-02 00:39:23.689, 2021-11-02 00:39:23.689
+2021-11-02 02:53:53.202 TRACE com.tv.server.mapper.FileMapper.selectByExample   :165  [32m        [0;39m <==        Row: 1TthEQFj, cover/YjeKFZEL.flv, [高清 720P] 【竖琴小杏仁】空之境界_杀人考察（前）M01.flv, flv, 34107622, 2021-11-02 00:38:51.19, 2021-11-02 00:38:51.19
+2021-11-02 02:53:53.202 TRACE com.tv.server.mapper.FileMapper.selectByExample   :165  [32m        [0;39m <==        Row: 3EMOMjWW, cover/JOa4dN3O.mp4, xvideos.com_1d41d80e8827eb1ca9443983d71ad3e7.mp4, mp4, 33270223, 2021-11-01 22:40:10.29, 2021-11-01 22:40:10.29
+2021-11-02 02:53:53.203 TRACE com.tv.server.mapper.FileMapper.selectByExample   :165  [32m        [0;39m <==        Row: cePmNOKO, cover/uQctnmEu.mp4, xvideos.com_e7b04d1e31716ad7bc24c686f42bc6c2-1.mp4, mp4, 712406, 2021-11-02 00:09:27.887, 2021-11-02 00:09:27.887
+2021-11-02 02:53:53.203 TRACE com.tv.server.mapper.FileMapper.selectByExample   :165  [32m        [0;39m <==        Row: CNyPZRON, cover/N5e8cH7V.mp4, xvideos.com_1d41d80e8827eb1ca9443983d71ad3e7.mp4, mp4, 33270223, 2021-11-01 22:39:23.947, 2021-11-01 22:39:23.947
+2021-11-02 02:53:53.204 DEBUG com.tv.server.mapper.FileMapper.selectByExample   :159  [32m        [0;39m <==      Total: 5
+2021-11-02 02:54:28.123 DEBUG c.t.server.mapper.FileMapper.selectByExample_COUNT:159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM file 
+2021-11-02 02:54:28.123 DEBUG c.t.server.mapper.FileMapper.selectByExample_COUNT:159  [32m        [0;39m ==> Parameters: 
+2021-11-02 02:54:28.124 TRACE c.t.server.mapper.FileMapper.selectByExample_COUNT:165  [32m        [0;39m <==    Columns: count(0)
+2021-11-02 02:54:28.125 TRACE c.t.server.mapper.FileMapper.selectByExample_COUNT:165  [32m        [0;39m <==        Row: 0
+2021-11-02 02:54:28.125 DEBUG c.t.server.mapper.FileMapper.selectByExample_COUNT:159  [32m        [0;39m <==      Total: 1
+2021-11-02 02:54:42.207 DEBUG c.t.server.mapper.FileMapper.selectByExample_COUNT:159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM file 
+2021-11-02 02:54:42.208 DEBUG c.t.server.mapper.FileMapper.selectByExample_COUNT:159  [32m        [0;39m ==> Parameters: 
+2021-11-02 02:54:42.209 TRACE c.t.server.mapper.FileMapper.selectByExample_COUNT:165  [32m        [0;39m <==    Columns: count(0)
+2021-11-02 02:54:42.209 TRACE c.t.server.mapper.FileMapper.selectByExample_COUNT:165  [32m        [0;39m <==        Row: 0
+2021-11-02 02:54:42.210 DEBUG c.t.server.mapper.FileMapper.selectByExample_COUNT:159  [32m        [0;39m <==      Total: 1
+2021-11-02 02:54:47.327 DEBUG c.t.server.mapper.FileMapper.selectByExample_COUNT:159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM file 
+2021-11-02 02:54:47.327 DEBUG c.t.server.mapper.FileMapper.selectByExample_COUNT:159  [32m        [0;39m ==> Parameters: 
+2021-11-02 02:54:47.328 TRACE c.t.server.mapper.FileMapper.selectByExample_COUNT:165  [32m        [0;39m <==    Columns: count(0)
+2021-11-02 02:54:47.329 TRACE c.t.server.mapper.FileMapper.selectByExample_COUNT:165  [32m        [0;39m <==        Row: 0
+2021-11-02 02:54:47.329 DEBUG c.t.server.mapper.FileMapper.selectByExample_COUNT:159  [32m        [0;39m <==      Total: 1
+2021-11-02 02:54:50.796 DEBUG c.t.server.mapper.FileMapper.selectByExample_COUNT:159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM file 
+2021-11-02 02:54:50.797 DEBUG c.t.server.mapper.FileMapper.selectByExample_COUNT:159  [32m        [0;39m ==> Parameters: 
+2021-11-02 02:54:50.798 TRACE c.t.server.mapper.FileMapper.selectByExample_COUNT:165  [32m        [0;39m <==    Columns: count(0)
+2021-11-02 02:54:50.799 TRACE c.t.server.mapper.FileMapper.selectByExample_COUNT:165  [32m        [0;39m <==        Row: 0
+2021-11-02 02:54:50.799 DEBUG c.t.server.mapper.FileMapper.selectByExample_COUNT:159  [32m        [0;39m <==      Total: 1
+2021-11-02 02:54:51.452 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-02 02:54:54.380 DEBUG c.t.server.mapper.FileMapper.selectByExample_COUNT:159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM file 
+2021-11-02 02:54:54.381 DEBUG c.t.server.mapper.FileMapper.selectByExample_COUNT:159  [32m        [0;39m ==> Parameters: 
+2021-11-02 02:54:54.382 TRACE c.t.server.mapper.FileMapper.selectByExample_COUNT:165  [32m        [0;39m <==    Columns: count(0)
+2021-11-02 02:54:54.382 TRACE c.t.server.mapper.FileMapper.selectByExample_COUNT:165  [32m        [0;39m <==        Row: 0
+2021-11-02 02:54:54.383 DEBUG c.t.server.mapper.FileMapper.selectByExample_COUNT:159  [32m        [0;39m <==      Total: 1
+2021-11-02 02:56:42.758 DEBUG c.t.server.mapper.FileMapper.selectByExample_COUNT:159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM file 
+2021-11-02 02:56:42.759 DEBUG c.t.server.mapper.FileMapper.selectByExample_COUNT:159  [32m        [0;39m ==> Parameters: 
+2021-11-02 02:56:42.760 TRACE c.t.server.mapper.FileMapper.selectByExample_COUNT:165  [32m        [0;39m <==    Columns: count(0)
+2021-11-02 02:56:42.760 TRACE c.t.server.mapper.FileMapper.selectByExample_COUNT:165  [32m        [0;39m <==        Row: 0
+2021-11-02 02:56:42.761 DEBUG c.t.server.mapper.FileMapper.selectByExample_COUNT:159  [32m        [0;39m <==      Total: 1
+2021-11-02 02:56:45.460 DEBUG c.t.server.mapper.FileMapper.selectByExample_COUNT:159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM file 
+2021-11-02 02:56:45.460 DEBUG c.t.server.mapper.FileMapper.selectByExample_COUNT:159  [32m        [0;39m ==> Parameters: 
+2021-11-02 02:56:45.461 TRACE c.t.server.mapper.FileMapper.selectByExample_COUNT:165  [32m        [0;39m <==    Columns: count(0)
+2021-11-02 02:56:45.462 TRACE c.t.server.mapper.FileMapper.selectByExample_COUNT:165  [32m        [0;39m <==        Row: 0
+2021-11-02 02:56:45.462 DEBUG c.t.server.mapper.FileMapper.selectByExample_COUNT:159  [32m        [0;39m <==      Total: 1
+2021-11-02 02:59:51.457 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-02 03:04:51.459 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-02 03:09:51.460 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-02 03:14:51.462 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-02 03:19:51.464 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-02 03:24:51.466 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-02 03:29:51.467 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-02 03:34:51.469 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-02 03:39:51.470 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-02 03:44:51.474 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-02 03:49:51.486 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-02 03:54:51.490 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-02 03:59:51.494 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-02 11:12:46.436 WARN  com.zaxxer.hikari.pool.HikariPool                 :787  [32m        [0;39m HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=7h12m39s414ms519µs200ns).
+2021-11-02 11:16:57.544 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-02 11:21:57.561 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-02 11:26:57.599 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-02 11:31:57.602 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-02 11:34:24.141 INFO  com.tv.file.controller.admin.UploadController     :49   [32m        [0;39m 上传文件开始：org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile@23f4b82d
+2021-11-02 11:34:24.143 INFO  com.tv.file.controller.admin.UploadController     :50   [32m        [0;39m 9c355d4e78f0f73695f4652f0755b319ebc41363.jpg
+2021-11-02 11:34:24.143 INFO  com.tv.file.controller.admin.UploadController     :51   [32m        [0;39m 206064
+2021-11-02 11:34:24.180 INFO  com.tv.file.controller.admin.UploadController     :62   [32m        [0;39m D:\MScProject\tv\file\local_file\program\cover\dqxTizsF.jpg
+2021-11-02 11:34:24.181 INFO  com.tv.file.controller.admin.UploadController     :63   [32m        [0;39m 保存文件记录开始
+2021-11-02 11:34:24.193 DEBUG com.tv.server.mapper.FileMapper.insert            :159  [32m        [0;39m ==>  Preparing: insert into file (id, `path`, `name`, suffix, `size`, created_at, updated_at) values (?, ?, ?, ?, ?, ?, ?) 
+2021-11-02 11:34:24.199 DEBUG com.tv.server.mapper.FileMapper.insert            :159  [32m        [0;39m ==> Parameters: 39vYBV37(String), cover/dqxTizsF.jpg(String), 9c355d4e78f0f73695f4652f0755b319ebc41363.jpg(String), jpg(String), 206064(Integer), 2021-11-02 11:34:24.184(Timestamp), 2021-11-02 11:34:24.184(Timestamp)
+2021-11-02 11:34:24.204 DEBUG com.tv.server.mapper.FileMapper.insert            :159  [32m        [0;39m <==    Updates: 1
+2021-11-02 11:34:41.321 INFO  com.tv.file.controller.admin.UploadController     :49   [32m        [0;39m 上传文件开始：org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile@a5296a4
+2021-11-02 11:34:41.321 INFO  com.tv.file.controller.admin.UploadController     :50   [32m        [0;39m 8ffebb2762d0f70357a6df1404fa513d2497c5d4.jpg
+2021-11-02 11:34:41.322 INFO  com.tv.file.controller.admin.UploadController     :51   [32m        [0;39m 30620
+2021-11-02 11:34:41.342 INFO  com.tv.file.controller.admin.UploadController     :62   [32m        [0;39m D:\MScProject\tv\file\local_file\program\cover\oEAGs4nc.jpg
+2021-11-02 11:34:41.343 INFO  com.tv.file.controller.admin.UploadController     :63   [32m        [0;39m 保存文件记录开始
+2021-11-02 11:34:41.343 DEBUG com.tv.server.mapper.FileMapper.insert            :159  [32m        [0;39m ==>  Preparing: insert into file (id, `path`, `name`, suffix, `size`, created_at, updated_at) values (?, ?, ?, ?, ?, ?, ?) 
+2021-11-02 11:34:41.344 DEBUG com.tv.server.mapper.FileMapper.insert            :159  [32m        [0;39m ==> Parameters: Eg2zvoom(String), cover/oEAGs4nc.jpg(String), 8ffebb2762d0f70357a6df1404fa513d2497c5d4.jpg(String), jpg(String), 30620(Integer), 2021-11-02 11:34:41.343(Timestamp), 2021-11-02 11:34:41.343(Timestamp)
+2021-11-02 11:34:41.345 DEBUG com.tv.server.mapper.FileMapper.insert            :159  [32m        [0;39m <==    Updates: 1
+2021-11-02 11:35:39.767 INFO  com.tv.file.controller.admin.UploadController     :49   [32m        [0;39m 上传文件开始：org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile@70d9cd20
+2021-11-02 11:35:39.767 INFO  com.tv.file.controller.admin.UploadController     :50   [32m        [0;39m 「只因有你」 .mp3
+2021-11-02 11:35:39.767 INFO  com.tv.file.controller.admin.UploadController     :51   [32m        [0;39m 10977807
+2021-11-02 11:35:39.783 INFO  com.tv.file.controller.admin.UploadController     :62   [32m        [0;39m D:\MScProject\tv\file\local_file\program\cover\K6FQW4mh.mp3
+2021-11-02 11:35:39.783 INFO  com.tv.file.controller.admin.UploadController     :63   [32m        [0;39m 保存文件记录开始
+2021-11-02 11:35:39.785 DEBUG com.tv.server.mapper.FileMapper.insert            :159  [32m        [0;39m ==>  Preparing: insert into file (id, `path`, `name`, suffix, `size`, created_at, updated_at) values (?, ?, ?, ?, ?, ?, ?) 
+2021-11-02 11:35:39.786 DEBUG com.tv.server.mapper.FileMapper.insert            :159  [32m        [0;39m ==> Parameters: ku2qH8sd(String), cover/K6FQW4mh.mp3(String), 「只因有你」 .mp3(String), mp3(String), 10977807(Integer), 2021-11-02 11:35:39.783(Timestamp), 2021-11-02 11:35:39.783(Timestamp)
+2021-11-02 11:35:39.786 DEBUG com.tv.server.mapper.FileMapper.insert            :159  [32m        [0;39m <==    Updates: 1
+2021-11-02 11:36:57.612 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-02 11:41:57.617 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-02 11:46:57.631 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-02 11:51:57.645 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-02 11:56:57.646 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-02 12:01:57.649 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-02 12:02:40.685 INFO  com.tv.file.controller.admin.UploadController     :49   [32m        [0;39m 上传文件开始：org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile@762ce80d
+2021-11-02 12:02:40.686 INFO  com.tv.file.controller.admin.UploadController     :50   [32m        [0;39m 183c3cfc56e85420bbe74def58896a22_hd.jpg
+2021-11-02 12:02:40.687 INFO  com.tv.file.controller.admin.UploadController     :51   [32m        [0;39m 9746
+2021-11-02 12:02:40.714 INFO  com.tv.file.controller.admin.UploadController     :62   [32m        [0;39m D:\MScProject\tv\file\local_file\program\cover\evhiQypJ.jpg
+2021-11-02 12:02:40.715 INFO  com.tv.file.controller.admin.UploadController     :63   [32m        [0;39m 保存文件记录开始
+2021-11-02 12:02:40.717 DEBUG com.tv.server.mapper.FileMapper.insert            :159  [32m        [0;39m ==>  Preparing: insert into file (id, `path`, `name`, suffix, `size`, created_at, updated_at) values (?, ?, ?, ?, ?, ?, ?) 
+2021-11-02 12:02:40.719 DEBUG com.tv.server.mapper.FileMapper.insert            :159  [32m        [0;39m ==> Parameters: AkPOm9hf(String), cover/evhiQypJ.jpg(String), 183c3cfc56e85420bbe74def58896a22_hd.jpg(String), jpg(String), 9746(Integer), 2021-11-02 12:02:40.716(Timestamp), 2021-11-02 12:02:40.716(Timestamp)
+2021-11-02 12:02:40.723 DEBUG com.tv.server.mapper.FileMapper.insert            :159  [32m        [0;39m <==    Updates: 1
+2021-11-02 12:04:12.597 INFO  com.tv.file.controller.admin.UploadController     :49   [32m        [0;39m 上传文件开始：org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile@2082881
+2021-11-02 12:04:12.597 INFO  com.tv.file.controller.admin.UploadController     :50   [32m        [0;39m 16b4edfc1e178a822208e313ff03738da877e8e4.jpg
+2021-11-02 12:04:12.598 INFO  com.tv.file.controller.admin.UploadController     :51   [32m        [0;39m 28168
+2021-11-02 12:04:12.610 INFO  com.tv.file.controller.admin.UploadController     :62   [32m        [0;39m D:\MScProject\tv\file\local_file\program\cover\VPt6I5h6.jpg
+2021-11-02 12:04:12.610 INFO  com.tv.file.controller.admin.UploadController     :63   [32m        [0;39m 保存文件记录开始
+2021-11-02 12:04:12.612 DEBUG com.tv.server.mapper.FileMapper.insert            :159  [32m        [0;39m ==>  Preparing: insert into file (id, `path`, `name`, suffix, `size`, created_at, updated_at) values (?, ?, ?, ?, ?, ?, ?) 
+2021-11-02 12:04:12.613 DEBUG com.tv.server.mapper.FileMapper.insert            :159  [32m        [0;39m ==> Parameters: 8JmJOz4r(String), cover/VPt6I5h6.jpg(String), 16b4edfc1e178a822208e313ff03738da877e8e4.jpg(String), jpg(String), 28168(Integer), 2021-11-02 12:04:12.611(Timestamp), 2021-11-02 12:04:12.611(Timestamp)
+2021-11-02 12:04:12.614 DEBUG com.tv.server.mapper.FileMapper.insert            :159  [32m        [0;39m <==    Updates: 1
+2021-11-02 12:06:57.664 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-02 12:08:15.446 INFO  com.tv.file.controller.admin.UploadController     :49   [32m        [0;39m 上传文件开始：org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile@5397eed3
+2021-11-02 12:08:15.446 INFO  com.tv.file.controller.admin.UploadController     :50   [32m        [0;39m 9c355d4e78f0f73695f4652f0755b319ebc41363.jpg
+2021-11-02 12:08:15.447 INFO  com.tv.file.controller.admin.UploadController     :51   [32m        [0;39m 206064
+2021-11-02 12:08:15.462 INFO  com.tv.file.controller.admin.UploadController     :62   [32m        [0;39m D:\MScProject\tv\file\local_file\program\cover\wmdMbiIF.jpg
+2021-11-02 12:08:15.462 INFO  com.tv.file.controller.admin.UploadController     :63   [32m        [0;39m 保存文件记录开始
+2021-11-02 12:08:15.463 DEBUG com.tv.server.mapper.FileMapper.insert            :159  [32m        [0;39m ==>  Preparing: insert into file (id, `path`, `name`, suffix, `size`, created_at, updated_at) values (?, ?, ?, ?, ?, ?, ?) 
+2021-11-02 12:08:15.464 DEBUG com.tv.server.mapper.FileMapper.insert            :159  [32m        [0;39m ==> Parameters: OFe5q546(String), cover/wmdMbiIF.jpg(String), 9c355d4e78f0f73695f4652f0755b319ebc41363.jpg(String), jpg(String), 206064(Integer), 2021-11-02 12:08:15.462(Timestamp), 2021-11-02 12:08:15.462(Timestamp)
+2021-11-02 12:08:15.465 DEBUG com.tv.server.mapper.FileMapper.insert            :159  [32m        [0;39m <==    Updates: 1
+2021-11-02 12:11:57.666 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-02 12:13:48.148 INFO  com.tv.file.controller.admin.UploadController     :49   [32m        [0;39m 上传文件开始：org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile@62673339
+2021-11-02 12:13:48.149 INFO  com.tv.file.controller.admin.UploadController     :50   [32m        [0;39m 8ffebb2762d0f70357a6df1404fa513d2497c5d4.jpg
+2021-11-02 12:13:48.150 INFO  com.tv.file.controller.admin.UploadController     :51   [32m        [0;39m 30620
+2021-11-02 12:13:48.164 INFO  com.tv.file.controller.admin.UploadController     :62   [32m        [0;39m D:\MScProject\tv\file\local_file\program\cover\c49Yncyn.jpg
+2021-11-02 12:13:48.164 INFO  com.tv.file.controller.admin.UploadController     :63   [32m        [0;39m 保存文件记录开始
+2021-11-02 12:13:48.167 DEBUG com.tv.server.mapper.FileMapper.insert            :159  [32m        [0;39m ==>  Preparing: insert into file (id, `path`, `name`, suffix, `size`, created_at, updated_at) values (?, ?, ?, ?, ?, ?, ?) 
+2021-11-02 12:13:48.170 DEBUG com.tv.server.mapper.FileMapper.insert            :159  [32m        [0;39m ==> Parameters: b1VHn6qO(String), cover/c49Yncyn.jpg(String), 8ffebb2762d0f70357a6df1404fa513d2497c5d4.jpg(String), jpg(String), 30620(Integer), 2021-11-02 12:13:48.164(Timestamp), 2021-11-02 12:13:48.164(Timestamp)
+2021-11-02 12:13:48.173 DEBUG com.tv.server.mapper.FileMapper.insert            :159  [32m        [0;39m <==    Updates: 1
+2021-11-02 12:16:57.671 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-02 12:18:27.552 INFO  com.tv.file.controller.admin.UploadController     :49   [32m        [0;39m 上传文件开始：org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile@1811e3f3
+2021-11-02 12:18:27.552 INFO  com.tv.file.controller.admin.UploadController     :50   [32m        [0;39m 737994eef01f3a290b9b844f9725bc315d607c89.jpg
+2021-11-02 12:18:27.553 INFO  com.tv.file.controller.admin.UploadController     :51   [32m        [0;39m 1146174
+2021-11-02 12:18:27.567 INFO  com.tv.file.controller.admin.UploadController     :62   [32m        [0;39m D:\MScProject\tv\file\local_file\program\cover\gJ38BILh.jpg
+2021-11-02 12:18:27.568 INFO  com.tv.file.controller.admin.UploadController     :63   [32m        [0;39m 保存文件记录开始
+2021-11-02 12:18:27.569 DEBUG com.tv.server.mapper.FileMapper.insert            :159  [32m        [0;39m ==>  Preparing: insert into file (id, `path`, `name`, suffix, `size`, created_at, updated_at) values (?, ?, ?, ?, ?, ?, ?) 
+2021-11-02 12:18:27.571 DEBUG com.tv.server.mapper.FileMapper.insert            :159  [32m        [0;39m ==> Parameters: OnRPWJYO(String), cover/gJ38BILh.jpg(String), 737994eef01f3a290b9b844f9725bc315d607c89.jpg(String), jpg(String), 1146174(Integer), 2021-11-02 12:18:27.568(Timestamp), 2021-11-02 12:18:27.568(Timestamp)
+2021-11-02 12:18:27.572 DEBUG com.tv.server.mapper.FileMapper.insert            :159  [32m        [0;39m <==    Updates: 1
