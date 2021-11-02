@@ -1844,3 +1844,49 @@ Identify and stop the process that's listening on port 9001 or configure this ap
 
 2021-11-02 17:04:19.889 ERROR c.tv.system.controller.ControllerExceptionHandler :21   [32m        [0;39m 业务异常：Username or password does not exist
 2021-11-02 17:04:37.392 ERROR c.tv.system.controller.ControllerExceptionHandler :21   [32m        [0;39m 业务异常：Username or password does not exist
+2021-11-02 18:13:19.830 ERROR c.tv.system.controller.ControllerExceptionHandler :21   [32m        [0;39m 业务异常：Username or password does not exist
+2021-11-02 18:13:57.962 ERROR c.tv.system.controller.ControllerExceptionHandler :21   [32m        [0;39m 业务异常：Username or password does not exist
+2021-11-02 18:14:53.794 ERROR c.tv.system.controller.ControllerExceptionHandler :21   [32m        [0;39m 业务异常：Username or password does not exist
+2021-11-02 18:14:59.376 ERROR c.tv.system.controller.ControllerExceptionHandler :21   [32m        [0;39m 业务异常：Username or password does not exist
+2021-11-02 18:50:39.914 ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter  :40   [32m        [0;39m 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 9001 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 9001 or configure this application to listen on another port.
+
+2021-11-02 18:53:03.940 ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter  :40   [32m        [0;39m 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 9001 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 9001 or configure this application to listen on another port.
+
+2021-11-02 18:54:47.964 ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter  :40   [32m        [0;39m 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 9001 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 9001 or configure this application to listen on another port.
+
