@@ -1,3 +1,5 @@
+SESSION_KEY_LOGIN_USER = "SESSION_KEY_LOGIN_USER"; // 登录信息
+
 SessionStorage = {
     get: function (key) {
         let v = sessionStorage.getItem(key);
