@@ -84,9 +84,9 @@
               <div class="form-group">
                 <label class="col-sm-2 control-label">Video</label>
                 <div class="col-sm-10">
-                  <big-file v-bind:input-id="'video-upload'"
-                        v-bind:suffixs="['mp4']"
-                        v-bind:after-upload="afterUpload"></big-file>
+                  <file v-bind:input-id="'video-upload'"
+                        v-bind:suffixs="['mp4', 'mp3']"
+                        v-bind:after-upload="afterUpload"></file>
                   <div v-show="episode.video" class="row">
                     <div class="col-md-9">
                       <video v-bind:src="episode.video" id="video" controls="controls"></video>
@@ -128,10 +128,10 @@
 
 <script>
   import Pagination from "../../components/pagination";
-  import BigFile from "../../components/big-file";
+  import File from "../../components/file";
 
   export default {
-    components: {Pagination, BigFile},
+    components: {Pagination, File},
     name: "episode",
     data: function() {
       return {
@@ -243,16 +243,18 @@
         let _this = this;
         let video = resp.content.path;
         _this.episode.video = video;
-                _this.getTime();
+        _this.getTime();
       },
 
       /**
-       * 获取时长
+       * canplay函数获取时长
        */
       getTime() {
         let _this = this;
         let ele = document.getElementById("video");
-        _this.episode.time = parseInt(ele.duration, 10);
+        ele.oncanplay=function(){
+          _this.episode.time = parseInt(ele.duration)
+        }
       },
     }
   }

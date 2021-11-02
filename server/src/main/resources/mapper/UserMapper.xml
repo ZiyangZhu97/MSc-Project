@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.tv.server.mapper.FileMapper">
-  <resultMap id="BaseResultMap" type="com.tv.server.domain.File">
+<mapper namespace="com.tv.server.mapper.UserMapper">
+  <resultMap id="BaseResultMap" type="com.tv.server.domain.User">
     <id column="id" jdbcType="CHAR" property="id" />
-    <result column="path" jdbcType="VARCHAR" property="path" />
+    <result column="login_name" jdbcType="VARCHAR" property="loginName" />
     <result column="name" jdbcType="VARCHAR" property="name" />
-    <result column="suffix" jdbcType="VARCHAR" property="suffix" />
-    <result column="size" jdbcType="INTEGER" property="size" />
-    <result column="created_at" jdbcType="TIMESTAMP" property="createdAt" />
-    <result column="updated_at" jdbcType="TIMESTAMP" property="updatedAt" />
+    <result column="password" jdbcType="CHAR" property="password" />
   </resultMap>
   <sql id="Example_Where_Clause">
     <where>
@@ -69,15 +66,15 @@
     </where>
   </sql>
   <sql id="Base_Column_List">
-    id, `path`, `name`, suffix, `size`, created_at, updated_at
+    id, login_name, `name`, `password`
   </sql>
-  <select id="selectByExample" parameterType="com.tv.server.domain.FileExample" resultMap="BaseResultMap">
+  <select id="selectByExample" parameterType="com.tv.server.domain.UserExample" resultMap="BaseResultMap">
     select
     <if test="distinct">
       distinct
     </if>
     <include refid="Base_Column_List" />
-    from file
+    from user
     <if test="_parameter != null">
       <include refid="Example_Where_Clause" />
     </if>
@@ -88,105 +85,76 @@
   <select id="selectByPrimaryKey" parameterType="java.lang.String" resultMap="BaseResultMap">
     select 
     <include refid="Base_Column_List" />
-    from file
+    from user
     where id = #{id,jdbcType=CHAR}
   </select>
   <delete id="deleteByPrimaryKey" parameterType="java.lang.String">
-    delete from file
+    delete from user
     where id = #{id,jdbcType=CHAR}
   </delete>
-  <delete id="deleteByExample" parameterType="com.tv.server.domain.FileExample">
-    delete from file
+  <delete id="deleteByExample" parameterType="com.tv.server.domain.UserExample">
+    delete from user
     <if test="_parameter != null">
       <include refid="Example_Where_Clause" />
     </if>
   </delete>
-  <insert id="insert" parameterType="com.tv.server.domain.File">
-    insert into file (id, `path`, `name`, 
-      suffix, `size`, created_at, 
-      updated_at)
-    values (#{id,jdbcType=CHAR}, #{path,jdbcType=VARCHAR}, #{name,jdbcType=VARCHAR}, 
-      #{suffix,jdbcType=VARCHAR}, #{size,jdbcType=INTEGER}, #{createdAt,jdbcType=TIMESTAMP}, 
-      #{updatedAt,jdbcType=TIMESTAMP})
+  <insert id="insert" parameterType="com.tv.server.domain.User">
+    insert into user (id, login_name, `name`, 
+      `password`)
+    values (#{id,jdbcType=CHAR}, #{loginName,jdbcType=VARCHAR}, #{name,jdbcType=VARCHAR}, 
+      #{password,jdbcType=CHAR})
   </insert>
-  <insert id="insertSelective" parameterType="com.tv.server.domain.File">
-    insert into file
+  <insert id="insertSelective" parameterType="com.tv.server.domain.User">
+    insert into user
     <trim prefix="(" suffix=")" suffixOverrides=",">
       <if test="id != null">
         id,
       </if>
-      <if test="path != null">
-        `path`,
+      <if test="loginName != null">
+        login_name,
       </if>
       <if test="name != null">
         `name`,
       </if>
-      <if test="suffix != null">
-        suffix,
-      </if>
-      <if test="size != null">
-        `size`,
-      </if>
-      <if test="createdAt != null">
-        created_at,
-      </if>
-      <if test="updatedAt != null">
-        updated_at,
+      <if test="password != null">
+        `password`,
       </if>
     </trim>
     <trim prefix="values (" suffix=")" suffixOverrides=",">
       <if test="id != null">
         #{id,jdbcType=CHAR},
       </if>
-      <if test="path != null">
-        #{path,jdbcType=VARCHAR},
+      <if test="loginName != null">
+        #{loginName,jdbcType=VARCHAR},
       </if>
       <if test="name != null">
         #{name,jdbcType=VARCHAR},
       </if>
-      <if test="suffix != null">
-        #{suffix,jdbcType=VARCHAR},
-      </if>
-      <if test="size != null">
-        #{size,jdbcType=INTEGER},
-      </if>
-      <if test="createdAt != null">
-        #{createdAt,jdbcType=TIMESTAMP},
-      </if>
-      <if test="updatedAt != null">
-        #{updatedAt,jdbcType=TIMESTAMP},
+      <if test="password != null">
+        #{password,jdbcType=CHAR},
       </if>
     </trim>
   </insert>
-  <select id="countByExample" parameterType="com.tv.server.domain.FileExample" resultType="java.lang.Long">
-    select count(*) from file
+  <select id="countByExample" parameterType="com.tv.server.domain.UserExample" resultType="java.lang.Long">
+    select count(*) from user
     <if test="_parameter != null">
       <include refid="Example_Where_Clause" />
     </if>
   </select>
   <update id="updateByExampleSelective" parameterType="map">
-    update file
+    update user
     <set>
       <if test="record.id != null">
         id = #{record.id,jdbcType=CHAR},
       </if>
-      <if test="record.path != null">
-        `path` = #{record.path,jdbcType=VARCHAR},
+      <if test="record.loginName != null">
+        login_name = #{record.loginName,jdbcType=VARCHAR},
       </if>
       <if test="record.name != null">
         `name` = #{record.name,jdbcType=VARCHAR},
       </if>
-      <if test="record.suffix != null">
-        suffix = #{record.suffix,jdbcType=VARCHAR},
-      </if>
-      <if test="record.size != null">
-        `size` = #{record.size,jdbcType=INTEGER},
-      </if>
-      <if test="record.createdAt != null">
-        created_at = #{record.createdAt,jdbcType=TIMESTAMP},
-      </if>
-      <if test="record.updatedAt != null">
-        updated_at = #{record.updatedAt,jdbcType=TIMESTAMP},
+      <if test="record.password != null">
+        `password` = #{record.password,jdbcType=CHAR},
       </if>
     </set>
     <if test="_parameter != null">
@@ -194,50 +162,35 @@
     </if>
   </update>
   <update id="updateByExample" parameterType="map">
-    update file
+    update user
     set id = #{record.id,jdbcType=CHAR},
-      `path` = #{record.path,jdbcType=VARCHAR},
+      login_name = #{record.loginName,jdbcType=VARCHAR},
       `name` = #{record.name,jdbcType=VARCHAR},
-      suffix = #{record.suffix,jdbcType=VARCHAR},
-      `size` = #{record.size,jdbcType=INTEGER},
-      created_at = #{record.createdAt,jdbcType=TIMESTAMP},
-      updated_at = #{record.updatedAt,jdbcType=TIMESTAMP}
+      `password` = #{record.password,jdbcType=CHAR}
     <if test="_parameter != null">
       <include refid="Update_By_Example_Where_Clause" />
     </if>
   </update>
-  <update id="updateByPrimaryKeySelective" parameterType="com.tv.server.domain.File">
-    update file
+  <update id="updateByPrimaryKeySelective" parameterType="com.tv.server.domain.User">
+    update user
     <set>
-      <if test="path != null">
-        `path` = #{path,jdbcType=VARCHAR},
+      <if test="loginName != null">
+        login_name = #{loginName,jdbcType=VARCHAR},
       </if>
       <if test="name != null">
         `name` = #{name,jdbcType=VARCHAR},
       </if>
-      <if test="suffix != null">
-        suffix = #{suffix,jdbcType=VARCHAR},
-      </if>
-      <if test="size != null">
-        `size` = #{size,jdbcType=INTEGER},
-      </if>
-      <if test="createdAt != null">
-        created_at = #{createdAt,jdbcType=TIMESTAMP},
-      </if>
-      <if test="updatedAt != null">
-        updated_at = #{updatedAt,jdbcType=TIMESTAMP},
+      <if test="password != null">
+        `password` = #{password,jdbcType=CHAR},
       </if>
     </set>
     where id = #{id,jdbcType=CHAR}
   </update>
-  <update id="updateByPrimaryKey" parameterType="com.tv.server.domain.File">
-    update file
-    set `path` = #{path,jdbcType=VARCHAR},
+  <update id="updateByPrimaryKey" parameterType="com.tv.server.domain.User">
+    update user
+    set login_name = #{loginName,jdbcType=VARCHAR},
       `name` = #{name,jdbcType=VARCHAR},
-      suffix = #{suffix,jdbcType=VARCHAR},
-      `size` = #{size,jdbcType=INTEGER},
-      created_at = #{createdAt,jdbcType=TIMESTAMP},
-      updated_at = #{updatedAt,jdbcType=TIMESTAMP}
+      `password` = #{password,jdbcType=CHAR}
     where id = #{id,jdbcType=CHAR}
   </update>
 </mapper>
