@@ -43,10 +43,10 @@
                                                 <div class="space"></div>
 
                                                 <div class="clearfix">
-                                                    <label class="inline">
-                                                        <input type="checkbox" class="ace"/>
-                                                        <span class="lbl">Remember Me</span>
-                                                    </label>
+<!--                                                    <label class="inline">-->
+<!--                                                        <input type="checkbox" class="ace"/>-->
+<!--                                                        <span class="lbl">Remember Me</span>-->
+<!--                                                    </label>-->
 
                                                     <button type="button"
                                                             class="width-35 pull-right btn btn-sm btn-primary"

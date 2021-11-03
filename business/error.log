@@ -482,3 +482,31 @@ Action:
 
 Identify and stop the process that's listening on port 9002 or configure this application to listen on another port.
 
+2021-11-02 18:50:39.724 ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter  :40   [32m        [0;39m 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 9002 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 9002 or configure this application to listen on another port.
+
+2021-11-02 18:50:41.271 ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter  :40   [32m        [0;39m 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 9002 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 9002 or configure this application to listen on another port.
+
