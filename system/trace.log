@@ -1370,3 +1370,1045 @@ Caused by: java.lang.ClassNotFoundException: Cannot find class: com.tv.server.do
 2021-11-03 05:05:40.423 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m        [0;39m Condition evaluation unchanged
 2021-11-03 05:05:40.423 INFO  com.tv.system.config.SystemApplication            :22   [32m        [0;39m started successfully!!
 2021-11-03 05:05:40.424 INFO  com.tv.system.config.SystemApplication            :23   [32m        [0;39m system address: 	http://127.0.0.1:9001
+2021-11-03 05:10:39.681 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-03 05:11:31.400 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :225  [32m        [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-11-03 05:11:31.641 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-11-03 05:11:32.368 INFO  com.tv.system.config.SystemApplication            :651  [32m        [0;39m No active profile set, falling back to default profiles: default
+2021-11-03 05:11:33.620 INFO  o.springframework.cloud.context.scope.GenericScope:295  [32m        [0;39m BeanFactory id=cf7198c9-cd55-3b50-93b0-8f9ae3cd2084
+2021-11-03 05:11:34.076 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-11-03 05:11:34.434 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-11-03 05:11:35.705 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :92   [32m        [0;39m Tomcat initialized with port(s): 9001 (http)
+2021-11-03 05:11:35.723 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m        [0;39m Initializing ProtocolHandler ["http-nio-9001"]
+2021-11-03 05:11:35.725 INFO  org.apache.catalina.core.StandardService          :173  [32m        [0;39m Starting service [Tomcat]
+2021-11-03 05:11:35.726 INFO  org.apache.catalina.core.StandardEngine           :173  [32m        [0;39m Starting Servlet engine: [Apache Tomcat/9.0.29]
+2021-11-03 05:11:35.951 INFO  o.a.c.c.C.[Tomcat].[localhost].[/system]          :173  [32m        [0;39m Initializing Spring embedded WebApplicationContext
+2021-11-03 05:11:35.952 INFO  org.springframework.web.context.ContextLoader     :284  [32m        [0;39m Root WebApplicationContext: initialization completed in 3558 ms
+2021-11-03 05:11:36.854 WARN  com.netflix.config.sources.URLConfigurationSource :121  [32m        [0;39m No URLs will be polled as dynamic configuration sources.
+2021-11-03 05:11:36.855 INFO  com.netflix.config.sources.URLConfigurationSource :122  [32m        [0;39m To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-11-03 05:11:36.863 WARN  com.netflix.config.sources.URLConfigurationSource :121  [32m        [0;39m No URLs will be polled as dynamic configuration sources.
+2021-11-03 05:11:36.864 INFO  com.netflix.config.sources.URLConfigurationSource :122  [32m        [0;39m To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-11-03 05:11:37.097 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :171  [32m        [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2021-11-03 05:11:37.721 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m        [0;39m LiveReload server is running on port 35729
+2021-11-03 05:11:40.134 WARN  o.s.c.l.c.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger:106  [32m        [0;39m You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2021-11-03 05:11:40.181 WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger:81   [32m        [0;39m Spring Cloud LoadBalancer is currently working with default default cache. You can switch to using Caffeine cache, by adding it to the classpath.
+2021-11-03 05:11:40.217 INFO  o.s.cloud.netflix.eureka.InstanceInfoFactory      :72   [32m        [0;39m Setting initial instance status as: STARTING
+2021-11-03 05:11:40.321 INFO  com.netflix.discovery.DiscoveryClient             :365  [32m        [0;39m Initializing Eureka in region us-east-1
+2021-11-03 05:11:40.957 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :70   [32m        [0;39m Using JSON encoding codec LegacyJacksonJson
+2021-11-03 05:11:40.958 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :71   [32m        [0;39m Using JSON decoding codec LegacyJacksonJson
+2021-11-03 05:11:41.127 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :80   [32m        [0;39m Using XML encoding codec XStreamXml
+2021-11-03 05:11:41.127 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :81   [32m        [0;39m Using XML decoding codec XStreamXml
+2021-11-03 05:11:41.302 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-03 05:11:41.693 INFO  com.netflix.discovery.DiscoveryClient             :976  [32m        [0;39m Disable delta property : false
+2021-11-03 05:11:41.693 INFO  com.netflix.discovery.DiscoveryClient             :977  [32m        [0;39m Single vip registry refresh property : null
+2021-11-03 05:11:41.693 INFO  com.netflix.discovery.DiscoveryClient             :978  [32m        [0;39m Force full registry fetch : false
+2021-11-03 05:11:41.693 INFO  com.netflix.discovery.DiscoveryClient             :979  [32m        [0;39m Application is null : false
+2021-11-03 05:11:41.694 INFO  com.netflix.discovery.DiscoveryClient             :980  [32m        [0;39m Registered Applications size is zero : true
+2021-11-03 05:11:41.694 INFO  com.netflix.discovery.DiscoveryClient             :982  [32m        [0;39m Application version is -1: true
+2021-11-03 05:11:41.694 INFO  com.netflix.discovery.DiscoveryClient             :1065 [32m        [0;39m Getting all instance registry info from the eureka server
+2021-11-03 05:11:41.897 INFO  com.netflix.discovery.DiscoveryClient             :1074 [32m        [0;39m The response status is 200
+2021-11-03 05:11:41.902 INFO  com.netflix.discovery.DiscoveryClient             :1288 [32m        [0;39m Starting heartbeat executor: renew interval is: 30
+2021-11-03 05:11:41.906 INFO  com.netflix.discovery.InstanceInfoReplicator      :60   [32m        [0;39m InstanceInfoReplicator onDemand update allowed rate per min is 4
+2021-11-03 05:11:41.911 INFO  com.netflix.discovery.DiscoveryClient             :465  [32m        [0;39m Discovery Client initialized at timestamp 1635916301909 with initial instances count: 3
+2021-11-03 05:11:41.913 INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry   :41   [32m        [0;39m Registering application SYSTEM with eureka with status UP
+2021-11-03 05:11:41.914 INFO  com.netflix.discovery.DiscoveryClient             :1323 [32m        [0;39m Saw local status change event StatusChangeEvent [timestamp=1635916301914, current=UP, previous=STARTING]
+2021-11-03 05:11:41.917 INFO  com.netflix.discovery.DiscoveryClient             :844  [32m        [0;39m DiscoveryClient_SYSTEM/windows10.microdone.cn:system:9001: registering service...
+2021-11-03 05:11:41.934 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m        [0;39m Starting ProtocolHandler ["http-nio-9001"]
+2021-11-03 05:11:41.979 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :204  [32m        [0;39m Tomcat started on port(s): 9001 (http) with context path '/system'
+2021-11-03 05:11:41.981 INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration         :145  [32m        [0;39m Updating port to 9001
+2021-11-03 05:11:41.991 INFO  com.netflix.discovery.DiscoveryClient             :853  [32m        [0;39m DiscoveryClient_SYSTEM/windows10.microdone.cn:system:9001 - registration status: 204
+2021-11-03 05:11:42.624 INFO  com.tv.system.config.SystemApplication            :61   [32m        [0;39m Started SystemApplication in 12.792 seconds (JVM running for 13.95)
+2021-11-03 05:11:42.626 INFO  com.tv.system.config.SystemApplication            :22   [32m        [0;39m started successfully!!
+2021-11-03 05:11:42.626 INFO  com.tv.system.config.SystemApplication            :23   [32m        [0;39m system address: 	http://127.0.0.1:9001
+2021-11-03 05:16:41.702 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-03 05:20:46.400 ERROR c.n.d.s.t.decorator.RedirectingEurekaHttpClient   :91   [32m        [0;39m Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}
+com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused: connect
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187)
+	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123)
+	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27)
+	at com.sun.jersey.api.client.Client.handle(Client.java:652)
+	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682)
+	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74)
+	at com.sun.jersey.api.client.WebResource$Builder.get(WebResource.java:509)
+	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.getApplicationsInternal(AbstractJerseyEurekaHttpClient.java:194)
+	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.getDelta(AbstractJerseyEurekaHttpClient.java:170)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.MetricsCollectingEurekaHttpClient.execute(MetricsCollectingEurekaHttpClient.java:73)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.DiscoveryClient.getAndUpdateDelta(DiscoveryClient.java:1103)
+	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:985)
+	at com.netflix.discovery.DiscoveryClient.refreshRegistry(DiscoveryClient.java:1497)
+	at com.netflix.discovery.DiscoveryClient$CacheRefreshThread.run(DiscoveryClient.java:1464)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:81)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:476)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:218)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:200)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:162)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:394)
+	at java.net.Socket.connect(Socket.java:606)
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:121)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:605)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:440)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:118)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173)
+	... 29 common frames omitted
+2021-11-03 05:20:46.401 WARN  c.n.d.s.t.decorator.RetryableEurekaHttpClient     :130  [32m        [0;39m Request execution failed with message: java.net.ConnectException: Connection refused: connect
+2021-11-03 05:20:46.413 ERROR c.n.d.s.t.decorator.RedirectingEurekaHttpClient   :91   [32m        [0;39m Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}
+com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused: connect
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187)
+	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123)
+	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27)
+	at com.sun.jersey.api.client.Client.handle(Client.java:652)
+	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682)
+	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74)
+	at com.sun.jersey.api.client.WebResource$Builder.put(WebResource.java:529)
+	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.sendHeartBeat(AbstractJerseyEurekaHttpClient.java:102)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.MetricsCollectingEurekaHttpClient.execute(MetricsCollectingEurekaHttpClient.java:73)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.DiscoveryClient.renew(DiscoveryClient.java:864)
+	at com.netflix.discovery.DiscoveryClient$HeartbeatThread.run(DiscoveryClient.java:1423)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:81)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:476)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:218)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:200)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:162)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:394)
+	at java.net.Socket.connect(Socket.java:606)
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:121)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:605)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:440)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:118)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173)
+	... 26 common frames omitted
+2021-11-03 05:20:46.414 WARN  c.n.d.s.t.decorator.RetryableEurekaHttpClient     :130  [32m        [0;39m Request execution failed with message: java.net.ConnectException: Connection refused: connect
+2021-11-03 05:20:50.475 ERROR c.n.d.s.t.decorator.RedirectingEurekaHttpClient   :83   [32m        [0;39m Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}
+com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused: connect
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187)
+	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123)
+	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27)
+	at com.sun.jersey.api.client.Client.handle(Client.java:652)
+	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682)
+	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74)
+	at com.sun.jersey.api.client.WebResource$Builder.put(WebResource.java:529)
+	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.sendHeartBeat(AbstractJerseyEurekaHttpClient.java:102)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.MetricsCollectingEurekaHttpClient.execute(MetricsCollectingEurekaHttpClient.java:73)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:118)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:79)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.DiscoveryClient.renew(DiscoveryClient.java:864)
+	at com.netflix.discovery.DiscoveryClient$HeartbeatThread.run(DiscoveryClient.java:1423)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:81)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:476)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:218)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:200)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:162)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:394)
+	at java.net.Socket.connect(Socket.java:606)
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:121)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:605)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:440)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:118)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173)
+	... 27 common frames omitted
+2021-11-03 05:20:50.476 WARN  c.n.d.s.t.decorator.RetryableEurekaHttpClient     :130  [32m        [0;39m Request execution failed with message: java.net.ConnectException: Connection refused: connect
+2021-11-03 05:20:50.477 ERROR com.netflix.discovery.DiscoveryClient             :878  [32m        [0;39m DiscoveryClient_SYSTEM/windows10.microdone.cn:system:9001 - was unable to send heartbeat!
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.DiscoveryClient.renew(DiscoveryClient.java:864)
+	at com.netflix.discovery.DiscoveryClient$HeartbeatThread.run(DiscoveryClient.java:1423)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2021-11-03 05:20:50.940 ERROR c.n.d.s.t.decorator.RedirectingEurekaHttpClient   :83   [32m        [0;39m Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}
+com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused: connect
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187)
+	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123)
+	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27)
+	at com.sun.jersey.api.client.Client.handle(Client.java:652)
+	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682)
+	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74)
+	at com.sun.jersey.api.client.WebResource$Builder.get(WebResource.java:509)
+	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.getApplicationsInternal(AbstractJerseyEurekaHttpClient.java:194)
+	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.getDelta(AbstractJerseyEurekaHttpClient.java:170)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.MetricsCollectingEurekaHttpClient.execute(MetricsCollectingEurekaHttpClient.java:73)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:118)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:79)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.DiscoveryClient.getAndUpdateDelta(DiscoveryClient.java:1103)
+	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:985)
+	at com.netflix.discovery.DiscoveryClient.refreshRegistry(DiscoveryClient.java:1497)
+	at com.netflix.discovery.DiscoveryClient$CacheRefreshThread.run(DiscoveryClient.java:1464)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:81)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:476)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:218)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:200)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:162)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:394)
+	at java.net.Socket.connect(Socket.java:606)
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:121)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:605)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:440)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:118)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173)
+	... 30 common frames omitted
+2021-11-03 05:20:50.942 WARN  c.n.d.s.t.decorator.RetryableEurekaHttpClient     :130  [32m        [0;39m Request execution failed with message: java.net.ConnectException: Connection refused: connect
+2021-11-03 05:20:50.942 ERROR com.netflix.discovery.DiscoveryClient             :990  [32m        [0;39m DiscoveryClient_SYSTEM/windows10.microdone.cn:system:9001 - was unable to refresh its cache! status = Cannot execute request on any known server
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.DiscoveryClient.getAndUpdateDelta(DiscoveryClient.java:1103)
+	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:985)
+	at com.netflix.discovery.DiscoveryClient.refreshRegistry(DiscoveryClient.java:1497)
+	at com.netflix.discovery.DiscoveryClient$CacheRefreshThread.run(DiscoveryClient.java:1464)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2021-11-03 05:21:20.495 INFO  com.netflix.discovery.DiscoveryClient             :868  [32m        [0;39m DiscoveryClient_SYSTEM/windows10.microdone.cn:system:9001 - Re-registering apps/SYSTEM
+2021-11-03 05:21:20.495 INFO  com.netflix.discovery.DiscoveryClient             :844  [32m        [0;39m DiscoveryClient_SYSTEM/windows10.microdone.cn:system:9001: registering service...
+2021-11-03 05:21:20.511 INFO  com.netflix.discovery.DiscoveryClient             :853  [32m        [0;39m DiscoveryClient_SYSTEM/windows10.microdone.cn:system:9001 - registration status: 204
+2021-11-03 05:21:41.712 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-03 05:22:20.557 INFO  com.netflix.discovery.DiscoveryClient             :868  [32m        [0;39m DiscoveryClient_SYSTEM/windows10.microdone.cn:system:9001 - Re-registering apps/SYSTEM
+2021-11-03 05:22:20.557 INFO  com.netflix.discovery.DiscoveryClient             :844  [32m        [0;39m DiscoveryClient_SYSTEM/windows10.microdone.cn:system:9001: registering service...
+2021-11-03 05:22:20.568 INFO  com.netflix.discovery.DiscoveryClient             :853  [32m        [0;39m DiscoveryClient_SYSTEM/windows10.microdone.cn:system:9001 - registration status: 204
+2021-11-03 05:22:23.261 INFO  o.a.c.c.C.[Tomcat].[localhost].[/system]          :173  [32m        [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-11-03 05:22:23.262 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m        [0;39m Initializing Servlet 'dispatcherServlet'
+2021-11-03 05:22:23.271 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m        [0;39m Completed initialization in 9 ms
+2021-11-03 05:22:23.426 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m        [0;39m HikariPool-1 - Starting...
+2021-11-03 05:22:23.846 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m        [0;39m HikariPool-1 - Start completed.
+2021-11-03 05:22:23.909 DEBUG c.t.s.mapper.ResourceMapper.selectByExample_COUNT :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM resource 
+2021-11-03 05:22:23.933 DEBUG c.t.s.mapper.ResourceMapper.selectByExample_COUNT :159  [32m        [0;39m ==> Parameters: 
+2021-11-03 05:22:23.951 TRACE c.t.s.mapper.ResourceMapper.selectByExample_COUNT :165  [32m        [0;39m <==    Columns: count(0)
+2021-11-03 05:22:23.951 TRACE c.t.s.mapper.ResourceMapper.selectByExample_COUNT :165  [32m        [0;39m <==        Row: 9
+2021-11-03 05:22:23.954 DEBUG c.t.s.mapper.ResourceMapper.selectByExample_COUNT :159  [32m        [0;39m <==      Total: 1
+2021-11-03 05:22:23.957 DEBUG c.tv.server.mapper.ResourceMapper.selectByExample :159  [32m        [0;39m ==>  Preparing: select id, `name`, page, request, parent from resource LIMIT ? 
+2021-11-03 05:22:23.958 DEBUG c.tv.server.mapper.ResourceMapper.selectByExample :159  [32m        [0;39m ==> Parameters: 5(Integer)
+2021-11-03 05:22:23.959 TRACE c.tv.server.mapper.ResourceMapper.selectByExample :165  [32m        [0;39m <==    Columns: id, name, page, request, parent
+2021-11-03 05:22:23.959 TRACE c.tv.server.mapper.ResourceMapper.selectByExample :165  [32m        [0;39m <==        Row: 01, system management, null, null, null
+2021-11-03 05:22:23.960 TRACE c.tv.server.mapper.ResourceMapper.selectByExample :165  [32m        [0;39m <==        Row: 0101, user management, /system/user, null, 01
+2021-11-03 05:22:23.961 TRACE c.tv.server.mapper.ResourceMapper.selectByExample :165  [32m        [0;39m <==        Row: 010101, save, null, ["/system/admin/user/list", "/system/admin/user/save"], 0101
+2021-11-03 05:22:23.962 TRACE c.tv.server.mapper.ResourceMapper.selectByExample :165  [32m        [0;39m <==        Row: 010102, delete, null, ["/system/admin/user/delete"], 0101
+2021-11-03 05:22:23.962 TRACE c.tv.server.mapper.ResourceMapper.selectByExample :165  [32m        [0;39m <==        Row: 010103, reset password, null, ["/system/admin/user/save-password"], 0101
+2021-11-03 05:22:23.963 DEBUG c.tv.server.mapper.ResourceMapper.selectByExample :159  [32m        [0;39m <==      Total: 5
+2021-11-03 05:22:51.083 INFO  com.netflix.discovery.DiscoveryClient             :976  [32m        [0;39m Disable delta property : false
+2021-11-03 05:22:51.083 INFO  com.netflix.discovery.DiscoveryClient             :977  [32m        [0;39m Single vip registry refresh property : null
+2021-11-03 05:22:51.083 INFO  com.netflix.discovery.DiscoveryClient             :978  [32m        [0;39m Force full registry fetch : false
+2021-11-03 05:22:51.083 INFO  com.netflix.discovery.DiscoveryClient             :979  [32m        [0;39m Application is null : false
+2021-11-03 05:22:51.083 INFO  com.netflix.discovery.DiscoveryClient             :980  [32m        [0;39m Registered Applications size is zero : true
+2021-11-03 05:22:51.084 INFO  com.netflix.discovery.DiscoveryClient             :982  [32m        [0;39m Application version is -1: false
+2021-11-03 05:22:51.084 INFO  com.netflix.discovery.DiscoveryClient             :1065 [32m        [0;39m Getting all instance registry info from the eureka server
+2021-11-03 05:22:51.103 INFO  com.netflix.discovery.DiscoveryClient             :1074 [32m        [0;39m The response status is 200
+2021-11-03 05:26:41.723 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-03 05:31:41.738 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-03 05:36:41.752 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-03 05:41:41.764 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-03 05:46:41.775 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-03 05:51:41.792 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-03 05:56:41.798 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-03 06:01:41.812 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-03 13:20:30.069 WARN  com.zaxxer.hikari.pool.HikariPool                 :787  [32m        [0;39m HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=7h15m9s499ms891µs900ns).
+2021-11-03 13:21:17.263 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-03 13:26:17.265 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-03 13:31:17.280 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-03 13:36:17.282 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-03 13:41:17.285 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-03 13:46:17.287 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-03 13:51:17.289 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-03 13:56:17.291 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-03 14:01:17.294 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-03 14:06:17.305 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-03 14:11:17.319 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-03 14:12:23.979 DEBUG c.t.s.mapper.ResourceMapper.selectByExample_COUNT :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM resource 
+2021-11-03 14:12:23.985 DEBUG c.t.s.mapper.ResourceMapper.selectByExample_COUNT :159  [32m        [0;39m ==> Parameters: 
+2021-11-03 14:12:23.993 TRACE c.t.s.mapper.ResourceMapper.selectByExample_COUNT :165  [32m        [0;39m <==    Columns: count(0)
+2021-11-03 14:12:23.994 TRACE c.t.s.mapper.ResourceMapper.selectByExample_COUNT :165  [32m        [0;39m <==        Row: 9
+2021-11-03 14:12:23.995 DEBUG c.t.s.mapper.ResourceMapper.selectByExample_COUNT :159  [32m        [0;39m <==      Total: 1
+2021-11-03 14:12:23.997 DEBUG c.tv.server.mapper.ResourceMapper.selectByExample :159  [32m        [0;39m ==>  Preparing: select id, `name`, page, request, parent from resource LIMIT ? 
+2021-11-03 14:12:23.997 DEBUG c.tv.server.mapper.ResourceMapper.selectByExample :159  [32m        [0;39m ==> Parameters: 5(Integer)
+2021-11-03 14:12:23.999 TRACE c.tv.server.mapper.ResourceMapper.selectByExample :165  [32m        [0;39m <==    Columns: id, name, page, request, parent
+2021-11-03 14:12:24.000 TRACE c.tv.server.mapper.ResourceMapper.selectByExample :165  [32m        [0;39m <==        Row: 01, system management, null, null, null
+2021-11-03 14:12:24.001 TRACE c.tv.server.mapper.ResourceMapper.selectByExample :165  [32m        [0;39m <==        Row: 0101, user management, /system/user, null, 01
+2021-11-03 14:12:24.002 TRACE c.tv.server.mapper.ResourceMapper.selectByExample :165  [32m        [0;39m <==        Row: 010101, save, null, ["/system/admin/user/list", "/system/admin/user/save"], 0101
+2021-11-03 14:12:24.002 TRACE c.tv.server.mapper.ResourceMapper.selectByExample :165  [32m        [0;39m <==        Row: 010102, delete, null, ["/system/admin/user/delete"], 0101
+2021-11-03 14:12:24.003 TRACE c.tv.server.mapper.ResourceMapper.selectByExample :165  [32m        [0;39m <==        Row: 010103, reset password, null, ["/system/admin/user/save-password"], 0101
+2021-11-03 14:12:24.006 DEBUG c.tv.server.mapper.ResourceMapper.selectByExample :159  [32m        [0;39m <==      Total: 5
+2021-11-03 14:12:45.939 DEBUG c.t.s.mapper.ResourceMapper.selectByExample_COUNT :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM resource 
+2021-11-03 14:12:45.940 DEBUG c.t.s.mapper.ResourceMapper.selectByExample_COUNT :159  [32m        [0;39m ==> Parameters: 
+2021-11-03 14:12:45.941 TRACE c.t.s.mapper.ResourceMapper.selectByExample_COUNT :165  [32m        [0;39m <==    Columns: count(0)
+2021-11-03 14:12:45.941 TRACE c.t.s.mapper.ResourceMapper.selectByExample_COUNT :165  [32m        [0;39m <==        Row: 9
+2021-11-03 14:12:45.941 DEBUG c.t.s.mapper.ResourceMapper.selectByExample_COUNT :159  [32m        [0;39m <==      Total: 1
+2021-11-03 14:12:45.942 DEBUG c.tv.server.mapper.ResourceMapper.selectByExample :159  [32m        [0;39m ==>  Preparing: select id, `name`, page, request, parent from resource LIMIT ? 
+2021-11-03 14:12:45.943 DEBUG c.tv.server.mapper.ResourceMapper.selectByExample :159  [32m        [0;39m ==> Parameters: 10(Integer)
+2021-11-03 14:12:45.945 TRACE c.tv.server.mapper.ResourceMapper.selectByExample :165  [32m        [0;39m <==    Columns: id, name, page, request, parent
+2021-11-03 14:12:45.946 TRACE c.tv.server.mapper.ResourceMapper.selectByExample :165  [32m        [0;39m <==        Row: 01, system management, null, null, null
+2021-11-03 14:12:45.946 TRACE c.tv.server.mapper.ResourceMapper.selectByExample :165  [32m        [0;39m <==        Row: 0101, user management, /system/user, null, 01
+2021-11-03 14:12:45.947 TRACE c.tv.server.mapper.ResourceMapper.selectByExample :165  [32m        [0;39m <==        Row: 010101, save, null, ["/system/admin/user/list", "/system/admin/user/save"], 0101
+2021-11-03 14:12:45.947 TRACE c.tv.server.mapper.ResourceMapper.selectByExample :165  [32m        [0;39m <==        Row: 010102, delete, null, ["/system/admin/user/delete"], 0101
+2021-11-03 14:12:45.947 TRACE c.tv.server.mapper.ResourceMapper.selectByExample :165  [32m        [0;39m <==        Row: 010103, reset password, null, ["/system/admin/user/save-password"], 0101
+2021-11-03 14:12:45.948 TRACE c.tv.server.mapper.ResourceMapper.selectByExample :165  [32m        [0;39m <==        Row: 0102, resource management, /system/resource, null, 01
+2021-11-03 14:12:45.950 TRACE c.tv.server.mapper.ResourceMapper.selectByExample :165  [32m        [0;39m <==        Row: 010201, save/display, null, ["/system/admin/resource"], 0102
+2021-11-03 14:12:45.950 TRACE c.tv.server.mapper.ResourceMapper.selectByExample :165  [32m        [0;39m <==        Row: 0103, character management, /system/role, null, 01
+2021-11-03 14:12:45.950 TRACE c.tv.server.mapper.ResourceMapper.selectByExample :165  [32m        [0;39m <==        Row: 010301, character/privilege management, null, ["/system/admin/role"], 0103
+2021-11-03 14:12:45.951 DEBUG c.tv.server.mapper.ResourceMapper.selectByExample :159  [32m        [0;39m <==      Total: 9
+2021-11-03 14:16:17.332 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-03 14:21:17.344 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-03 14:26:17.350 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-03 14:31:17.363 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-03 14:36:17.373 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-03 14:40:49.117 DEBUG c.t.s.mapper.ResourceMapper.selectByExample_COUNT :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM resource 
+2021-11-03 14:40:49.118 DEBUG c.t.s.mapper.ResourceMapper.selectByExample_COUNT :159  [32m        [0;39m ==> Parameters: 
+2021-11-03 14:40:49.121 TRACE c.t.s.mapper.ResourceMapper.selectByExample_COUNT :165  [32m        [0;39m <==    Columns: count(0)
+2021-11-03 14:40:49.122 TRACE c.t.s.mapper.ResourceMapper.selectByExample_COUNT :165  [32m        [0;39m <==        Row: 9
+2021-11-03 14:40:49.122 DEBUG c.t.s.mapper.ResourceMapper.selectByExample_COUNT :159  [32m        [0;39m <==      Total: 1
+2021-11-03 14:40:49.123 DEBUG c.tv.server.mapper.ResourceMapper.selectByExample :159  [32m        [0;39m ==>  Preparing: select id, `name`, page, request, parent from resource LIMIT ? 
+2021-11-03 14:40:49.124 DEBUG c.tv.server.mapper.ResourceMapper.selectByExample :159  [32m        [0;39m ==> Parameters: 5(Integer)
+2021-11-03 14:40:49.125 TRACE c.tv.server.mapper.ResourceMapper.selectByExample :165  [32m        [0;39m <==    Columns: id, name, page, request, parent
+2021-11-03 14:40:49.125 TRACE c.tv.server.mapper.ResourceMapper.selectByExample :165  [32m        [0;39m <==        Row: 01, system management, null, null, null
+2021-11-03 14:40:49.126 TRACE c.tv.server.mapper.ResourceMapper.selectByExample :165  [32m        [0;39m <==        Row: 0101, user management, /system/user, null, 01
+2021-11-03 14:40:49.127 TRACE c.tv.server.mapper.ResourceMapper.selectByExample :165  [32m        [0;39m <==        Row: 010101, save, null, ["/system/admin/user/list", "/system/admin/user/save"], 0101
+2021-11-03 14:40:49.127 TRACE c.tv.server.mapper.ResourceMapper.selectByExample :165  [32m        [0;39m <==        Row: 010102, delete, null, ["/system/admin/user/delete"], 0101
+2021-11-03 14:40:49.128 TRACE c.tv.server.mapper.ResourceMapper.selectByExample :165  [32m        [0;39m <==        Row: 010103, reset password, null, ["/system/admin/user/save-password"], 0101
+2021-11-03 14:40:49.129 DEBUG c.tv.server.mapper.ResourceMapper.selectByExample :159  [32m        [0;39m <==      Total: 5
+2021-11-03 14:41:17.381 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-03 14:41:58.632 DEBUG c.t.server.mapper.UserMapper.selectByExample_COUNT:159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM user 
+2021-11-03 14:41:58.633 DEBUG c.t.server.mapper.UserMapper.selectByExample_COUNT:159  [32m        [0;39m ==> Parameters: 
+2021-11-03 14:41:58.635 TRACE c.t.server.mapper.UserMapper.selectByExample_COUNT:165  [32m        [0;39m <==    Columns: count(0)
+2021-11-03 14:41:58.635 TRACE c.t.server.mapper.UserMapper.selectByExample_COUNT:165  [32m        [0;39m <==        Row: 3
+2021-11-03 14:41:58.636 DEBUG c.t.server.mapper.UserMapper.selectByExample_COUNT:159  [32m        [0;39m <==      Total: 1
+2021-11-03 14:41:58.637 DEBUG com.tv.server.mapper.UserMapper.selectByExample   :159  [32m        [0;39m ==>  Preparing: select id, login_name, `name`, `password` from user LIMIT ? 
+2021-11-03 14:41:58.637 DEBUG com.tv.server.mapper.UserMapper.selectByExample   :159  [32m        [0;39m ==> Parameters: 5(Integer)
+2021-11-03 14:41:58.638 TRACE com.tv.server.mapper.UserMapper.selectByExample   :165  [32m        [0;39m <==    Columns: id, login_name, name, password
+2021-11-03 14:41:58.638 TRACE com.tv.server.mapper.UserMapper.selectByExample   :165  [32m        [0;39m <==        Row: SMkiFheo, 1, 1, c61ab42a6b421b809f858abb29f36dcc
+2021-11-03 14:41:58.639 TRACE com.tv.server.mapper.UserMapper.selectByExample   :165  [32m        [0;39m <==        Row: W4AEV83L, 2, 1, d2111fce93f114b3b583947262feda00
+2021-11-03 14:41:58.639 TRACE com.tv.server.mapper.UserMapper.selectByExample   :165  [32m        [0;39m <==        Row: YoDuFnN0, 3, 1, d2111fce93f114b3b583947262feda00
+2021-11-03 14:41:58.639 DEBUG com.tv.server.mapper.UserMapper.selectByExample   :159  [32m        [0;39m <==      Total: 3
+2021-11-03 14:42:19.973 DEBUG c.t.server.mapper.UserMapper.selectByExample_COUNT:159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM user 
+2021-11-03 14:42:19.974 DEBUG c.t.server.mapper.UserMapper.selectByExample_COUNT:159  [32m        [0;39m ==> Parameters: 
+2021-11-03 14:42:19.975 TRACE c.t.server.mapper.UserMapper.selectByExample_COUNT:165  [32m        [0;39m <==    Columns: count(0)
+2021-11-03 14:42:19.975 TRACE c.t.server.mapper.UserMapper.selectByExample_COUNT:165  [32m        [0;39m <==        Row: 3
+2021-11-03 14:42:19.976 DEBUG c.t.server.mapper.UserMapper.selectByExample_COUNT:159  [32m        [0;39m <==      Total: 1
+2021-11-03 14:42:19.976 DEBUG com.tv.server.mapper.UserMapper.selectByExample   :159  [32m        [0;39m ==>  Preparing: select id, login_name, `name`, `password` from user LIMIT ? 
+2021-11-03 14:42:19.977 DEBUG com.tv.server.mapper.UserMapper.selectByExample   :159  [32m        [0;39m ==> Parameters: 5(Integer)
+2021-11-03 14:42:19.978 TRACE com.tv.server.mapper.UserMapper.selectByExample   :165  [32m        [0;39m <==    Columns: id, login_name, name, password
+2021-11-03 14:42:19.979 TRACE com.tv.server.mapper.UserMapper.selectByExample   :165  [32m        [0;39m <==        Row: SMkiFheo, 1, 1, c61ab42a6b421b809f858abb29f36dcc
+2021-11-03 14:42:19.980 TRACE com.tv.server.mapper.UserMapper.selectByExample   :165  [32m        [0;39m <==        Row: W4AEV83L, 2, 1, d2111fce93f114b3b583947262feda00
+2021-11-03 14:42:19.980 TRACE com.tv.server.mapper.UserMapper.selectByExample   :165  [32m        [0;39m <==        Row: YoDuFnN0, 3, 1, d2111fce93f114b3b583947262feda00
+2021-11-03 14:42:19.980 DEBUG com.tv.server.mapper.UserMapper.selectByExample   :159  [32m        [0;39m <==      Total: 3
+2021-11-03 14:46:17.385 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-03 14:51:17.389 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-03 14:53:30.308 ERROR o.a.c.c.C.[.[.[/system].[dispatcherServlet]       :175  [32m        [0;39m Servlet.service() for servlet [dispatcherServlet] in context with path [/system] threw exception [Request processing failed; nested exception is java.lang.RuntimeException: Value for loginName cannot be null] with root cause
+java.lang.RuntimeException: Value for loginName cannot be null
+	at com.tv.server.domain.UserExample$GeneratedCriteria.addCriterion(UserExample.java:95)
+	at com.tv.server.domain.UserExample$GeneratedCriteria.andLoginNameEqualTo(UserExample.java:188)
+	at com.tv.server.domain.UserExample$Criteria.andLoginNameEqualTo(UserExample.java:388)
+	at com.tv.server.service.UserService.selectByLoginName(UserService.java:93)
+	at com.tv.server.service.UserService.login(UserService.java:118)
+	at com.tv.system.controller.admin.UserController.login(UserController.java:81)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:888)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:860)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1591)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2021-11-03 14:53:34.215 DEBUG com.tv.server.mapper.UserMapper.selectByExample   :159  [32m        [0;39m ==>  Preparing: select id, login_name, `name`, `password` from user WHERE ( login_name = ? ) 
+2021-11-03 14:53:34.217 DEBUG com.tv.server.mapper.UserMapper.selectByExample   :159  [32m        [0;39m ==> Parameters: 1(String)
+2021-11-03 14:53:34.218 TRACE com.tv.server.mapper.UserMapper.selectByExample   :165  [32m        [0;39m <==    Columns: id, login_name, name, password
+2021-11-03 14:53:34.219 TRACE com.tv.server.mapper.UserMapper.selectByExample   :165  [32m        [0;39m <==        Row: SMkiFheo, 1, 1, c61ab42a6b421b809f858abb29f36dcc
+2021-11-03 14:53:34.220 DEBUG com.tv.server.mapper.UserMapper.selectByExample   :159  [32m        [0;39m <==      Total: 1
+2021-11-03 14:53:34.220 INFO  com.tv.server.service.UserService                 :127  [32m        [0;39m 密码不对, 输入密码：e052c222843d8ab3553177919ee49293, 数据库密码：c61ab42a6b421b809f858abb29f36dcc
+2021-11-03 14:53:34.236 ERROR c.tv.system.controller.ControllerExceptionHandler :21   [32m        [0;39m 业务异常：Username or password does not exist
+2021-11-03 14:53:34.239 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :199  [32m        [0;39m Resolved [com.tv.server.exception.BusinessException: Username or password does not exist]
+2021-11-03 14:53:37.240 DEBUG com.tv.server.mapper.UserMapper.selectByExample   :159  [32m        [0;39m ==>  Preparing: select id, login_name, `name`, `password` from user WHERE ( login_name = ? ) 
+2021-11-03 14:53:37.241 DEBUG com.tv.server.mapper.UserMapper.selectByExample   :159  [32m        [0;39m ==> Parameters: 1(String)
+2021-11-03 14:53:37.242 TRACE com.tv.server.mapper.UserMapper.selectByExample   :165  [32m        [0;39m <==    Columns: id, login_name, name, password
+2021-11-03 14:53:37.242 TRACE com.tv.server.mapper.UserMapper.selectByExample   :165  [32m        [0;39m <==        Row: SMkiFheo, 1, 1, c61ab42a6b421b809f858abb29f36dcc
+2021-11-03 14:53:37.242 DEBUG com.tv.server.mapper.UserMapper.selectByExample   :159  [32m        [0;39m <==      Total: 1
+2021-11-03 14:55:20.215 INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry   :65   [32m        [0;39m Unregistering application SYSTEM with eureka with status DOWN
+2021-11-03 14:55:20.216 WARN  com.netflix.discovery.DiscoveryClient             :1321 [32m        [0;39m Saw local status change event StatusChangeEvent [timestamp=1635951320216, current=DOWN, previous=UP]
+2021-11-03 14:55:20.218 INFO  com.netflix.discovery.DiscoveryClient             :844  [32m        [0;39m DiscoveryClient_SYSTEM/windows10.microdone.cn:system:9001: registering service...
+2021-11-03 14:55:20.239 INFO  com.netflix.discovery.DiscoveryClient             :853  [32m        [0;39m DiscoveryClient_SYSTEM/windows10.microdone.cn:system:9001 - registration status: 204
+2021-11-03 14:55:20.257 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :208  [32m        [0;39m Shutting down ExecutorService 'applicationTaskExecutor'
+2021-11-03 14:55:20.277 INFO  com.netflix.discovery.DiscoveryClient             :906  [32m        [0;39m Shutting down DiscoveryClient ...
+2021-11-03 14:55:23.284 INFO  com.netflix.discovery.DiscoveryClient             :940  [32m        [0;39m Unregistering ...
+2021-11-03 14:55:23.302 INFO  com.netflix.discovery.DiscoveryClient             :942  [32m        [0;39m DiscoveryClient_SYSTEM/windows10.microdone.cn:system:9001 - deregister  status: 200
+2021-11-03 14:55:23.326 INFO  com.netflix.discovery.DiscoveryClient             :929  [32m        [0;39m Completed shut down of DiscoveryClient
+2021-11-03 14:55:23.327 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m        [0;39m HikariPool-1 - Shutdown initiated...
+2021-11-03 14:55:23.337 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m        [0;39m HikariPool-1 - Shutdown completed.
+2021-11-03 14:55:25.214 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-11-03 14:55:26.280 INFO  com.tv.system.config.SystemApplication            :651  [32m        [0;39m No active profile set, falling back to default profiles: default
+2021-11-03 14:55:29.250 INFO  o.springframework.cloud.context.scope.GenericScope:295  [32m        [0;39m BeanFactory id=359ad9a6-f533-346f-87c9-dc9b4ed1b6e2
+2021-11-03 14:55:29.608 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-11-03 14:55:29.647 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-11-03 14:55:30.094 WARN  org.apache.tomcat.util.modeler.Registry           :173  [32m        [0;39m The MBean registry cannot be disabled because it has already been initialised
+2021-11-03 14:55:30.652 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :92   [32m        [0;39m Tomcat initialized with port(s): 9001 (http)
+2021-11-03 14:55:30.653 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m        [0;39m Initializing ProtocolHandler ["http-nio-9001"]
+2021-11-03 14:55:30.653 INFO  org.apache.catalina.core.StandardService          :173  [32m        [0;39m Starting service [Tomcat]
+2021-11-03 14:55:30.654 INFO  org.apache.catalina.core.StandardEngine           :173  [32m        [0;39m Starting Servlet engine: [Apache Tomcat/9.0.29]
+2021-11-03 14:55:30.875 INFO  o.a.c.c.C.[Tomcat].[localhost].[/system]          :173  [32m        [0;39m Initializing Spring embedded WebApplicationContext
+2021-11-03 14:55:30.875 INFO  org.springframework.web.context.ContextLoader     :284  [32m        [0;39m Root WebApplicationContext: initialization completed in 4585 ms
+2021-11-03 14:55:31.659 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext:558  [32m        [0;39m Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'resourceController' defined in file [D:\MScProject\tv\system\target\classes\com\tv\system\controller\admin\ResourceController.class]: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.tv.system.controller.admin.ResourceController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@5720e5d3]
+2021-11-03 14:55:31.660 INFO  org.apache.catalina.core.StandardService          :173  [32m        [0;39m Stopping service [Tomcat]
+2021-11-03 14:55:31.735 INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener:136  [32m        [0;39m 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-11-03 14:55:31.740 ERROR org.springframework.boot.SpringApplication        :826  [32m        [0;39m Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'resourceController' defined in file [D:\MScProject\tv\system\target\classes\com\tv\system\controller\admin\ResourceController.class]: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.tv.system.controller.admin.ResourceController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@5720e5d3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:572)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:878)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at com.tv.system.config.SystemApplication.main(SystemApplication.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.tv.system.controller.admin.ResourceController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@5720e5d3]
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:734)
+	at org.springframework.util.ReflectionUtils.doWithLocalFields(ReflectionUtils.java:666)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.buildResourceMetadata(CommonAnnotationBeanPostProcessor.java:382)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.findResourceMetadata(CommonAnnotationBeanPostProcessor.java:363)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessMergedBeanDefinition(CommonAnnotationBeanPostProcessor.java:311)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyMergedBeanDefinitionPostProcessors(AbstractAutowireCapableBeanFactory.java:1094)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569)
+	... 18 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: Lcom/tv/server/service/ResourceService;
+	at java.lang.Class.getDeclaredFields0(Native Method)
+	at java.lang.Class.privateGetDeclaredFields(Class.java:2583)
+	at java.lang.Class.getDeclaredFields(Class.java:1916)
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:729)
+	... 24 common frames omitted
+Caused by: java.lang.ClassNotFoundException: com.tv.server.service.ResourceService
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:382)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:418)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:355)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:351)
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:144)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:351)
+	... 28 common frames omitted
+2021-11-03 14:58:38.992 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-11-03 14:58:40.635 INFO  com.tv.system.config.SystemApplication            :651  [32m        [0;39m No active profile set, falling back to default profiles: default
+2021-11-03 14:58:41.895 INFO  o.springframework.cloud.context.scope.GenericScope:295  [32m        [0;39m BeanFactory id=cf7198c9-cd55-3b50-93b0-8f9ae3cd2084
+2021-11-03 14:58:41.949 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-11-03 14:58:41.955 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-11-03 14:58:42.018 WARN  org.apache.tomcat.util.modeler.Registry           :173  [32m        [0;39m The MBean registry cannot be disabled because it has already been initialised
+2021-11-03 14:58:42.357 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :92   [32m        [0;39m Tomcat initialized with port(s): 9001 (http)
+2021-11-03 14:58:42.357 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m        [0;39m Initializing ProtocolHandler ["http-nio-9001"]
+2021-11-03 14:58:42.358 INFO  org.apache.catalina.core.StandardService          :173  [32m        [0;39m Starting service [Tomcat]
+2021-11-03 14:58:42.359 INFO  org.apache.catalina.core.StandardEngine           :173  [32m        [0;39m Starting Servlet engine: [Apache Tomcat/9.0.29]
+2021-11-03 14:58:42.435 INFO  o.a.c.c.C.[Tomcat-1].[localhost].[/system]        :173  [32m        [0;39m Initializing Spring embedded WebApplicationContext
+2021-11-03 14:58:42.436 INFO  org.springframework.web.context.ContextLoader     :284  [32m        [0;39m Root WebApplicationContext: initialization completed in 1791 ms
+2021-11-03 14:58:42.916 WARN  com.netflix.config.sources.URLConfigurationSource :121  [32m        [0;39m No URLs will be polled as dynamic configuration sources.
+2021-11-03 14:58:42.916 INFO  com.netflix.config.sources.URLConfigurationSource :122  [32m        [0;39m To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-11-03 14:58:43.079 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :171  [32m        [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2021-11-03 14:58:43.502 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m        [0;39m LiveReload server is running on port 35729
+2021-11-03 14:58:50.361 WARN  o.s.c.l.c.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger:106  [32m        [0;39m You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2021-11-03 14:58:50.388 WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger:81   [32m        [0;39m Spring Cloud LoadBalancer is currently working with default default cache. You can switch to using Caffeine cache, by adding it to the classpath.
+2021-11-03 14:58:50.406 INFO  o.s.cloud.netflix.eureka.InstanceInfoFactory      :72   [32m        [0;39m Setting initial instance status as: STARTING
+2021-11-03 14:58:50.411 INFO  com.netflix.discovery.DiscoveryClient             :365  [32m        [0;39m Initializing Eureka in region us-east-1
+2021-11-03 14:58:50.417 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :70   [32m        [0;39m Using JSON encoding codec LegacyJacksonJson
+2021-11-03 14:58:50.417 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :71   [32m        [0;39m Using JSON decoding codec LegacyJacksonJson
+2021-11-03 14:58:50.418 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :80   [32m        [0;39m Using XML encoding codec XStreamXml
+2021-11-03 14:58:50.418 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :81   [32m        [0;39m Using XML decoding codec XStreamXml
+2021-11-03 14:58:50.514 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-03 14:58:50.528 INFO  com.netflix.discovery.DiscoveryClient             :976  [32m        [0;39m Disable delta property : false
+2021-11-03 14:58:50.529 INFO  com.netflix.discovery.DiscoveryClient             :977  [32m        [0;39m Single vip registry refresh property : null
+2021-11-03 14:58:50.529 INFO  com.netflix.discovery.DiscoveryClient             :978  [32m        [0;39m Force full registry fetch : false
+2021-11-03 14:58:50.529 INFO  com.netflix.discovery.DiscoveryClient             :979  [32m        [0;39m Application is null : false
+2021-11-03 14:58:50.529 INFO  com.netflix.discovery.DiscoveryClient             :980  [32m        [0;39m Registered Applications size is zero : true
+2021-11-03 14:58:50.530 INFO  com.netflix.discovery.DiscoveryClient             :982  [32m        [0;39m Application version is -1: true
+2021-11-03 14:58:50.530 INFO  com.netflix.discovery.DiscoveryClient             :1065 [32m        [0;39m Getting all instance registry info from the eureka server
+2021-11-03 14:58:50.537 INFO  com.netflix.discovery.DiscoveryClient             :1074 [32m        [0;39m The response status is 200
+2021-11-03 14:58:50.538 INFO  com.netflix.discovery.DiscoveryClient             :1288 [32m        [0;39m Starting heartbeat executor: renew interval is: 30
+2021-11-03 14:58:50.539 INFO  com.netflix.discovery.InstanceInfoReplicator      :60   [32m        [0;39m InstanceInfoReplicator onDemand update allowed rate per min is 4
+2021-11-03 14:58:50.542 INFO  com.netflix.discovery.DiscoveryClient             :465  [32m        [0;39m Discovery Client initialized at timestamp 1635951530541 with initial instances count: 2
+2021-11-03 14:58:50.543 INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry   :41   [32m        [0;39m Registering application SYSTEM with eureka with status UP
+2021-11-03 14:58:50.544 INFO  com.netflix.discovery.DiscoveryClient             :1323 [32m        [0;39m Saw local status change event StatusChangeEvent [timestamp=1635951530544, current=UP, previous=STARTING]
+2021-11-03 14:58:50.545 INFO  com.netflix.discovery.DiscoveryClient             :844  [32m        [0;39m DiscoveryClient_SYSTEM/windows10.microdone.cn:system:9001: registering service...
+2021-11-03 14:58:50.553 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m        [0;39m Starting ProtocolHandler ["http-nio-9001"]
+2021-11-03 14:58:50.557 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :204  [32m        [0;39m Tomcat started on port(s): 9001 (http) with context path '/system'
+2021-11-03 14:58:50.579 INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration         :145  [32m        [0;39m Updating port to 9001
+2021-11-03 14:58:50.586 INFO  com.netflix.discovery.DiscoveryClient             :853  [32m        [0;39m DiscoveryClient_SYSTEM/windows10.microdone.cn:system:9001 - registration status: 204
+2021-11-03 14:58:52.123 INFO  com.tv.system.config.SystemApplication            :61   [32m        [0;39m Started SystemApplication in 14.226 seconds (JVM running for 35247.49)
+2021-11-03 14:58:52.126 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m        [0;39m Condition evaluation unchanged
+2021-11-03 14:58:52.127 INFO  com.tv.system.config.SystemApplication            :22   [32m        [0;39m started successfully!!
+2021-11-03 14:58:52.129 INFO  com.tv.system.config.SystemApplication            :23   [32m        [0;39m system address: 	http://127.0.0.1:9001
+2021-11-03 15:03:50.541 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-03 15:07:55.183 INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry   :65   [32m        [0;39m Unregistering application SYSTEM with eureka with status DOWN
+2021-11-03 15:07:55.184 WARN  com.netflix.discovery.DiscoveryClient             :1321 [32m        [0;39m Saw local status change event StatusChangeEvent [timestamp=1635952075184, current=DOWN, previous=UP]
+2021-11-03 15:07:55.184 INFO  com.netflix.discovery.DiscoveryClient             :844  [32m        [0;39m DiscoveryClient_SYSTEM/windows10.microdone.cn:system:9001: registering service...
+2021-11-03 15:07:55.186 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :208  [32m        [0;39m Shutting down ExecutorService 'applicationTaskExecutor'
+2021-11-03 15:07:55.188 INFO  com.netflix.discovery.DiscoveryClient             :906  [32m        [0;39m Shutting down DiscoveryClient ...
+2021-11-03 15:07:55.196 INFO  com.netflix.discovery.DiscoveryClient             :853  [32m        [0;39m DiscoveryClient_SYSTEM/windows10.microdone.cn:system:9001 - registration status: 204
+2021-11-03 15:07:55.197 INFO  com.netflix.discovery.DiscoveryClient             :940  [32m        [0;39m Unregistering ...
+2021-11-03 15:07:55.212 INFO  com.netflix.discovery.DiscoveryClient             :942  [32m        [0;39m DiscoveryClient_SYSTEM/windows10.microdone.cn:system:9001 - deregister  status: 200
+2021-11-03 15:07:55.225 INFO  com.netflix.discovery.DiscoveryClient             :929  [32m        [0;39m Completed shut down of DiscoveryClient
+2021-11-03 15:07:57.239 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-11-03 15:07:58.271 INFO  com.tv.system.config.SystemApplication            :651  [32m        [0;39m No active profile set, falling back to default profiles: default
+2021-11-03 15:07:58.821 INFO  o.springframework.cloud.context.scope.GenericScope:295  [32m        [0;39m BeanFactory id=cf7198c9-cd55-3b50-93b0-8f9ae3cd2084
+2021-11-03 15:07:58.869 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-11-03 15:07:58.874 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-11-03 15:07:58.941 WARN  org.apache.tomcat.util.modeler.Registry           :173  [32m        [0;39m The MBean registry cannot be disabled because it has already been initialised
+2021-11-03 15:07:59.567 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :92   [32m        [0;39m Tomcat initialized with port(s): 9001 (http)
+2021-11-03 15:07:59.568 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m        [0;39m Initializing ProtocolHandler ["http-nio-9001"]
+2021-11-03 15:07:59.568 INFO  org.apache.catalina.core.StandardService          :173  [32m        [0;39m Starting service [Tomcat]
+2021-11-03 15:07:59.570 INFO  org.apache.catalina.core.StandardEngine           :173  [32m        [0;39m Starting Servlet engine: [Apache Tomcat/9.0.29]
+2021-11-03 15:07:59.645 INFO  o.a.c.c.C.[Tomcat-1].[localhost].[/system]        :173  [32m        [0;39m Initializing Spring embedded WebApplicationContext
+2021-11-03 15:07:59.646 INFO  org.springframework.web.context.ContextLoader     :284  [32m        [0;39m Root WebApplicationContext: initialization completed in 1373 ms
+2021-11-03 15:08:00.043 WARN  com.netflix.config.sources.URLConfigurationSource :121  [32m        [0;39m No URLs will be polled as dynamic configuration sources.
+2021-11-03 15:08:00.043 INFO  com.netflix.config.sources.URLConfigurationSource :122  [32m        [0;39m To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-11-03 15:08:00.215 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :171  [32m        [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2021-11-03 15:08:00.396 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m        [0;39m LiveReload server is running on port 35729
+2021-11-03 15:08:02.785 WARN  o.s.c.l.c.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger:106  [32m        [0;39m You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2021-11-03 15:08:02.791 WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger:81   [32m        [0;39m Spring Cloud LoadBalancer is currently working with default default cache. You can switch to using Caffeine cache, by adding it to the classpath.
+2021-11-03 15:08:02.801 INFO  o.s.cloud.netflix.eureka.InstanceInfoFactory      :72   [32m        [0;39m Setting initial instance status as: STARTING
+2021-11-03 15:08:02.804 INFO  com.netflix.discovery.DiscoveryClient             :365  [32m        [0;39m Initializing Eureka in region us-east-1
+2021-11-03 15:08:02.807 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :70   [32m        [0;39m Using JSON encoding codec LegacyJacksonJson
+2021-11-03 15:08:02.807 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :71   [32m        [0;39m Using JSON decoding codec LegacyJacksonJson
+2021-11-03 15:08:02.807 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :80   [32m        [0;39m Using XML encoding codec XStreamXml
+2021-11-03 15:08:02.807 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :81   [32m        [0;39m Using XML decoding codec XStreamXml
+2021-11-03 15:08:02.858 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-03 15:08:02.859 INFO  com.netflix.discovery.DiscoveryClient             :976  [32m        [0;39m Disable delta property : false
+2021-11-03 15:08:02.859 INFO  com.netflix.discovery.DiscoveryClient             :977  [32m        [0;39m Single vip registry refresh property : null
+2021-11-03 15:08:02.860 INFO  com.netflix.discovery.DiscoveryClient             :978  [32m        [0;39m Force full registry fetch : false
+2021-11-03 15:08:02.860 INFO  com.netflix.discovery.DiscoveryClient             :979  [32m        [0;39m Application is null : false
+2021-11-03 15:08:02.860 INFO  com.netflix.discovery.DiscoveryClient             :980  [32m        [0;39m Registered Applications size is zero : true
+2021-11-03 15:08:02.861 INFO  com.netflix.discovery.DiscoveryClient             :982  [32m        [0;39m Application version is -1: true
+2021-11-03 15:08:02.861 INFO  com.netflix.discovery.DiscoveryClient             :1065 [32m        [0;39m Getting all instance registry info from the eureka server
+2021-11-03 15:08:02.865 INFO  com.netflix.discovery.DiscoveryClient             :1074 [32m        [0;39m The response status is 200
+2021-11-03 15:08:02.866 INFO  com.netflix.discovery.DiscoveryClient             :1288 [32m        [0;39m Starting heartbeat executor: renew interval is: 30
+2021-11-03 15:08:02.867 INFO  com.netflix.discovery.InstanceInfoReplicator      :60   [32m        [0;39m InstanceInfoReplicator onDemand update allowed rate per min is 4
+2021-11-03 15:08:02.869 INFO  com.netflix.discovery.DiscoveryClient             :465  [32m        [0;39m Discovery Client initialized at timestamp 1635952082869 with initial instances count: 4
+2021-11-03 15:08:02.870 INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry   :41   [32m        [0;39m Registering application SYSTEM with eureka with status UP
+2021-11-03 15:08:02.870 INFO  com.netflix.discovery.DiscoveryClient             :1323 [32m        [0;39m Saw local status change event StatusChangeEvent [timestamp=1635952082870, current=UP, previous=STARTING]
+2021-11-03 15:08:02.871 INFO  com.netflix.discovery.DiscoveryClient             :844  [32m        [0;39m DiscoveryClient_SYSTEM/windows10.microdone.cn:system:9001: registering service...
+2021-11-03 15:08:02.876 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m        [0;39m Starting ProtocolHandler ["http-nio-9001"]
+2021-11-03 15:08:02.879 INFO  com.netflix.discovery.DiscoveryClient             :853  [32m        [0;39m DiscoveryClient_SYSTEM/windows10.microdone.cn:system:9001 - registration status: 204
+2021-11-03 15:08:02.880 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :204  [32m        [0;39m Tomcat started on port(s): 9001 (http) with context path '/system'
+2021-11-03 15:08:02.880 INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration         :145  [32m        [0;39m Updating port to 9001
+2021-11-03 15:08:03.558 INFO  com.tv.system.config.SystemApplication            :61   [32m        [0;39m Started SystemApplication in 7.423 seconds (JVM running for 35798.925)
+2021-11-03 15:08:03.560 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m        [0;39m Condition evaluation unchanged
+2021-11-03 15:08:03.560 INFO  com.tv.system.config.SystemApplication            :22   [32m        [0;39m started successfully!!
+2021-11-03 15:08:03.560 INFO  com.tv.system.config.SystemApplication            :23   [32m        [0;39m system address: 	http://127.0.0.1:9001
+2021-11-03 15:09:07.216 INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry   :65   [32m        [0;39m Unregistering application SYSTEM with eureka with status DOWN
+2021-11-03 15:09:07.217 WARN  com.netflix.discovery.DiscoveryClient             :1321 [32m        [0;39m Saw local status change event StatusChangeEvent [timestamp=1635952147217, current=DOWN, previous=UP]
+2021-11-03 15:09:07.217 INFO  com.netflix.discovery.DiscoveryClient             :844  [32m        [0;39m DiscoveryClient_SYSTEM/windows10.microdone.cn:system:9001: registering service...
+2021-11-03 15:09:07.219 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :208  [32m        [0;39m Shutting down ExecutorService 'applicationTaskExecutor'
+2021-11-03 15:09:07.220 INFO  com.netflix.discovery.DiscoveryClient             :906  [32m        [0;39m Shutting down DiscoveryClient ...
+2021-11-03 15:09:07.226 INFO  com.netflix.discovery.DiscoveryClient             :853  [32m        [0;39m DiscoveryClient_SYSTEM/windows10.microdone.cn:system:9001 - registration status: 204
+2021-11-03 15:09:07.227 INFO  com.netflix.discovery.DiscoveryClient             :940  [32m        [0;39m Unregistering ...
+2021-11-03 15:09:07.241 INFO  com.netflix.discovery.DiscoveryClient             :942  [32m        [0;39m DiscoveryClient_SYSTEM/windows10.microdone.cn:system:9001 - deregister  status: 200
+2021-11-03 15:09:07.247 INFO  com.netflix.discovery.DiscoveryClient             :929  [32m        [0;39m Completed shut down of DiscoveryClient
+2021-11-03 15:09:09.674 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-11-03 15:09:10.653 INFO  com.tv.system.config.SystemApplication            :651  [32m        [0;39m No active profile set, falling back to default profiles: default
+2021-11-03 15:09:11.300 INFO  o.springframework.cloud.context.scope.GenericScope:295  [32m        [0;39m BeanFactory id=cf7198c9-cd55-3b50-93b0-8f9ae3cd2084
+2021-11-03 15:09:11.354 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-11-03 15:09:11.359 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-11-03 15:09:11.457 WARN  org.apache.tomcat.util.modeler.Registry           :173  [32m        [0;39m The MBean registry cannot be disabled because it has already been initialised
+2021-11-03 15:09:11.707 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :92   [32m        [0;39m Tomcat initialized with port(s): 9001 (http)
+2021-11-03 15:09:11.708 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m        [0;39m Initializing ProtocolHandler ["http-nio-9001"]
+2021-11-03 15:09:11.708 INFO  org.apache.catalina.core.StandardService          :173  [32m        [0;39m Starting service [Tomcat]
+2021-11-03 15:09:11.709 INFO  org.apache.catalina.core.StandardEngine           :173  [32m        [0;39m Starting Servlet engine: [Apache Tomcat/9.0.29]
+2021-11-03 15:09:11.766 INFO  o.a.c.c.C.[Tomcat-1].[localhost].[/system]        :173  [32m        [0;39m Initializing Spring embedded WebApplicationContext
+2021-11-03 15:09:11.766 INFO  org.springframework.web.context.ContextLoader     :284  [32m        [0;39m Root WebApplicationContext: initialization completed in 1109 ms
+2021-11-03 15:09:11.964 WARN  com.netflix.config.sources.URLConfigurationSource :121  [32m        [0;39m No URLs will be polled as dynamic configuration sources.
+2021-11-03 15:09:11.964 INFO  com.netflix.config.sources.URLConfigurationSource :122  [32m        [0;39m To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-11-03 15:09:12.012 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :171  [32m        [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2021-11-03 15:09:12.112 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m        [0;39m LiveReload server is running on port 35729
+2021-11-03 15:09:14.518 WARN  o.s.c.l.c.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger:106  [32m        [0;39m You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2021-11-03 15:09:14.528 WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger:81   [32m        [0;39m Spring Cloud LoadBalancer is currently working with default default cache. You can switch to using Caffeine cache, by adding it to the classpath.
+2021-11-03 15:09:14.541 INFO  o.s.cloud.netflix.eureka.InstanceInfoFactory      :72   [32m        [0;39m Setting initial instance status as: STARTING
+2021-11-03 15:09:14.544 INFO  com.netflix.discovery.DiscoveryClient             :365  [32m        [0;39m Initializing Eureka in region us-east-1
+2021-11-03 15:09:14.545 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :70   [32m        [0;39m Using JSON encoding codec LegacyJacksonJson
+2021-11-03 15:09:14.545 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :71   [32m        [0;39m Using JSON decoding codec LegacyJacksonJson
+2021-11-03 15:09:14.546 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :80   [32m        [0;39m Using XML encoding codec XStreamXml
+2021-11-03 15:09:14.546 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :81   [32m        [0;39m Using XML decoding codec XStreamXml
+2021-11-03 15:09:14.610 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-03 15:09:14.611 INFO  com.netflix.discovery.DiscoveryClient             :976  [32m        [0;39m Disable delta property : false
+2021-11-03 15:09:14.611 INFO  com.netflix.discovery.DiscoveryClient             :977  [32m        [0;39m Single vip registry refresh property : null
+2021-11-03 15:09:14.612 INFO  com.netflix.discovery.DiscoveryClient             :978  [32m        [0;39m Force full registry fetch : false
+2021-11-03 15:09:14.613 INFO  com.netflix.discovery.DiscoveryClient             :979  [32m        [0;39m Application is null : false
+2021-11-03 15:09:14.614 INFO  com.netflix.discovery.DiscoveryClient             :980  [32m        [0;39m Registered Applications size is zero : true
+2021-11-03 15:09:14.614 INFO  com.netflix.discovery.DiscoveryClient             :982  [32m        [0;39m Application version is -1: true
+2021-11-03 15:09:14.614 INFO  com.netflix.discovery.DiscoveryClient             :1065 [32m        [0;39m Getting all instance registry info from the eureka server
+2021-11-03 15:09:14.618 INFO  com.netflix.discovery.DiscoveryClient             :1074 [32m        [0;39m The response status is 200
+2021-11-03 15:09:14.619 INFO  com.netflix.discovery.DiscoveryClient             :1288 [32m        [0;39m Starting heartbeat executor: renew interval is: 30
+2021-11-03 15:09:14.620 INFO  com.netflix.discovery.InstanceInfoReplicator      :60   [32m        [0;39m InstanceInfoReplicator onDemand update allowed rate per min is 4
+2021-11-03 15:09:14.622 INFO  com.netflix.discovery.DiscoveryClient             :465  [32m        [0;39m Discovery Client initialized at timestamp 1635952154622 with initial instances count: 1
+2021-11-03 15:09:14.623 INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry   :41   [32m        [0;39m Registering application SYSTEM with eureka with status UP
+2021-11-03 15:09:14.623 INFO  com.netflix.discovery.DiscoveryClient             :1323 [32m        [0;39m Saw local status change event StatusChangeEvent [timestamp=1635952154623, current=UP, previous=STARTING]
+2021-11-03 15:09:14.624 INFO  com.netflix.discovery.DiscoveryClient             :844  [32m        [0;39m DiscoveryClient_SYSTEM/windows10.microdone.cn:system:9001: registering service...
+2021-11-03 15:09:14.631 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m        [0;39m Starting ProtocolHandler ["http-nio-9001"]
+2021-11-03 15:09:14.634 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :204  [32m        [0;39m Tomcat started on port(s): 9001 (http) with context path '/system'
+2021-11-03 15:09:14.635 INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration         :145  [32m        [0;39m Updating port to 9001
+2021-11-03 15:09:14.647 INFO  com.netflix.discovery.DiscoveryClient             :853  [32m        [0;39m DiscoveryClient_SYSTEM/windows10.microdone.cn:system:9001 - registration status: 204
+2021-11-03 15:09:15.381 INFO  com.tv.system.config.SystemApplication            :61   [32m        [0;39m Started SystemApplication in 6.97 seconds (JVM running for 35870.748)
+2021-11-03 15:09:15.382 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m        [0;39m Condition evaluation unchanged
+2021-11-03 15:09:15.382 INFO  com.tv.system.config.SystemApplication            :22   [32m        [0;39m started successfully!!
+2021-11-03 15:09:15.382 INFO  com.tv.system.config.SystemApplication            :23   [32m        [0;39m system address: 	http://127.0.0.1:9001
+2021-11-03 15:09:22.281 INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry   :65   [32m        [0;39m Unregistering application SYSTEM with eureka with status DOWN
+2021-11-03 15:09:22.281 WARN  com.netflix.discovery.DiscoveryClient             :1321 [32m        [0;39m Saw local status change event StatusChangeEvent [timestamp=1635952162281, current=DOWN, previous=UP]
+2021-11-03 15:09:22.284 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :208  [32m        [0;39m Shutting down ExecutorService 'applicationTaskExecutor'
+2021-11-03 15:09:22.285 INFO  com.netflix.discovery.DiscoveryClient             :906  [32m        [0;39m Shutting down DiscoveryClient ...
+2021-11-03 15:09:22.287 INFO  com.netflix.discovery.DiscoveryClient             :844  [32m        [0;39m DiscoveryClient_SYSTEM/windows10.microdone.cn:system:9001: registering service...
+2021-11-03 15:09:22.306 INFO  com.netflix.discovery.DiscoveryClient             :853  [32m        [0;39m DiscoveryClient_SYSTEM/windows10.microdone.cn:system:9001 - registration status: 204
+2021-11-03 15:09:25.299 INFO  com.netflix.discovery.DiscoveryClient             :940  [32m        [0;39m Unregistering ...
+2021-11-03 15:09:25.317 INFO  com.netflix.discovery.DiscoveryClient             :942  [32m        [0;39m DiscoveryClient_SYSTEM/windows10.microdone.cn:system:9001 - deregister  status: 200
+2021-11-03 15:09:25.322 INFO  com.netflix.discovery.DiscoveryClient             :929  [32m        [0;39m Completed shut down of DiscoveryClient
+2021-11-03 15:09:26.967 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-11-03 15:09:27.778 INFO  com.tv.system.config.SystemApplication            :651  [32m        [0;39m No active profile set, falling back to default profiles: default
+2021-11-03 15:09:28.216 INFO  o.springframework.cloud.context.scope.GenericScope:295  [32m        [0;39m BeanFactory id=cf7198c9-cd55-3b50-93b0-8f9ae3cd2084
+2021-11-03 15:09:28.240 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-11-03 15:09:28.244 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-11-03 15:09:28.275 WARN  org.apache.tomcat.util.modeler.Registry           :173  [32m        [0;39m The MBean registry cannot be disabled because it has already been initialised
+2021-11-03 15:09:28.481 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :92   [32m        [0;39m Tomcat initialized with port(s): 9001 (http)
+2021-11-03 15:09:28.481 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m        [0;39m Initializing ProtocolHandler ["http-nio-9001"]
+2021-11-03 15:09:28.481 INFO  org.apache.catalina.core.StandardService          :173  [32m        [0;39m Starting service [Tomcat]
+2021-11-03 15:09:28.482 INFO  org.apache.catalina.core.StandardEngine           :173  [32m        [0;39m Starting Servlet engine: [Apache Tomcat/9.0.29]
+2021-11-03 15:09:28.523 INFO  o.a.c.c.C.[Tomcat-1].[localhost].[/system]        :173  [32m        [0;39m Initializing Spring embedded WebApplicationContext
+2021-11-03 15:09:28.523 INFO  org.springframework.web.context.ContextLoader     :284  [32m        [0;39m Root WebApplicationContext: initialization completed in 743 ms
+2021-11-03 15:09:28.677 WARN  com.netflix.config.sources.URLConfigurationSource :121  [32m        [0;39m No URLs will be polled as dynamic configuration sources.
+2021-11-03 15:09:28.678 INFO  com.netflix.config.sources.URLConfigurationSource :122  [32m        [0;39m To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-11-03 15:09:28.733 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :171  [32m        [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2021-11-03 15:09:28.822 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m        [0;39m LiveReload server is running on port 35729
+2021-11-03 15:09:30.586 WARN  o.s.c.l.c.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger:106  [32m        [0;39m You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2021-11-03 15:09:30.594 WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger:81   [32m        [0;39m Spring Cloud LoadBalancer is currently working with default default cache. You can switch to using Caffeine cache, by adding it to the classpath.
+2021-11-03 15:09:30.601 INFO  o.s.cloud.netflix.eureka.InstanceInfoFactory      :72   [32m        [0;39m Setting initial instance status as: STARTING
+2021-11-03 15:09:30.604 INFO  com.netflix.discovery.DiscoveryClient             :365  [32m        [0;39m Initializing Eureka in region us-east-1
+2021-11-03 15:09:30.605 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :70   [32m        [0;39m Using JSON encoding codec LegacyJacksonJson
+2021-11-03 15:09:30.606 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :71   [32m        [0;39m Using JSON decoding codec LegacyJacksonJson
+2021-11-03 15:09:30.606 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :80   [32m        [0;39m Using XML encoding codec XStreamXml
+2021-11-03 15:09:30.606 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :81   [32m        [0;39m Using XML decoding codec XStreamXml
+2021-11-03 15:09:30.647 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-03 15:09:30.648 INFO  com.netflix.discovery.DiscoveryClient             :976  [32m        [0;39m Disable delta property : false
+2021-11-03 15:09:30.649 INFO  com.netflix.discovery.DiscoveryClient             :977  [32m        [0;39m Single vip registry refresh property : null
+2021-11-03 15:09:30.649 INFO  com.netflix.discovery.DiscoveryClient             :978  [32m        [0;39m Force full registry fetch : false
+2021-11-03 15:09:30.649 INFO  com.netflix.discovery.DiscoveryClient             :979  [32m        [0;39m Application is null : false
+2021-11-03 15:09:30.649 INFO  com.netflix.discovery.DiscoveryClient             :980  [32m        [0;39m Registered Applications size is zero : true
+2021-11-03 15:09:30.649 INFO  com.netflix.discovery.DiscoveryClient             :982  [32m        [0;39m Application version is -1: true
+2021-11-03 15:09:30.649 INFO  com.netflix.discovery.DiscoveryClient             :1065 [32m        [0;39m Getting all instance registry info from the eureka server
+2021-11-03 15:09:30.652 INFO  com.netflix.discovery.DiscoveryClient             :1074 [32m        [0;39m The response status is 200
+2021-11-03 15:09:30.653 INFO  com.netflix.discovery.DiscoveryClient             :1288 [32m        [0;39m Starting heartbeat executor: renew interval is: 30
+2021-11-03 15:09:30.654 INFO  com.netflix.discovery.InstanceInfoReplicator      :60   [32m        [0;39m InstanceInfoReplicator onDemand update allowed rate per min is 4
+2021-11-03 15:09:30.655 INFO  com.netflix.discovery.DiscoveryClient             :465  [32m        [0;39m Discovery Client initialized at timestamp 1635952170655 with initial instances count: 1
+2021-11-03 15:09:30.657 INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry   :41   [32m        [0;39m Registering application SYSTEM with eureka with status UP
+2021-11-03 15:09:30.657 INFO  com.netflix.discovery.DiscoveryClient             :1323 [32m        [0;39m Saw local status change event StatusChangeEvent [timestamp=1635952170657, current=UP, previous=STARTING]
+2021-11-03 15:09:30.658 INFO  com.netflix.discovery.DiscoveryClient             :844  [32m        [0;39m DiscoveryClient_SYSTEM/windows10.microdone.cn:system:9001: registering service...
+2021-11-03 15:09:30.663 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m        [0;39m Starting ProtocolHandler ["http-nio-9001"]
+2021-11-03 15:09:30.667 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :204  [32m        [0;39m Tomcat started on port(s): 9001 (http) with context path '/system'
+2021-11-03 15:09:30.667 INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration         :145  [32m        [0;39m Updating port to 9001
+2021-11-03 15:09:30.672 INFO  com.netflix.discovery.DiscoveryClient             :853  [32m        [0;39m DiscoveryClient_SYSTEM/windows10.microdone.cn:system:9001 - registration status: 204
+2021-11-03 15:09:31.224 INFO  com.tv.system.config.SystemApplication            :61   [32m        [0;39m Started SystemApplication in 5.131 seconds (JVM running for 35886.591)
+2021-11-03 15:09:31.225 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m        [0;39m Condition evaluation unchanged
+2021-11-03 15:09:31.225 INFO  com.tv.system.config.SystemApplication            :22   [32m        [0;39m started successfully!!
+2021-11-03 15:09:31.225 INFO  com.tv.system.config.SystemApplication            :23   [32m        [0;39m system address: 	http://127.0.0.1:9001
+2021-11-03 15:14:30.663 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-03 15:19:07.729 INFO  o.a.c.c.C.[Tomcat-1].[localhost].[/system]        :173  [32m        [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-11-03 15:19:07.729 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m        [0;39m Initializing Servlet 'dispatcherServlet'
+2021-11-03 15:19:07.734 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m        [0;39m Completed initialization in 4 ms
+2021-11-03 15:19:07.744 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m        [0;39m HikariPool-2 - Starting...
+2021-11-03 15:19:07.750 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m        [0;39m HikariPool-2 - Start completed.
+2021-11-03 15:19:07.752 DEBUG c.t.s.mapper.ResourceMapper.selectByExample_COUNT :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM resource 
+2021-11-03 15:19:07.752 DEBUG c.t.s.mapper.ResourceMapper.selectByExample_COUNT :159  [32m        [0;39m ==> Parameters: 
+2021-11-03 15:19:07.754 TRACE c.t.s.mapper.ResourceMapper.selectByExample_COUNT :165  [32m        [0;39m <==    Columns: count(0)
+2021-11-03 15:19:07.755 TRACE c.t.s.mapper.ResourceMapper.selectByExample_COUNT :165  [32m        [0;39m <==        Row: 9
+2021-11-03 15:19:07.755 DEBUG c.t.s.mapper.ResourceMapper.selectByExample_COUNT :159  [32m        [0;39m <==      Total: 1
+2021-11-03 15:19:07.756 DEBUG c.tv.server.mapper.ResourceMapper.selectByExample :159  [32m        [0;39m ==>  Preparing: select id, `name`, page, request, parent from resource LIMIT ? 
+2021-11-03 15:19:07.757 DEBUG c.tv.server.mapper.ResourceMapper.selectByExample :159  [32m        [0;39m ==> Parameters: 5(Integer)
+2021-11-03 15:19:07.759 TRACE c.tv.server.mapper.ResourceMapper.selectByExample :165  [32m        [0;39m <==    Columns: id, name, page, request, parent
+2021-11-03 15:19:07.759 TRACE c.tv.server.mapper.ResourceMapper.selectByExample :165  [32m        [0;39m <==        Row: 01, system management, null, null, null
+2021-11-03 15:19:07.760 TRACE c.tv.server.mapper.ResourceMapper.selectByExample :165  [32m        [0;39m <==        Row: 0101, user management, /system/user, null, 01
+2021-11-03 15:19:07.760 TRACE c.tv.server.mapper.ResourceMapper.selectByExample :165  [32m        [0;39m <==        Row: 010101, save, null, ["/system/admin/user/list", "/system/admin/user/save"], 0101
+2021-11-03 15:19:07.761 TRACE c.tv.server.mapper.ResourceMapper.selectByExample :165  [32m        [0;39m <==        Row: 010102, delete, null, ["/system/admin/user/delete"], 0101
+2021-11-03 15:19:07.761 TRACE c.tv.server.mapper.ResourceMapper.selectByExample :165  [32m        [0;39m <==        Row: 010103, reset password, null, ["/system/admin/user/save-password"], 0101
+2021-11-03 15:19:07.761 DEBUG c.tv.server.mapper.ResourceMapper.selectByExample :159  [32m        [0;39m <==      Total: 5
+2021-11-03 15:19:27.619 DEBUG c.t.s.mapper.ResourceMapper.selectByExample_COUNT :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM resource 
+2021-11-03 15:19:27.621 DEBUG c.t.s.mapper.ResourceMapper.selectByExample_COUNT :159  [32m        [0;39m ==> Parameters: 
+2021-11-03 15:19:27.623 TRACE c.t.s.mapper.ResourceMapper.selectByExample_COUNT :165  [32m        [0;39m <==    Columns: count(0)
+2021-11-03 15:19:27.623 TRACE c.t.s.mapper.ResourceMapper.selectByExample_COUNT :165  [32m        [0;39m <==        Row: 9
+2021-11-03 15:19:27.624 DEBUG c.t.s.mapper.ResourceMapper.selectByExample_COUNT :159  [32m        [0;39m <==      Total: 1
+2021-11-03 15:19:27.625 DEBUG c.tv.server.mapper.ResourceMapper.selectByExample :159  [32m        [0;39m ==>  Preparing: select id, `name`, page, request, parent from resource LIMIT ? 
+2021-11-03 15:19:27.626 DEBUG c.tv.server.mapper.ResourceMapper.selectByExample :159  [32m        [0;39m ==> Parameters: 5(Integer)
+2021-11-03 15:19:27.627 TRACE c.tv.server.mapper.ResourceMapper.selectByExample :165  [32m        [0;39m <==    Columns: id, name, page, request, parent
+2021-11-03 15:19:27.627 TRACE c.tv.server.mapper.ResourceMapper.selectByExample :165  [32m        [0;39m <==        Row: 01, system management, null, null, null
+2021-11-03 15:19:27.628 TRACE c.tv.server.mapper.ResourceMapper.selectByExample :165  [32m        [0;39m <==        Row: 0101, user management, /system/user, null, 01
+2021-11-03 15:19:27.628 TRACE c.tv.server.mapper.ResourceMapper.selectByExample :165  [32m        [0;39m <==        Row: 010101, save, null, ["/system/admin/user/list", "/system/admin/user/save"], 0101
+2021-11-03 15:19:27.629 TRACE c.tv.server.mapper.ResourceMapper.selectByExample :165  [32m        [0;39m <==        Row: 010102, delete, null, ["/system/admin/user/delete"], 0101
+2021-11-03 15:19:27.629 TRACE c.tv.server.mapper.ResourceMapper.selectByExample :165  [32m        [0;39m <==        Row: 010103, reset password, null, ["/system/admin/user/save-password"], 0101
+2021-11-03 15:19:27.629 DEBUG c.tv.server.mapper.ResourceMapper.selectByExample :159  [32m        [0;39m <==      Total: 5
+2021-11-03 15:19:30.663 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-03 15:19:42.317 DEBUG c.t.s.mapper.ResourceMapper.selectByExample_COUNT :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM resource 
+2021-11-03 15:19:42.318 DEBUG c.t.s.mapper.ResourceMapper.selectByExample_COUNT :159  [32m        [0;39m ==> Parameters: 
+2021-11-03 15:19:42.319 TRACE c.t.s.mapper.ResourceMapper.selectByExample_COUNT :165  [32m        [0;39m <==    Columns: count(0)
+2021-11-03 15:19:42.320 TRACE c.t.s.mapper.ResourceMapper.selectByExample_COUNT :165  [32m        [0;39m <==        Row: 9
+2021-11-03 15:19:42.320 DEBUG c.t.s.mapper.ResourceMapper.selectByExample_COUNT :159  [32m        [0;39m <==      Total: 1
+2021-11-03 15:19:42.320 DEBUG c.tv.server.mapper.ResourceMapper.selectByExample :159  [32m        [0;39m ==>  Preparing: select id, `name`, page, request, parent from resource LIMIT ?, ? 
+2021-11-03 15:19:42.321 DEBUG c.tv.server.mapper.ResourceMapper.selectByExample :159  [32m        [0;39m ==> Parameters: 5(Integer), 5(Integer)
+2021-11-03 15:19:42.322 TRACE c.tv.server.mapper.ResourceMapper.selectByExample :165  [32m        [0;39m <==    Columns: id, name, page, request, parent
+2021-11-03 15:19:42.322 TRACE c.tv.server.mapper.ResourceMapper.selectByExample :165  [32m        [0;39m <==        Row: 0102, resource management, /system/resource, null, 01
+2021-11-03 15:19:42.322 TRACE c.tv.server.mapper.ResourceMapper.selectByExample :165  [32m        [0;39m <==        Row: 010201, save/display, null, ["/system/admin/resource"], 0102
+2021-11-03 15:19:42.322 TRACE c.tv.server.mapper.ResourceMapper.selectByExample :165  [32m        [0;39m <==        Row: 0103, character management, /system/role, null, 01
+2021-11-03 15:19:42.323 TRACE c.tv.server.mapper.ResourceMapper.selectByExample :165  [32m        [0;39m <==        Row: 010301, character/privilege management, null, ["/system/admin/role"], 0103
+2021-11-03 15:19:42.323 DEBUG c.tv.server.mapper.ResourceMapper.selectByExample :159  [32m        [0;39m <==      Total: 4
+2021-11-03 15:19:52.540 DEBUG c.t.s.mapper.ResourceMapper.selectByExample_COUNT :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM resource 
+2021-11-03 15:19:52.541 DEBUG c.t.s.mapper.ResourceMapper.selectByExample_COUNT :159  [32m        [0;39m ==> Parameters: 
+2021-11-03 15:19:52.542 TRACE c.t.s.mapper.ResourceMapper.selectByExample_COUNT :165  [32m        [0;39m <==    Columns: count(0)
+2021-11-03 15:19:52.542 TRACE c.t.s.mapper.ResourceMapper.selectByExample_COUNT :165  [32m        [0;39m <==        Row: 9
+2021-11-03 15:19:52.542 DEBUG c.t.s.mapper.ResourceMapper.selectByExample_COUNT :159  [32m        [0;39m <==      Total: 1
+2021-11-03 15:19:52.542 DEBUG c.tv.server.mapper.ResourceMapper.selectByExample :159  [32m        [0;39m ==>  Preparing: select id, `name`, page, request, parent from resource LIMIT ? 
+2021-11-03 15:19:52.543 DEBUG c.tv.server.mapper.ResourceMapper.selectByExample :159  [32m        [0;39m ==> Parameters: 5(Integer)
+2021-11-03 15:19:52.543 TRACE c.tv.server.mapper.ResourceMapper.selectByExample :165  [32m        [0;39m <==    Columns: id, name, page, request, parent
+2021-11-03 15:19:52.543 TRACE c.tv.server.mapper.ResourceMapper.selectByExample :165  [32m        [0;39m <==        Row: 01, system management, null, null, null
+2021-11-03 15:19:52.544 TRACE c.tv.server.mapper.ResourceMapper.selectByExample :165  [32m        [0;39m <==        Row: 0101, user management, /system/user, null, 01
+2021-11-03 15:19:52.546 TRACE c.tv.server.mapper.ResourceMapper.selectByExample :165  [32m        [0;39m <==        Row: 010101, save, null, ["/system/admin/user/list", "/system/admin/user/save"], 0101
+2021-11-03 15:19:52.546 TRACE c.tv.server.mapper.ResourceMapper.selectByExample :165  [32m        [0;39m <==        Row: 010102, delete, null, ["/system/admin/user/delete"], 0101
+2021-11-03 15:19:52.547 TRACE c.tv.server.mapper.ResourceMapper.selectByExample :165  [32m        [0;39m <==        Row: 010103, reset password, null, ["/system/admin/user/save-password"], 0101
+2021-11-03 15:19:52.547 DEBUG c.tv.server.mapper.ResourceMapper.selectByExample :159  [32m        [0;39m <==      Total: 5
+2021-11-03 15:19:54.833 DEBUG c.t.s.mapper.ResourceMapper.selectByExample_COUNT :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM resource 
+2021-11-03 15:19:54.834 DEBUG c.t.s.mapper.ResourceMapper.selectByExample_COUNT :159  [32m        [0;39m ==> Parameters: 
+2021-11-03 15:19:54.834 TRACE c.t.s.mapper.ResourceMapper.selectByExample_COUNT :165  [32m        [0;39m <==    Columns: count(0)
+2021-11-03 15:19:54.835 TRACE c.t.s.mapper.ResourceMapper.selectByExample_COUNT :165  [32m        [0;39m <==        Row: 9
+2021-11-03 15:19:54.835 DEBUG c.t.s.mapper.ResourceMapper.selectByExample_COUNT :159  [32m        [0;39m <==      Total: 1
+2021-11-03 15:19:54.836 DEBUG c.tv.server.mapper.ResourceMapper.selectByExample :159  [32m        [0;39m ==>  Preparing: select id, `name`, page, request, parent from resource LIMIT ?, ? 
+2021-11-03 15:19:54.836 DEBUG c.tv.server.mapper.ResourceMapper.selectByExample :159  [32m        [0;39m ==> Parameters: 5(Integer), 5(Integer)
+2021-11-03 15:19:54.837 TRACE c.tv.server.mapper.ResourceMapper.selectByExample :165  [32m        [0;39m <==    Columns: id, name, page, request, parent
+2021-11-03 15:19:54.837 TRACE c.tv.server.mapper.ResourceMapper.selectByExample :165  [32m        [0;39m <==        Row: 0102, resource management, /system/resource, null, 01
+2021-11-03 15:19:54.837 TRACE c.tv.server.mapper.ResourceMapper.selectByExample :165  [32m        [0;39m <==        Row: 010201, save/display, null, ["/system/admin/resource"], 0102
+2021-11-03 15:19:54.838 TRACE c.tv.server.mapper.ResourceMapper.selectByExample :165  [32m        [0;39m <==        Row: 0103, character management, /system/role, null, 01
+2021-11-03 15:19:54.838 TRACE c.tv.server.mapper.ResourceMapper.selectByExample :165  [32m        [0;39m <==        Row: 010301, character/privilege management, null, ["/system/admin/role"], 0103
+2021-11-03 15:19:54.839 DEBUG c.tv.server.mapper.ResourceMapper.selectByExample :159  [32m        [0;39m <==      Total: 4
+2021-11-03 15:20:01.434 DEBUG c.t.s.mapper.ResourceMapper.selectByExample_COUNT :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM resource 
+2021-11-03 15:20:01.435 DEBUG c.t.s.mapper.ResourceMapper.selectByExample_COUNT :159  [32m        [0;39m ==> Parameters: 
+2021-11-03 15:20:01.436 TRACE c.t.s.mapper.ResourceMapper.selectByExample_COUNT :165  [32m        [0;39m <==    Columns: count(0)
+2021-11-03 15:20:01.436 TRACE c.t.s.mapper.ResourceMapper.selectByExample_COUNT :165  [32m        [0;39m <==        Row: 9
+2021-11-03 15:20:01.436 DEBUG c.t.s.mapper.ResourceMapper.selectByExample_COUNT :159  [32m        [0;39m <==      Total: 1
+2021-11-03 15:20:01.437 DEBUG c.tv.server.mapper.ResourceMapper.selectByExample :159  [32m        [0;39m ==>  Preparing: select id, `name`, page, request, parent from resource LIMIT ? 
+2021-11-03 15:20:01.437 DEBUG c.tv.server.mapper.ResourceMapper.selectByExample :159  [32m        [0;39m ==> Parameters: 5(Integer)
+2021-11-03 15:20:01.438 TRACE c.tv.server.mapper.ResourceMapper.selectByExample :165  [32m        [0;39m <==    Columns: id, name, page, request, parent
+2021-11-03 15:20:01.438 TRACE c.tv.server.mapper.ResourceMapper.selectByExample :165  [32m        [0;39m <==        Row: 01, system management, null, null, null
+2021-11-03 15:20:01.438 TRACE c.tv.server.mapper.ResourceMapper.selectByExample :165  [32m        [0;39m <==        Row: 0101, user management, /system/user, null, 01
+2021-11-03 15:20:01.438 TRACE c.tv.server.mapper.ResourceMapper.selectByExample :165  [32m        [0;39m <==        Row: 010101, save, null, ["/system/admin/user/list", "/system/admin/user/save"], 0101
+2021-11-03 15:20:01.439 TRACE c.tv.server.mapper.ResourceMapper.selectByExample :165  [32m        [0;39m <==        Row: 010102, delete, null, ["/system/admin/user/delete"], 0101
+2021-11-03 15:20:01.439 TRACE c.tv.server.mapper.ResourceMapper.selectByExample :165  [32m        [0;39m <==        Row: 010103, reset password, null, ["/system/admin/user/save-password"], 0101
+2021-11-03 15:20:01.440 DEBUG c.tv.server.mapper.ResourceMapper.selectByExample :159  [32m        [0;39m <==      Total: 5
+2021-11-03 15:20:02.446 DEBUG c.t.s.mapper.ResourceMapper.selectByExample_COUNT :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM resource 
+2021-11-03 15:20:02.447 DEBUG c.t.s.mapper.ResourceMapper.selectByExample_COUNT :159  [32m        [0;39m ==> Parameters: 
+2021-11-03 15:20:02.447 TRACE c.t.s.mapper.ResourceMapper.selectByExample_COUNT :165  [32m        [0;39m <==    Columns: count(0)
+2021-11-03 15:20:02.447 TRACE c.t.s.mapper.ResourceMapper.selectByExample_COUNT :165  [32m        [0;39m <==        Row: 9
+2021-11-03 15:20:02.448 DEBUG c.t.s.mapper.ResourceMapper.selectByExample_COUNT :159  [32m        [0;39m <==      Total: 1
+2021-11-03 15:20:02.448 DEBUG c.tv.server.mapper.ResourceMapper.selectByExample :159  [32m        [0;39m ==>  Preparing: select id, `name`, page, request, parent from resource LIMIT ?, ? 
+2021-11-03 15:20:02.450 DEBUG c.tv.server.mapper.ResourceMapper.selectByExample :159  [32m        [0;39m ==> Parameters: 5(Integer), 5(Integer)
+2021-11-03 15:20:02.450 TRACE c.tv.server.mapper.ResourceMapper.selectByExample :165  [32m        [0;39m <==    Columns: id, name, page, request, parent
+2021-11-03 15:20:02.451 TRACE c.tv.server.mapper.ResourceMapper.selectByExample :165  [32m        [0;39m <==        Row: 0102, resource management, /system/resource, null, 01
+2021-11-03 15:20:02.451 TRACE c.tv.server.mapper.ResourceMapper.selectByExample :165  [32m        [0;39m <==        Row: 010201, save/display, null, ["/system/admin/resource"], 0102
+2021-11-03 15:20:02.452 TRACE c.tv.server.mapper.ResourceMapper.selectByExample :165  [32m        [0;39m <==        Row: 0103, character management, /system/role, null, 01
+2021-11-03 15:20:02.452 TRACE c.tv.server.mapper.ResourceMapper.selectByExample :165  [32m        [0;39m <==        Row: 010301, character/privilege management, null, ["/system/admin/role"], 0103
+2021-11-03 15:20:02.452 DEBUG c.tv.server.mapper.ResourceMapper.selectByExample :159  [32m        [0;39m <==      Total: 4
+2021-11-03 15:20:03.131 DEBUG c.t.s.mapper.ResourceMapper.selectByExample_COUNT :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM resource 
+2021-11-03 15:20:03.131 DEBUG c.t.s.mapper.ResourceMapper.selectByExample_COUNT :159  [32m        [0;39m ==> Parameters: 
+2021-11-03 15:20:03.132 TRACE c.t.s.mapper.ResourceMapper.selectByExample_COUNT :165  [32m        [0;39m <==    Columns: count(0)
+2021-11-03 15:20:03.132 TRACE c.t.s.mapper.ResourceMapper.selectByExample_COUNT :165  [32m        [0;39m <==        Row: 9
+2021-11-03 15:20:03.132 DEBUG c.t.s.mapper.ResourceMapper.selectByExample_COUNT :159  [32m        [0;39m <==      Total: 1
+2021-11-03 15:20:03.133 DEBUG c.tv.server.mapper.ResourceMapper.selectByExample :159  [32m        [0;39m ==>  Preparing: select id, `name`, page, request, parent from resource LIMIT ? 
+2021-11-03 15:20:03.134 DEBUG c.tv.server.mapper.ResourceMapper.selectByExample :159  [32m        [0;39m ==> Parameters: 5(Integer)
+2021-11-03 15:20:03.134 TRACE c.tv.server.mapper.ResourceMapper.selectByExample :165  [32m        [0;39m <==    Columns: id, name, page, request, parent
+2021-11-03 15:20:03.135 TRACE c.tv.server.mapper.ResourceMapper.selectByExample :165  [32m        [0;39m <==        Row: 01, system management, null, null, null
+2021-11-03 15:20:03.135 TRACE c.tv.server.mapper.ResourceMapper.selectByExample :165  [32m        [0;39m <==        Row: 0101, user management, /system/user, null, 01
+2021-11-03 15:20:03.135 TRACE c.tv.server.mapper.ResourceMapper.selectByExample :165  [32m        [0;39m <==        Row: 010101, save, null, ["/system/admin/user/list", "/system/admin/user/save"], 0101
+2021-11-03 15:20:03.136 TRACE c.tv.server.mapper.ResourceMapper.selectByExample :165  [32m        [0;39m <==        Row: 010102, delete, null, ["/system/admin/user/delete"], 0101
+2021-11-03 15:20:03.136 TRACE c.tv.server.mapper.ResourceMapper.selectByExample :165  [32m        [0;39m <==        Row: 010103, reset password, null, ["/system/admin/user/save-password"], 0101
+2021-11-03 15:20:03.136 DEBUG c.tv.server.mapper.ResourceMapper.selectByExample :159  [32m        [0;39m <==      Total: 5
+2021-11-03 15:20:11.663 DEBUG c.t.server.mapper.UserMapper.selectByExample_COUNT:159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM user 
+2021-11-03 15:20:11.664 DEBUG c.t.server.mapper.UserMapper.selectByExample_COUNT:159  [32m        [0;39m ==> Parameters: 
+2021-11-03 15:20:11.665 TRACE c.t.server.mapper.UserMapper.selectByExample_COUNT:165  [32m        [0;39m <==    Columns: count(0)
+2021-11-03 15:20:11.665 TRACE c.t.server.mapper.UserMapper.selectByExample_COUNT:165  [32m        [0;39m <==        Row: 3
+2021-11-03 15:20:11.665 DEBUG c.t.server.mapper.UserMapper.selectByExample_COUNT:159  [32m        [0;39m <==      Total: 1
+2021-11-03 15:20:11.666 DEBUG com.tv.server.mapper.UserMapper.selectByExample   :159  [32m        [0;39m ==>  Preparing: select id, login_name, `name`, `password` from user LIMIT ? 
+2021-11-03 15:20:11.667 DEBUG com.tv.server.mapper.UserMapper.selectByExample   :159  [32m        [0;39m ==> Parameters: 5(Integer)
+2021-11-03 15:20:11.668 TRACE com.tv.server.mapper.UserMapper.selectByExample   :165  [32m        [0;39m <==    Columns: id, login_name, name, password
+2021-11-03 15:20:11.669 TRACE com.tv.server.mapper.UserMapper.selectByExample   :165  [32m        [0;39m <==        Row: SMkiFheo, 1, 1, c61ab42a6b421b809f858abb29f36dcc
+2021-11-03 15:20:11.669 TRACE com.tv.server.mapper.UserMapper.selectByExample   :165  [32m        [0;39m <==        Row: W4AEV83L, 2, 1, d2111fce93f114b3b583947262feda00
+2021-11-03 15:20:11.670 TRACE com.tv.server.mapper.UserMapper.selectByExample   :165  [32m        [0;39m <==        Row: YoDuFnN0, 3, 1, d2111fce93f114b3b583947262feda00
+2021-11-03 15:20:11.670 DEBUG com.tv.server.mapper.UserMapper.selectByExample   :159  [32m        [0;39m <==      Total: 3
+2021-11-03 15:24:30.666 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-03 15:29:30.679 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-03 15:34:30.686 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-03 15:39:30.692 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-03 15:44:30.697 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-03 15:49:30.707 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-03 15:54:30.720 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-03 15:59:30.721 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-03 16:04:30.726 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-03 16:09:30.742 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-03 16:14:30.757 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-03 16:15:17.804 INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry   :65   [32m        [0;39m Unregistering application SYSTEM with eureka with status DOWN
+2021-11-03 16:15:17.805 WARN  com.netflix.discovery.DiscoveryClient             :1321 [32m        [0;39m Saw local status change event StatusChangeEvent [timestamp=1635956117805, current=DOWN, previous=UP]
+2021-11-03 16:15:17.806 INFO  com.netflix.discovery.DiscoveryClient             :844  [32m        [0;39m DiscoveryClient_SYSTEM/windows10.microdone.cn:system:9001: registering service...
+2021-11-03 16:15:17.812 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :208  [32m        [0;39m Shutting down ExecutorService 'applicationTaskExecutor'
+2021-11-03 16:15:17.814 INFO  com.netflix.discovery.DiscoveryClient             :906  [32m        [0;39m Shutting down DiscoveryClient ...
+2021-11-03 16:15:17.818 INFO  com.netflix.discovery.DiscoveryClient             :853  [32m        [0;39m DiscoveryClient_SYSTEM/windows10.microdone.cn:system:9001 - registration status: 204
+2021-11-03 16:15:17.819 INFO  com.netflix.discovery.DiscoveryClient             :940  [32m        [0;39m Unregistering ...
+2021-11-03 16:15:17.833 INFO  com.netflix.discovery.DiscoveryClient             :942  [32m        [0;39m DiscoveryClient_SYSTEM/windows10.microdone.cn:system:9001 - deregister  status: 200
+2021-11-03 16:15:17.839 INFO  com.netflix.discovery.DiscoveryClient             :929  [32m        [0;39m Completed shut down of DiscoveryClient
+2021-11-03 16:15:17.839 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m        [0;39m HikariPool-2 - Shutdown initiated...
+2021-11-03 16:15:17.843 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m        [0;39m HikariPool-2 - Shutdown completed.
+2021-11-03 16:15:19.667 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-11-03 16:15:20.263 INFO  com.tv.system.config.SystemApplication            :651  [32m        [0;39m No active profile set, falling back to default profiles: default
+2021-11-03 16:15:20.631 INFO  o.springframework.cloud.context.scope.GenericScope:295  [32m        [0;39m BeanFactory id=cf7198c9-cd55-3b50-93b0-8f9ae3cd2084
+2021-11-03 16:15:20.663 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-11-03 16:15:20.666 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-11-03 16:15:20.703 WARN  org.apache.tomcat.util.modeler.Registry           :173  [32m        [0;39m The MBean registry cannot be disabled because it has already been initialised
+2021-11-03 16:15:20.936 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :92   [32m        [0;39m Tomcat initialized with port(s): 9001 (http)
+2021-11-03 16:15:20.937 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m        [0;39m Initializing ProtocolHandler ["http-nio-9001"]
+2021-11-03 16:15:20.938 INFO  org.apache.catalina.core.StandardService          :173  [32m        [0;39m Starting service [Tomcat]
+2021-11-03 16:15:20.938 INFO  org.apache.catalina.core.StandardEngine           :173  [32m        [0;39m Starting Servlet engine: [Apache Tomcat/9.0.29]
+2021-11-03 16:15:20.992 INFO  o.a.c.c.C.[Tomcat-1].[localhost].[/system]        :173  [32m        [0;39m Initializing Spring embedded WebApplicationContext
+2021-11-03 16:15:20.992 INFO  org.springframework.web.context.ContextLoader     :284  [32m        [0;39m Root WebApplicationContext: initialization completed in 726 ms
+2021-11-03 16:15:21.181 WARN  com.netflix.config.sources.URLConfigurationSource :121  [32m        [0;39m No URLs will be polled as dynamic configuration sources.
+2021-11-03 16:15:21.181 INFO  com.netflix.config.sources.URLConfigurationSource :122  [32m        [0;39m To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-11-03 16:15:21.237 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :171  [32m        [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2021-11-03 16:15:21.353 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m        [0;39m LiveReload server is running on port 35729
+2021-11-03 16:15:23.672 WARN  o.s.c.l.c.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger:106  [32m        [0;39m You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2021-11-03 16:15:23.685 WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger:81   [32m        [0;39m Spring Cloud LoadBalancer is currently working with default default cache. You can switch to using Caffeine cache, by adding it to the classpath.
+2021-11-03 16:15:23.696 INFO  o.s.cloud.netflix.eureka.InstanceInfoFactory      :72   [32m        [0;39m Setting initial instance status as: STARTING
+2021-11-03 16:15:23.698 INFO  com.netflix.discovery.DiscoveryClient             :365  [32m        [0;39m Initializing Eureka in region us-east-1
+2021-11-03 16:15:23.700 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :70   [32m        [0;39m Using JSON encoding codec LegacyJacksonJson
+2021-11-03 16:15:23.700 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :71   [32m        [0;39m Using JSON decoding codec LegacyJacksonJson
+2021-11-03 16:15:23.700 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :80   [32m        [0;39m Using XML encoding codec XStreamXml
+2021-11-03 16:15:23.700 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :81   [32m        [0;39m Using XML decoding codec XStreamXml
+2021-11-03 16:15:23.753 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-03 16:15:23.755 INFO  com.netflix.discovery.DiscoveryClient             :976  [32m        [0;39m Disable delta property : false
+2021-11-03 16:15:23.756 INFO  com.netflix.discovery.DiscoveryClient             :977  [32m        [0;39m Single vip registry refresh property : null
+2021-11-03 16:15:23.756 INFO  com.netflix.discovery.DiscoveryClient             :978  [32m        [0;39m Force full registry fetch : false
+2021-11-03 16:15:23.756 INFO  com.netflix.discovery.DiscoveryClient             :979  [32m        [0;39m Application is null : false
+2021-11-03 16:15:23.756 INFO  com.netflix.discovery.DiscoveryClient             :980  [32m        [0;39m Registered Applications size is zero : true
+2021-11-03 16:15:23.757 INFO  com.netflix.discovery.DiscoveryClient             :982  [32m        [0;39m Application version is -1: true
+2021-11-03 16:15:23.757 INFO  com.netflix.discovery.DiscoveryClient             :1065 [32m        [0;39m Getting all instance registry info from the eureka server
+2021-11-03 16:15:23.763 INFO  com.netflix.discovery.DiscoveryClient             :1074 [32m        [0;39m The response status is 200
+2021-11-03 16:15:23.764 INFO  com.netflix.discovery.DiscoveryClient             :1288 [32m        [0;39m Starting heartbeat executor: renew interval is: 30
+2021-11-03 16:15:23.766 INFO  com.netflix.discovery.InstanceInfoReplicator      :60   [32m        [0;39m InstanceInfoReplicator onDemand update allowed rate per min is 4
+2021-11-03 16:15:23.767 INFO  com.netflix.discovery.DiscoveryClient             :465  [32m        [0;39m Discovery Client initialized at timestamp 1635956123767 with initial instances count: 4
+2021-11-03 16:15:23.768 INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry   :41   [32m        [0;39m Registering application SYSTEM with eureka with status UP
+2021-11-03 16:15:23.768 INFO  com.netflix.discovery.DiscoveryClient             :1323 [32m        [0;39m Saw local status change event StatusChangeEvent [timestamp=1635956123768, current=UP, previous=STARTING]
+2021-11-03 16:15:23.778 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m        [0;39m Starting ProtocolHandler ["http-nio-9001"]
+2021-11-03 16:15:23.781 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :204  [32m        [0;39m Tomcat started on port(s): 9001 (http) with context path '/system'
+2021-11-03 16:15:23.782 INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration         :145  [32m        [0;39m Updating port to 9001
+2021-11-03 16:15:23.801 INFO  com.netflix.discovery.DiscoveryClient             :844  [32m        [0;39m DiscoveryClient_SYSTEM/windows10.microdone.cn:system:9001: registering service...
+2021-11-03 16:15:23.820 INFO  com.netflix.discovery.DiscoveryClient             :853  [32m        [0;39m DiscoveryClient_SYSTEM/windows10.microdone.cn:system:9001 - registration status: 204
+2021-11-03 16:15:24.525 INFO  com.tv.system.config.SystemApplication            :61   [32m        [0;39m Started SystemApplication in 5.643 seconds (JVM running for 39839.892)
+2021-11-03 16:15:24.526 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m        [0;39m Condition evaluation unchanged
+2021-11-03 16:15:24.527 INFO  com.tv.system.config.SystemApplication            :22   [32m        [0;39m started successfully!!
+2021-11-03 16:15:24.527 INFO  com.tv.system.config.SystemApplication            :23   [32m        [0;39m system address: 	http://127.0.0.1:9001
+2021-11-03 16:20:23.761 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-03 16:25:23.777 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-03 16:30:23.787 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-03 16:35:23.794 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-03 16:40:23.795 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-03 16:40:41.429 INFO  o.a.c.c.C.[Tomcat-1].[localhost].[/system]        :173  [32m        [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-11-03 16:40:41.429 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m        [0;39m Initializing Servlet 'dispatcherServlet'
+2021-11-03 16:40:41.432 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m        [0;39m Completed initialization in 3 ms
+2021-11-03 16:40:41.448 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m        [0;39m HikariPool-3 - Starting...
+2021-11-03 16:40:41.459 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m        [0;39m HikariPool-3 - Start completed.
+2021-11-03 16:40:41.460 DEBUG com.tv.server.mapper.UserMapper.selectByExample   :159  [32m        [0;39m ==>  Preparing: select id, login_name, `name`, `password` from user WHERE ( login_name = ? ) 
+2021-11-03 16:40:41.461 DEBUG com.tv.server.mapper.UserMapper.selectByExample   :159  [32m        [0;39m ==> Parameters: 1(String)
+2021-11-03 16:40:41.465 TRACE com.tv.server.mapper.UserMapper.selectByExample   :165  [32m        [0;39m <==    Columns: id, login_name, name, password
+2021-11-03 16:40:41.466 TRACE com.tv.server.mapper.UserMapper.selectByExample   :165  [32m        [0;39m <==        Row: SMkiFheo, 1, 1, c61ab42a6b421b809f858abb29f36dcc
+2021-11-03 16:40:41.466 DEBUG com.tv.server.mapper.UserMapper.selectByExample   :159  [32m        [0;39m <==      Total: 1
+2021-11-03 16:40:44.156 DEBUG c.t.server.mapper.UserMapper.selectByExample_COUNT:159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM user 
+2021-11-03 16:40:44.157 DEBUG c.t.server.mapper.UserMapper.selectByExample_COUNT:159  [32m        [0;39m ==> Parameters: 
+2021-11-03 16:40:44.157 TRACE c.t.server.mapper.UserMapper.selectByExample_COUNT:165  [32m        [0;39m <==    Columns: count(0)
+2021-11-03 16:40:44.158 TRACE c.t.server.mapper.UserMapper.selectByExample_COUNT:165  [32m        [0;39m <==        Row: 3
+2021-11-03 16:40:44.159 DEBUG c.t.server.mapper.UserMapper.selectByExample_COUNT:159  [32m        [0;39m <==      Total: 1
+2021-11-03 16:40:44.159 DEBUG com.tv.server.mapper.UserMapper.selectByExample   :159  [32m        [0;39m ==>  Preparing: select id, login_name, `name`, `password` from user LIMIT ? 
+2021-11-03 16:40:44.160 DEBUG com.tv.server.mapper.UserMapper.selectByExample   :159  [32m        [0;39m ==> Parameters: 5(Integer)
+2021-11-03 16:40:44.161 TRACE com.tv.server.mapper.UserMapper.selectByExample   :165  [32m        [0;39m <==    Columns: id, login_name, name, password
+2021-11-03 16:40:44.161 TRACE com.tv.server.mapper.UserMapper.selectByExample   :165  [32m        [0;39m <==        Row: SMkiFheo, 1, 1, c61ab42a6b421b809f858abb29f36dcc
+2021-11-03 16:40:44.162 TRACE com.tv.server.mapper.UserMapper.selectByExample   :165  [32m        [0;39m <==        Row: W4AEV83L, 2, 1, d2111fce93f114b3b583947262feda00
+2021-11-03 16:40:44.162 TRACE com.tv.server.mapper.UserMapper.selectByExample   :165  [32m        [0;39m <==        Row: YoDuFnN0, 3, 1, d2111fce93f114b3b583947262feda00
+2021-11-03 16:40:44.162 DEBUG com.tv.server.mapper.UserMapper.selectByExample   :159  [32m        [0;39m <==      Total: 3
+2021-11-03 16:40:44.806 DEBUG c.t.s.mapper.ResourceMapper.selectByExample_COUNT :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM resource 
+2021-11-03 16:40:44.806 DEBUG c.t.s.mapper.ResourceMapper.selectByExample_COUNT :159  [32m        [0;39m ==> Parameters: 
+2021-11-03 16:40:44.811 TRACE c.t.s.mapper.ResourceMapper.selectByExample_COUNT :165  [32m        [0;39m <==    Columns: count(0)
+2021-11-03 16:40:44.812 TRACE c.t.s.mapper.ResourceMapper.selectByExample_COUNT :165  [32m        [0;39m <==        Row: 9
+2021-11-03 16:40:44.812 DEBUG c.t.s.mapper.ResourceMapper.selectByExample_COUNT :159  [32m        [0;39m <==      Total: 1
+2021-11-03 16:40:44.813 DEBUG c.tv.server.mapper.ResourceMapper.selectByExample :159  [32m        [0;39m ==>  Preparing: select id, `name`, page, request, parent from resource LIMIT ? 
+2021-11-03 16:40:44.813 DEBUG c.tv.server.mapper.ResourceMapper.selectByExample :159  [32m        [0;39m ==> Parameters: 5(Integer)
+2021-11-03 16:40:44.814 TRACE c.tv.server.mapper.ResourceMapper.selectByExample :165  [32m        [0;39m <==    Columns: id, name, page, request, parent
+2021-11-03 16:40:44.815 TRACE c.tv.server.mapper.ResourceMapper.selectByExample :165  [32m        [0;39m <==        Row: 01, system management, null, null, null
+2021-11-03 16:40:44.815 TRACE c.tv.server.mapper.ResourceMapper.selectByExample :165  [32m        [0;39m <==        Row: 0101, user management, /system/user, null, 01
+2021-11-03 16:40:44.816 TRACE c.tv.server.mapper.ResourceMapper.selectByExample :165  [32m        [0;39m <==        Row: 010101, save, null, ["/system/admin/user/list", "/system/admin/user/save"], 0101
+2021-11-03 16:40:44.817 TRACE c.tv.server.mapper.ResourceMapper.selectByExample :165  [32m        [0;39m <==        Row: 010102, delete, null, ["/system/admin/user/delete"], 0101
+2021-11-03 16:40:44.817 TRACE c.tv.server.mapper.ResourceMapper.selectByExample :165  [32m        [0;39m <==        Row: 010103, reset password, null, ["/system/admin/user/save-password"], 0101
+2021-11-03 16:40:44.817 DEBUG c.tv.server.mapper.ResourceMapper.selectByExample :159  [32m        [0;39m <==      Total: 5
+2021-11-03 16:45:23.801 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-03 16:50:23.802 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-03 16:55:23.812 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-03 17:00:23.820 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-03 17:05:23.822 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-03 17:10:23.836 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-03 17:11:59.293 DEBUG com.tv.server.mapper.UserMapper.selectByExample   :159  [32m        [0;39m ==>  Preparing: select id, login_name, `name`, `password` from user WHERE ( login_name = ? ) 
+2021-11-03 17:11:59.294 DEBUG com.tv.server.mapper.UserMapper.selectByExample   :159  [32m        [0;39m ==> Parameters: 1(String)
+2021-11-03 17:11:59.297 TRACE com.tv.server.mapper.UserMapper.selectByExample   :165  [32m        [0;39m <==    Columns: id, login_name, name, password
+2021-11-03 17:11:59.297 TRACE com.tv.server.mapper.UserMapper.selectByExample   :165  [32m        [0;39m <==        Row: SMkiFheo, 1, 1, c61ab42a6b421b809f858abb29f36dcc
+2021-11-03 17:11:59.298 DEBUG com.tv.server.mapper.UserMapper.selectByExample   :159  [32m        [0;39m <==      Total: 1
+2021-11-03 17:12:00.708 DEBUG c.t.s.mapper.ResourceMapper.selectByExample_COUNT :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM resource 
+2021-11-03 17:12:00.708 DEBUG c.t.s.mapper.ResourceMapper.selectByExample_COUNT :159  [32m        [0;39m ==> Parameters: 
+2021-11-03 17:12:00.712 TRACE c.t.s.mapper.ResourceMapper.selectByExample_COUNT :165  [32m        [0;39m <==    Columns: count(0)
+2021-11-03 17:12:00.712 TRACE c.t.s.mapper.ResourceMapper.selectByExample_COUNT :165  [32m        [0;39m <==        Row: 9
+2021-11-03 17:12:00.712 DEBUG c.t.s.mapper.ResourceMapper.selectByExample_COUNT :159  [32m        [0;39m <==      Total: 1
+2021-11-03 17:12:00.713 DEBUG c.tv.server.mapper.ResourceMapper.selectByExample :159  [32m        [0;39m ==>  Preparing: select id, `name`, page, request, parent from resource LIMIT ? 
+2021-11-03 17:12:00.713 DEBUG c.tv.server.mapper.ResourceMapper.selectByExample :159  [32m        [0;39m ==> Parameters: 5(Integer)
+2021-11-03 17:12:00.714 TRACE c.tv.server.mapper.ResourceMapper.selectByExample :165  [32m        [0;39m <==    Columns: id, name, page, request, parent
+2021-11-03 17:12:00.714 TRACE c.tv.server.mapper.ResourceMapper.selectByExample :165  [32m        [0;39m <==        Row: 01, system management, null, null, null
+2021-11-03 17:12:00.715 TRACE c.tv.server.mapper.ResourceMapper.selectByExample :165  [32m        [0;39m <==        Row: 0101, user management, /system/user, null, 01
+2021-11-03 17:12:00.715 TRACE c.tv.server.mapper.ResourceMapper.selectByExample :165  [32m        [0;39m <==        Row: 010101, save, null, ["/system/admin/user/list", "/system/admin/user/save"], 0101
+2021-11-03 17:12:00.716 TRACE c.tv.server.mapper.ResourceMapper.selectByExample :165  [32m        [0;39m <==        Row: 010102, delete, null, ["/system/admin/user/delete"], 0101
+2021-11-03 17:12:00.716 TRACE c.tv.server.mapper.ResourceMapper.selectByExample :165  [32m        [0;39m <==        Row: 010103, reset password, null, ["/system/admin/user/save-password"], 0101
+2021-11-03 17:12:00.717 DEBUG c.tv.server.mapper.ResourceMapper.selectByExample :159  [32m        [0;39m <==      Total: 5
