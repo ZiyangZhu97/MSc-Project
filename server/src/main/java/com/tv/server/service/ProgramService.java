@@ -4,6 +4,7 @@ import com.tv.server.domain.Program;
 import com.tv.server.domain.ProgramExample;
 import com.tv.server.dto.ProgramDto;
 import com.tv.server.dto.PageDto;
+import com.tv.server.enums.ProgramStatusEnum;
 import com.tv.server.mapper.ProgramMapper;
 import com.tv.server.mapper.my.MyProgramMapper;
 import com.tv.server.util.CopyUtil;
@@ -44,7 +45,17 @@ public class ProgramService {
         List<ProgramDto> programDtoList = CopyUtil.copyList(programList, ProgramDto.class);
         pageDto.setList(programDtoList);
     }
-
+    /**
+     * 新课列表查询，只查询已发布的，按创建日期倒序
+     */
+    public List<ProgramDto> listNew(PageDto pageDto) {
+        PageHelper.startPage(pageDto.getPage(), pageDto.getSize());
+        ProgramExample programExample = new ProgramExample();
+        programExample.createCriteria().andStatusEqualTo(ProgramStatusEnum.PUBLISH.getCode());
+        programExample.setOrderByClause("created_at desc");
+        List<Program> programList = programMapper.selectByExample(programExample);
+        return CopyUtil.copyList(programList, ProgramDto.class);
+    }
     /**
      * 保存，id有值时更新，无值时新增
      */
