@@ -6,11 +6,13 @@
       <p class="card-text">{{program.summary}}</p>
       <div class="d-flex justify-content-between align-items-center">
         <div class="btn-group">
-          <button type="button" class="btn btn-sm btn-outline-secondary">课程详情</button>
+          <button type="button" class="btn btn-sm btn-outline-secondary">Details</button>
         </div>
         <div class="text-muted">
-          <span class="badge badge-info"><i class="fa fa-yen" aria-hidden="true"></i>&nbsp;{{program.price}}</span>&nbsp;
-          <span class="badge badge-info"><i class="fa fa-user" aria-hidden="true"></i>&nbsp;123</span>&nbsp;
+          <span class="badge badge-info"><i class="fa fa-gbp" aria-hidden="true"></i>&nbsp;{{program.price}}</span>&nbsp;
+          <span class="badge badge-info"><i class="fa fa-heart" aria-hidden="true"></i>&nbsp;123</span>&nbsp;
+          <span class="badge badge-info">{{PROGRAM_TYPE | optionKV(program.type)}}</span>
+
         </div>
       </div>
     </div>
@@ -24,7 +26,9 @@
       program: {}
     },
     data: function () {
-      return {}
+      return {
+        PROGRAM_TYPE: PROGRAM_TYPE
+      }
     },
   }
 </script>
@@ -36,6 +40,6 @@
   }
 
   .program .text-muted .badge {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 </style>

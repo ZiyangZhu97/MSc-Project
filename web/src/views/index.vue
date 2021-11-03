@@ -16,27 +16,13 @@
     <div class="album py-5 bg-light">
       <div class="container">
         <div class="title1">New Programs</div>
-
-        <div class="row">
-          <div v-for="o in news" class="col-md-4">
-            <div class="card mb-4 shadow-sm" program>
-              <img class="img-fluid" v-bind:src="o.image">
-              <div class="card-body">
-                <h4 class="">{{o.title}}</h4>
-                <p class="card-text">{{o.summary}}</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Details</button>
-                  </div>
-                  <div class="text-muted">
-                    <span class="badge badge-info"><i class="fa fa-yen" aria-hidden="true"></i>&nbsp;{{o.price}}</span>&nbsp;
-                    <span class="badge badge-info"><i class="fa fa-user" aria-hidden="true"></i>&nbsp;123</span>&nbsp;
-                  </div>
-                </div>
-              </div>
+         <div class="row">
+            <div v-for="o in news" class="col-md-4">
+              <the-program v-bind:program="o"></the-program>
             </div>
-          </div>
-        </div>
+            </div>
+
+
 
         <hr>
 
