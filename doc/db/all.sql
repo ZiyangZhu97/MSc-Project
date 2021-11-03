@@ -17,7 +17,6 @@ insert into `category` (id, parent, name, sort) values ('00000203', '00000200', 
 
 
 
-
 insert into `chapter` (id, program_id, name) values ('00000001', '00000000', 'test01');
 insert into `chapter` (id, program_id, name) values ('00000002', '00000000', 'test02');
 insert into `chapter` (id, program_id, name) values ('00000003', '00000000', 'test03');

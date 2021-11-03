@@ -9,7 +9,7 @@ import Chapter from "./views/admin/chapter.vue"
 import Episode from "./views/admin/episode.vue"
 import File from "./views/admin/file.vue"
 import User from "./views/admin/user.vue"
-
+import Resource from "./views/admin/resource.vue"
 
 Vue.use(Router);
 
@@ -60,6 +60,10 @@ export default new Router({
             path: "system/user",
             name: "system/user",
             component: User,
+        }, {
+            path: "system/resource",
+            name: "system/resource",
+            component: Resource,
 
         }]
     }]

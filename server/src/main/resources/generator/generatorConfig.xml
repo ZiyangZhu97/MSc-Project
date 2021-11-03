@@ -46,7 +46,9 @@
 <!--        <table tableName="category" domainObjectName="Category"/>-->
 <!--        <table tableName="program_category" domainObjectName="ProgramCategory"/>-->
 <!--        <table tableName="file" domainObjectName="File"/>-->
-        <table tableName="user" domainObjectName="User"/>
+<!--        <table tableName="user" domainObjectName="User"/>-->
+        <table tableName="resource" domainObjectName="Resource"/>
+
 
     </context>
 </generatorConfiguration>
