@@ -59,4 +59,15 @@ public class ChapterService {
     public void delete(String id) {
         chapterMapper.deleteByPrimaryKey(id);
     }
+
+    /**
+     * 查询某一课程下的所有章
+     */
+    public List<ChapterDto> listByProgram(String programId) {
+        ChapterExample example = new ChapterExample();
+        example.createCriteria().andProgramIdEqualTo(programId);
+        List<Chapter> chapterList = chapterMapper.selectByExample(example);
+        List<ChapterDto> chapterDtoList = CopyUtil.copyList(chapterList, ChapterDto.class);
+        return chapterDtoList;
+    }
 }

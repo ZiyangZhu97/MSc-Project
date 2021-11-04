@@ -48,6 +48,16 @@ public class ProgramController {
         responseDto.setContent(pageDto);
         return responseDto;
     }
+
+    @GetMapping("/find/{id}")
+    public ResponseDto findProgram(@PathVariable String id) {
+        LOG.info("查找课程开始：{}", id);
+        ResponseDto responseDto = new ResponseDto();
+        ProgramDto programDto = programService.findProgram(id);
+        responseDto.setContent(programDto);
+        LOG.info("查找课程结束：{}", responseDto);
+        return responseDto;
+    }
 }
 
 

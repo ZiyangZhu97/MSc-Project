@@ -91,4 +91,15 @@ public class EpisodeService {
         episodeMapper.deleteByPrimaryKey(id);
     }
 
+    /**
+     * 查询某一课程下的所有节
+     */
+    public List<EpisodeDto> listByProgram(String programId) {
+        EpisodeExample example = new EpisodeExample();
+        example.createCriteria().andProgramIdEqualTo(programId);
+        List<Episode> episodeList = episodeMapper.selectByExample(example);
+        List<EpisodeDto> episodeDtoList = CopyUtil.copyList(episodeList, EpisodeDto.class);
+        return episodeDtoList;
+    }
+
 }

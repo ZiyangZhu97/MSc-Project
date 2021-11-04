@@ -6,11 +6,11 @@
       <p class="card-text">{{program.summary}}</p>
       <div class="d-flex justify-content-between align-items-center">
         <div class="btn-group">
-          <button type="button" class="btn btn-sm btn-outline-secondary">Details</button>
+          <router-link v-bind:to="'/detail?id=' + program.id" class="btn btn-outline-secondary">Details</router-link>
         </div>
         <div class="text-muted">
           <span class="badge badge-info"><i class="fa fa-gbp" aria-hidden="true"></i>&nbsp;{{program.price}}</span>&nbsp;
-          <span class="badge badge-info"><i class="fa fa-heart" aria-hidden="true"></i>&nbsp;123</span>&nbsp;
+          <span class="badge badge-info"><i class="fa fa-heart" aria-hidden="true"></i>&nbsp;{{program.favorites}}</span>&nbsp;
           <span class="badge badge-info">{{PROGRAM_TYPE | optionKV(program.type)}}</span>
 
         </div>

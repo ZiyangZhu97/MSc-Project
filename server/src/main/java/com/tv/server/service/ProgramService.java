@@ -2,9 +2,7 @@ package com.tv.server.service;
 
 import com.tv.server.domain.Program;
 import com.tv.server.domain.ProgramExample;
-import com.tv.server.dto.ProgramDto;
-import com.tv.server.dto.PageDto;
-import com.tv.server.dto.ProgramPageDto;
+import com.tv.server.dto.*;
 import com.tv.server.enums.ProgramStatusEnum;
 import com.tv.server.mapper.ProgramMapper;
 import com.tv.server.mapper.my.MyProgramMapper;
@@ -30,6 +28,12 @@ public class ProgramService {
     private MyProgramMapper myProgramMapper;
     @Resource
     private ProgramCategoryService programCategoryService;
+
+    @Resource
+    private ChapterService chapterService;
+
+    @Resource
+    private EpisodeService episodeService;
 
     private static final Logger LOG = LoggerFactory.getLogger(ProgramService.class);
 
@@ -109,4 +113,27 @@ public class ProgramService {
     }
 
 
+    /**
+     * 查找某一节目，供web模块用，只能查已发布的
+     * @param id
+     * @return
+     */
+    public ProgramDto findProgram(String id) {
+        Program program = programMapper.selectByPrimaryKey(id);
+        if (program == null || !ProgramStatusEnum.PUBLISH.getCode().equals(program.getStatus())) {
+            return null;
+        }
+        ProgramDto programDto = CopyUtil.copy(program, ProgramDto.class);
+
+
+        // 查找章信息
+        List<ChapterDto> chapterDtoList = chapterService.listByProgram(id);
+        programDto.setChapters(chapterDtoList);
+
+        // 查找节信息
+        List<EpisodeDto> episodeDtoList = episodeService.listByProgram(id);
+        programDto.setEpisodes(episodeDtoList);
+
+        return programDto;
+    }
 }

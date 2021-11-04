@@ -76,6 +76,11 @@ public class ProgramDto {
     @JsonFormat(pattern="yyyy-MM-dd HH:mm:ss",timezone = "GMT+8")
     private Date updatedAt;
 
+    private List<ChapterDto> chapters;
+
+    private List<EpisodeDto> episodes;
+
+
     public String getId() {
         return id;
     }
@@ -188,6 +193,25 @@ public class ProgramDto {
         this.categorys = categorys;
     }
 
+
+    public List<ChapterDto> getChapters() {
+        return chapters;
+    }
+
+    public void setChapters(List<ChapterDto> chapters) {
+        this.chapters = chapters;
+    }
+
+    public List<EpisodeDto> getEpisodes() {
+        return episodes;
+    }
+
+    public void setEpisodes(List<EpisodeDto> episodes) {
+        this.episodes = episodes;
+    }
+
+
+    
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
