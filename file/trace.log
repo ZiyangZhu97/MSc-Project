@@ -158,3 +158,108 @@
 2021-11-04 01:10:59.680 INFO  o.a.c.c.C.[Tomcat-2].[localhost].[/file]          :173  [32m        [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
 2021-11-04 01:10:59.680 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m        [0;39m Initializing Servlet 'dispatcherServlet'
 2021-11-04 01:10:59.686 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m        [0;39m Completed initialization in 6 ms
+2021-11-04 01:15:31.928 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-04 01:20:31.945 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-04 01:25:31.956 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-04 01:30:31.967 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-04 01:35:31.978 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-04 01:40:31.989 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-04 01:45:31.997 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-04 01:50:32.008 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-04 01:51:02.632 INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry   :65   [32m        [0;39m Unregistering application FILE with eureka with status DOWN
+2021-11-04 01:51:02.633 WARN  com.netflix.discovery.DiscoveryClient             :1321 [32m        [0;39m Saw local status change event StatusChangeEvent [timestamp=1635990662633, current=DOWN, previous=UP]
+2021-11-04 01:51:02.635 INFO  com.netflix.discovery.DiscoveryClient             :844  [32m        [0;39m DiscoveryClient_FILE/windows10.microdone.cn:file:9003: registering service...
+2021-11-04 01:51:02.649 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :208  [32m        [0;39m Shutting down ExecutorService 'applicationTaskExecutor'
+2021-11-04 01:51:02.654 INFO  com.netflix.discovery.DiscoveryClient             :906  [32m        [0;39m Shutting down DiscoveryClient ...
+2021-11-04 01:51:02.658 INFO  com.netflix.discovery.DiscoveryClient             :853  [32m        [0;39m DiscoveryClient_FILE/windows10.microdone.cn:file:9003 - registration status: 204
+2021-11-04 01:51:02.659 INFO  com.netflix.discovery.DiscoveryClient             :940  [32m        [0;39m Unregistering ...
+2021-11-04 01:51:02.670 INFO  com.netflix.discovery.DiscoveryClient             :942  [32m        [0;39m DiscoveryClient_FILE/windows10.microdone.cn:file:9003 - deregister  status: 200
+2021-11-04 01:51:02.676 INFO  com.netflix.discovery.DiscoveryClient             :929  [32m        [0;39m Completed shut down of DiscoveryClient
+2021-11-04 01:51:04.433 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-11-04 01:51:05.522 INFO  com.tv.file.config.FileApplication                :651  [32m        [0;39m No active profile set, falling back to default profiles: default
+2021-11-04 01:51:07.558 INFO  o.springframework.cloud.context.scope.GenericScope:295  [32m        [0;39m BeanFactory id=ea531d3c-cfc9-34e5-ad7f-456c9257840a
+2021-11-04 01:51:07.586 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-11-04 01:51:07.591 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-11-04 01:51:07.644 WARN  org.apache.tomcat.util.modeler.Registry           :173  [32m        [0;39m The MBean registry cannot be disabled because it has already been initialised
+2021-11-04 01:51:08.053 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :92   [32m        [0;39m Tomcat initialized with port(s): 9003 (http)
+2021-11-04 01:51:08.054 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m        [0;39m Initializing ProtocolHandler ["http-nio-9003"]
+2021-11-04 01:51:08.054 INFO  org.apache.catalina.core.StandardService          :173  [32m        [0;39m Starting service [Tomcat]
+2021-11-04 01:51:08.054 INFO  org.apache.catalina.core.StandardEngine           :173  [32m        [0;39m Starting Servlet engine: [Apache Tomcat/9.0.29]
+2021-11-04 01:51:08.119 INFO  o.a.c.c.C.[Tomcat-2].[localhost].[/file]          :173  [32m        [0;39m Initializing Spring embedded WebApplicationContext
+2021-11-04 01:51:08.119 INFO  org.springframework.web.context.ContextLoader     :284  [32m        [0;39m Root WebApplicationContext: initialization completed in 2592 ms
+2021-11-04 01:51:08.456 WARN  com.netflix.config.sources.URLConfigurationSource :121  [32m        [0;39m No URLs will be polled as dynamic configuration sources.
+2021-11-04 01:51:08.457 INFO  com.netflix.config.sources.URLConfigurationSource :122  [32m        [0;39m To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-11-04 01:51:08.543 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :171  [32m        [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2021-11-04 01:51:08.783 WARN  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :61   [32m        [0;39m Unable to start LiveReload server
+2021-11-04 01:51:15.274 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-11-04 01:51:16.697 INFO  com.tv.file.config.FileApplication                :651  [32m        [0;39m No active profile set, falling back to default profiles: default
+2021-11-04 01:51:17.232 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :239  [32m        [0;39m Skipping MapperFactoryBean with name 'categoryMapper' and 'com.tv.server.mapper.CategoryMapper' mapperInterface. Bean already defined with the same name!
+2021-11-04 01:51:17.232 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :239  [32m        [0;39m Skipping MapperFactoryBean with name 'chapterMapper' and 'com.tv.server.mapper.ChapterMapper' mapperInterface. Bean already defined with the same name!
+2021-11-04 01:51:17.233 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :239  [32m        [0;39m Skipping MapperFactoryBean with name 'episodeMapper' and 'com.tv.server.mapper.EpisodeMapper' mapperInterface. Bean already defined with the same name!
+2021-11-04 01:51:17.233 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :239  [32m        [0;39m Skipping MapperFactoryBean with name 'fileMapper' and 'com.tv.server.mapper.FileMapper' mapperInterface. Bean already defined with the same name!
+2021-11-04 01:51:17.234 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :239  [32m        [0;39m Skipping MapperFactoryBean with name 'programCategoryMapper' and 'com.tv.server.mapper.ProgramCategoryMapper' mapperInterface. Bean already defined with the same name!
+2021-11-04 01:51:17.234 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :239  [32m        [0;39m Skipping MapperFactoryBean with name 'programMapper' and 'com.tv.server.mapper.ProgramMapper' mapperInterface. Bean already defined with the same name!
+2021-11-04 01:51:17.235 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :239  [32m        [0;39m Skipping MapperFactoryBean with name 'resourceMapper' and 'com.tv.server.mapper.ResourceMapper' mapperInterface. Bean already defined with the same name!
+2021-11-04 01:51:17.235 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :239  [32m        [0;39m Skipping MapperFactoryBean with name 'testMapper' and 'com.tv.server.mapper.TestMapper' mapperInterface. Bean already defined with the same name!
+2021-11-04 01:51:17.235 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :239  [32m        [0;39m Skipping MapperFactoryBean with name 'userMapper' and 'com.tv.server.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
+2021-11-04 01:51:17.235 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :239  [32m        [0;39m Skipping MapperFactoryBean with name 'myProgramMapper' and 'com.tv.server.mapper.my.MyProgramMapper' mapperInterface. Bean already defined with the same name!
+2021-11-04 01:51:17.235 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :166  [32m        [0;39m No MyBatis mapper was found in '[com.tv.server.mapper]' package. Please check your configuration.
+2021-11-04 01:51:17.447 INFO  o.springframework.cloud.context.scope.GenericScope:295  [32m        [0;39m BeanFactory id=7a91a20f-74dd-36c0-ab5c-78dea30bc4a7
+2021-11-04 01:51:17.489 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-11-04 01:51:17.492 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-11-04 01:51:17.548 WARN  org.apache.tomcat.util.modeler.Registry           :173  [32m        [0;39m The MBean registry cannot be disabled because it has already been initialised
+2021-11-04 01:51:17.900 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :92   [32m        [0;39m Tomcat initialized with port(s): 9003 (http)
+2021-11-04 01:51:17.900 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m        [0;39m Initializing ProtocolHandler ["http-nio-9003"]
+2021-11-04 01:51:17.901 INFO  org.apache.catalina.core.StandardService          :173  [32m        [0;39m Starting service [Tomcat]
+2021-11-04 01:51:17.901 INFO  org.apache.catalina.core.StandardEngine           :173  [32m        [0;39m Starting Servlet engine: [Apache Tomcat/9.0.29]
+2021-11-04 01:51:17.986 INFO  o.a.c.c.C.[Tomcat-3].[localhost].[/file]          :173  [32m        [0;39m Initializing Spring embedded WebApplicationContext
+2021-11-04 01:51:17.986 INFO  org.springframework.web.context.ContextLoader     :284  [32m        [0;39m Root WebApplicationContext: initialization completed in 1285 ms
+2021-11-04 01:51:18.288 WARN  com.netflix.config.sources.URLConfigurationSource :121  [32m        [0;39m No URLs will be polled as dynamic configuration sources.
+2021-11-04 01:51:18.333 INFO  com.netflix.config.sources.URLConfigurationSource :122  [32m        [0;39m To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-11-04 01:51:18.558 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :171  [32m        [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2021-11-04 01:51:18.760 WARN  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :61   [32m        [0;39m Unable to start LiveReload server
+2021-11-04 01:51:22.084 WARN  o.s.c.l.c.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger:106  [32m        [0;39m You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2021-11-04 01:51:22.091 WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger:81   [32m        [0;39m Spring Cloud LoadBalancer is currently working with default default cache. You can switch to using Caffeine cache, by adding it to the classpath.
+2021-11-04 01:51:22.099 INFO  o.s.cloud.netflix.eureka.InstanceInfoFactory      :72   [32m        [0;39m Setting initial instance status as: STARTING
+2021-11-04 01:51:22.100 INFO  com.netflix.discovery.DiscoveryClient             :365  [32m        [0;39m Initializing Eureka in region us-east-1
+2021-11-04 01:51:22.101 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :70   [32m        [0;39m Using JSON encoding codec LegacyJacksonJson
+2021-11-04 01:51:22.102 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :71   [32m        [0;39m Using JSON decoding codec LegacyJacksonJson
+2021-11-04 01:51:22.102 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :80   [32m        [0;39m Using XML encoding codec XStreamXml
+2021-11-04 01:51:22.102 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :81   [32m        [0;39m Using XML decoding codec XStreamXml
+2021-11-04 01:51:22.158 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-04 01:51:22.161 INFO  com.netflix.discovery.DiscoveryClient             :976  [32m        [0;39m Disable delta property : false
+2021-11-04 01:51:22.162 INFO  com.netflix.discovery.DiscoveryClient             :977  [32m        [0;39m Single vip registry refresh property : null
+2021-11-04 01:51:22.163 INFO  com.netflix.discovery.DiscoveryClient             :978  [32m        [0;39m Force full registry fetch : false
+2021-11-04 01:51:22.164 INFO  com.netflix.discovery.DiscoveryClient             :979  [32m        [0;39m Application is null : false
+2021-11-04 01:51:22.164 INFO  com.netflix.discovery.DiscoveryClient             :980  [32m        [0;39m Registered Applications size is zero : true
+2021-11-04 01:51:22.164 INFO  com.netflix.discovery.DiscoveryClient             :982  [32m        [0;39m Application version is -1: true
+2021-11-04 01:51:22.165 INFO  com.netflix.discovery.DiscoveryClient             :1065 [32m        [0;39m Getting all instance registry info from the eureka server
+2021-11-04 01:51:22.169 INFO  com.netflix.discovery.DiscoveryClient             :1074 [32m        [0;39m The response status is 200
+2021-11-04 01:51:22.170 INFO  com.netflix.discovery.DiscoveryClient             :1288 [32m        [0;39m Starting heartbeat executor: renew interval is: 30
+2021-11-04 01:51:22.171 INFO  com.netflix.discovery.InstanceInfoReplicator      :60   [32m        [0;39m InstanceInfoReplicator onDemand update allowed rate per min is 4
+2021-11-04 01:51:22.172 INFO  com.netflix.discovery.DiscoveryClient             :465  [32m        [0;39m Discovery Client initialized at timestamp 1635990682172 with initial instances count: 1
+2021-11-04 01:51:22.173 INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry   :41   [32m        [0;39m Registering application FILE with eureka with status UP
+2021-11-04 01:51:22.173 INFO  com.netflix.discovery.DiscoveryClient             :1323 [32m        [0;39m Saw local status change event StatusChangeEvent [timestamp=1635990682173, current=UP, previous=STARTING]
+2021-11-04 01:51:22.174 INFO  com.netflix.discovery.DiscoveryClient             :844  [32m        [0;39m DiscoveryClient_FILE/windows10.microdone.cn:file:9003: registering service...
+2021-11-04 01:51:22.181 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m        [0;39m Starting ProtocolHandler ["http-nio-9003"]
+2021-11-04 01:51:22.185 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :204  [32m        [0;39m Tomcat started on port(s): 9003 (http) with context path '/file'
+2021-11-04 01:51:22.186 INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration         :145  [32m        [0;39m Updating port to 9003
+2021-11-04 01:51:22.198 INFO  com.netflix.discovery.DiscoveryClient             :853  [32m        [0;39m DiscoveryClient_FILE/windows10.microdone.cn:file:9003 - registration status: 204
+2021-11-04 01:51:22.908 INFO  com.tv.file.config.FileApplication                :61   [32m        [0;39m Started FileApplication in 10.057 seconds (JVM running for 73878.214)
+2021-11-04 01:51:22.910 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m        [0;39m Condition evaluation unchanged
+2021-11-04 01:51:22.910 INFO  com.tv.system.config.SystemApplication            :23   [32m        [0;39m started successfully!!
+2021-11-04 01:51:22.911 INFO  com.tv.system.config.SystemApplication            :24   [32m        [0;39m file address: 	http://127.0.0.1:9003
+2021-11-04 01:53:03.529 INFO  o.a.c.c.C.[Tomcat-3].[localhost].[/file]          :173  [32m        [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-11-04 01:53:03.530 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m        [0;39m Initializing Servlet 'dispatcherServlet'
+2021-11-04 01:53:03.532 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m        [0;39m Completed initialization in 2 ms
+2021-11-04 01:56:22.172 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-04 01:57:45.682 INFO  com.tv.file.controller.admin.UploadController     :49   [32m        [0;39m 上传文件开始：org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile@25cf3033
+2021-11-04 01:57:45.682 INFO  com.tv.file.controller.admin.UploadController     :50   [32m        [0;39m 183c3cfc56e85420bbe74def58896a22_hd.jpg
+2021-11-04 01:57:45.684 INFO  com.tv.file.controller.admin.UploadController     :51   [32m        [0;39m 9746
+2021-11-04 01:57:45.700 INFO  com.tv.file.controller.admin.UploadController     :62   [32m        [0;39m D:\MScProject\tv\file\local_file\program\cover\v2IfVpMM.jpg
+2021-11-04 01:57:45.701 INFO  com.tv.file.controller.admin.UploadController     :63   [32m        [0;39m 保存文件记录开始
+2021-11-04 01:57:45.728 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m        [0;39m HikariPool-2 - Starting...
+2021-11-04 01:57:45.738 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m        [0;39m HikariPool-2 - Start completed.
+2021-11-04 01:57:45.739 DEBUG com.tv.server.mapper.FileMapper.insert            :159  [32m        [0;39m ==>  Preparing: insert into file (id, `path`, `name`, suffix, `size`, created_at, updated_at) values (?, ?, ?, ?, ?, ?, ?) 
+2021-11-04 01:57:45.741 DEBUG com.tv.server.mapper.FileMapper.insert            :159  [32m        [0;39m ==> Parameters: aGnGcHuk(String), cover/v2IfVpMM.jpg(String), 183c3cfc56e85420bbe74def58896a22_hd.jpg(String), jpg(String), 9746(Integer), 2021-11-04 01:57:45.724(Timestamp), 2021-11-04 01:57:45.724(Timestamp)
+2021-11-04 01:57:45.748 DEBUG com.tv.server.mapper.FileMapper.insert            :159  [32m        [0;39m <==    Updates: 1
