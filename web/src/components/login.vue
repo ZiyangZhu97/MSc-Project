@@ -3,7 +3,31 @@
     <div class="modal-dialog modal-login" role="document">
       <div class="modal-content">
         <div class="modal-body">
-          <div class="register-div">
+          <div class="login-div" v-show="MODAL_STATUS === STATUS_LOGIN">
+            <h3>Login</h3>
+            <div class="form-group">
+              <input v-model="member.email" class="form-control" placeholder="email">
+            </div>
+            <div class="form-group">
+              <input class="form-control" type="password" placeholder="password" v-model="member.passwordOriginal">
+            </div>
+
+            <div class="form-group">
+              <button class="btn btn-primary btn-block submit-button">
+                Login
+              </button>
+            </div>
+            <div class="form-group">
+              <div class="checkbox">
+                <div class="pull-right">
+                  <a href="javascript:;" v-on:click="toRegisterDiv()">Register</a>
+                </div>
+              </div>
+            </div>
+            <div class="form-group to-register-div">
+            </div>
+          </div>
+          <div class="register-div" v-show="MODAL_STATUS === STATUS_REGISTER">
             <h3>Register</h3>
             <div class="form-group">
               <input id="register-email" v-model="memberRegister.email"
@@ -29,9 +53,10 @@
               </button>
             </div>
             <div class="form-group to-login-div">
-              <a href="javascript:;">I want to login</a>
+              <a href="javascript:;" v-on:click="toLoginDiv()">Login</a>
             </div>
           </div>
+
         </div>
       </div><!-- /.modal-content -->
     </div><!-- /.modal-dialog -->
@@ -44,6 +69,13 @@
     name: 'the-login',
     data: function () {
       return {
+        // 模态框内容切换：登录、注册
+        STATUS_LOGIN: "STATUS_LOGIN",
+        STATUS_REGISTER: "STATUS_REGISTER",
+        MODAL_STATUS: "",
+
+        member: {},
+        memberForget: {},
         memberRegister: {},
 
         rememberMe: true, // 记住密码
@@ -52,6 +84,8 @@
     },
     mounted() {
       let _this = this;
+      _this.toLoginDiv();
+
     },
     methods: {
 
@@ -61,6 +95,16 @@
       openLoginModal() {
         let _this = this;
         $("#login-modal").modal("show");
+      },
+
+      //---------------登录框、注册框、忘记密码框切换-----------------
+      toLoginDiv() {
+        let _this = this;
+        _this.MODAL_STATUS = _this.STATUS_LOGIN
+      },
+      toRegisterDiv() {
+        let _this = this;
+        _this.MODAL_STATUS = _this.STATUS_REGISTER
       },
 
       register() {
