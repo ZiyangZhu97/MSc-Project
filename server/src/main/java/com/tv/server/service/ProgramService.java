@@ -34,22 +34,18 @@ public class ProgramService {
     private static final Logger LOG = LoggerFactory.getLogger(ProgramService.class);
 
     /**
-     * 列表查询
+     * 列表查询：关联课程分类表
+     * @param pageDto
      */
     public void list(ProgramPageDto pageDto) {
         PageHelper.startPage(pageDto.getPage(), pageDto.getSize());
-        ProgramExample programExample = new ProgramExample();
-        ProgramExample.Criteria criteria = programExample.createCriteria();
-        if (!StringUtils.isEmpty(pageDto.getStatus())) {
-            criteria.andStatusEqualTo(pageDto.getStatus());
-        }
-        programExample.setOrderByClause("sort asc");
-        List<Program> programList = programMapper.selectByExample(programExample);
-        PageInfo<Program> pageInfo = new PageInfo<>(programList);
+        List<ProgramDto> programDtoList = myProgramMapper.list(pageDto);
+        PageInfo<ProgramDto> pageInfo = new PageInfo<>(programDtoList);
         pageDto.setTotal(pageInfo.getTotal());
-        List<ProgramDto> programDtoList = CopyUtil.copyList(programList, ProgramDto.class);
         pageDto.setList(programDtoList);
     }
+    
+    
     /**
      * 新课列表查询，只查询已发布的，按创建日期倒序
      */

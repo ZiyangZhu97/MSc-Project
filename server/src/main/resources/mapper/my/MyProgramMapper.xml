@@ -7,4 +7,24 @@
         where c.id = #{programId}
     </update>
 
+    <!-- 查询节目 -->
+    <select id="list" resultType="com.tv.server.dto.ProgramDto">
+        select c.id, c.title, c.summary, length, price, image, type,
+        charge, status, favorites, sort, created_at as createdAt,
+        updated_at as updatedAt
+        from `program` c
+        <if test="pageDto.categoryId != null and pageDto.categoryId != ''">
+            , program_category cc
+        </if>
+        where 1 = 1
+        <if test="pageDto.categoryId != null and pageDto.categoryId != ''">
+            and c.id = cc.program_id
+            and cc.category_id = #{pageDto.categoryId}
+        </if>
+        <if test="pageDto.status != null and pageDto.status != ''">
+            and c.status = #{pageDto.status}
+        </if>
+        order by c.sort asc
+    </select>
+
 </mapper>
