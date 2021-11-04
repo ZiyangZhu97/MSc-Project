@@ -8,7 +8,7 @@
           You can Watch movies and series by One Click on the browser!
         </p>
         <p>
-          <a href="#" class="btn btn-primary my-2 p-3">Click to Find a Program</a>
+          <router-link to="/list" class="btn btn-primary my-2 p-3">Click to Find a Program</router-link>
         </p>
       </div>
     </section>

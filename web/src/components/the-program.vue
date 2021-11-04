@@ -40,6 +40,6 @@
   }
 
   .program .text-muted .badge {
-    font-size: 0.9rem;
+    font-size: 0.85rem;
   }
 </style>

@@ -6,9 +6,7 @@ import com.tv.server.dto.ResponseDto;
 import com.tv.server.service.ProgramService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
 import java.util.List;
@@ -34,6 +32,17 @@ public class ProgramController {
         ResponseDto responseDto = new ResponseDto();
         List<ProgramDto> programDtoList = programService.listNew(pageDto);
         responseDto.setContent(programDtoList);
+        return responseDto;
+    }
+
+    /**
+     * 列表查询
+     */
+    @PostMapping("/list")
+    public ResponseDto list(@RequestBody PageDto pageDto) {
+        ResponseDto responseDto = new ResponseDto();
+        programService.list(pageDto);
+        responseDto.setContent(pageDto);
         return responseDto;
     }
 }
