@@ -378,10 +378,10 @@
                 <b class="arrow"></b>
               </li>
 
-              <li class="" id="system-resource-sidebar">
-                <router-link to="/system/resource">
+              <li class="" id="business-member-sidebar">
+                <router-link to="/business/member">
                   <i class="menu-icon fa fa-caret-right"></i>
-                  Resource
+                  Member
                 </router-link>
 
                 <b class="arrow"></b>
