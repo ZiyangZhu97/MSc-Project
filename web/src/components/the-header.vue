@@ -22,24 +22,37 @@
                 More
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">about us</a>
-                <a class="dropdown-item" href="#">cooperation</a>
+                <a class="dropdown-item" href="#">xxx</a>
+                <a class="dropdown-item" href="#">xxxx</a>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">more information</a>
+                <a class="dropdown-item" href="#">xxx</a>
               </div>
             </li>
           </ul>
           <span class="text-white"></span>
-          <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Login/Register</button>
+          <button  v-on:click="openLoginModal()" class="btn btn-outline-light my-2 my-sm-0" type="submit">Login/Register</button>
         </div>
       </div>
     </nav>
+    <the-login ref="loginComponent"></the-login>
   </header>
 </template>
 
 <script>
 
+  import TheLogin from "./login";
   export default {
     name: 'theHeader',
+    components: {TheLogin},
+    methods: {
+      /**
+       * 打开登录注册窗口
+       */
+      openLoginModal() {
+        let _this = this;
+        _this.$refs.loginComponent.openLoginModal();
+      },
+
+    }
   }
 </script>
