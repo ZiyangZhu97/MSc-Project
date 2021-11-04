@@ -1,9 +1,6 @@
 package com.tv.business.controller.admin;
 
-import com.tv.server.dto.ProgramCategoryDto;
-import com.tv.server.dto.ProgramDto;
-import com.tv.server.dto.PageDto;
-import com.tv.server.dto.ResponseDto;
+import com.tv.server.dto.*;
 import com.tv.server.service.ProgramCategoryService;
 import com.tv.server.service.ProgramService;
 import com.tv.server.util.ValidatorUtil;
@@ -30,7 +27,7 @@ public class ProgramController {
      * 列表查询
      */
     @PostMapping("/list")
-    public ResponseDto list(@RequestBody PageDto pageDto) {
+    public ResponseDto list(@RequestBody ProgramPageDto pageDto) {
         ResponseDto responseDto = new ResponseDto();
         programService.list(pageDto);
         responseDto.setContent(pageDto);

@@ -4,6 +4,7 @@ import com.tv.server.domain.Program;
 import com.tv.server.domain.ProgramExample;
 import com.tv.server.dto.ProgramDto;
 import com.tv.server.dto.PageDto;
+import com.tv.server.dto.ProgramPageDto;
 import com.tv.server.enums.ProgramStatusEnum;
 import com.tv.server.mapper.ProgramMapper;
 import com.tv.server.mapper.my.MyProgramMapper;
@@ -35,9 +36,13 @@ public class ProgramService {
     /**
      * 列表查询
      */
-    public void list(PageDto pageDto) {
+    public void list(ProgramPageDto pageDto) {
         PageHelper.startPage(pageDto.getPage(), pageDto.getSize());
         ProgramExample programExample = new ProgramExample();
+        ProgramExample.Criteria criteria = programExample.createCriteria();
+        if (!StringUtils.isEmpty(pageDto.getStatus())) {
+            criteria.andStatusEqualTo(pageDto.getStatus());
+        }
         programExample.setOrderByClause("sort asc");
         List<Program> programList = programMapper.selectByExample(programExample);
         PageInfo<Program> pageInfo = new PageInfo<>(programList);

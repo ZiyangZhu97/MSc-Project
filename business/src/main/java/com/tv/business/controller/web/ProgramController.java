@@ -2,7 +2,9 @@ package com.tv.business.controller.web;
 
 import com.tv.server.dto.PageDto;
 import com.tv.server.dto.ProgramDto;
+import com.tv.server.dto.ProgramPageDto;
 import com.tv.server.dto.ResponseDto;
+import com.tv.server.enums.ProgramStatusEnum;
 import com.tv.server.service.ProgramService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -39,8 +41,9 @@ public class ProgramController {
      * 列表查询
      */
     @PostMapping("/list")
-    public ResponseDto list(@RequestBody PageDto pageDto) {
+    public ResponseDto list(@RequestBody ProgramPageDto pageDto) {
         ResponseDto responseDto = new ResponseDto();
+        pageDto.setStatus(ProgramStatusEnum.PUBLISH.getCode());
         programService.list(pageDto);
         responseDto.setContent(pageDto);
         return responseDto;

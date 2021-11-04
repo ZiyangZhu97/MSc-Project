@@ -43,7 +43,7 @@
           if (resp.success) {
             _this.programs = resp.content.list;
           }
-        }).catch((response) => {
+        }).catch((response) => {dto
           console.log("error：", response);
         })
       },
