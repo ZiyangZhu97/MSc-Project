@@ -16405,3 +16405,377 @@ Identify and stop the process that's listening on port 9002 or configure this ap
 2021-11-05 02:42:29.234 TRACE com.tv.server.mapper.MemberMapper.selectByExample :165  [32m        [0;39m <==    Columns: id, email, password, name, register_time
 2021-11-05 02:42:29.234 TRACE com.tv.server.mapper.MemberMapper.selectByExample :165  [32m        [0;39m <==        Row: z9yKcGyd, 11, d2111fce93f114b3b583947262feda00, 1, 2021-11-04 22:05:59.599
 2021-11-05 02:42:29.235 DEBUG com.tv.server.mapper.MemberMapper.selectByExample :159  [32m        [0;39m <==      Total: 1
+2021-11-05 02:44:17.443 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-05 02:44:52.000 DEBUG c.tv.server.mapper.CategoryMapper.selectByExample :159  [32m        [0;39m ==>  Preparing: select id, parent, name, sort from category order by sort asc 
+2021-11-05 02:44:52.000 DEBUG c.tv.server.mapper.CategoryMapper.selectByExample :159  [32m        [0;39m ==> Parameters: 
+2021-11-05 02:44:52.001 DEBUG com.tv.server.mapper.my.MyProgramMapper.list_COUNT:159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM `program` c WHERE 1 = 1 AND c.status = ? 
+2021-11-05 02:44:52.001 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==    Columns: id, parent, name, sort
+2021-11-05 02:44:52.002 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 5g3hDwFu, cc1uckCJ, t2, null
+2021-11-05 02:44:52.002 DEBUG com.tv.server.mapper.my.MyProgramMapper.list_COUNT:159  [32m        [0;39m ==> Parameters: P(String)
+2021-11-05 02:44:52.002 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: fHfboa8n, cc1uckCJ, t3, null
+2021-11-05 02:44:52.002 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: JeiVdBjB, cc1uckCJ, t1, null
+2021-11-05 02:44:52.003 TRACE com.tv.server.mapper.my.MyProgramMapper.list_COUNT:165  [32m        [0;39m <==    Columns: count(0)
+2021-11-05 02:44:52.003 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000100, 00000000, Language, 1
+2021-11-05 02:44:52.003 TRACE com.tv.server.mapper.my.MyProgramMapper.list_COUNT:165  [32m        [0;39m <==        Row: 4
+2021-11-05 02:44:52.003 DEBUG com.tv.server.mapper.my.MyProgramMapper.list_COUNT:159  [32m        [0;39m <==      Total: 1
+2021-11-05 02:44:52.003 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000200, 00000000, Genre, 2
+2021-11-05 02:44:52.004 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: cc1uckCJ, 00000000, Test, 3
+2021-11-05 02:44:52.004 DEBUG com.tv.server.mapper.my.MyProgramMapper.list      :159  [32m        [0;39m ==>  Preparing: select c.id, c.title, c.summary, length, price, image, type, charge, status, favorites, sort, created_at as createdAt, updated_at as updatedAt from `program` c where 1 = 1 and c.status = ? order by c.sort asc LIMIT ? 
+2021-11-05 02:44:52.004 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000101, 00000100, Chinese, 101
+2021-11-05 02:44:52.005 DEBUG com.tv.server.mapper.my.MyProgramMapper.list      :159  [32m        [0;39m ==> Parameters: P(String), 3(Integer)
+2021-11-05 02:44:52.005 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000102, 00000100, Japanese, 102
+2021-11-05 02:44:52.006 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000103, 00000100, Engilish, 103
+2021-11-05 02:44:52.006 TRACE com.tv.server.mapper.my.MyProgramMapper.list      :165  [32m        [0;39m <==    Columns: id, title, summary, length, price, image, type, charge, status, favorites, sort, createdAt, updatedAt
+2021-11-05 02:44:52.006 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 6ia3K5Ag, 00000100, Other Language, 199
+2021-11-05 02:44:52.006 TRACE com.tv.server.mapper.my.MyProgramMapper.list      :165  [32m        [0;39m <==        Row: 0QIiNoVB, Test Program 1, test test test test test test test test test test test test test test test test test test test test test test , 280, 5.00, http://127.0.0.1:9000/file/f/cover/S7yNFaWV.jpg, S, C, P, 456, null, 2021-10-30 07:56:08.0, 2021-11-05 01:51:39.074
+2021-11-05 02:44:52.007 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000201, 00000200, Action, 201
+2021-11-05 02:44:52.007 TRACE com.tv.server.mapper.my.MyProgramMapper.list      :165  [32m        [0;39m <==        Row: EJuu5hxD, Test Program 2, test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test , 241, 2.00, http://127.0.0.1:9000/file/f/cover/SjswmKjK.jpg, S, C, P, 234, null, 2021-10-31 19:24:01.0, 2021-11-04 21:00:21.652
+2021-11-05 02:44:52.008 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000202, 00000200, Comedy, 202
+2021-11-05 02:44:52.008 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000203, 00000200, Romance, 203
+2021-11-05 02:44:52.008 TRACE com.tv.server.mapper.my.MyProgramMapper.list      :165  [32m        [0;39m <==        Row: mzDVD1Xq, Test Program 3, Test Program 1Test Program 1Test Program 1Test Program 1Test Program 1Test Program 1Test Program 1Test Program 1Test Program 1Test Program 1Test Program 1Test Program 1Test Program 1, 111, 3.00, http://127.0.0.1:9000/file/f/cover/qtV1qWXv.jpg, M, C, P, 567, null, 2021-11-04 00:57:08.0, 2021-11-04 21:00:28.663
+2021-11-05 02:44:52.008 TRACE c.tv.server.mapper.CategoryMapper.selectByExample :165  [32m        [0;39m <==        Row: NNvjDlnn, 00000200, Adventure, 204
+2021-11-05 02:44:52.009 DEBUG com.tv.server.mapper.my.MyProgramMapper.list      :159  [32m        [0;39m <==      Total: 3
+2021-11-05 02:44:52.009 DEBUG c.tv.server.mapper.CategoryMapper.selectByExample :159  [32m        [0;39m <==      Total: 14
+2021-11-05 02:44:54.698 INFO  com.tv.business.controller.web.ProgramController  :54   [32m        [0;39m 查找课程开始：0QIiNoVB
+2021-11-05 02:44:54.699 DEBUG c.t.server.mapper.ProgramMapper.selectByPrimaryKey:159  [32m        [0;39m ==>  Preparing: select id, title, summary, length, price, image, type, charge, status, favorites, sort, created_at, updated_at from program where id = ? 
+2021-11-05 02:44:54.700 DEBUG c.t.server.mapper.ProgramMapper.selectByPrimaryKey:159  [32m        [0;39m ==> Parameters: 0QIiNoVB(String)
+2021-11-05 02:44:54.701 TRACE c.t.server.mapper.ProgramMapper.selectByPrimaryKey:165  [32m        [0;39m <==    Columns: id, title, summary, length, price, image, type, charge, status, favorites, sort, created_at, updated_at
+2021-11-05 02:44:54.702 TRACE c.t.server.mapper.ProgramMapper.selectByPrimaryKey:165  [32m        [0;39m <==        Row: 0QIiNoVB, Test Program 1, test test test test test test test test test test test test test test test test test test test test test test , 280, 5.00, http://127.0.0.1:9000/file/f/cover/S7yNFaWV.jpg, S, C, P, 456, null, 2021-10-30 07:56:08.0, 2021-11-05 01:51:39.074
+2021-11-05 02:44:54.702 DEBUG c.t.server.mapper.ProgramMapper.selectByPrimaryKey:159  [32m        [0;39m <==      Total: 1
+2021-11-05 02:44:54.707 DEBUG com.tv.server.mapper.ChapterMapper.selectByExample:159  [32m        [0;39m ==>  Preparing: select id, program_id, name from chapter WHERE ( program_id = ? ) 
+2021-11-05 02:44:54.707 DEBUG com.tv.server.mapper.ChapterMapper.selectByExample:159  [32m        [0;39m ==> Parameters: 0QIiNoVB(String)
+2021-11-05 02:44:54.709 TRACE com.tv.server.mapper.ChapterMapper.selectByExample:165  [32m        [0;39m <==    Columns: id, program_id, name
+2021-11-05 02:44:54.709 TRACE com.tv.server.mapper.ChapterMapper.selectByExample:165  [32m        [0;39m <==        Row: 0KpoxjMh, 0QIiNoVB, Season 2
+2021-11-05 02:44:54.709 TRACE com.tv.server.mapper.ChapterMapper.selectByExample:165  [32m        [0;39m <==        Row: RLsbMYyl, 0QIiNoVB, Season 1
+2021-11-05 02:44:54.710 DEBUG com.tv.server.mapper.ChapterMapper.selectByExample:159  [32m        [0;39m <==      Total: 2
+2021-11-05 02:44:54.722 DEBUG com.tv.server.mapper.EpisodeMapper.selectByExample:159  [32m        [0;39m ==>  Preparing: select id, title, program_id, chapter_id, video, time, charge, sort, created_at, updated_at from episode WHERE ( program_id = ? ) 
+2021-11-05 02:44:54.723 DEBUG com.tv.server.mapper.EpisodeMapper.selectByExample:159  [32m        [0;39m ==> Parameters: 0QIiNoVB(String)
+2021-11-05 02:44:54.725 TRACE com.tv.server.mapper.EpisodeMapper.selectByExample:165  [32m        [0;39m <==    Columns: id, title, program_id, chapter_id, video, time, charge, sort, created_at, updated_at
+2021-11-05 02:44:54.726 TRACE com.tv.server.mapper.EpisodeMapper.selectByExample:165  [32m        [0;39m <==        Row: 27bTKMiv, E1, 0QIiNoVB, RLsbMYyl, http://127.0.0.1:9000/file/f/cover/K6FQW4mh.mp3, 1, F, 1, 2021-10-30 08:05:38.0, 2021-11-04 18:36:43.076
+2021-11-05 02:44:54.727 TRACE com.tv.server.mapper.EpisodeMapper.selectByExample:165  [32m        [0;39m <==        Row: 6blu2VTS, E2, 0QIiNoVB, 0KpoxjMh, null, null, C, 2, 2021-11-04 19:38:21.0, 2021-11-04 19:40:11.146
+2021-11-05 02:44:54.727 TRACE com.tv.server.mapper.EpisodeMapper.selectByExample:165  [32m        [0;39m <==        Row: GbF6Bgke, E3, 0QIiNoVB, RLsbMYyl, http://127.0.0.1:9000/file/f/cover/K6FQW4mh.mp3, 2, C, 3, 2021-10-30 17:06:10.0, 2021-11-04 18:36:52.979
+2021-11-05 02:44:54.728 TRACE com.tv.server.mapper.EpisodeMapper.selectByExample:165  [32m        [0;39m <==        Row: hjwwGBsJ, E1, 0QIiNoVB, 0KpoxjMh, null, 1, F, 1, 2021-11-04 18:39:21.264, 2021-11-04 18:39:21.264
+2021-11-05 02:44:54.728 TRACE com.tv.server.mapper.EpisodeMapper.selectByExample:165  [32m        [0;39m <==        Row: Wi82ixLn, E4, 0QIiNoVB, RLsbMYyl, http://127.0.0.1:9000/file/f/cover/K6FQW4mh.mp3, 274, C, 4, 2021-10-30 18:35:38.0, 2021-11-04 18:38:15.212
+2021-11-05 02:44:54.729 TRACE com.tv.server.mapper.EpisodeMapper.selectByExample:165  [32m        [0;39m <==        Row: XxvPFRHC, E2, 0QIiNoVB, RLsbMYyl, http://127.0.0.1:9000/file/f/cover/K6FQW4mh.mp3, 2, C, 2, 2021-10-30 08:07:35.0, 2021-11-04 18:36:47.497
+2021-11-05 02:44:54.729 DEBUG com.tv.server.mapper.EpisodeMapper.selectByExample:159  [32m        [0;39m <==      Total: 6
+2021-11-05 02:44:54.739 INFO  com.tv.business.controller.web.ProgramController  :58   [32m        [0;39m 查找课程结束：ResponseDto{success=true, code='null', message='null', content=ProgramDto [Hash = 1729419585, id=0QIiNoVB, title=Test Program 1, summary=test test test test test test test test test test test test test test test test test test test test test test , length=280, price=5.00, image=http://127.0.0.1:9000/file/f/cover/S7yNFaWV.jpg, type=S, charge=C, status=P, favorites=456, sort=null, createdAt=Sat Oct 30 07:56:08 BST 2021, updatedAt=Fri Nov 05 01:51:39 GMT 2021]}
+2021-11-05 02:46:43.201 DEBUG c.t.s.mapper.MemberMapper.selectByExample_COUNT   :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM member 
+2021-11-05 02:46:43.201 DEBUG c.t.s.mapper.MemberMapper.selectByExample_COUNT   :159  [32m        [0;39m ==> Parameters: 
+2021-11-05 02:46:43.202 TRACE c.t.s.mapper.MemberMapper.selectByExample_COUNT   :165  [32m        [0;39m <==    Columns: count(0)
+2021-11-05 02:46:43.202 TRACE c.t.s.mapper.MemberMapper.selectByExample_COUNT   :165  [32m        [0;39m <==        Row: 3
+2021-11-05 02:46:43.203 DEBUG c.t.s.mapper.MemberMapper.selectByExample_COUNT   :159  [32m        [0;39m <==      Total: 1
+2021-11-05 02:46:43.203 DEBUG com.tv.server.mapper.MemberMapper.selectByExample :159  [32m        [0;39m ==>  Preparing: select id, email, `password`, `name`, register_time from member LIMIT ? 
+2021-11-05 02:46:43.203 DEBUG com.tv.server.mapper.MemberMapper.selectByExample :159  [32m        [0;39m ==> Parameters: 5(Integer)
+2021-11-05 02:46:43.204 TRACE com.tv.server.mapper.MemberMapper.selectByExample :165  [32m        [0;39m <==    Columns: id, email, password, name, register_time
+2021-11-05 02:46:43.205 TRACE com.tv.server.mapper.MemberMapper.selectByExample :165  [32m        [0;39m <==        Row: CEF6oa3T, 111, d2111fce93f114b3b583947262feda00, 1, 2021-11-04 22:25:53.675
+2021-11-05 02:46:43.205 TRACE com.tv.server.mapper.MemberMapper.selectByExample :165  [32m        [0;39m <==        Row: RwQ6vYG8, 2, d2111fce93f114b3b583947262feda00, 1, 2021-11-05 01:44:22.407
+2021-11-05 02:46:43.205 TRACE com.tv.server.mapper.MemberMapper.selectByExample :165  [32m        [0;39m <==        Row: z9yKcGyd, 11, d2111fce93f114b3b583947262feda00, 1, 2021-11-04 22:05:59.599
+2021-11-05 02:46:43.207 DEBUG com.tv.server.mapper.MemberMapper.selectByExample :159  [32m        [0;39m <==      Total: 3
+2021-11-05 02:46:47.052 DEBUG c.t.s.mapper.MemberMapper.selectByExample_COUNT   :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM member 
+2021-11-05 02:46:47.053 DEBUG c.t.s.mapper.MemberMapper.selectByExample_COUNT   :159  [32m        [0;39m ==> Parameters: 
+2021-11-05 02:46:47.053 TRACE c.t.s.mapper.MemberMapper.selectByExample_COUNT   :165  [32m        [0;39m <==    Columns: count(0)
+2021-11-05 02:46:47.054 TRACE c.t.s.mapper.MemberMapper.selectByExample_COUNT   :165  [32m        [0;39m <==        Row: 3
+2021-11-05 02:46:47.054 DEBUG c.t.s.mapper.MemberMapper.selectByExample_COUNT   :159  [32m        [0;39m <==      Total: 1
+2021-11-05 02:46:47.055 DEBUG com.tv.server.mapper.MemberMapper.selectByExample :159  [32m        [0;39m ==>  Preparing: select id, email, `password`, `name`, register_time from member LIMIT ? 
+2021-11-05 02:46:47.056 DEBUG com.tv.server.mapper.MemberMapper.selectByExample :159  [32m        [0;39m ==> Parameters: 5(Integer)
+2021-11-05 02:46:47.056 TRACE com.tv.server.mapper.MemberMapper.selectByExample :165  [32m        [0;39m <==    Columns: id, email, password, name, register_time
+2021-11-05 02:46:47.057 TRACE com.tv.server.mapper.MemberMapper.selectByExample :165  [32m        [0;39m <==        Row: CEF6oa3T, 111, d2111fce93f114b3b583947262feda00, 1, 2021-11-04 22:25:53.675
+2021-11-05 02:46:47.057 TRACE com.tv.server.mapper.MemberMapper.selectByExample :165  [32m        [0;39m <==        Row: RwQ6vYG8, 2, d2111fce93f114b3b583947262feda00, 1, 2021-11-05 01:44:22.407
+2021-11-05 02:46:47.057 TRACE com.tv.server.mapper.MemberMapper.selectByExample :165  [32m        [0;39m <==        Row: z9yKcGyd, 11, d2111fce93f114b3b583947262feda00, 1, 2021-11-04 22:05:59.599
+2021-11-05 02:46:47.058 DEBUG com.tv.server.mapper.MemberMapper.selectByExample :159  [32m        [0;39m <==      Total: 3
+2021-11-05 02:46:55.352 DEBUG c.t.s.mapper.MemberMapper.selectByExample_COUNT   :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM member 
+2021-11-05 02:46:55.353 DEBUG c.t.s.mapper.MemberMapper.selectByExample_COUNT   :159  [32m        [0;39m ==> Parameters: 
+2021-11-05 02:46:55.354 TRACE c.t.s.mapper.MemberMapper.selectByExample_COUNT   :165  [32m        [0;39m <==    Columns: count(0)
+2021-11-05 02:46:55.354 TRACE c.t.s.mapper.MemberMapper.selectByExample_COUNT   :165  [32m        [0;39m <==        Row: 3
+2021-11-05 02:46:55.354 DEBUG c.t.s.mapper.MemberMapper.selectByExample_COUNT   :159  [32m        [0;39m <==      Total: 1
+2021-11-05 02:46:55.355 DEBUG com.tv.server.mapper.MemberMapper.selectByExample :159  [32m        [0;39m ==>  Preparing: select id, email, `password`, `name`, register_time from member LIMIT ? 
+2021-11-05 02:46:55.356 DEBUG com.tv.server.mapper.MemberMapper.selectByExample :159  [32m        [0;39m ==> Parameters: 5(Integer)
+2021-11-05 02:46:55.357 TRACE com.tv.server.mapper.MemberMapper.selectByExample :165  [32m        [0;39m <==    Columns: id, email, password, name, register_time
+2021-11-05 02:46:55.357 TRACE com.tv.server.mapper.MemberMapper.selectByExample :165  [32m        [0;39m <==        Row: CEF6oa3T, 111, d2111fce93f114b3b583947262feda00, 1, 2021-11-04 22:25:53.675
+2021-11-05 02:46:55.357 TRACE com.tv.server.mapper.MemberMapper.selectByExample :165  [32m        [0;39m <==        Row: RwQ6vYG8, 2, d2111fce93f114b3b583947262feda00, 1, 2021-11-05 01:44:22.407
+2021-11-05 02:46:55.358 TRACE com.tv.server.mapper.MemberMapper.selectByExample :165  [32m        [0;39m <==        Row: z9yKcGyd, 11, d2111fce93f114b3b583947262feda00, 1, 2021-11-04 22:05:59.599
+2021-11-05 02:46:55.358 DEBUG com.tv.server.mapper.MemberMapper.selectByExample :159  [32m        [0;39m <==      Total: 3
+2021-11-05 02:46:57.358 DEBUG c.t.s.mapper.MemberMapper.selectByExample_COUNT   :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM member 
+2021-11-05 02:46:57.359 DEBUG c.t.s.mapper.MemberMapper.selectByExample_COUNT   :159  [32m        [0;39m ==> Parameters: 
+2021-11-05 02:46:57.359 TRACE c.t.s.mapper.MemberMapper.selectByExample_COUNT   :165  [32m        [0;39m <==    Columns: count(0)
+2021-11-05 02:46:57.360 TRACE c.t.s.mapper.MemberMapper.selectByExample_COUNT   :165  [32m        [0;39m <==        Row: 3
+2021-11-05 02:46:57.360 DEBUG c.t.s.mapper.MemberMapper.selectByExample_COUNT   :159  [32m        [0;39m <==      Total: 1
+2021-11-05 02:46:57.360 DEBUG com.tv.server.mapper.MemberMapper.selectByExample :159  [32m        [0;39m ==>  Preparing: select id, email, `password`, `name`, register_time from member LIMIT ? 
+2021-11-05 02:46:57.361 DEBUG com.tv.server.mapper.MemberMapper.selectByExample :159  [32m        [0;39m ==> Parameters: 5(Integer)
+2021-11-05 02:46:57.361 TRACE com.tv.server.mapper.MemberMapper.selectByExample :165  [32m        [0;39m <==    Columns: id, email, password, name, register_time
+2021-11-05 02:46:57.362 TRACE com.tv.server.mapper.MemberMapper.selectByExample :165  [32m        [0;39m <==        Row: CEF6oa3T, 111, d2111fce93f114b3b583947262feda00, 1, 2021-11-04 22:25:53.675
+2021-11-05 02:46:57.362 TRACE com.tv.server.mapper.MemberMapper.selectByExample :165  [32m        [0;39m <==        Row: RwQ6vYG8, 2, d2111fce93f114b3b583947262feda00, 1, 2021-11-05 01:44:22.407
+2021-11-05 02:46:57.363 TRACE com.tv.server.mapper.MemberMapper.selectByExample :165  [32m        [0;39m <==        Row: z9yKcGyd, 11, d2111fce93f114b3b583947262feda00, 1, 2021-11-04 22:05:59.599
+2021-11-05 02:46:57.363 DEBUG com.tv.server.mapper.MemberMapper.selectByExample :159  [32m        [0;39m <==      Total: 3
+2021-11-05 02:49:17.454 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-05 02:54:17.464 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-05 02:59:17.473 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-05 03:04:17.487 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-05 03:09:17.492 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-05 03:14:17.506 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-05 03:17:12.121 DEBUG com.tv.server.mapper.MemberMapper.selectByExample :159  [32m        [0;39m ==>  Preparing: select id, email, `password`, `name`, register_time from member WHERE ( email = ? ) 
+2021-11-05 03:17:12.122 DEBUG com.tv.server.mapper.MemberMapper.selectByExample :159  [32m        [0;39m ==> Parameters: 11(String)
+2021-11-05 03:17:12.126 TRACE com.tv.server.mapper.MemberMapper.selectByExample :165  [32m        [0;39m <==    Columns: id, email, password, name, register_time
+2021-11-05 03:17:12.127 TRACE com.tv.server.mapper.MemberMapper.selectByExample :165  [32m        [0;39m <==        Row: z9yKcGyd, 11, d2111fce93f114b3b583947262feda00, 1, 2021-11-04 22:05:59.599
+2021-11-05 03:17:12.127 DEBUG com.tv.server.mapper.MemberMapper.selectByExample :159  [32m        [0;39m <==      Total: 1
+2021-11-05 03:17:12.128 INFO  com.tv.server.service.MemberService               :116  [32m        [0;39m 密码不对, 输入密码：b27d20ec4e8b2cef0599707e3490dfc1, 数据库密码：d2111fce93f114b3b583947262feda00
+2021-11-05 03:17:12.128 ERROR c.t.business.controller.ControllerExceptionHandler:32   [32m        [0;39m 业务异常：Wrong email or password
+2021-11-05 03:17:12.129 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :199  [32m        [0;39m Resolved [com.tv.server.exception.BusinessException: Wrong email or password]
+2021-11-05 03:17:15.097 DEBUG com.tv.server.mapper.MemberMapper.selectByExample :159  [32m        [0;39m ==>  Preparing: select id, email, `password`, `name`, register_time from member WHERE ( email = ? ) 
+2021-11-05 03:17:15.097 DEBUG com.tv.server.mapper.MemberMapper.selectByExample :159  [32m        [0;39m ==> Parameters: 11(String)
+2021-11-05 03:17:15.098 TRACE com.tv.server.mapper.MemberMapper.selectByExample :165  [32m        [0;39m <==    Columns: id, email, password, name, register_time
+2021-11-05 03:17:15.098 TRACE com.tv.server.mapper.MemberMapper.selectByExample :165  [32m        [0;39m <==        Row: z9yKcGyd, 11, d2111fce93f114b3b583947262feda00, 1, 2021-11-04 22:05:59.599
+2021-11-05 03:17:15.099 DEBUG com.tv.server.mapper.MemberMapper.selectByExample :159  [32m        [0;39m <==      Total: 1
+2021-11-05 03:19:17.519 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-05 03:24:17.522 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-05 03:29:17.533 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-05 03:34:17.547 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-05 03:39:17.551 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-05 03:44:17.562 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-05 03:45:59.010 INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry   :65   [32m        [0;39m Unregistering application BUSINESS with eureka with status DOWN
+2021-11-05 03:45:59.011 WARN  com.netflix.discovery.DiscoveryClient             :1321 [32m        [0;39m Saw local status change event StatusChangeEvent [timestamp=1636083959011, current=DOWN, previous=UP]
+2021-11-05 03:45:59.012 INFO  com.netflix.discovery.DiscoveryClient             :844  [32m        [0;39m DiscoveryClient_BUSINESS/windows10.microdone.cn:business:9002: registering service...
+2021-11-05 03:45:59.018 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :208  [32m        [0;39m Shutting down ExecutorService 'applicationTaskExecutor'
+2021-11-05 03:45:59.022 INFO  com.netflix.discovery.DiscoveryClient             :906  [32m        [0;39m Shutting down DiscoveryClient ...
+2021-11-05 03:45:59.033 INFO  com.netflix.discovery.DiscoveryClient             :853  [32m        [0;39m DiscoveryClient_BUSINESS/windows10.microdone.cn:business:9002 - registration status: 204
+2021-11-05 03:45:59.033 INFO  com.netflix.discovery.DiscoveryClient             :940  [32m        [0;39m Unregistering ...
+2021-11-05 03:45:59.041 INFO  com.netflix.discovery.DiscoveryClient             :942  [32m        [0;39m DiscoveryClient_BUSINESS/windows10.microdone.cn:business:9002 - deregister  status: 200
+2021-11-05 03:45:59.047 INFO  com.netflix.discovery.DiscoveryClient             :929  [32m        [0;39m Completed shut down of DiscoveryClient
+2021-11-05 03:45:59.048 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m        [0;39m HikariPool-2 - Shutdown initiated...
+2021-11-05 03:45:59.056 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m        [0;39m HikariPool-2 - Shutdown completed.
+2021-11-05 03:46:00.680 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-11-05 03:46:01.334 INFO  com.tv.business.config.BusinessApplication        :651  [32m        [0;39m No active profile set, falling back to default profiles: default
+2021-11-05 03:46:02.708 INFO  o.springframework.cloud.context.scope.GenericScope:295  [32m        [0;39m BeanFactory id=baf6c541-d517-3a7b-abc4-4cd09e48eca1
+2021-11-05 03:46:02.752 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-11-05 03:46:02.759 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-11-05 03:46:02.816 WARN  org.apache.tomcat.util.modeler.Registry           :173  [32m        [0;39m The MBean registry cannot be disabled because it has already been initialised
+2021-11-05 03:46:03.162 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :92   [32m        [0;39m Tomcat initialized with port(s): 9002 (http)
+2021-11-05 03:46:03.163 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m        [0;39m Initializing ProtocolHandler ["http-nio-9002"]
+2021-11-05 03:46:03.164 INFO  org.apache.catalina.core.StandardService          :173  [32m        [0;39m Starting service [Tomcat]
+2021-11-05 03:46:03.165 INFO  org.apache.catalina.core.StandardEngine           :173  [32m        [0;39m Starting Servlet engine: [Apache Tomcat/9.0.29]
+2021-11-05 03:46:03.869 INFO  o.a.c.c.C.[Tomcat].[localhost].[/business]        :173  [32m        [0;39m Initializing Spring embedded WebApplicationContext
+2021-11-05 03:46:03.869 INFO  org.springframework.web.context.ContextLoader     :284  [32m        [0;39m Root WebApplicationContext: initialization completed in 2531 ms
+2021-11-05 03:46:04.093 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext:558  [32m        [0;39m Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'categoryController': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'categoryService': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'categoryMapper' defined in file [D:\MScProject\tv\server\target\classes\com\tv\server\mapper\CategoryMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [D:\MScProject\tv\server\target\classes\mapper\MemberProgramMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [D:\MScProject\tv\server\target\classes\mapper\MemberProgramMapper.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.tv.server.domain.MemberProgram'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.tv.server.domain.MemberProgram
+2021-11-05 03:46:04.094 INFO  org.apache.catalina.core.StandardService          :173  [32m        [0;39m Stopping service [Tomcat]
+2021-11-05 03:46:04.106 INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener:136  [32m        [0;39m 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-11-05 03:46:04.114 ERROR org.springframework.boot.SpringApplication        :826  [32m        [0;39m Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'categoryController': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'categoryService': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'categoryMapper' defined in file [D:\MScProject\tv\server\target\classes\com\tv\server\mapper\CategoryMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [D:\MScProject\tv\server\target\classes\mapper\MemberProgramMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [D:\MScProject\tv\server\target\classes\mapper\MemberProgramMapper.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.tv.server.domain.MemberProgram'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.tv.server.domain.MemberProgram
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:337)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1422)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:878)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at com.tv.business.config.BusinessApplication.main(BusinessApplication.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'categoryService': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'categoryMapper' defined in file [D:\MScProject\tv\server\target\classes\com\tv\server\mapper\CategoryMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [D:\MScProject\tv\server\target\classes\mapper\MemberProgramMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [D:\MScProject\tv\server\target\classes\mapper\MemberProgramMapper.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.tv.server.domain.MemberProgram'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.tv.server.domain.MemberProgram
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:337)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1422)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeanByName(AbstractAutowireCapableBeanFactory.java:454)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:543)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:513)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:653)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:224)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:116)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:334)
+	... 20 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'categoryMapper' defined in file [D:\MScProject\tv\server\target\classes\com\tv\server\mapper\CategoryMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [D:\MScProject\tv\server\target\classes\mapper\MemberProgramMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [D:\MScProject\tv\server\target\classes\mapper\MemberProgramMapper.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.tv.server.domain.MemberProgram'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.tv.server.domain.MemberProgram
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1526)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1406)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeanByName(AbstractAutowireCapableBeanFactory.java:454)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:543)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:513)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:653)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:224)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:116)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:334)
+	... 34 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [D:\MScProject\tv\server\target\classes\mapper\MemberProgramMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [D:\MScProject\tv\server\target\classes\mapper\MemberProgramMapper.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.tv.server.domain.MemberProgram'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.tv.server.domain.MemberProgram
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:656)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:636)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1338)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1287)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1207)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1511)
+	... 48 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [D:\MScProject\tv\server\target\classes\mapper\MemberProgramMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [D:\MScProject\tv\server\target\classes\mapper\MemberProgramMapper.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.tv.server.domain.MemberProgram'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.tv.server.domain.MemberProgram
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:651)
+	... 61 common frames omitted
+Caused by: org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [D:\MScProject\tv\server\target\classes\mapper\MemberProgramMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [D:\MScProject\tv\server\target\classes\mapper\MemberProgramMapper.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.tv.server.domain.MemberProgram'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.tv.server.domain.MemberProgram
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:523)
+	at org.mybatis.spring.SqlSessionFactoryBean.afterPropertiesSet(SqlSessionFactoryBean.java:380)
+	at org.mybatis.spring.SqlSessionFactoryBean.getObject(SqlSessionFactoryBean.java:547)
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration.sqlSessionFactory(MybatisAutoConfiguration.java:153)
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$c61660d.CGLIB$sqlSessionFactory$1(<generated>)
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$c61660d$$FastClassBySpringCGLIB$$a0d8c464.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:363)
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$c61660d.sqlSessionFactory(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 62 common frames omitted
+Caused by: org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [D:\MScProject\tv\server\target\classes\mapper\MemberProgramMapper.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.tv.server.domain.MemberProgram'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.tv.server.domain.MemberProgram
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:120)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.parse(XMLMapperBuilder.java:92)
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:521)
+	... 75 common frames omitted
+Caused by: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.tv.server.domain.MemberProgram'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.tv.server.domain.MemberProgram
+	at org.apache.ibatis.builder.BaseBuilder.resolveClass(BaseBuilder.java:118)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.resultMapElement(XMLMapperBuilder.java:265)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.resultMapElement(XMLMapperBuilder.java:252)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.resultMapElements(XMLMapperBuilder.java:244)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:116)
+	... 77 common frames omitted
+Caused by: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.tv.server.domain.MemberProgram'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.tv.server.domain.MemberProgram
+	at org.apache.ibatis.type.TypeAliasRegistry.resolveAlias(TypeAliasRegistry.java:120)
+	at org.apache.ibatis.builder.BaseBuilder.resolveAlias(BaseBuilder.java:149)
+	at org.apache.ibatis.builder.BaseBuilder.resolveClass(BaseBuilder.java:116)
+	... 81 common frames omitted
+Caused by: java.lang.ClassNotFoundException: Cannot find class: com.tv.server.domain.MemberProgram
+	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:200)
+	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:89)
+	at org.apache.ibatis.io.Resources.classForName(Resources.java:261)
+	at org.apache.ibatis.type.TypeAliasRegistry.resolveAlias(TypeAliasRegistry.java:116)
+	... 83 common frames omitted
+2021-11-05 03:46:11.022 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-11-05 03:46:12.363 INFO  com.tv.business.config.BusinessApplication        :651  [32m        [0;39m No active profile set, falling back to default profiles: default
+2021-11-05 03:46:13.200 INFO  o.springframework.cloud.context.scope.GenericScope:295  [32m        [0;39m BeanFactory id=71e0f212-f9dd-3ca8-9dad-1e940c0490ed
+2021-11-05 03:46:13.282 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-11-05 03:46:13.287 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-11-05 03:46:13.350 WARN  org.apache.tomcat.util.modeler.Registry           :173  [32m        [0;39m The MBean registry cannot be disabled because it has already been initialised
+2021-11-05 03:46:13.812 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :92   [32m        [0;39m Tomcat initialized with port(s): 9002 (http)
+2021-11-05 03:46:13.814 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m        [0;39m Initializing ProtocolHandler ["http-nio-9002"]
+2021-11-05 03:46:13.819 INFO  org.apache.catalina.core.StandardService          :173  [32m        [0;39m Starting service [Tomcat]
+2021-11-05 03:46:13.819 INFO  org.apache.catalina.core.StandardEngine           :173  [32m        [0;39m Starting Servlet engine: [Apache Tomcat/9.0.29]
+2021-11-05 03:46:13.958 INFO  o.a.c.c.C.[Tomcat-1].[localhost].[/business]      :173  [32m        [0;39m Initializing Spring embedded WebApplicationContext
+2021-11-05 03:46:13.959 INFO  org.springframework.web.context.ContextLoader     :284  [32m        [0;39m Root WebApplicationContext: initialization completed in 1588 ms
+2021-11-05 03:46:14.486 WARN  com.netflix.config.sources.URLConfigurationSource :121  [32m        [0;39m No URLs will be polled as dynamic configuration sources.
+2021-11-05 03:46:14.488 INFO  com.netflix.config.sources.URLConfigurationSource :122  [32m        [0;39m To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-11-05 03:46:14.610 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :171  [32m        [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2021-11-05 03:46:14.949 WARN  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :61   [32m        [0;39m Unable to start LiveReload server
+2021-11-05 03:46:20.681 WARN  o.s.c.l.c.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger:106  [32m        [0;39m You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2021-11-05 03:46:20.698 WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger:81   [32m        [0;39m Spring Cloud LoadBalancer is currently working with default default cache. You can switch to using Caffeine cache, by adding it to the classpath.
+2021-11-05 03:46:20.750 INFO  o.s.cloud.netflix.eureka.InstanceInfoFactory      :72   [32m        [0;39m Setting initial instance status as: STARTING
+2021-11-05 03:46:20.753 INFO  com.netflix.discovery.DiscoveryClient             :365  [32m        [0;39m Initializing Eureka in region us-east-1
+2021-11-05 03:46:20.763 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :70   [32m        [0;39m Using JSON encoding codec LegacyJacksonJson
+2021-11-05 03:46:20.764 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :71   [32m        [0;39m Using JSON decoding codec LegacyJacksonJson
+2021-11-05 03:46:20.764 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :80   [32m        [0;39m Using XML encoding codec XStreamXml
+2021-11-05 03:46:20.764 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :81   [32m        [0;39m Using XML decoding codec XStreamXml
+2021-11-05 03:46:20.923 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-05 03:46:20.925 INFO  com.netflix.discovery.DiscoveryClient             :976  [32m        [0;39m Disable delta property : false
+2021-11-05 03:46:20.926 INFO  com.netflix.discovery.DiscoveryClient             :977  [32m        [0;39m Single vip registry refresh property : null
+2021-11-05 03:46:20.926 INFO  com.netflix.discovery.DiscoveryClient             :978  [32m        [0;39m Force full registry fetch : false
+2021-11-05 03:46:20.926 INFO  com.netflix.discovery.DiscoveryClient             :979  [32m        [0;39m Application is null : false
+2021-11-05 03:46:20.926 INFO  com.netflix.discovery.DiscoveryClient             :980  [32m        [0;39m Registered Applications size is zero : true
+2021-11-05 03:46:20.927 INFO  com.netflix.discovery.DiscoveryClient             :982  [32m        [0;39m Application version is -1: true
+2021-11-05 03:46:20.927 INFO  com.netflix.discovery.DiscoveryClient             :1065 [32m        [0;39m Getting all instance registry info from the eureka server
+2021-11-05 03:46:20.937 INFO  com.netflix.discovery.DiscoveryClient             :1074 [32m        [0;39m The response status is 200
+2021-11-05 03:46:20.939 INFO  com.netflix.discovery.DiscoveryClient             :1288 [32m        [0;39m Starting heartbeat executor: renew interval is: 30
+2021-11-05 03:46:20.941 INFO  com.netflix.discovery.InstanceInfoReplicator      :60   [32m        [0;39m InstanceInfoReplicator onDemand update allowed rate per min is 4
+2021-11-05 03:46:20.943 INFO  com.netflix.discovery.DiscoveryClient             :465  [32m        [0;39m Discovery Client initialized at timestamp 1636083980943 with initial instances count: 3
+2021-11-05 03:46:20.945 INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry   :41   [32m        [0;39m Registering application BUSINESS with eureka with status UP
+2021-11-05 03:46:20.945 INFO  com.netflix.discovery.DiscoveryClient             :1323 [32m        [0;39m Saw local status change event StatusChangeEvent [timestamp=1636083980945, current=UP, previous=STARTING]
+2021-11-05 03:46:20.946 INFO  com.netflix.discovery.DiscoveryClient             :844  [32m        [0;39m DiscoveryClient_BUSINESS/windows10.microdone.cn:business:9002: registering service...
+2021-11-05 03:46:20.951 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m        [0;39m Starting ProtocolHandler ["http-nio-9002"]
+2021-11-05 03:46:20.954 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :204  [32m        [0;39m Tomcat started on port(s): 9002 (http) with context path '/business'
+2021-11-05 03:46:20.955 INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration         :145  [32m        [0;39m Updating port to 9002
+2021-11-05 03:46:20.964 INFO  com.netflix.discovery.DiscoveryClient             :853  [32m        [0;39m DiscoveryClient_BUSINESS/windows10.microdone.cn:business:9002 - registration status: 204
+2021-11-05 03:46:22.576 INFO  com.tv.business.config.BusinessApplication        :61   [32m        [0;39m Started BusinessApplication in 12.768 seconds (JVM running for 7029.3)
+2021-11-05 03:46:22.578 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m        [0;39m Condition evaluation unchanged
+2021-11-05 03:46:22.579 INFO  com.tv.business.config.BusinessApplication        :22   [32m        [0;39m started successfully!!
+2021-11-05 03:46:22.579 INFO  com.tv.business.config.BusinessApplication        :23   [32m        [0;39m business address: 	http://127.0.0.1:9002
+2021-11-05 03:47:28.537 INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry   :65   [32m        [0;39m Unregistering application BUSINESS with eureka with status DOWN
+2021-11-05 03:47:28.537 WARN  com.netflix.discovery.DiscoveryClient             :1321 [32m        [0;39m Saw local status change event StatusChangeEvent [timestamp=1636084048537, current=DOWN, previous=UP]
+2021-11-05 03:47:28.537 INFO  com.netflix.discovery.DiscoveryClient             :844  [32m        [0;39m DiscoveryClient_BUSINESS/windows10.microdone.cn:business:9002: registering service...
+2021-11-05 03:47:28.539 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :208  [32m        [0;39m Shutting down ExecutorService 'applicationTaskExecutor'
+2021-11-05 03:47:28.540 INFO  com.netflix.discovery.DiscoveryClient             :906  [32m        [0;39m Shutting down DiscoveryClient ...
+2021-11-05 03:47:28.549 INFO  com.netflix.discovery.DiscoveryClient             :853  [32m        [0;39m DiscoveryClient_BUSINESS/windows10.microdone.cn:business:9002 - registration status: 204
+2021-11-05 03:47:28.550 INFO  com.netflix.discovery.DiscoveryClient             :940  [32m        [0;39m Unregistering ...
+2021-11-05 03:47:28.564 INFO  com.netflix.discovery.DiscoveryClient             :942  [32m        [0;39m DiscoveryClient_BUSINESS/windows10.microdone.cn:business:9002 - deregister  status: 200
+2021-11-05 03:47:28.569 INFO  com.netflix.discovery.DiscoveryClient             :929  [32m        [0;39m Completed shut down of DiscoveryClient
+2021-11-05 03:47:30.610 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-11-05 03:47:31.849 INFO  com.tv.business.config.BusinessApplication        :651  [32m        [0;39m No active profile set, falling back to default profiles: default
+2021-11-05 03:47:32.696 INFO  o.springframework.cloud.context.scope.GenericScope:295  [32m        [0;39m BeanFactory id=388a9118-f2cf-3540-adaf-9f0e604d90fd
+2021-11-05 03:47:32.744 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-11-05 03:47:32.755 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-11-05 03:47:32.811 WARN  org.apache.tomcat.util.modeler.Registry           :173  [32m        [0;39m The MBean registry cannot be disabled because it has already been initialised
+2021-11-05 03:47:33.403 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :92   [32m        [0;39m Tomcat initialized with port(s): 9002 (http)
+2021-11-05 03:47:33.404 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m        [0;39m Initializing ProtocolHandler ["http-nio-9002"]
+2021-11-05 03:47:33.404 INFO  org.apache.catalina.core.StandardService          :173  [32m        [0;39m Starting service [Tomcat]
+2021-11-05 03:47:33.405 INFO  org.apache.catalina.core.StandardEngine           :173  [32m        [0;39m Starting Servlet engine: [Apache Tomcat/9.0.29]
+2021-11-05 03:47:33.490 INFO  o.a.c.c.C.[Tomcat-1].[localhost].[/business]      :173  [32m        [0;39m Initializing Spring embedded WebApplicationContext
+2021-11-05 03:47:33.491 INFO  org.springframework.web.context.ContextLoader     :284  [32m        [0;39m Root WebApplicationContext: initialization completed in 1638 ms
+2021-11-05 03:47:34.078 WARN  com.netflix.config.sources.URLConfigurationSource :121  [32m        [0;39m No URLs will be polled as dynamic configuration sources.
+2021-11-05 03:47:34.078 INFO  com.netflix.config.sources.URLConfigurationSource :122  [32m        [0;39m To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-11-05 03:47:34.144 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :171  [32m        [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2021-11-05 03:47:34.283 WARN  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :61   [32m        [0;39m Unable to start LiveReload server
+2021-11-05 03:47:37.068 WARN  o.s.c.l.c.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger:106  [32m        [0;39m You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2021-11-05 03:47:37.078 WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger:81   [32m        [0;39m Spring Cloud LoadBalancer is currently working with default default cache. You can switch to using Caffeine cache, by adding it to the classpath.
+2021-11-05 03:47:37.089 INFO  o.s.cloud.netflix.eureka.InstanceInfoFactory      :72   [32m        [0;39m Setting initial instance status as: STARTING
+2021-11-05 03:47:37.093 INFO  com.netflix.discovery.DiscoveryClient             :365  [32m        [0;39m Initializing Eureka in region us-east-1
+2021-11-05 03:47:37.098 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :70   [32m        [0;39m Using JSON encoding codec LegacyJacksonJson
+2021-11-05 03:47:37.099 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :71   [32m        [0;39m Using JSON decoding codec LegacyJacksonJson
+2021-11-05 03:47:37.100 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :80   [32m        [0;39m Using XML encoding codec XStreamXml
+2021-11-05 03:47:37.100 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :81   [32m        [0;39m Using XML decoding codec XStreamXml
+2021-11-05 03:47:37.183 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-05 03:47:37.186 INFO  com.netflix.discovery.DiscoveryClient             :976  [32m        [0;39m Disable delta property : false
+2021-11-05 03:47:37.187 INFO  com.netflix.discovery.DiscoveryClient             :977  [32m        [0;39m Single vip registry refresh property : null
+2021-11-05 03:47:37.189 INFO  com.netflix.discovery.DiscoveryClient             :978  [32m        [0;39m Force full registry fetch : false
+2021-11-05 03:47:37.189 INFO  com.netflix.discovery.DiscoveryClient             :979  [32m        [0;39m Application is null : false
+2021-11-05 03:47:37.190 INFO  com.netflix.discovery.DiscoveryClient             :980  [32m        [0;39m Registered Applications size is zero : true
+2021-11-05 03:47:37.190 INFO  com.netflix.discovery.DiscoveryClient             :982  [32m        [0;39m Application version is -1: true
+2021-11-05 03:47:37.190 INFO  com.netflix.discovery.DiscoveryClient             :1065 [32m        [0;39m Getting all instance registry info from the eureka server
+2021-11-05 03:47:37.197 INFO  com.netflix.discovery.DiscoveryClient             :1074 [32m        [0;39m The response status is 200
+2021-11-05 03:47:37.199 INFO  com.netflix.discovery.DiscoveryClient             :1288 [32m        [0;39m Starting heartbeat executor: renew interval is: 30
+2021-11-05 03:47:37.200 INFO  com.netflix.discovery.InstanceInfoReplicator      :60   [32m        [0;39m InstanceInfoReplicator onDemand update allowed rate per min is 4
+2021-11-05 03:47:37.201 INFO  com.netflix.discovery.DiscoveryClient             :465  [32m        [0;39m Discovery Client initialized at timestamp 1636084057201 with initial instances count: 1
+2021-11-05 03:47:37.203 INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry   :41   [32m        [0;39m Registering application BUSINESS with eureka with status UP
+2021-11-05 03:47:37.203 INFO  com.netflix.discovery.DiscoveryClient             :1323 [32m        [0;39m Saw local status change event StatusChangeEvent [timestamp=1636084057203, current=UP, previous=STARTING]
+2021-11-05 03:47:37.209 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m        [0;39m Starting ProtocolHandler ["http-nio-9002"]
+2021-11-05 03:47:37.212 INFO  com.netflix.discovery.DiscoveryClient             :844  [32m        [0;39m DiscoveryClient_BUSINESS/windows10.microdone.cn:business:9002: registering service...
+2021-11-05 03:47:37.222 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :204  [32m        [0;39m Tomcat started on port(s): 9002 (http) with context path '/business'
+2021-11-05 03:47:37.223 INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration         :145  [32m        [0;39m Updating port to 9002
+2021-11-05 03:47:37.237 INFO  com.netflix.discovery.DiscoveryClient             :853  [32m        [0;39m DiscoveryClient_BUSINESS/windows10.microdone.cn:business:9002 - registration status: 204
+2021-11-05 03:47:37.933 INFO  com.tv.business.config.BusinessApplication        :61   [32m        [0;39m Started BusinessApplication in 8.502 seconds (JVM running for 7104.657)
+2021-11-05 03:47:37.934 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m        [0;39m Condition evaluation unchanged
+2021-11-05 03:47:37.934 INFO  com.tv.business.config.BusinessApplication        :22   [32m        [0;39m started successfully!!
+2021-11-05 03:47:37.935 INFO  com.tv.business.config.BusinessApplication        :23   [32m        [0;39m business address: 	http://127.0.0.1:9002

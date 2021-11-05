@@ -48,8 +48,8 @@
 <!--        <table tableName="file" domainObjectName="File"/>-->
 <!--        <table tableName="user" domainObjectName="User"/>-->
 <!--        <table tableName="resource" domainObjectName="Resource"/>-->
-        <table tableName="member" domainObjectName="Member"/>
-
+<!--        <table tableName="member" domainObjectName="Member"/>-->
+        <table tableName="member_program" domainObjectName="MemberProgram"/>
 
     </context>
 </generatorConfiguration>
