@@ -139,6 +139,8 @@
             // 登录成功
             _this.$parent.setLoginMember(loginMember);
             $("#login-modal").modal("hide");
+            _this.$router.go(0);
+
 
           } else {
             Toast.warning(resp.message);

@@ -1,4 +1,4 @@
-package com.tv.business.controller.admin;
+package com.tv.business.controller.web;
 
 import com.tv.server.dto.MemberProgramDto;
 import com.tv.server.dto.PageDto;
@@ -11,49 +11,39 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
 
-@RestController
-@RequestMapping("/admin/memberProgram")
+@RestController("webMemberProgramController")
+@RequestMapping("/web/member-program")
 public class MemberProgramController {
 
     private static final Logger LOG = LoggerFactory.getLogger(MemberProgramController.class);
-    public static final String BUSINESS_NAME = "";
+    public static final String BUSINESS_NAME = "Subscribe program";
 
     @Resource
     private MemberProgramService memberProgramService;
 
     /**
-     * 列表查询
+     * 保存，id有值时更新，无值时新增
      */
-    @PostMapping("/list")
-    public ResponseDto list(@RequestBody PageDto pageDto) {
+    @PostMapping("/subscribe")
+    public ResponseDto subscribe(@RequestBody MemberProgramDto memberProgramDto) {
+        // 保存校验
+        ValidatorUtil.require(memberProgramDto.getMemberId(), "Member ID");
+        ValidatorUtil.require(memberProgramDto.getProgramId(), "Program ID");
+
         ResponseDto responseDto = new ResponseDto();
-        memberProgramService.list(pageDto);
-        responseDto.setContent(pageDto);
+        memberProgramDto = memberProgramService.subscribe(memberProgramDto);
+        responseDto.setContent(memberProgramDto);
         return responseDto;
     }
 
     /**
      * 保存，id有值时更新，无值时新增
      */
-    @PostMapping("/save")
-    public ResponseDto save(@RequestBody MemberProgramDto memberProgramDto) {
-        // 保存校验
-        ValidatorUtil.require(memberProgramDto.getMemberId(), "Member ID");
-        ValidatorUtil.require(memberProgramDto.getProgramId(), "Program ID");
-
+    @PostMapping("/get-enroll")
+    public ResponseDto getEnroll(@RequestBody MemberProgramDto memberProgramDto) {
         ResponseDto responseDto = new ResponseDto();
-        memberProgramService.save(memberProgramDto);
+        memberProgramDto = memberProgramService.getSub(memberProgramDto);
         responseDto.setContent(memberProgramDto);
-        return responseDto;
-    }
-
-    /**
-     * 删除
-     */
-    @DeleteMapping("/delete/{id}")
-    public ResponseDto delete(@PathVariable String id) {
-        ResponseDto responseDto = new ResponseDto();
-        memberProgramService.delete(id);
         return responseDto;
     }
 }

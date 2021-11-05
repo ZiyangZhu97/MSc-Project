@@ -18,7 +18,8 @@
               <span class="price-now text-danger"><i class="fa fa-gbp"></i>&nbsp;{{program.price}}&nbsp;&nbsp;</span>
             </p>
             <p class="program-head-button-links">
-              <a class="btn btn-lg btn-primary btn-shadow" href="javascript:;">Subscribe</a>
+              <a v-show="!memberProgram.id" v-on:click="subscribe()" class="btn btn-lg btn-primary btn-shadow" href="javascript:;">Subscribe</a>
+              <a v-show="memberProgram.id" href="#" class="btn btn-lg btn-success btn-shadow disabled">Subscribed</a>
             </p>
           </div>
         </div>
@@ -83,6 +84,7 @@
         program: {},
         chapters: [],
         episodes: [],
+        memberProgram: {},
         PROGRAM_TYPE: PROGRAM_TYPE,
         EPISODE_CHARGE: EPISODE_CHARGE
       }
@@ -101,6 +103,9 @@
           _this.chapters = _this.program.chapters || [];
           _this.episodes = _this.program.episodes || [];
 
+          // 获取报名信息
+          _this.getSub();
+
           // 将所有的节放入对应的章中
           Tool.sortAsc(_this.chapters, "id");
           for (let i = 0; i < _this.chapters.length; i++) {
@@ -116,6 +121,52 @@
           }
         })
       },
+
+
+      /**
+       * 订购
+       */
+      subscribe() {
+        let _this = this;
+        let loginMember = Tool.getLoginMember();
+        if (Tool.isEmpty(loginMember)) {
+          Toast.warning("Log in first");
+          return;
+        }
+        _this.$ajax.post(process.env.VUE_APP_SERVER + '/business/web/member-program/subscribe', {
+          programId: _this.program.id,
+          memberId: loginMember.id
+        }).then((response)=>{
+          let resp = response.data;
+          if (resp.success) {
+            _this.memberProgram = resp.content;
+            Toast.success("Subscribed successfully!");
+          } else {
+            Toast.warning(resp.message);
+          }
+        });
+      },
+      /**
+       * 获取订购
+       */
+      getSub() {
+        let _this = this;
+        let loginMember = Tool.getLoginMember();
+        if (Tool.isEmpty(loginMember)) {
+          console.log("未登录");
+          return;
+        }
+        _this.$ajax.post(process.env.VUE_APP_SERVER + '/business/web/member-program/get-enroll', {
+          programId: _this.program.id,
+          memberId: loginMember.id
+        }).then((response)=>{
+          let resp = response.data;
+          if (resp.success) {
+            _this.memberProgram = resp.content || {};
+          }
+        });
+      },
+
     }
   }
 </script>

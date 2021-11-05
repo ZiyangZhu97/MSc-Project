@@ -10,6 +10,7 @@ import com.tv.server.util.UuidUtil;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import org.springframework.stereotype.Service;
+import org.springframework.util.CollectionUtils;
 import org.springframework.util.StringUtils;
 
 import javax.annotation.Resource;
@@ -53,6 +54,7 @@ public class MemberProgramService {
     private void insert(MemberProgram memberProgram) {
         Date now = new Date();
         memberProgram.setId(UuidUtil.getShortUuid());
+        memberProgram.setAt(now);
         memberProgramMapper.insert(memberProgram);
     }
 
@@ -68,5 +70,45 @@ public class MemberProgramService {
      */
     public void delete(String id) {
         memberProgramMapper.deleteByPrimaryKey(id);
+    }
+
+    /**
+     * 报名，先判断是否已报名
+     * @param memberProgramDto
+     */
+    public MemberProgramDto subscribe(MemberProgramDto memberProgramDto) {
+        MemberProgram memberProgramDb = this.select(memberProgramDto.getMemberId(), memberProgramDto.getProgramId());
+        if (memberProgramDb == null) {
+            MemberProgram memberProgram = CopyUtil.copy(memberProgramDto, MemberProgram.class);
+            this.insert(memberProgram);
+            // 将数据库信息全部返回，包括id, at
+            return CopyUtil.copy(memberProgram, MemberProgramDto.class);
+        } else {
+            // 如果已经报名，则直接返回已报名的信息
+            return CopyUtil.copy(memberProgramDb, MemberProgramDto.class);
+        }
+    }
+
+    /**
+     * 根据memberId和programId查询记录
+     */
+    public MemberProgram select(String memberId, String programId) {
+        MemberProgramExample example = new MemberProgramExample();
+        example.createCriteria()
+                .andProgramIdEqualTo(programId)
+                .andMemberIdEqualTo(memberId);
+        List<MemberProgram> memberProgramList = memberProgramMapper.selectByExample(example);
+        if (CollectionUtils.isEmpty(memberProgramList)) {
+            return null;
+        } else {
+            return memberProgramList.get(0);
+        }
+    }
+    /**
+     * 获取报名信息
+     */
+    public MemberProgramDto getSub(MemberProgramDto memberProgramDto) {
+        MemberProgram memberProgram = this.select(memberProgramDto.getMemberId(), memberProgramDto.getProgramId());
+        return CopyUtil.copy(memberProgram, MemberProgramDto.class);
     }
 }
