@@ -9,11 +9,11 @@
               <input v-model="member.email" class="form-control" placeholder="email">
             </div>
             <div class="form-group">
-              <input class="form-control" type="password" placeholder="password" v-model="member.passwordOriginal">
+              <input class="form-control" type="password" placeholder="password" v-model="member.password">
             </div>
 
             <div class="form-group">
-              <button class="btn btn-primary btn-block submit-button">
+              <button v-on:click="login()" class="btn btn-primary btn-block submit-button">
                 Login
               </button>
             </div>
@@ -78,8 +78,6 @@
         memberForget: {},
         memberRegister: {},
 
-        rememberMe: true, // 记住密码
-        imageCodeToken: ""
       }
     },
     mounted() {
@@ -97,7 +95,7 @@
         $("#login-modal").modal("show");
       },
 
-      //---------------登录框、注册框、忘记密码框切换-----------------
+      //---------------登录框、注册框切换-----------------
       toLoginDiv() {
         let _this = this;
         _this.MODAL_STATUS = _this.STATUS_LOGIN
@@ -121,6 +119,34 @@
           }
         })
       },
+      login () {
+        let _this = this;
+
+        // 明文存储到缓存中
+        // let passwordShow = _this.member.password;
+
+        // 如果密码是从缓存带出来的，则不需要重新加密
+        _this.member.password = hex_md5(_this.member.password + KEY);
+
+
+        _this.$ajax.post(process.env.VUE_APP_SERVER + '/business/web/member/login', _this.member).then((response)=>{
+          let resp = response.data;
+          if (resp.success) {
+            console.log("登录成功：", resp.content);
+            let loginMember = resp.content;
+            Tool.setLoginMember(resp.content);
+
+            // 登录成功
+            _this.$parent.setLoginMember(loginMember);
+            $("#login-modal").modal("hide");
+
+          } else {
+            Toast.warning(resp.message);
+            _this.member.password = "";
+          }
+        });
+      },
+
 
     }
   }

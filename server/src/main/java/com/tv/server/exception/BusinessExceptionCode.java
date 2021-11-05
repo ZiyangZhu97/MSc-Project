@@ -3,7 +3,8 @@ package com.tv.server.exception;
 public enum BusinessExceptionCode {
 
     USER_LOGIN_NAME_EXIST("Login name already exist"),
-    LOGIN_ERROR("Username or password does not exist"),
+    LOGIN_ERROR("Wrong username or password"),
+    LOGIN_MEMBER_ERROR("Wrong email or password"),
 
     ;
 

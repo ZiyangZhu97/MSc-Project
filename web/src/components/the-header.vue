@@ -29,8 +29,9 @@
               </div>
             </li>
           </ul>
-          <span class="text-white"></span>
-          <button  v-on:click="openLoginModal()" class="btn btn-outline-light my-2 my-sm-0" type="submit">Login/Register</button>
+          <span v-show="loginMember.id" class="text-white pr-3">Hello: {{loginMember.name}}</span>
+          <button v-show="loginMember.id" v-on:click="logout()" class="btn btn-outline-light my-2 my-sm-0">Logout</button>
+          <button v-show="!loginMember.id"  v-on:click="openLoginModal()" class="btn btn-outline-light my-2 my-sm-0" type="submit">Login/Register</button>
         </div>
       </div>
     </nav>
@@ -44,6 +45,15 @@
   export default {
     name: 'theHeader',
     components: {TheLogin},
+        data: function () {
+      return {
+        loginMember: {}
+      }
+    },
+    mounted() {
+      let _this = this;
+      _this.loginMember = Tool.getLoginMember();
+    },
     methods: {
       /**
        * 打开登录注册窗口
@@ -51,6 +61,24 @@
       openLoginModal() {
         let _this = this;
         _this.$refs.loginComponent.openLoginModal();
+      },
+      setLoginMember(loginMember) {
+        let _this = this;
+        _this.loginMember = loginMember;
+      },
+
+      logout () {
+        let _this = this;
+        _this.$ajax.get(process.env.VUE_APP_SERVER + '/business/web/member/logout').then((response)=>{
+          let resp = response.data;
+          if (resp.success) {
+            Tool.setLoginMember(null);
+            _this.loginMember = {};
+            Toast.success("Logout succeeded!");
+          } else {
+            Toast.warning(resp.message);
+          }
+        });
       },
 
     }
